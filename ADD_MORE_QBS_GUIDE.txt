@@ -1,0 +1,110 @@
+# NFL QB Scraper - How to Add & Scrape More Players
+
+## Quick Start
+
+Run the current working scraper:
+```bash
+python scrape_nfl_qbs_simple.py
+```
+
+This will scrape the **5 verified QBs** already configured. Add more by following the guide below.
+
+---
+
+## How to Find & Add a New QB Player ID
+
+### Step 1: Find the Player ID
+1. Open: https://www.pro-football-reference.com/
+2. Click **Search** or go directly to the players page
+3. Find your player (e.g., "Aaron Rodgers")
+4. Look at the URL in the address bar
+   - Example: `https://www.pro-football-reference.com/players/R/RodAa01.htm`
+   - **The ID is**: `RodAa01`
+5. Note their **birth year** (search online if needed)
+
+### Step 2: Add to Script
+
+Open `scrape_nfl_qbs_simple.py` and find the `ADDITIONAL_QBS` section:
+
+```python
+ADDITIONAL_QBS = [
+    # Add your QBs here
+    ('RodAa01', 'Aaron Rodgers', 1983),
+    ('MahoP01', 'Patrick Mahomes', 1995),
+    # etc...
+]
+```
+
+Add one line per QB with format:
+```
+('PLAYERID', 'Full Name', birth_year),
+```
+
+### Step 3: Run the Scraper
+
+```bash
+python scrape_nfl_qbs_simple.py
+```
+
+The script will:
+- Skip QBs already scraped
+- Scrape new QBs
+- Automatically fix Season/Age columns
+- Move files to `data/raw/qb/`
+- Show a summary report
+
+---
+
+## Current Verified QBs (Already Configured)
+
+✓ Josh Allen (Bills) - AlleJo02
+✓ Lamar Jackson (Ravens) - JackLa00
+✓ Joe Burrow (Bengals) - BurrJo01
+✓ Jalen Hurts (Eagles) - HurtJa00
+✓ Justin Herbert (Chargers) - HerbJu00
+
+---
+
+## Example: Adding Aaron Rodgers
+
+1. Search ProFootballReference for "Aaron Rodgers"
+2. Find his page: `/players/R/RodAa01.htm`
+3. Add to script:
+   ```python
+   ADDITIONAL_QBS = [
+       ('RodAa01', 'Aaron Rodgers', 1983),
+   ]
+   ```
+4. Run: `python scrape_nfl_qbs_simple.py`
+
+---
+
+## Troubleshooting
+
+**Player not found?**
+- Check spelling on PFR
+- Verify birth year
+- Make sure ID format is correct (case-sensitive!)
+
+**Rate limiting (429 error)?**
+- Script includes delays between requests (5-8 seconds)
+- Wait and try again later
+
+**File already exists?**
+- Player already scraped
+- Delete the CSV from `data/raw/qb/` if you want to re-scrape
+
+---
+
+## Data Structure
+
+Each QB CSV file has columns:
+- Season (year)
+- Age (player age that year)
+- Team, Position, Games, Stats... (all from PFR)
+
+All files go to: `data/raw/qb/`
+
+---
+
+**That's it!** Just add the player ID and birth year, then run the script.

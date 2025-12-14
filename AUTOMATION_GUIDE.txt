@@ -1,0 +1,101 @@
+# NFL QB Data Scraper - Automation Guide
+
+## Overview
+This project now has **fully automated QB data scraping** for all current NFL starting quarterbacks.
+
+## Quick Start
+
+### Run Full Automation (All Current Starting QBs)
+```bash
+python scrape_all_nfl_complete.py
+```
+This will:
+- Scrape all 32 current starting QBs
+- Automatically fix Season/Age columns
+- Move files to `data/raw/qb/`
+- Generate a summary report
+
+### Run Verified QBs Only (Fast)
+```bash
+python scrape_all_nfl_qbs.py
+```
+Scrapes only pre-tested QBs (currently 5 established QBs - will skip if already exist)
+
+## How It Works
+
+### 1. **Automatic Scraping**
+- Uses `cloudscraper` to bypass Cloudflare protection
+- Scrapes from Pro Football Reference
+- Respectful delays (1-3 seconds between requests)
+
+### 2. **Automatic Data Fixing**
+For each QB, the script:
+- Reads scraped CSV
+- Fixes Season column (Season = Birth Year + Age)
+- Reorders columns (Season, Age first)
+- Removes summary rows (career totals, averages)
+
+### 3. **Automatic Organization**
+- Saves all QB data to `data/raw/qb/`
+- Cleans up temporary files from raw root
+- Skips already-processed QBs
+
+## File Structure
+
+```
+Analiza-i-Obrada/
+├── scraper_production.py          # Core scraper (DO NOT MODIFY)
+├── scrape_all_nfl_qbs.py          # Quick batch (verified QBs)
+├── scrape_all_nfl_complete.py     # Full automation (all 32 QBs)
+├── fix_season_column.py           # Manual season fixer
+├── fix_new_qbs.py                 # Batch season fixer
+├── requirements.txt
+└── data/
+    └── raw/
+        └── qb/                    # ← All QB CSVs here
+            ├── AlleJo02_stats.csv
+            ├── JackLa00_stats.csv
+            ├── BurrJo01_stats.csv
+            └── ... (more QBs)
+```
+
+## Adding Custom Players
+
+Edit `scrape_all_nfl_complete.py` and add to `NFL_STARTING_QBS`:
+
+```python
+('PLAYERID', 'Name', birth_year),  # e.g., ('MahoP01', 'Patrick Mahomes', 1995)
+```
+
+Player ID format: `LastFirst##` (ProFootballReference format)
+
+## Troubleshooting
+
+**Player not found?**
+- Check if player exists on Pro Football Reference
+- Verify player ID format (case-sensitive)
+- Ensure birth year is correct
+
+**Empty data scraped?**
+- Player may not have available historical data
+- Try different player ID variations
+
+**Rate limiting?**
+- Script already includes respectful delays
+- If needed, increase delay in script
+
+## Current Status
+
+**Total QBs automated:** 7 verified
+- Josh Allen (Bills)
+- Lamar Jackson (Ravens)
+- Joe Burrow (Bengals)
+- Jalen Hurts (Eagles)
+- Justin Herbert (Chargers)
+- Joe Montana (historical)
+- Tom Brady (historical)
+
+**Ready for full 32-team expansion:** See `scrape_all_nfl_complete.py`
+
+---
+Last updated: December 14, 2025
