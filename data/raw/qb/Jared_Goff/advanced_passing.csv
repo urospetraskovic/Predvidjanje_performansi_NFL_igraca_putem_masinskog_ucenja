@@ -1,0 +1,9 @@
+Season,Age,Team,Pos,G,GS,Cmp,Att,pass_target_yds,pass_tgt_yds_per_att,pass_air_yds,pass_air_yds_per_cmp,pass_air_yds_per_att,pass_yac,pass_yac_per_cmp,pass_batted_passes,pass_throwaways,pass_spikes,pass_drops,pass_drop_pct,pass_poor_throws,pass_poor_throw_pct,pass_on_target,pass_on_target_pct,pocket_time,pass_blitzed,pass_hurried,pass_hits,pass_pressured,pass_pressured_pct,rush_scrambles,rush_scrambles_yds_per_att,pass_rpo,pass_rpo_yds,pass_rpo_pass_att,pass_rpo_pass_yds,pass_rpo_rush_att,pass_rpo_rush_yds,pass_play_action,pass_play_action_pass_yds,Awards,Player,PlayerID
+2018,24,LAR,QB,16,16,364,561,4865,8.7,2562,7.0,4.6,2126,5.8,0,29,2,13,2.5,93,17.5,,,2.6,151,66,34,133,21.7,18,6.2,,,,,,,,,PB,Jared Goff,GoffJa00
+2019,25,LAR,QB,16,16,394,626,4825,7.7,2388,6.1,3.8,2250,5.7,17,15,1,27,4.4,123,20.2,437,71.6,2.6,219,52,48,122,18.5,10,3.8,2,3,0,0,2,3,182,1564,,Jared Goff,GoffJa00
+2020,26,LAR,QB,15,15,370,552,3579,6.5,1800,4.9,3.3,2152,5.8,6,24,2,27,5.1,84,16.0,413,78.5,2.5,185,42,54,119,19.9,22,4.5,2,11,0,0,2,11,172,1384,,Jared Goff,GoffJa00
+2021,27,DET,QB,14,14,332,494,3150,6.4,1490,4.5,3.0,1755,5.3,5,21,5,21,4.5,77,16.5,375,80.1,2.4,110,50,48,133,24.6,11,6.1,24,191,22,174,1,17,79,647,,Jared Goff,GoffJa00
+2022,28,DET,QB,17,17,382,587,4106,7.0,2151,5.6,3.7,2287,6.0,11,27,1,34,6.1,94,16.8,426,76.2,2.4,186,43,53,119,19.1,14,4.6,20,108,20,108,0,0,154,1445,"PB,AP CPoY-6",Jared Goff,GoffJa00
+2023,29,DET,QB,17,17,407,605,4064,6.7,2428,6.0,4.0,2147,5.3,14,27,4,35,6.1,87,15.2,461,80.3,2.3,212,42,69,141,22.0,7,4.4,23,189,22,186,1,3,151,1415,,Jared Goff,GoffJa00
+2024,30,DET,QB,17,17,390,539,3390,6.3,1994,5.1,3.7,2635,6.8,4,24,3,11,2.1,69,13.5,412,80.5,2.3,143,34,57,122,20.9,14,4.9,14,94,12,91,1,3,203,2060,"PB,AP MVP-5,AP OPoY-9",Jared Goff,GoffJa00
+2025,31,DET,QB,14,14,314,453,2923,6.5,1677,5.3,3.7,1995,6.4,11,23,2,18,4.2,71,16.6,338,79.0,2.3,112,26,65,119,24.5,5,9.6,9,46,9,46,0,0,136,1357,,Jared Goff,GoffJa00

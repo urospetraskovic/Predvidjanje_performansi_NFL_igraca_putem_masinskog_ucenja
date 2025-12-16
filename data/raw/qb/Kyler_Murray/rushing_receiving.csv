@@ -1,0 +1,8 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Tgt,Rec,Rec_Yds,Rec_TD,Rec_1D,Rec/G,Rec_Y/G,touches,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,Awards,Player,PlayerID
+2019,22,ARI,QB,16,16,93,544,4,27,48.4,35,5.8,34.0,5.8,0,0,0,0,0,0.0,0.0,93,5.8,544,4,5,AP ORoY-1,Kyler Murray,MurrKy00
+2020,23,ARI,QB,16,16,133,819,11,52,57.1,48,6.2,51.2,8.3,0,0,0,0,0,0.0,0.0,133,6.2,819,11,9,PB,Kyler Murray,MurrKy00
+2021,24,ARI,QB,14,14,88,423,5,25,53.4,57,4.8,30.2,6.3,0,0,7,0,0,0.0,0.5,88,4.9,430,5,13,PB,Kyler Murray,MurrKy00
+2022,25,ARI,QB,11,11,67,418,3,23,61.2,42,6.2,38.0,6.1,0,0,0,0,0,0.0,0.0,67,6.2,418,3,8,,Kyler Murray,MurrKy00
+2023,26,ARI,QB,8,8,44,244,3,15,59.1,33,5.5,30.5,5.5,0,0,0,0,0,0.0,0.0,44,5.5,244,3,7,AP CPoY-9,Kyler Murray,MurrKy00
+2024,27,ARI,QB,17,17,78,572,5,27,52.6,50,7.3,33.6,4.6,0,0,0,0,0,0.0,0.0,78,7.3,572,5,8,AP CPoY-10,Kyler Murray,MurrKy00
+2025,28,ARI,QB,5,5,29,173,1,10,41.4,30,6.0,34.6,5.8,0,0,0,0,0,0.0,0.0,29,6.0,173,1,1,,Kyler Murray,MurrKy00

@@ -1,0 +1,4 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2023,22,HOU,QB,15,15,0,0,0,0,0,0,8,1,-10,0,0.0,0,0,0,0,0,0,"PB,AP MVP-8,AP ORoY-1",C.J. Stroud,StroCJ00
+2024,23,HOU,QB,17,17,0,0,0,0,0,0,6,1,-4,0,0.0,0,0,0,0,0,0,,C.J. Stroud,StroCJ00
+2025,24,HOU,QB,11,11,0,0,0,0,0,0,1,0,0,0,0.0,0,0,0,0,0,0,,C.J. Stroud,StroCJ00

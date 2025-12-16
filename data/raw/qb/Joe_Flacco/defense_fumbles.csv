@@ -1,0 +1,19 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2008,23,BAL,QB,16,16,0,0,0,0,0,0,11,3,-18,0,0.0,0,0,0,0,0,0,,Joe Flacco,FlacJo00
+2009,24,BAL,QB,16,16,0,0,0,0,0,0,8,3,0,0,0.0,0,0,0,0,0,0,,Joe Flacco,FlacJo00
+2010,25,BAL,QB,16,16,0,0,0,0,0,0,9,1,-8,0,0.0,0,0,0,0,0,0,,Joe Flacco,FlacJo00
+2011,26,BAL,QB,16,16,0,0,0,0,0,0,11,4,-7,0,0.0,0,0,0,0,0,0,,Joe Flacco,FlacJo00
+2012,27,BAL,QB,16,16,0,0,0,0,0,0,9,1,-10,0,0.0,0,0,0,,,0,,Joe Flacco,FlacJo00
+2013,28,BAL,QB,16,16,0,0,0,0,0,0,8,2,0,0,0.0,0,0,0,0,0,0,,Joe Flacco,FlacJo00
+2014,29,BAL,QB,16,16,0,0,0,0,0,0,5,3,-5,0,0.0,0,0,0,0,0,0,,Joe Flacco,FlacJo00
+2015,30,BAL,QB,10,10,0,0,0,0,0,0,5,3,-22,0,0.0,0,0,0,,,0,,Joe Flacco,FlacJo00
+2016,31,BAL,QB,16,16,0,0,0,0,0,0,5,2,-2,0,0.0,0,0,0,0,0,0,,Joe Flacco,FlacJo00
+2017,32,BAL,QB,16,16,0,0,0,0,0,0,6,4,-3,0,0.0,0,0,0,0,0,0,,Joe Flacco,FlacJo00
+2018,33,BAL,QB,9,9,0,0,0,0,0,0,3,1,-6,0,0.0,0,0,0,0,0,0,,Joe Flacco,FlacJo00
+2019,34,DEN,QB,8,8,0,0,0,0,0,0,8,2,0,0,0.0,0,0,0,0,0,0,,Joe Flacco,FlacJo00
+2020,35,NYJ,QB,5,4,0,0,0,0,0,0,1,1,-6,0,0.0,0,0,0,0,0,0,,Joe Flacco,FlacJo00
+2021,36,NYJ,QB,2,1,0,0,0,0,0,0,1,0,0,0,0.0,0,0,0,0,0,0,,Joe Flacco,FlacJo00
+2022,37,NYJ,QB,5,4,0,0,0,0,0,0,5,0,0,0,0.0,1,1,0,0,0,0,,Joe Flacco,FlacJo00
+2023,38,CLE,QB,5,5,0,0,0,0,0,0,4,1,-2,0,0.0,0,0,0,0,0,0,AP CPoY-1,Joe Flacco,FlacJo00
+2024,39,IND,QB,8,6,0,0,0,0,0,0,4,0,0,0,0.0,0,0,0,0,0,0,,Joe Flacco,FlacJo00
+2025,40,2TM,QB,10,10,0,0,0,0,0,0,3,0,0,0,0.0,0,0,0,0,0,0,,Joe Flacco,FlacJo00

@@ -1,0 +1,4 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2023,24,SFO,QB,16,16,0,0,0,0,0,0,6,4,-1,0,0.0,0,0,0,0,0,0,"PB,AP MVP-4,AP OPoY-6,AP CPoY-6",Brock Purdy,PurdBr00
+2024,25,SFO,QB,15,15,0,0,0,0,0,0,7,0,-11,0,0.0,0,0,0,0,0,0,,Brock Purdy,PurdBr00
+2025,26,SFO,QB,6,6,0,0,0,0,0,0,2,0,0,0,0.0,0,0,0,0,0,0,,Brock Purdy,PurdBr00

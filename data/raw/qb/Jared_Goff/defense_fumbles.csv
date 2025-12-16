@@ -1,0 +1,11 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2016,22,LAR,QB,7,7,0,0,0,0,0,0,5,1,0,0,0.0,0,0,0,0,0,0,,Jared Goff,GoffJa00
+2017,23,LAR,QB,15,15,0,0,0,0,0,0,8,0,0,0,0.0,0,0,0,0,0,0,PB,Jared Goff,GoffJa00
+2018,24,LAR,QB,16,16,0,0,0,0,0,0,12,3,-5,0,0.0,0,0,0,0,0,0,PB,Jared Goff,GoffJa00
+2019,25,LAR,QB,16,16,0,0,0,0,0,0,10,0,-19,0,0.0,0,0,0,0,0,0,,Jared Goff,GoffJa00
+2020,26,LAR,QB,15,15,0,0,0,0,0,0,7,1,0,0,0.0,0,0,0,0,0,0,,Jared Goff,GoffJa00
+2021,27,DET,QB,14,14,0,0,0,0,0,0,9,3,3,0,0.0,0,0,0,0,0,0,,Jared Goff,GoffJa00
+2022,28,DET,QB,17,17,0,0,0,0,0,0,7,2,5,0,0.0,2,2,0,0,0,0,"PB,AP CPoY-6",Jared Goff,GoffJa00
+2023,29,DET,QB,17,17,0,0,0,0,0,0,6,2,0,0,0.0,0,0,0,0,0,0,,Jared Goff,GoffJa00
+2024,30,DET,QB,17,17,0,0,0,0,0,0,6,2,0,0,0.0,0,0,0,0,0,0,"PB,AP MVP-5,AP OPoY-9",Jared Goff,GoffJa00
+2025,31,DET,QB,14,14,0,0,0,0,0,0,3,1,-9,0,0.0,0,0,0,0,0,0,,Jared Goff,GoffJa00

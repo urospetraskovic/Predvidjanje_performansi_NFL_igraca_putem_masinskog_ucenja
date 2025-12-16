@@ -1,0 +1,9 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Tgt,Rec,Rec_Yds,rec_yds_per_rec,Rec_TD,Rec_1D,rec_success,rec_long,Rec/G,Rec_Y/G,catch_pct,rec_yds_per_tgt,touches,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,Awards,Player,PlayerID
+2018,22,BUF,QB,12,11,89,631,8,41,59.6,45,7.1,52.6,7.4,1,0,0,,0,0,0.0,,0.0,0.0,0.0,0.0,89,7.1,631,8,8,,Josh Allen,AlleJo02
+2019,23,BUF,QB,16,16,109,510,9,42,54.1,36,4.7,31.9,6.8,0,0,0,,0,0,,,0.0,0.0,,,109,4.7,510,9,14,,Josh Allen,AlleJo02
+2020,24,BUF,QB,16,16,102,421,8,38,54.9,24,4.1,26.3,6.4,1,1,12,12.0,1,1,100.0,12,0.1,0.8,100.0,12.0,103,4.2,433,9,9,"PB,AP-2,AP MVP-2,AP OPoY-4",Josh Allen,AlleJo02
+2021,25,BUF,QB,17,17,122,763,6,54,61.5,34,6.3,44.9,7.2,0,0,0,,0,0,,,0.0,0.0,,,122,6.3,763,6,8,,Josh Allen,AlleJo02
+2022,26,BUF,QB,16,16,124,762,7,55,61.3,44,6.1,47.6,7.8,0,0,0,,0,0,,,0.0,0.0,,,124,6.1,762,7,13,"PB,AP MVP-3,AP OPoY-8",Josh Allen,AlleJo02
+2023,27,BUF,QB,17,17,111,524,15,57,65.8,23,4.7,30.8,6.5,0,0,0,,0,0,,,0.0,0.0,,,111,4.7,524,15,7,"AP MVP-5,AP OPoY-6",Josh Allen,AlleJo02
+2024,28,BUF,QB,17,17,102,531,12,52,64.7,30,5.2,31.2,6.0,0,0,7,,1,0,,7,0.0,0.4,,,102,5.3,538,13,5,"PB,AP-2,AP MVP-1,AP OPoY-6",Josh Allen,AlleJo02
+2025,29,BUF,QB,14,14,98,535,12,41,58.2,40,5.5,38.2,7.0,0,0,0,,0,0,,,0.0,0.0,,,98,5.5,535,12,5,,Josh Allen,AlleJo02

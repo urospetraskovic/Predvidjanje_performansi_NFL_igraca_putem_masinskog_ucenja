@@ -1,0 +1,8 @@
+Season,Age,Team,Pos,G,GS,Cmp,Att,pass_target_yds,pass_tgt_yds_per_att,pass_air_yds,pass_air_yds_per_cmp,pass_air_yds_per_att,pass_yac,pass_yac_per_cmp,pass_batted_passes,pass_throwaways,pass_spikes,pass_drops,pass_drop_pct,pass_poor_throws,pass_poor_throw_pct,pass_on_target,pass_on_target_pct,pocket_time,pass_blitzed,pass_hurried,pass_hits,pass_pressured,pass_pressured_pct,rush_scrambles,rush_scrambles_yds_per_att,pass_rpo,pass_rpo_yds,pass_rpo_pass_att,pass_rpo_pass_yds,pass_rpo_rush_att,pass_rpo_rush_yds,pass_play_action,pass_play_action_pass_yds,Awards,Player,PlayerID
+2019,22,NYG,QB,13,12,284,459,3689,8.0,1619,5.7,3.5,1408,5.0,6,12,0,17,3.8,80,17.9,318,71.1,2.5,131,48,66,152,29.0,27,8.4,37,325,28,297,5,28,75,639,,Daniel Jones,JoneDa05
+2020,23,NYG,QB,14,14,280,448,3395,7.6,1827,6.5,4.1,1116,4.0,8,14,2,23,5.3,76,17.6,325,75.2,2.5,200,56,55,156,30.3,22,7.9,46,367,28,208,17,159,101,717,,Daniel Jones,JoneDa05
+2021,24,NYG,QB,11,11,232,361,2616,7.2,1334,5.8,3.7,1094,4.7,5,12,1,19,5.5,64,18.4,265,76.1,2.4,120,37,36,95,23.3,24,6.4,38,160,25,111,10,49,93,652,,Daniel Jones,JoneDa05
+2022,25,NYG,QB,16,16,317,472,3024,6.4,1609,5.1,3.4,1596,5.0,11,24,5,29,6.5,54,12.2,359,81.0,2.5,137,46,53,143,25.1,53,7.2,49,310,39,240,9,70,141,984,AP CPoY-11,Daniel Jones,JoneDa05
+2023,26,NYG,QB,6,6,108,160,1083,6.8,469,4.3,2.9,440,4.1,5,7,0,6,3.9,21,13.7,120,78.4,2.3,47,17,17,64,30.5,20,8.0,30,198,23,160,6,38,30,262,,Daniel Jones,JoneDa05
+2024,27,NYG,QB,10,10,216,341,2443,7.2,1126,5.2,3.3,944,4.4,7,17,4,24,7.5,40,12.5,254,79.4,2.4,89,21,44,94,24.5,14,5.5,33,206,25,166,8,40,68,473,,Daniel Jones,JoneDa05
+2025,28,IND,QB,13,13,261,384,3063,8.0,1750,6.7,4.6,1351,5.2,8,10,2,14,3.8,45,12.1,290,78.0,2.3,127,24,41,87,20.3,23,6.6,61,518,52,491,5,27,103,872,,Daniel Jones,JoneDa05

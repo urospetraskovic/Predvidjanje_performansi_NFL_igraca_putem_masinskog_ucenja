@@ -1,0 +1,6 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Tgt,Rec,Rec_Yds,Rec_TD,Rec_1D,Rec/G,Rec_Y/G,touches,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,Awards,Player,PlayerID
+2021,23,GNB,QB,6,1,12,27,0,1,25.0,10,2.3,4.5,2.0,0,0,0,0,0,0.0,0.0,12,2.3,27,0,3,,Jordan Love,LoveJo03
+2022,24,GNB,QB,4,0,1,-1,0,0,0.0,-1,-1.0,-0.3,0.3,0,0,0,0,0,0.0,0.0,1,-1.0,-1,0,0,,Jordan Love,LoveJo03
+2023,25,GNB,QB,17,17,50,247,4,16,44.0,37,4.9,14.5,2.9,0,0,0,0,0,0.0,0.0,50,4.9,247,4,9,,Jordan Love,LoveJo03
+2024,26,GNB,QB,15,15,25,83,1,9,44.0,14,3.3,5.5,1.7,0,0,0,0,0,0.0,0.0,25,3.3,83,1,4,,Jordan Love,LoveJo03
+2025,27,GNB,QB,14,14,45,192,0,13,48.9,25,4.3,13.7,3.2,0,0,0,0,0,0.0,0.0,45,4.3,192,0,6,,Jordan Love,LoveJo03

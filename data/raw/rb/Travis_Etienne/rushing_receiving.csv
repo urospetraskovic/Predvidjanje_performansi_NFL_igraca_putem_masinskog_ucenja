@@ -1,0 +1,5 @@
+Season,Age,Team,Lg,Pos,G,GS,Att,Yds,TD,1D,Succ%,Lng,Y/A,Y/G,A/G,Tgt,Rec,Yds,Y/R,TD,1D,rec_success,rec_long,R/G,Y/G,catch_pct,Y/Tgt,Touch,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,av,awards,Player,PlayerID
+2022,23,JAX,NFL,RB,17,12,220,1125,5,52,50.9,62,5.1,66.2,12.9,45,35,316,9.0,0,16,44.4,30,2.1,18.6,77.8,7.0,255,5.7,1441,5,5,11.0,,Travis Etienne,EtieTr00
+2023,24,JAX,NFL,RB,17,17,267,1008,11,53,43.1,62,3.8,59.3,15.7,73,58,476,8.2,1,23,49.3,56,3.4,28.0,79.5,6.5,325,4.6,1484,12,0,9.0,,Travis Etienne,EtieTr00
+2024,25,JAX,NFL,RB,15,15,150,558,2,31,45.3,22,3.7,37.2,10.0,52,39,254,6.5,0,13,38.5,26,2.6,16.9,75.0,4.9,189,4.3,812,2,1,5.0,,Travis Etienne,EtieTr00
+2025,26,JAX,NFL,RB,14,14,213,949,7,41,48.8,71,4.5,67.8,15.2,43,29,254,8.8,5,11,48.8,45,2.1,18.1,67.4,5.9,242,5.0,1203,12,1,,,Travis Etienne,EtieTr00

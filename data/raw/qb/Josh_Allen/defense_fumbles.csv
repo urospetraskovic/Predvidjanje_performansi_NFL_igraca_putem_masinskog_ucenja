@@ -1,0 +1,9 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2018,22,BUF,QB,12,11,0,0,0,0,0,0,8,2,-14,0,0.0,0,0,0,0,0,0,,Josh Allen,AlleJo02
+2019,23,BUF,QB,16,16,0,0,0,0,0,0,14,4,-1,0,0.0,0,0,0,0,0,0,,Josh Allen,AlleJo02
+2020,24,BUF,QB,16,16,0,0,0,0,0,0,9,1,-2,0,0.0,0,0,0,0,0,0,"PB,AP-2,AP MVP-2,AP OPoY-4",Josh Allen,AlleJo02
+2021,25,BUF,QB,17,17,0,0,0,0,0,0,8,2,-4,0,0.0,1,1,0,0,0,0,,Josh Allen,AlleJo02
+2022,26,BUF,QB,16,16,0,0,0,0,0,0,13,5,-2,0,0.0,3,3,0,0,0,0,"PB,AP MVP-3,AP OPoY-8",Josh Allen,AlleJo02
+2023,27,BUF,QB,17,17,0,0,0,0,0,0,7,1,-4,0,0.0,0,0,0,0,0,0,"AP MVP-5,AP OPoY-6",Josh Allen,AlleJo02
+2024,28,BUF,QB,17,17,0,0,0,0,0,0,5,1,0,0,0.0,0,0,0,0,0,0,"PB,AP-2,AP MVP-1,AP OPoY-6",Josh Allen,AlleJo02
+2025,29,BUF,QB,14,14,0,0,0,0,0,0,5,1,-11,0,0.0,0,0,0,0,0,0,,Josh Allen,AlleJo02

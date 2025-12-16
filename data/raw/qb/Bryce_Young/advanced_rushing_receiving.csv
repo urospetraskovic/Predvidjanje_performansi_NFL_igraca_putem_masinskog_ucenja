@@ -1,0 +1,4 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_YAC,Rec_BrkTkl,Rec_Drops,Rec_Int,Awards,Player,PlayerID
+2023,22,CAR,QB,16,16,39,253,18,191,4.9,62,1.6,4,9.8,0,0,0,0,0,0,0,0,0,,Bryce Young,YounBr01
+2024,23,CAR,QB,14,12,43,249,15,217,5.0,32,0.7,4,10.8,0,0,0,0,0,0,0,0,0,,Bryce Young,YounBr01
+2025,24,CAR,QB,13,13,39,170,13,139,3.6,31,0.8,2,19.5,0,0,0,0,0,0,0,0,0,,Bryce Young,YounBr01

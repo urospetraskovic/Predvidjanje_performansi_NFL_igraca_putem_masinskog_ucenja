@@ -1,0 +1,5 @@
+Season,Age,Team,Lg,Pos,G,GS,Att,Yds,TD,1D,Succ%,Lng,Y/A,Y/G,A/G,Tgt,Rec,Yds,Y/R,TD,1D,rec_success,rec_long,R/G,Y/G,catch_pct,Y/Tgt,Touch,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,av,awards,Player,PlayerID
+2022,23,SFO,NFL,RB,16,0,43,258,1,10,58.1,55,6.0,16.1,2.7,0,0,0,,0,0,,,0.0,0.0,,,43,6.0,258,1,0,2.0,,Jordan Mason,MasoJo00
+2023,24,SFO,NFL,RB,17,0,40,206,3,13,55.0,26,5.2,12.1,2.4,4,3,31,10.3,0,1,50.0,13.0,0.2,1.8,75.0,7.8,43,5.5,237,3,0,2.0,,Jordan Mason,MasoJo00
+2024,25,SFO,NFL,RB,12,6,153,789,3,37,47.1,38,5.2,65.8,12.8,14,11,91,8.3,0,5,64.3,24.0,0.9,7.6,78.6,6.5,164,5.4,880,3,3,5.0,,Jordan Mason,MasoJo00
+2025,26,MIN,NFL,RB,14,4,143,659,6,39,55.9,24,4.6,47.1,10.2,15,13,45,3.5,0,1,26.7,13.0,0.9,3.2,86.7,3.0,156,4.5,704,6,3,,,Jordan Mason,MasoJo00

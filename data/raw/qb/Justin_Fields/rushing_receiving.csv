@@ -1,0 +1,6 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Tgt,Rec,Rec_Yds,Rec_TD,Rec_1D,rec_success,Rec/G,Rec_Y/G,catch_pct,rec_yds_per_tgt,touches,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,Awards,Player,PlayerID
+2021,22,CHI,QB,12,10,72,420,2,22,48.6,23,5.8,35.0,6.0,0,0,0,0,0,,0.0,0.0,,,72,5.8,420,2,12,,Justin Fields,FielJu00
+2022,23,CHI,QB,15,15,160,1143,8,65,56.3,67,7.1,76.2,10.7,0,0,0,0,0,,0.0,0.0,,,160,7.1,1143,8,16,AP MVP-9,Justin Fields,FielJu00
+2023,24,CHI,QB,13,13,124,657,4,43,52.4,39,5.3,50.5,9.5,0,0,0,0,0,,0.0,0.0,,,124,5.3,657,4,10,,Justin Fields,FielJu00
+2024,25,PIT,QB,10,6,62,289,5,19,54.8,30,4.7,28.9,6.2,0,0,0,0,0,,0.0,0.0,,,62,4.7,289,5,6,,Justin Fields,FielJu00
+2025,26,NYJ,QB,9,9,71,383,4,26,57.7,43,5.4,42.6,7.9,1,0,0,0,0,0.0,0.0,0.0,0.0,0.0,71,5.4,383,4,4,,Justin Fields,FielJu00

@@ -1,0 +1,5 @@
+Season,Age,Team,Lg,Pos,G,GS,Att,Yds,TD,1D,Succ%,Lng,Y/A,Y/G,A/G,Tgt,Rec,Yds,Y/R,TD,1D,rec_success,rec_long,R/G,Y/G,catch_pct,Y/Tgt,Touch,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,av,awards,Player,PlayerID
+2022,22,SEA,NFL,RB,15,11,228,1050,9,51,39.9,74,4.6,70.0,15.2,35,27,165,6.1,0,6,37.1,33,1.8,11.0,77.1,4.7,255,4.8,1215,9,0,8.0,,Kenneth Walker III,WalkKe00
+2023,23,SEA,NFL,RB,15,15,219,905,8,46,46.6,45,4.1,60.3,14.6,37,29,259,8.9,1,9,43.2,64,1.9,17.3,78.4,7.0,248,4.7,1164,9,1,8.0,,Kenneth Walker III,WalkKe00
+2024,24,SEA,NFL,RB,11,11,153,573,7,28,44.4,28,3.7,52.1,13.9,53,46,299,6.5,1,19,54.7,21,4.2,27.2,86.8,5.6,199,4.4,872,8,1,5.0,,Kenneth Walker III,WalkKe00
+2025,25,SEA,NFL,RB,14,14,179,779,4,37,43.6,31,4.4,55.6,12.8,27,22,176,8.0,0,8,44.4,29,1.6,12.6,81.5,6.5,201,4.8,955,4,0,,,Kenneth Walker III,WalkKe00

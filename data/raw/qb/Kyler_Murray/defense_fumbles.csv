@@ -1,0 +1,8 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2019,22,ARI,QB,16,16,0,0,0,0,0,0,5,3,-15,0,0.0,0,0,0,0,0,0,AP ORoY-1,Kyler Murray,MurrKy00
+2020,23,ARI,QB,16,16,0,0,0,0,0,0,9,2,-3,0,0.0,0,0,0,0,0,0,PB,Kyler Murray,MurrKy00
+2021,24,ARI,QB,14,14,0,0,0,0,0,0,13,13,-1,0,0.0,0,0,0,0,0,0,PB,Kyler Murray,MurrKy00
+2022,25,ARI,QB,11,11,0,0,0,0,0,0,8,6,5,0,0.0,0,0,0,0,0,0,,Kyler Murray,MurrKy00
+2023,26,ARI,QB,8,8,0,0,0,0,0,0,7,1,-11,0,0.0,0,0,0,0,0,0,AP CPoY-9,Kyler Murray,MurrKy00
+2024,27,ARI,QB,17,17,0,0,0,0,0,0,8,3,-4,0,0.0,0,0,0,0,0,0,AP CPoY-10,Kyler Murray,MurrKy00
+2025,28,ARI,QB,5,5,0,0,0,0,0,0,1,0,-4,0,0.0,0,0,0,0,0,0,,Kyler Murray,MurrKy00

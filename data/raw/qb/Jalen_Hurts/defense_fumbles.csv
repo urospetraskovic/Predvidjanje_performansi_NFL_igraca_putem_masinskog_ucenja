@@ -1,0 +1,7 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2020,22,PHI,QB,15,4,0,0,0,0,0,0,9,3,-12,0,0.0,0,0,0,0,0,0,,Jalen Hurts,HurtJa00
+2021,23,PHI,QB,15,15,0,0,0,0,0,0,9,3,-23,0,0.0,0,0,0,0,0,0,,Jalen Hurts,HurtJa00
+2022,24,PHI,QB,15,15,0,0,0,0,0,0,9,2,-13,0,0.0,2,2,0,0,0,0,"PB,AP-2,AP MVP-2,AP OPoY-3",Jalen Hurts,HurtJa00
+2023,25,PHI,QB,17,17,0,0,0,0,0,0,9,4,-3,0,0.0,0,0,0,0,0,0,PB,Jalen Hurts,HurtJa00
+2024,26,PHI,QB,15,15,0,0,0,0,0,0,9,2,-8,0,0.0,0,0,0,0,0,0,,Jalen Hurts,HurtJa00
+2025,27,PHI,QB,14,14,0,0,0,0,0,0,7,2,-7,0,0.0,0,0,0,0,0,0,,Jalen Hurts,HurtJa00

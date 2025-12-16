@@ -1,0 +1,7 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Tgt,Rec,Rec_Yds,rec_yds_per_rec,Rec_TD,Rec_1D,rec_success,rec_long,Rec/G,Rec_Y/G,catch_pct,rec_yds_per_tgt,touches,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,Awards,Player,PlayerID
+2020,22,PHI,QB,15,4,63,354,3,25,50.8,24,5.6,23.6,4.2,1,1,3,3.0,0,0,0.0,3,0.1,0.2,100.0,3.0,64,5.6,357,3,9,,Jalen Hurts,HurtJa00
+2021,23,PHI,QB,15,15,139,784,10,56,61.9,31,5.6,52.3,9.3,1,0,0,,0,0,0.0,,0.0,0.0,0.0,0.0,139,5.6,784,10,9,,Jalen Hurts,HurtJa00
+2022,24,PHI,QB,15,15,165,760,13,67,59.4,42,4.6,50.7,11.0,0,0,0,,0,0,,,0.0,0.0,,,165,4.6,760,13,9,"PB,AP-2,AP MVP-2,AP OPoY-3",Jalen Hurts,HurtJa00
+2023,25,PHI,QB,17,17,157,605,15,68,61.1,24,3.9,35.6,9.2,0,0,0,,0,0,,,0.0,0.0,,,157,3.9,605,15,9,PB,Jalen Hurts,HurtJa00
+2024,26,PHI,QB,15,15,150,630,14,62,55.3,35,4.2,42.0,10.0,0,0,0,,0,0,,,0.0,0.0,,,150,4.2,630,14,9,,Jalen Hurts,HurtJa00
+2025,27,PHI,QB,14,14,95,376,8,37,55.8,29,4.0,26.9,6.8,0,0,0,,0,0,,,0.0,0.0,,,95,4.0,376,8,7,,Jalen Hurts,HurtJa00

@@ -1,0 +1,9 @@
+Season,Age,Team,Pos,G,GS,Cmp,Att,pass_target_yds,pass_tgt_yds_per_att,pass_air_yds,pass_air_yds_per_cmp,pass_air_yds_per_att,pass_yac,pass_yac_per_cmp,pass_batted_passes,pass_throwaways,pass_spikes,pass_drops,pass_drop_pct,pass_poor_throws,pass_poor_throw_pct,pass_on_target,pass_on_target_pct,pocket_time,pass_blitzed,pass_hurried,pass_hits,pass_pressured,pass_pressured_pct,rush_scrambles,rush_scrambles_yds_per_att,pass_rpo,pass_rpo_yds,pass_rpo_pass_att,pass_rpo_pass_yds,pass_rpo_rush_att,pass_rpo_rush_yds,pass_play_action,pass_play_action_pass_yds,Awards,Player,PlayerID
+2018,26,IND,QB,4,0,2,4,82,20.5,1,0.5,0.3,1,0.5,0,0,0,0,0.0,1,25.0,,,2.1,2,1,1,2,50.0,0,,,,,,,,,,,Jacoby Brissett,BrisJa00
+2019,27,IND,QB,15,15,272,447,3521,7.9,1437,5.3,3.2,1505,5.5,12,21,3,24,5.7,78,18.4,315,74.5,2.6,135,56,54,137,27.0,33,6.1,60,343,50,305,9,38,110,827,,Jacoby Brissett,BrisJa00
+2020,28,IND,QB,11,0,2,8,65,8.1,-1,-0.5,-0.1,18,9.0,0,1,0,1,14.3,3,42.9,4,57.1,2.8,3,3,0,5,45.5,1,2.0,4,8,0,0,3,8,2,4,,Jacoby Brissett,BrisJa00
+2021,29,MIA,QB,11,5,141,225,1691,7.5,775,5.5,3.4,508,3.6,1,6,1,17,7.8,36,16.5,158,72.5,2.4,62,26,24,69,26.8,13,5.0,23,156,21,152,1,4,33,243,,Jacoby Brissett,BrisJa00
+2022,30,CLE,QB,16,11,236,369,3154,8.5,1513,6.4,4.1,1095,4.6,5,16,3,25,7.1,48,13.7,265,75.7,2.5,101,39,39,102,24.5,23,8.7,11,36,11,36,0,0,76,700,,Jacoby Brissett,BrisJa00
+2023,31,WAS,QB,3,0,18,23,178,7.7,154,8.6,6.7,70,3.9,0,1,0,1,4.5,1,4.5,19,86.4,2.5,2,0,2,2,8.0,2,9.5,0,0,0,0,0,0,3,21,,Jacoby Brissett,BrisJa00
+2024,32,NWE,QB,8,5,95,161,1038,6.4,389,4.1,2.4,437,4.6,1,7,1,13,8.5,29,19.0,118,77.1,2.4,55,16,28,62,33.0,9,7.2,12,66,11,69,1,-3,21,139,,Jacoby Brissett,BrisJa00
+2025,33,ARI,QB,11,9,256,386,2946,7.6,1459,5.7,3.8,1249,4.9,3,18,1,8,2.2,66,18.0,271,73.8,2.5,91,32,51,114,26.1,20,6.4,34,180,28,173,2,7,86,658,,Jacoby Brissett,BrisJa00

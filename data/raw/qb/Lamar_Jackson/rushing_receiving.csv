@@ -1,0 +1,9 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Tgt,Rec,Rec_Yds,Rec_TD,Rec_1D,rec_success,Rec/G,Rec_Y/G,catch_pct,rec_yds_per_tgt,touches,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,Awards,Player,PlayerID
+2018,21,BAL,QB,16,7,147,695,5,45,51.0,39,4.7,43.4,9.2,2,0,0,0,0,0.0,0.0,0.0,0.0,0.0,147,4.7,695,5,12,,Lamar Jackson,JackLa00
+2019,22,BAL,QB,15,15,176,1206,7,71,58.0,47,6.9,80.4,11.7,0,0,0,0,0,,0.0,0.0,,,176,6.9,1206,7,9,"PB,AP-1,AP MVP-1,AP OPoY-2",Lamar Jackson,JackLa00
+2020,23,BAL,QB,15,15,159,1005,7,56,51.6,50,6.3,67.0,10.6,0,0,0,0,0,,0.0,0.0,,,159,6.3,1005,7,10,,Lamar Jackson,JackLa00
+2021,24,BAL,QB,12,12,133,767,2,48,56.4,31,5.8,63.9,11.1,0,0,0,0,0,,0.0,0.0,,,133,5.8,767,2,6,PB,Lamar Jackson,JackLa00
+2022,25,BAL,QB,12,12,112,764,3,47,64.3,79,6.8,63.7,9.3,0,0,0,0,0,,0.0,0.0,,,112,6.8,764,3,5,,Lamar Jackson,JackLa00
+2023,26,BAL,QB,16,16,148,821,5,48,54.1,30,5.5,51.3,9.3,0,0,0,0,0,,0.0,0.0,,,148,5.5,821,5,11,"PB,AP-1,AP MVP-1,AP OPoY-4,AP CPoY-9",Lamar Jackson,JackLa00
+2024,27,BAL,QB,17,17,139,915,4,47,56.1,48,6.6,53.8,8.2,0,0,0,0,0,,0.0,0.0,,,139,6.6,915,4,10,"PB,AP-1,AP MVP-2,AP OPoY-2",Lamar Jackson,JackLa00
+2025,28,BAL,QB,11,11,61,333,2,23,50.8,19,5.5,30.3,5.5,0,0,0,0,0,,0.0,0.0,,,61,5.5,333,2,7,,Lamar Jackson,JackLa00

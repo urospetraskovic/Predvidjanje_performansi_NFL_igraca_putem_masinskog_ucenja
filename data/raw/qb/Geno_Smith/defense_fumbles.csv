@@ -1,0 +1,12 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2013,23,NYJ,QB,16,16,0,0,0,0,0,0,8,3,-2,0,0.0,0,0,0,0,0,0,,Geno Smith,SmitGe00
+2014,24,NYJ,QB,14,13,0,0,0,0,0,0,8,5,-21,0,0.0,0,0,0,0,0,0,,Geno Smith,SmitGe00
+2016,26,NYJ,QB,2,1,0,0,0,0,0,0,1,0,0,0,0.0,0,0,0,,,0,,Geno Smith,SmitGe00
+2017,27,NYG,QB,2,1,0,0,0,0,0,0,2,0,0,0,0.0,0,0,0,0,0,0,,Geno Smith,SmitGe00
+2018,28,LAC,QB,5,0,0,0,0,0,0,0,1,0,0,0,0.0,0,0,0,0,0,0,,Geno Smith,SmitGe00
+2020,30,SEA,QB,1,0,0,0,0,0,0,0,1,0,-6,0,0.0,0,0,0,0,0,0,,Geno Smith,SmitGe00
+2021,31,SEA,QB,4,3,0,0,0,0,0,0,1,0,0,0,0.0,0,0,0,0,0,0,,Geno Smith,SmitGe00
+2022,32,SEA,QB,17,17,0,0,0,0,0,0,8,2,2,0,0.0,1,1,0,0,0,0,"PB,AP MVP-9,AP CPoY-1",Geno Smith,SmitGe00
+2023,33,SEA,QB,15,15,0,0,0,0,0,0,5,2,-3,0,0.0,0,0,0,0,0,0,PB,Geno Smith,SmitGe00
+2024,34,SEA,QB,17,17,0,0,0,0,0,0,9,6,-47,0,0.0,0,0,0,0,0,0,,Geno Smith,SmitGe00
+2025,35,LVR,QB,13,13,0,0,0,0,0,0,4,3,-2,0,0.0,0,0,0,0,0,0,,Geno Smith,SmitGe00

@@ -1,0 +1,8 @@
+Season,Age,Team,Pos,G,GS,Cmp,Att,pass_target_yds,pass_tgt_yds_per_att,pass_air_yds,pass_air_yds_per_cmp,pass_air_yds_per_att,pass_yac,pass_yac_per_cmp,pass_batted_passes,pass_throwaways,pass_spikes,pass_drops,pass_drop_pct,pass_poor_throws,pass_poor_throw_pct,pass_on_target,pass_on_target_pct,pocket_time,pass_blitzed,pass_hurried,pass_hits,pass_pressured,pass_pressured_pct,rush_scrambles,rush_scrambles_yds_per_att,pass_rpo,pass_rpo_yds,pass_rpo_pass_att,pass_rpo_pass_yds,pass_rpo_rush_att,pass_rpo_rush_yds,pass_play_action,pass_play_action_pass_yds,Awards,Player,PlayerID
+2018,28,LAC,QB,5,0,1,4,11,2.8,-3,-3.0,-0.8,11,11.0,0,1,0,0,0.0,0,0.0,,,2.6,1,2,2,5,83.3,1,9.0,,,,,,,,,,Geno Smith,SmitGe00
+2020,30,SEA,QB,1,0,4,5,25,5.0,19,4.8,3.8,14,3.5,0,0,0,0,0.0,1,20.0,4,80.0,2.1,4,0,1,2,33.3,0,,3,12,1,14,2,-2,1,14,,Geno Smith,SmitGe00
+2021,31,SEA,QB,4,3,65,95,669,7.0,342,5.3,3.6,360,5.5,3,6,1,0,0.0,13,14.8,65,73.9,2.5,38,12,6,31,27.7,4,9.3,3,25,3,25,0,0,19,214,,Geno Smith,SmitGe00
+2022,32,SEA,QB,17,17,399,572,4325,7.6,2506,6.3,4.4,1776,4.5,11,20,1,18,3.3,65,11.8,434,78.8,2.4,170,37,64,147,22.5,34,9.1,37,283,34,278,2,5,135,1150,"PB,AP MVP-9,AP CPoY-1",Geno Smith,SmitGe00
+2023,33,SEA,QB,15,15,323,499,3500,7.0,1910,5.9,3.8,1714,5.3,18,21,4,24,5.1,69,14.6,358,75.5,2.4,145,63,46,140,25.5,20,7.9,49,493,45,483,3,10,113,1115,PB,Geno Smith,SmitGe00
+2024,34,SEA,QB,17,17,407,578,3942,6.8,2139,5.3,3.7,2181,5.4,14,20,2,20,3.6,58,10.4,455,81.8,2.4,138,36,57,143,21.9,24,10.7,64,339,58,331,2,8,82,510,,Geno Smith,SmitGe00
+2025,35,LVR,QB,13,13,266,397,2372,6.0,1133,4.3,2.9,1515,5.7,11,13,2,15,3.9,43,11.3,295,77.2,2.5,127,17,37,103,22.2,17,6.4,42,261,38,241,1,20,85,643,,Geno Smith,SmitGe00

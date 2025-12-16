@@ -1,0 +1,4 @@
+Season,Age,Team,Lg,Pos,G,GS,Att,Yds,TD,1D,Succ%,Lng,Y/A,Y/G,A/G,Tgt,Rec,Yds,Y/R,TD,1D,rec_success,rec_long,R/G,Y/G,catch_pct,Y/Tgt,Touch,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,av,awards,Player,PlayerID
+2023,21,ATL,NFL,RB,17,16,214,976,4,50,43.5,38,4.6,57.4,12.6,86,58,487,8.4,4,24,45.3,71,3.4,28.6,67.4,5.7,272,5.4,1463,8,4,9.0,,Bijan Robinson,RobiBi01
+2024,22,ATL,NFL,RB,17,17,304,1456,14,82,60.2,37,4.8,85.6,17.9,72,61,431,7.1,1,20,41.7,29,3.6,25.4,84.7,6.0,365,5.2,1887,15,1,12.0,,Bijan Robinson,RobiBi01
+2025,23,ATL,NFL,RB,14,14,234,1174,6,53,54.7,81,5.0,83.9,16.7,81,64,684,10.7,2,28,59.3,69,4.6,48.9,79.0,8.4,298,6.2,1858,8,4,,,Bijan Robinson,RobiBi01

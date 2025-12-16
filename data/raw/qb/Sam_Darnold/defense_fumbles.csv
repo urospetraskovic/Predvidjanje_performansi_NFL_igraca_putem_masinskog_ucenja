@@ -1,0 +1,9 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2018,21,NYJ,QB,13,13,0,0,0,0,0,0,5,2,-11,0,0.0,0,0,0,0,0,0,,Sam Darnold,DarnSa00
+2019,22,NYJ,QB,13,13,0,0,0,0,0,0,11,3,-16,0,0.0,0,0,0,0,0,0,,Sam Darnold,DarnSa00
+2020,23,NYJ,QB,12,12,0,0,0,0,0,0,4,0,0,0,0.0,0,0,0,0,0,0,,Sam Darnold,DarnSa00
+2021,24,CAR,QB,12,11,0,0,0,0,0,0,9,3,5,0,0.0,0,0,0,0,0,0,,Sam Darnold,DarnSa00
+2022,25,CAR,QB,6,6,0,0,0,0,0,0,6,3,-1,0,0.0,0,0,0,0,0,0,,Sam Darnold,DarnSa00
+2023,26,SFO,QB,10,1,0,0,0,0,0,0,3,2,-1,0,0.0,0,0,0,0,0,0,,Sam Darnold,DarnSa00
+2024,27,MIN,QB,17,17,0,0,0,0,0,0,8,2,-27,0,0.0,0,0,0,0,0,0,"PB,AP MVP-10,AP CPoY-3",Sam Darnold,DarnSa00
+2025,28,SEA,QB,14,14,0,0,0,0,0,0,8,0,0,0,0.0,0,0,0,0,0,0,,Sam Darnold,DarnSa00

@@ -1,0 +1,17 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2009,21,DET,QB,10,10,0,0,0,0,0,0,4,2,0,0,0.0,0,0,0,0,0,0,,Matthew Stafford,StafMa00
+2010,22,DET,QB,3,3,0,0,0,0,0,0,2,0,-5,0,0.0,0,0,0,,,0,,Matthew Stafford,StafMa00
+2011,23,DET,QB,16,16,0,0,0,0,0,0,5,1,-4,0,0.0,0,0,0,0,0,0,AP CPoY-1,Matthew Stafford,StafMa00
+2012,24,DET,QB,16,16,0,0,0,0,0,0,6,2,-7,0,0.0,0,0,0,0,0,0,,Matthew Stafford,StafMa00
+2013,25,DET,QB,16,16,0,0,0,0,0,0,12,5,-35,0,0.0,1,0,1,0,0,0,,Matthew Stafford,StafMa00
+2014,26,DET,QB,16,16,0,0,0,0,0,0,8,3,-5,0,0.0,0,0,0,0,0,0,PB,Matthew Stafford,StafMa00
+2015,27,DET,QB,16,16,0,0,0,0,0,0,4,2,-5,0,0.0,0,0,0,0,0,0,,Matthew Stafford,StafMa00
+2016,28,DET,QB,16,16,0,0,0,0,0,0,3,1,0,0,0.0,0,0,0,0,0,0,,Matthew Stafford,StafMa00
+2017,29,DET,QB,16,16,0,0,0,0,0,0,12,3,-13,0,0.0,0,0,0,0,0,0,,Matthew Stafford,StafMa00
+2018,30,DET,QB,16,16,0,0,0,0,0,0,6,1,0,0,0.0,0,0,0,0,0,0,,Matthew Stafford,StafMa00
+2019,31,DET,QB,8,8,0,0,0,0,0,0,5,1,-10,0,0.0,0,0,0,0,0,0,,Matthew Stafford,StafMa00
+2020,32,DET,QB,16,16,0,0,0,0,0,0,2,1,-1,0,0.0,0,0,0,0,0,0,,Matthew Stafford,StafMa00
+2021,33,LAR,QB,17,17,0,0,0,0,0,0,5,3,2,0,0.0,0,0,0,0,0,0,,Matthew Stafford,StafMa00
+2022,34,LAR,QB,9,9,0,0,0,0,0,0,5,2,0,0,0.0,1,1,0,0,0,0,,Matthew Stafford,StafMa00
+2024,36,LAR,QB,16,16,0,0,0,0,0,0,6,3,-15,0,0.0,0,0,0,0,0,0,,Matthew Stafford,StafMa00
+2025,37,LAR,QB,14,14,0,0,0,0,0,0,7,3,-30,0,0.0,0,0,0,0,0,0,,Matthew Stafford,StafMa00

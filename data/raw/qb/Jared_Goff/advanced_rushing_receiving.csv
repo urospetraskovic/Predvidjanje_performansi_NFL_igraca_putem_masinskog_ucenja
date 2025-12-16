@@ -1,0 +1,9 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,rec_air_yds_per_rec,Rec_YAC,rec_yac_per_rec,rec_adot,Rec_BrkTkl,Rec_Drops,rec_drop_pct,Rec_Int,rec_pass_rating,Awards,Player,PlayerID
+2018,24,LAR,QB,16,16,43,108,9,103,2.4,5,0.1,0,0,0,0,0,0,,0,,,0,0,,0,,PB,Jared Goff,GoffJa00
+2019,25,LAR,QB,16,16,33,40,5,36,1.1,4,0.1,0,0,0,0,0,0,,0,,,0,0,,0,,,Jared Goff,GoffJa00
+2020,26,LAR,QB,15,15,51,99,12,93,1.8,6,0.1,0,0,0,0,0,0,,0,,,0,0,,0,,,Jared Goff,GoffJa00
+2021,27,DET,QB,14,14,17,87,4,85,5.0,2,0.1,0,0,0,0,0,0,,0,,,0,0,,0,,,Jared Goff,GoffJa00
+2022,28,DET,QB,17,17,29,73,5,67,2.3,6,0.2,0,1,1,5,0,0,0.0,5,5.0,0.0,0,0,0.0,0,87.5,"PB,AP CPoY-6",Jared Goff,GoffJa00
+2023,29,DET,QB,17,17,32,21,5,13,0.4,8,0.3,0,0,0,0,0,0,,0,,,0,0,,0,,,Jared Goff,GoffJa00
+2024,30,DET,QB,17,17,35,56,9,52,1.5,4,0.1,0,1,1,7,1,5,5.0,2,2.0,5.0,0,0,0.0,0,135.4,"PB,AP MVP-5,AP OPoY-9",Jared Goff,GoffJa00
+2025,31,DET,QB,14,14,15,44,4,42,2.8,2,0.1,0,0,0,0,0,0,,0,,,0,0,,0,,,Jared Goff,GoffJa00

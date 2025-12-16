@@ -1,0 +1,9 @@
+Season,Age,Team,Pos,G,GS,Cmp,Att,pass_target_yds,pass_tgt_yds_per_att,pass_air_yds,pass_air_yds_per_cmp,pass_air_yds_per_att,pass_yac,pass_yac_per_cmp,pass_batted_passes,pass_throwaways,pass_spikes,pass_drops,pass_drop_pct,pass_poor_throws,pass_poor_throw_pct,pass_on_target,pass_on_target_pct,pocket_time,pass_blitzed,pass_hurried,pass_hits,pass_pressured,pass_pressured_pct,rush_scrambles,rush_scrambles_yds_per_att,pass_rpo,pass_rpo_yds,pass_rpo_pass_att,pass_rpo_pass_yds,pass_rpo_rush_att,pass_rpo_rush_yds,pass_play_action,pass_play_action_pass_yds,Awards,Player,PlayerID
+2018,30,MIN,QB,16,16,425,606,4390,7.2,2345,5.5,3.9,1953,4.6,0,17,3,25,4.3,68,11.6,,,2.5,143,97,39,176,26.5,17,5.6,,,,,,,,,,Kirk Cousins,CousKi00
+2019,31,MIN,QB,15,15,307,444,3395,7.6,1818,5.9,4.1,1785,5.8,9,24,0,17,4.0,65,15.5,332,79.0,2.7,107,48,30,106,22.0,9,5.6,1,46,1,46,0,0,124,1235,PB,Kirk Cousins,CousKi00
+2020,32,MIN,QB,16,16,349,516,4103,8.0,2329,6.7,4.5,1936,5.5,11,27,3,18,3.7,67,13.8,395,81.3,2.6,181,56,78,173,30.2,17,8.1,3,12,2,10,1,2,127,1286,,Kirk Cousins,CousKi00
+2021,33,MIN,QB,16,16,372,561,4576,8.2,2415,6.5,4.3,1806,4.9,4,13,5,22,4.1,93,17.1,418,77.0,2.4,168,68,65,161,26.6,16,7.8,8,23,7,21,1,2,113,1107,PB,Kirk Cousins,CousKi00
+2022,34,MIN,QB,17,17,424,643,4800,7.5,2569,6.1,4.0,1978,4.7,14,27,3,25,4.1,93,15.2,469,76.5,2.5,159,36,84,166,23.7,12,9.1,20,175,19,175,0,0,191,1283,PB,Kirk Cousins,CousKi00
+2023,35,MIN,QB,8,8,216,311,2256,7.3,1340,6.2,4.3,991,4.6,3,5,2,16,5.3,39,12.8,250,82.2,2.5,106,21,45,83,25.1,3,7.0,15,39,13,39,0,0,85,616,,Kirk Cousins,CousKi00
+2024,36,ATL,QB,14,14,303,453,3392,7.5,1821,6.0,4.0,1687,5.6,15,12,4,16,3.7,51,11.7,340,77.8,2.4,106,25,47,100,20.7,3,5.3,8,28,7,30,1,-2,64,461,AP CPoY-13,Kirk Cousins,CousKi00
+2025,37,ATL,QB,7,5,114,182,1304,7.2,500,4.4,2.7,718,6.3,1,10,2,9,5.3,24,14.1,128,75.3,2.3,53,15,16,39,20.4,1,6.0,3,11,3,11,0,0,37,419,,Kirk Cousins,CousKi00

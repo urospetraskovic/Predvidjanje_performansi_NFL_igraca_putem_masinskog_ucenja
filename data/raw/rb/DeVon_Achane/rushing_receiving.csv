@@ -1,0 +1,4 @@
+Season,Age,Team,Lg,Pos,G,GS,Att,Yds,TD,1D,Succ%,Lng,Y/A,Y/G,A/G,Tgt,Rec,Yds,Y/R,TD,1D,rec_success,rec_long,R/G,Y/G,catch_pct,Y/Tgt,Touch,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,av,awards,Player,PlayerID
+2023,22,MIA,NFL,RB,11,4,103,800,8,30,54.4,76,7.8,72.7,9.4,37,27,197,7.3,3,10,48.6,23,2.5,17.9,73.0,5.3,130,7.7,997,11,1,7.0,,De'Von Achane,AchaDe00
+2024,23,MIA,NFL,RB,17,16,203,907,6,37,49.3,61,4.5,53.4,11.9,87,78,592,7.6,6,30,57.5,39,4.6,34.8,89.7,6.8,281,5.3,1499,12,1,11.0,,De'Von Achane,AchaDe00
+2025,24,MIA,NFL,RB,14,14,205,1186,7,50,49.8,59,5.8,84.7,14.6,79,61,450,7.4,4,22,44.3,29,4.4,32.1,77.2,5.7,266,6.2,1636,11,1,,,De'Von Achane,AchaDe00

@@ -1,0 +1,5 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_YAC,Rec_BrkTkl,Rec_Drops,Rec_Int,Awards,Player,PlayerID
+2022,23,SFO,QB,9,5,22,13,5,6,0.3,7,0.3,0,,0,0,0,0,0,0,0,0,0,AP ORoY-3,Brock Purdy,PurdBr00
+2023,24,SFO,QB,16,16,39,144,15,108,2.8,36,0.9,2,19.5,0,0,0,0,0,0,0,0,0,"PB,AP MVP-4,AP OPoY-6,AP CPoY-6",Brock Purdy,PurdBr00
+2024,25,SFO,QB,15,15,66,323,33,259,3.9,64,1.0,2,33.0,0,0,0,0,0,0,0,0,0,,Brock Purdy,PurdBr00
+2025,26,SFO,QB,6,6,23,87,11,81,3.5,6,0.3,0,,0,0,0,0,0,0,0,0,0,,Brock Purdy,PurdBr00

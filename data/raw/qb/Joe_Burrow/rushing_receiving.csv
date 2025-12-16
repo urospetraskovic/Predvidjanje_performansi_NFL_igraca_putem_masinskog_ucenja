@@ -1,0 +1,7 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Tgt,Rec,Rec_Yds,Rec_TD,Rec_1D,Rec/G,Rec_Y/G,touches,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,Awards,Player,PlayerID
+2020,24,CIN,QB,10,10,37,142,3,14,54.1,23,3.8,14.2,3.7,0,0,0,0,0,0.0,0.0,37,3.8,142,3,9,,Joe Burrow,BurrJo01
+2021,25,CIN,QB,16,16,40,118,2,14,40.0,12,3.0,7.4,2.5,0,0,0,0,0,0.0,0.0,40,3.0,118,2,5,AP CPoY-1,Joe Burrow,BurrJo01
+2022,26,CIN,QB,16,16,75,257,5,28,49.3,23,3.4,16.1,4.7,0,0,0,0,0,0.0,0.0,75,3.4,257,5,6,"PB,AP MVP-4,AP OPoY-9",Joe Burrow,BurrJo01
+2023,27,CIN,QB,10,10,31,88,0,9,38.7,20,2.8,8.8,3.1,0,0,0,0,0,0.0,0.0,31,2.8,88,0,2,,Joe Burrow,BurrJo01
+2024,28,CIN,QB,17,17,42,201,2,16,47.6,47,4.8,11.8,2.5,0,0,0,0,0,0.0,0.0,42,4.8,201,2,11,"PB,AP MVP-4,AP OPoY-5,AP CPoY-1",Joe Burrow,BurrJo01
+2025,29,CIN,QB,5,5,7,16,0,2,28.6,3,2.3,3.2,1.4,0,0,0,0,0,0.0,0.0,7,2.3,16,0,0,,Joe Burrow,BurrJo01

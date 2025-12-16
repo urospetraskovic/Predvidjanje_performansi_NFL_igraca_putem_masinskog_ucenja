@@ -1,0 +1,5 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2021,23,GNB,QB,6,1,0,0,0,0,0,0,3,2,0,0,0.0,0,0,0,0,0,0,,Jordan Love,LoveJo03
+2023,25,GNB,QB,17,17,0,0,0,0,0,0,9,3,-6,0,0.0,0,0,0,0,0,0,,Jordan Love,LoveJo03
+2024,26,GNB,QB,15,15,0,0,0,0,0,0,4,2,-7,0,0.0,0,0,0,0,0,0,,Jordan Love,LoveJo03
+2025,27,GNB,QB,14,14,0,0,0,0,0,0,6,5,-3,0,0.0,0,0,0,0,0,0,,Jordan Love,LoveJo03

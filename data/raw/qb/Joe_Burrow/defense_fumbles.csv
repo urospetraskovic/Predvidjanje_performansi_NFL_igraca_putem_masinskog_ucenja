@@ -1,0 +1,6 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2020,24,CIN,QB,10,10,0,0,0,0,0,0,9,4,-27,0,0.0,0,0,0,0,0,0,,Joe Burrow,BurrJo01
+2021,25,CIN,QB,16,16,0,0,0,0,0,0,5,1,0,0,0.0,1,1,0,0,0,0,AP CPoY-1,Joe Burrow,BurrJo01
+2022,26,CIN,QB,16,16,0,0,0,0,0,0,6,1,0,0,0.0,0,0,0,0,0,0,"PB,AP MVP-4,AP OPoY-9",Joe Burrow,BurrJo01
+2023,27,CIN,QB,10,10,0,0,0,0,0,0,2,0,0,0,0.0,0,0,0,0,0,0,,Joe Burrow,BurrJo01
+2024,28,CIN,QB,17,17,0,0,0,0,0,0,11,2,-3,0,0.0,0,0,0,0,0,0,"PB,AP MVP-4,AP OPoY-5,AP CPoY-1",Joe Burrow,BurrJo01
