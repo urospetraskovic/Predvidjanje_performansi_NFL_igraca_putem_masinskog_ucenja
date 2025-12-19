@@ -1,0 +1,5 @@
+Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,Y/R,TD,1D,rec_success,rec_long,R/G,Y/G,catch_pct,Y/Tgt,Att,Yds,TD,1D,Succ%,Lng,Y/A,Y/G,A/G,Touch,yds_per_touch,yds_from_scrimmage,rush_receive_td,fumbles,av,awards,Player,PlayerID
+2022,23,TAM,NFL,TE,16,11,65,42,391,9.3,2,19,52.3,35,2.6,24.4,64.6,6.0,0,0,0,0,,,,0.0,0.0,42,9.3,391,2,0,3.0,,Cade Otton,OttoCa00
+2023,24,TAM,NFL,TE,17,17,67,47,455,9.7,4,22,49.3,27,2.8,26.8,70.1,6.8,0,0,0,0,,,,0.0,0.0,47,9.7,455,4,1,4.0,,Cade Otton,OttoCa00
+2024,25,TAM,NFL,TE,14,14,87,59,600,10.2,4,31,51.7,44,4.2,42.9,67.8,6.9,1,-4,0,0,0.0,-4.0,-4.0,-0.3,0.1,60,9.9,596,4,2,6.0,,Cade Otton,OttoCa00
+2025,26,TAM,NFL,TE,13,13,66,46,430,9.3,0,18,50.0,27,3.5,33.1,69.7,6.5,0,0,0,0,,,,0.0,0.0,46,9.3,430,0,0,,,Cade Otton,OttoCa00

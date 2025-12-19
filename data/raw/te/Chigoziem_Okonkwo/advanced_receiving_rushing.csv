@@ -1,0 +1,5 @@
+Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,1D,YBC,YBC/R,YAC,YAC/R,ADOT,BrkTkl,Rec/Br,Drop,Drop%,Int,rec_pass_rating,Att,Yds,1D,YBC,YBC/Att,YAC,YAC/Att,BrkTkl,awards,Player,PlayerID
+2022,23,TEN,NFL,TE,17,8,46,32,450,22,196,6.1,254,7.9,7.6,3,10.7,3,6.5,0,122.6,3,2,0,0,0.0,2,0.7,0,,Chigoziem Okonkwo,OkonCh00
+2023,24,TEN,NFL,TE,17,11,77,54,528,25,268,5.0,260,4.8,6.8,5,10.8,6,7.8,1,88.0,2,6,1,4,2.0,2,1.0,0,,Chigoziem Okonkwo,OkonCh00
+2024,25,TEN,NFL,TE,17,11,70,52,479,19,230,4.4,249,4.8,5.9,5,10.4,3,4.3,4,78.2,1,17,1,14,14.0,3,3.0,0,,Chigoziem Okonkwo,OkonCh00
+2025,26,TEN,NFL,TE,14,10,59,45,459,20,202,4.5,257,5.7,4.9,4,11.3,3,5.1,1,91.0,0,0,0,0,,0,,0,,Chigoziem Okonkwo,OkonCh00

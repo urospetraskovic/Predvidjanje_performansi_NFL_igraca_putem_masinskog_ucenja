@@ -1,0 +1,4 @@
+Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,1D,YBC,YBC/R,YAC,YAC/R,ADOT,BrkTkl,Rec/Br,Drop,Drop%,Int,rec_pass_rating,Att,Yds,1D,YBC,YBC/Att,YAC,YAC/Att,BrkTkl,awards,Player,PlayerID
+2023,22,DET,NFL,TE,17,14,120,86,889,48,531,6.2,358,4.2,7.1,9,9.6,5,4.2,3,110.0,1,4,0,4,4.0,0,0.0,0,,Sam LaPorta,LaPoSa01
+2024,23,DET,NFL,TE,16,16,83,60,726,39,383,6.4,343,5.7,7.0,3,20.0,1,1.2,2,116.8,0,0,0,0,,0,,0,,Sam LaPorta,LaPoSa01
+2025,24,DET,NFL,TE,9,9,49,40,489,23,215,5.4,274,6.9,5.7,5,8.0,0,0.0,0,128.7,0,0,0,0,,0,,0,,Sam LaPorta,LaPoSa01

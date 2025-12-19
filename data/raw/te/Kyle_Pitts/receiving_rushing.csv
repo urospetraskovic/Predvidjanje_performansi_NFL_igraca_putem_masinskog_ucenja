@@ -1,0 +1,6 @@
+Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,Y/R,TD,1D,rec_success,rec_long,R/G,Y/G,catch_pct,Y/Tgt,Att,Yds,TD,1D,Succ%,Lng,Y/A,Y/G,A/G,Touch,yds_per_touch,yds_from_scrimmage,rush_receive_td,fumbles,av,awards,Player,PlayerID
+2021,21,ATL,NFL,TE,17,15,110,68,1026,15.1,1,43,50.9,61,4.0,60.4,61.8,9.3,0,0,0,0,,,,0.0,0.0,68,15.1,1026,1,0,8.0,,Kyle Pitts,PittKy00
+2022,22,ATL,NFL,TE,10,10,59,28,356,12.7,2,20,42.4,33,2.8,35.6,47.5,6.0,0,0,0,0,,,,0.0,0.0,28,12.7,356,2,0,4.0,,Kyle Pitts,PittKy00
+2023,23,ATL,NFL,TE,17,15,90,53,667,12.6,3,35,52.2,39,3.1,39.2,58.9,7.4,1,-4,0,0,0.0,-4.0,-4.0,-0.2,0.1,54,12.3,663,3,0,5.0,,Kyle Pitts,PittKy00
+2024,24,ATL,NFL,TE,17,15,74,47,602,12.8,4,21,41.9,52,2.8,35.4,63.5,8.1,0,0,0,0,,,,0.0,0.0,47,12.8,602,4,0,5.0,,Kyle Pitts,PittKy00
+2025,25,ATL,NFL,TE,14,14,97,73,797,10.9,4,39,52.6,36,5.2,56.9,75.3,8.2,0,0,0,0,,,,0.0,0.0,73,10.9,797,4,0,,,Kyle Pitts,PittKy00

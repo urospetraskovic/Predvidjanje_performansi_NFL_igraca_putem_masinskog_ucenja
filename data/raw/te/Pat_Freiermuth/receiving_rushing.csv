@@ -1,0 +1,6 @@
+Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,Y/R,TD,1D,rec_success,rec_long,R/G,Y/G,catch_pct,Y/Tgt,Att,Yds,TD,1D,Y/G,A/G,Touch,yds_per_touch,yds_from_scrimmage,rush_receive_td,fumbles,av,awards,Player,PlayerID
+2021,23,PIT,NFL,TE,16,9,79,60,497,8.3,7,34,55.7,24,3.8,31.1,75.9,6.3,0,0,0,0,0.0,0.0,60,8.3,497,7,1,4.0,,Pat Freiermuth,FreiPa00
+2022,24,PIT,NFL,TE,16,8,98,63,732,11.6,2,37,53.1,57,3.9,45.8,64.3,7.5,0,0,0,0,0.0,0.0,63,11.6,732,2,0,6.0,,Pat Freiermuth,FreiPa00
+2023,25,PIT,NFL,TE,12,9,47,32,308,9.6,2,17,48.9,29,2.7,25.7,68.1,6.6,0,0,0,0,0.0,0.0,32,9.6,308,2,0,3.0,,Pat Freiermuth,FreiPa00
+2024,26,PIT,NFL,TE,17,11,78,65,653,10.0,7,32,62.8,30,3.8,38.4,83.3,8.4,0,0,0,0,0.0,0.0,65,10.0,653,7,3,6.0,,Pat Freiermuth,FreiPa00
+2025,27,PIT,NFL,TE,14,5,40,31,352,11.4,4,14,52.5,68,2.2,25.1,77.5,8.8,0,0,0,0,0.0,0.0,31,11.4,352,4,0,,,Pat Freiermuth,FreiPa00

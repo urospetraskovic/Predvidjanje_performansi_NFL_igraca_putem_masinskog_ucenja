@@ -1,0 +1,5 @@
+Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,Y/R,TD,1D,rec_success,rec_long,R/G,Y/G,catch_pct,Y/Tgt,Att,Yds,TD,1D,Succ%,Lng,Y/A,Y/G,A/G,Touch,yds_per_touch,yds_from_scrimmage,rush_receive_td,fumbles,av,awards,Player,PlayerID
+2022,23,TEN,NFL,TE,17,8,46,32,450,14.1,3,22,50.0,48,1.9,26.5,69.6,9.8,3,2,0,0,0.0,6.0,0.7,0.1,0.2,35,12.9,452,3,0,4.0,,Chigoziem Okonkwo,OkonCh00
+2023,24,TEN,NFL,TE,17,11,77,54,528,9.8,1,25,48.1,39,3.2,31.1,70.1,6.9,2,6,0,1,50.0,4.0,3.0,0.4,0.1,56,9.5,534,1,0,5.0,,Chigoziem Okonkwo,OkonCh00
+2024,25,TEN,NFL,TE,17,11,70,52,479,9.2,2,19,55.7,70,3.1,28.2,74.3,6.8,1,17,0,1,100.0,17.0,17.0,1.0,0.1,53,9.4,496,2,2,4.0,,Chigoziem Okonkwo,OkonCh00
+2025,26,TEN,NFL,TE,14,10,59,45,459,10.2,0,20,52.5,39,3.2,32.8,76.3,7.8,0,0,0,0,,,,0.0,0.0,45,10.2,459,0,0,,,Chigoziem Okonkwo,OkonCh00
