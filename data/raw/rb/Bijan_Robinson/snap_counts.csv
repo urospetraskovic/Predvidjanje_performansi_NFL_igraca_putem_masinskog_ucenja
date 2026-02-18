@@ -1,4 +1,4 @@
 Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,PlayerID
 2023,21,ATL,RB,7,17,16,771,,0,,1,,Bijan Robinson,RobiBi01
 2024*,22,ATL,RB,7,17,17,861,,0,,0,,Bijan Robinson,RobiBi01
-2025,23,ATL,RB,7,14,14,711,,0,,0,,Bijan Robinson,RobiBi01
+2025*+,23,ATL,RB,7,17,17,860,,0,,0,,Bijan Robinson,RobiBi01

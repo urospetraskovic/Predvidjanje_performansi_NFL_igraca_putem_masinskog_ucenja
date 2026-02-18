@@ -1,6 +1,6 @@
 Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,PlayerID
 2024*+,22,LVR,TE,89.0,17,16,956,,0,,0,,Brock Bowers,BoweBr01
-2025,23,LVR,TE,89.0,11,7,552,,0,,0,,Brock Bowers,BoweBr01
+2025*,23,LVR,TE,89.0,12,8,605,,0,,0,,Brock Bowers,BoweBr01
 2015,22,CIN,TE,87.0,5,0,48,,0,,79,,C.J. Uzomah,UzomC.00
 2016,23,CIN,TE,87.0,10,8,411,,0,,67,,C.J. Uzomah,UzomC.00
 2017,24,CIN,TE,87.0,14,4,211,,0,,249,,C.J. Uzomah,UzomC.00
@@ -14,17 +14,17 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2022,23,TAM,TE,88.0,16,11,803,,0,,107,,Cade Otton,OttoCa00
 2023,24,TAM,TE,88.0,17,17,1064,,0,,4,,Cade Otton,OttoCa00
 2024,25,TAM,TE,88.0,14,14,856,,0,,1,,Cade Otton,OttoCa00
-2025,26,TAM,TE,88.0,13,13,804,,0,,1,,Cade Otton,OttoCa00
+2025,26,TAM,TE,88.0,16,16,993,,0,,2,,Cade Otton,OttoCa00
 2022,23,TEN,TE,85.0,17,8,378,,0,,224,,Chigoziem Okonkwo,OkonCh00
 2023,24,TEN,TE,85.0,17,11,692,,0,,85,,Chigoziem Okonkwo,OkonCh00
 2024,25,TEN,TE,85.0,17,11,665,,0,,168,,Chigoziem Okonkwo,OkonCh00
-2025,26,TEN,TE,85.0,14,10,552,,0,,1,,Chigoziem Okonkwo,OkonCh00
+2025,26,TEN,TE,85.0,17,12,666,,0,,1,,Chigoziem Okonkwo,OkonCh00
 2020,21,CHI,TE,85.0,16,9,603,,0,,109,,Cole Kmet,KmetCo00
 2021,22,CHI,TE,85.0,17,17,935,,0,,121,,Cole Kmet,KmetCo00
 2022,23,CHI,TE,85.0,17,17,971,,0,,57,,Cole Kmet,KmetCo00
 2023,24,CHI,TE,85.0,17,17,878,,0,,58,,Cole Kmet,KmetCo00
 2024,25,CHI,TE,85.0,17,16,994,,0,,52,,Cole Kmet,KmetCo00
-2025,26,CHI,TE,85.0,13,12,630,,0,,64,,Cole Kmet,KmetCo00
+2025,26,CHI,TE,85.0,16,15,768,,0,,74,,Cole Kmet,KmetCo00
 2018,23,PHI,TE,88.0,16,8,523,,0,,187,,Dallas Goedert,GoedDa00
 2019,24,PHI,TE,88.0,15,9,770,,0,,143,,Dallas Goedert,GoedDa00
 2020,25,PHI,TE,88.0,11,9,604,,0,,41,,Dallas Goedert,GoedDa00
@@ -32,10 +32,10 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2022,27,PHI,TE,88.0,12,12,735,,0,,4,,Dallas Goedert,GoedDa00
 2023,28,PHI,TE,88.0,14,14,809,,0,,3,,Dallas Goedert,GoedDa00
 2024,29,PHI,TE,88.0,10,10,446,,0,,3,,Dallas Goedert,GoedDa00
-2025,30,PHI,TE,88.0,13,13,683,,0,,1,,Dallas Goedert,GoedDa00
+2025,30,PHI,TE,88.0,15,15,787,,0,,3,,Dallas Goedert,GoedDa00
 2023,24,BUF,TE,86.0,16,11,699,,0,,1,,Dalton Kincaid,KincDa00
 2024,25,BUF,TE,86.0,13,9,471,,0,,3,,Dalton Kincaid,KincDa00
-2025,26,BUF,TE,86.0,10,3,273,,0,,1,,Dalton Kincaid,KincDa00
+2025*,26,BUF,TE,86.0,12,4,302,,0,,1,,Dalton Kincaid,KincDa00
 2018,22,DAL,TE,86.0,11,7,300,,0,,66,,Dalton Schultz,SchuDa00
 2019,23,DAL,TE,86.0,16,0,117,,0,,95,,Dalton Schultz,SchuDa00
 2020,24,DAL,TE,86.0,16,14,973,,0,,9,,Dalton Schultz,SchuDa00
@@ -43,7 +43,7 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2022,26,DAL,TE,86.0,15,15,817,,0,,1,,Dalton Schultz,SchuDa00
 2023,27,HOU,TE,86.0,15,8,739,,0,,1,,Dalton Schultz,SchuDa00
 2024,28,HOU,TE,86.0,17,13,865,,0,,12,,Dalton Schultz,SchuDa00
-2025,29,HOU,TE,86.0,14,4,692,,0,,2,,Dalton Schultz,SchuDa00
+2025,29,HOU,TE,86.0,17,6,827,,0,,2,,Dalton Schultz,SchuDa00
 2015,23,BAL,WR,12.0,6,1,45,,0,,95,,Darren Waller,WallDa01
 2016,24,BAL,WR,84.0,12,3,234,,0,,213,,Darren Waller,WallDa01
 2018,26,OAK,WR,83.0,4,0,42,,0,,36,,Darren Waller,WallDa01
@@ -52,7 +52,7 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2021,29,LVR,TE,83.0,11,11,608,,0,,3,,Darren Waller,WallDa01
 2022,30,LVR,TE,83.0,9,6,346,,0,,0,,Darren Waller,WallDa01
 2023,31,NYG,TE,12.0,12,11,568,,0,,0,,Darren Waller,WallDa01
-2025,33,MIA,TE,83.0,7,2,184,,0,,1,,Darren Waller,WallDa01
+2025,33,MIA,TE,83.0,9,3,234,,0,,2,,Darren Waller,WallDa01
 2017,21,CLE,TE,85.0,16,5,500,,0,,167,,David Njoku,NjokDa00
 2018,22,CLE,TE,85.0,16,14,871,,0,,0,,David Njoku,NjokDa00
 2019,23,CLE,TE,85.0,4,1,99,,0,,0,,David Njoku,NjokDa00
@@ -70,7 +70,7 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2022,28,JAX,TE,17.0,17,14,868,,0,,1,,Evan Engram,EngrEv00
 2023*,29,JAX,TE,17.0,17,15,917,,0,,7,,Evan Engram,EngrEv00
 2024,30,JAX,TE,17.0,9,9,363,,0,,1,,Evan Engram,EngrEv00
-2025,31,DEN,TE,1.0,13,1,384,,0,,0,,Evan Engram,EngrEv00
+2025,31,DEN,TE,1.0,16,2,458,,0,,0,,Evan Engram,EngrEv00
 2017,24,SFO,TE,85.0,15,7,592,,0,,6,,George Kittle,KittGe00
 2018*,25,SFO,TE,85.0,16,16,929,,0,,1,,George Kittle,KittGe00
 2019*+,26,SFO,TE,85.0,14,14,804,,0,,2,,George Kittle,KittGe00
@@ -79,11 +79,11 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2022*,29,SFO,TE,85.0,15,15,859,,0,,3,,George Kittle,KittGe00
 2023*+,30,SFO,TE,85.0,16,16,895,,0,,2,,George Kittle,KittGe00
 2024*,31,SFO,TE,85.0,15,15,808,,0,,0,,George Kittle,KittGe00
-2025,32,SFO,TE,85.0,9,9,473,,0,,0,,George Kittle,KittGe00
+2025*,32,SFO,TE,85.0,11,11,554,,0,,0,,George Kittle,KittGe00
 2022,22,DEN,TE,80.0,10,6,497,,0,,0,,Greg Dulcich,DulcGr00
 2023,23,DEN,TE,80.0,2,1,32,,0,,0,,Greg Dulcich,DulcGr00
 2024,24,2TM,,,9,3,147,,0,,20,,Greg Dulcich,DulcGr00
-2025,25,MIA,TE,85.0,7,1,179,,0,,29,,Greg Dulcich,DulcGr00
+2025,25,MIA,TE,85.0,10,3,245,,0,,52,,Greg Dulcich,DulcGr00
 2018,25,BAL,TE,81.0,12,0,275,,0,,31,,Hayden Hurst,HursHa00
 2019,26,BAL,TE,81.0,16,4,457,,0,,45,,Hayden Hurst,HursHa00
 2020,27,ATL,TE,81.0,16,9,786,,0,,19,,Hayden Hurst,HursHa00
@@ -99,7 +99,7 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2022,28,NWE,TE,85.0,17,14,797,,0,,24,,Hunter Henry,HenrHu00
 2023,29,NWE,TE,85.0,14,10,664,,0,,6,,Hunter Henry,HenrHu00
 2024,30,NWE,TE,85.0,16,16,835,,0,,0,,Hunter Henry,HenrHu00
-2025,31,NWE,TE,85.0,14,14,732,,0,,9,,Hunter Henry,HenrHu00
+2025,31,NWE,TE,85.0,17,17,869,,0,,9,,Hunter Henry,HenrHu00
 2018,22,CAR,TE,80.0,16,6,526,,0,,107,,Ian Thomas,ThomIa00
 2019,23,CAR,TE,80.0,16,3,302,,0,,39,,Ian Thomas,ThomIa00
 2020,24,CAR,TE,80.0,16,8,672,,0,,19,,Ian Thomas,ThomIa00
@@ -107,7 +107,7 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2022,26,CAR,TE,80.0,17,17,556,,0,,169,,Ian Thomas,ThomIa00
 2023,27,CAR,TE,80.0,12,5,216,,0,,105,,Ian Thomas,ThomIa00
 2024,28,CAR,TE,80.0,5,2,94,,0,,9,,Ian Thomas,ThomIa00
-2025,29,LVR,TE,80.0,13,8,273,,0,,88,,Ian Thomas,ThomIa00
+2025,29,LVR,TE,80.0,15,10,318,,0,,96,,Ian Thomas,ThomIa00
 2017,22,TEN,TE,81.0,16,13,552,,0,,99,,Jonnu Smith,SmitJo01
 2018,23,TEN,TE,81.0,13,12,611,,0,,43,,Jonnu Smith,SmitJo01
 2019,24,TEN,TE,81.0,16,14,701,,0,,65,,Jonnu Smith,SmitJo01
@@ -116,12 +116,12 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2022,27,NWE,TE,81.0,14,8,423,,0,,54,,Jonnu Smith,SmitJo01
 2023,28,ATL,TE,81.0,17,6,653,,0,,0,,Jonnu Smith,SmitJo01
 2024*,29,MIA,TE,9.0,17,6,626,,0,,1,,Jonnu Smith,SmitJo01
-2025,30,PIT,TE,81.0,14,5,448,,0,,4,,Jonnu Smith,SmitJo01
+2025,30,PIT,TE,81.0,17,7,536,,0,,4,,Jonnu Smith,SmitJo01
 2021*,21,ATL,TE,8.0,17,15,774,,0,,0,,Kyle Pitts,PittKy00
 2022,22,ATL,TE,8.0,10,10,434,,0,,0,,Kyle Pitts,PittKy00
 2023,23,ATL,TE,8.0,17,15,728,,0,,0,,Kyle Pitts,PittKy00
 2024,24,ATL,TE,8.0,17,15,707,,0,,1,,Kyle Pitts,PittKy00
-2025,25,ATL,TE,8.0,14,14,787,,0,,1,,Kyle Pitts,PittKy00
+2025,25,ATL,TE,8.0,17,17,961,,0,,2,,Kyle Pitts,PittKy00
 2018,23,BAL,TE,89.0,16,3,414,,0,,81,,Mark Andrews,AndrMa00
 2019*,24,BAL,TE,89.0,15,4,456,,0,,78,,Mark Andrews,AndrMa00
 2020,25,BAL,TE,89.0,14,2,597,,0,,6,,Mark Andrews,AndrMa00
@@ -129,12 +129,12 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2022*,27,BAL,TE,89.0,15,15,787,,0,,2,,Mark Andrews,AndrMa00
 2023,28,BAL,TE,89.0,10,9,467,,0,,4,,Mark Andrews,AndrMa00
 2024,29,BAL,TE,89.0,17,13,682,,0,,6,,Mark Andrews,AndrMa00
-2025,30,BAL,TE,89.0,14,10,546,,0,,0,,Mark Andrews,AndrMa00
+2025,30,BAL,TE,89.0,17,11,631,,0,,0,,Mark Andrews,AndrMa00
 2021,23,PIT,TE,88.0,16,9,683,,0,,41,,Pat Freiermuth,FreiPa00
 2022,24,PIT,TE,88.0,16,8,743,,0,,13,,Pat Freiermuth,FreiPa00
 2023,25,PIT,TE,88.0,12,9,474,,0,,43,,Pat Freiermuth,FreiPa00
 2024,26,PIT,TE,88.0,17,11,776,,0,,81,,Pat Freiermuth,FreiPa00
-2025,27,PIT,TE,88.0,14,5,392,,0,,32,,Pat Freiermuth,FreiPa00
+2025,27,PIT,TE,88.0,17,8,522,,0,,32,,Pat Freiermuth,FreiPa00
 2023*,22,DET,TE,87.0,17,14,981,,0,,12,,Sam LaPorta,LaPoSa01
 2024,23,DET,TE,87.0,16,16,910,,0,,2,,Sam LaPorta,LaPoSa01
 2025,24,DET,TE,87.0,9,9,517,,0,,5,,Sam LaPorta,LaPoSa01
@@ -144,7 +144,7 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2022*,25,2TM,TE,,17,14,987,,0,,0,,T.J. Hockenson,HockTJ00
 2023,26,MIN,TE,87.0,15,11,790,,0,,0,,T.J. Hockenson,HockTJ00
 2024,27,MIN,TE,87.0,10,9,423,,0,,3,,T.J. Hockenson,HockTJ00
-2025,28,MIN,TE,87.0,14,14,645,,0,,1,,T.J. Hockenson,HockTJ00
+2025,28,MIN,TE,87.0,15,15,691,,0,,1,,T.J. Hockenson,HockTJ00
 2017,22,SEA,DB,33.0,9,0,0,,8,,104,,Tedric Thompson,ThomTe00
 2018,23,SEA,FS,33.0,14,10,0,,656,,177,,Tedric Thompson,ThomTe00
 2019,24,SEA,FS,33.0,6,6,0,,387,,54,,Tedric Thompson,ThomTe00
@@ -162,7 +162,7 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2022*+,33,KAN,TE,87.0,17,17,914,,0,,0,,Travis Kelce,KelcTr00
 2023*,34,KAN,TE,87.0,15,15,775,,2,,0,,Travis Kelce,KelcTr00
 2024*,35,KAN,TE,87.0,16,16,940,,0,,0,,Travis Kelce,KelcTr00
-2025,36,KAN,TE,87.0,14,14,774,,0,,0,,Travis Kelce,KelcTr00
+2025*,36,KAN,TE,87.0,17,17,902,,0,,0,,Travis Kelce,KelcTr00
 2023,23,GNB,TE,85.0,17,8,621,,0,,194,,Tucker Kraft,KrafTu00
 2024,24,GNB,TE,85.0,17,17,925,,0,,130,,Tucker Kraft,KrafTu00
 2025,25,GNB,TE,85.0,8,8,439,,0,,15,,Tucker Kraft,KrafTu00
@@ -175,7 +175,7 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2022,29,LAR,TE,89.0,17,17,888,,0,,14,,Tyler Higbee,HigbTy00
 2023,30,LAR,TE,89.0,15,15,866,,0,,6,,Tyler Higbee,HigbTy00
 2024,31,LAR,TE,89.0,3,3,58,,0,,0,,Tyler Higbee,HigbTy00
-2025,32,LAR,TE,89.0,9,7,318,,0,,3,,Tyler Higbee,HigbTy00
+2025,32,LAR,TE,89.0,10,8,366,,0,,5,,Tyler Higbee,HigbTy00
 2018,22,SEA,TE,88.0,4,4,127,,0,,29,,Will Dissly,DissWi00
 2019,23,SEA,TE,88.0,6,6,249,,0,,71,,Will Dissly,DissWi00
 2020,24,SEA,TE,89.0,16,12,557,,0,,213,,Will Dissly,DissWi00
@@ -183,7 +183,7 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2022,26,SEA,TE,89.0,15,15,569,,0,,180,,Will Dissly,DissWi00
 2023,27,SEA,TE,89.0,16,14,380,,0,,178,,Will Dissly,DissWi00
 2024,28,LAC,TE,81.0,15,8,540,,0,,10,,Will Dissly,DissWi00
-2025,29,LAC,TE,89.0,6,1,137,,0,,27,,Will Dissly,DissWi00
+2025,29,LAC,TE,89.0,9,2,189,,0,,63,,Will Dissly,DissWi00
 2013,23,PHI,TE,86.0,16,3,450,,0,,167,,Zach Ertz,ErtzZa00
 2014,24,PHI,TE,86.0,16,5,588,,0,,210,,Zach Ertz,ErtzZa00
 2015,25,PHI,TE,86.0,15,7,789,,0,,83,,Zach Ertz,ErtzZa00

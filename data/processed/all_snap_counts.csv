@@ -8,10 +8,10 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2023,28,NOR,RB,41.0,13,12,558,,0,,0,,Alvin Kamara,KamaAl00
 2024,29,NOR,RB,41.0,14,14,641,,0,,0,,Alvin Kamara,KamaAl00
 2025,30,NOR,RB,41.0,11,11,457,,0,,0,,Alvin Kamara,KamaAl00
-2025,22,LVR,RB,2.0,14,14,613,,0,,2,,Ashton Jeanty,JeanAs00
+2025,22,LVR,RB,2.0,17,17,771,,0,,2,,Ashton Jeanty,JeanAs00
 2023,21,ATL,RB,7.0,17,16,771,,0,,1,,Bijan Robinson,RobiBi01
 2024*,22,ATL,RB,7.0,17,17,861,,0,,0,,Bijan Robinson,RobiBi01
-2025,23,ATL,RB,7.0,14,14,711,,0,,0,,Bijan Robinson,RobiBi01
+2025*+,23,ATL,RB,7.0,17,17,860,,0,,0,,Bijan Robinson,RobiBi01
 2020,23,NYJ,LCB,37.0,8,7,0,,547,,40,,Bryce Hall,HallBr02
 2021,24,NYJ,LCB,37.0,17,17,0,,1169,,47,,Bryce Hall,HallBr02
 2022,25,NYJ,CB,37.0,5,0,0,,15,,58,,Bryce Hall,HallBr02
@@ -36,16 +36,16 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2022*,26,2TM,RB,,17,16,777,,0,,3,,Christian McCaffrey,McCaCh01
 2023*+,27,SFO,RB,23.0,16,16,812,,0,,1,,Christian McCaffrey,McCaCh01
 2024,28,SFO,RB,23.0,4,4,167,,0,,0,,Christian McCaffrey,McCaCh01
-2025,29,SFO,RB,23.0,14,14,782,,0,,3,,Christian McCaffrey,McCaCh01
+2025*+,29,SFO,RB,23.0,17,17,932,,0,,3,,Christian McCaffrey,McCaCh01
 2020,21,DET,RB,32.0,13,4,398,,0,,36,,D'Andre Swift,SwifDA00
 2021,22,DET,RB,32.0,13,4,560,,0,,0,,D'Andre Swift,SwifDA00
 2022,23,DET,RB,32.0,14,8,393,,0,,0,,D'Andre Swift,SwifDA00
 2023*,24,PHI,RB,0.0,16,15,630,,0,,0,,D'Andre Swift,SwifDA00
 2024,25,CHI,RB,4.0,17,17,751,,0,,0,,D'Andre Swift,SwifDA00
-2025,26,CHI,RB,4.0,13,13,515,,0,,0,,D'Andre Swift,SwifDA00
+2025,26,CHI,RB,4.0,16,16,621,,0,,0,,D'Andre Swift,SwifDA00
 2023,22,MIA,RB,28.0,11,4,300,,0,,7,,De'Von Achane,AchaDe00
 2024,23,MIA,RB,28.0,17,16,704,,0,,6,,De'Von Achane,AchaDe00
-2025,24,MIA,RB,28.0,14,14,614,,0,,3,,De'Von Achane,AchaDe00
+2025*,24,MIA,RB,28.0,16,16,697,,0,,4,,De'Von Achane,AchaDe00
 2016,22,TEN,RB,22.0,15,2,270,,0,,0,,Derrick Henry,HenrDe00
 2017,23,TEN,RB,22.0,16,2,408,,0,,0,,Derrick Henry,HenrDe00
 2018,24,TEN,RB,22.0,16,12,401,,0,,0,,Derrick Henry,HenrDe00
@@ -55,11 +55,11 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2022*,28,TEN,RB,22.0,16,16,648,,0,,0,,Derrick Henry,HenrDe00
 2023*,29,TEN,RB,22.0,17,17,558,,0,,0,,Derrick Henry,HenrDe00
 2024*,30,BAL,RB,22.0,17,17,635,,0,,0,,Derrick Henry,HenrDe00
-2025,31,BAL,RB,22.0,14,14,448,,0,,0,,Derrick Henry,HenrDe00
+2025,31,BAL,RB,22.0,17,17,556,,0,,0,,Derrick Henry,HenrDe00
 2022,24,TEN,LB,50.0,5,2,0,,215,,88,,Jack Gibbens,GibbJa00
 2023,25,TEN,LB,50.0,14,13,0,,628,,198,,Jack Gibbens,GibbJa00
 2024,26,TEN,LB,50.0,10,5,0,,235,,180,,Jack Gibbens,GibbJa00
-2025,27,NWE,LB,51.0,14,5,0,,351,,262,,Jack Gibbens,GibbJa00
+2025,27,NWE,LB,51.0,17,8,0,,491,,281,,Jack Gibbens,GibbJa00
 2012,24,NYG,LB,57.0,10,3,0,,286,,105,,Jacquian Williams,WillJa02
 2013,25,NYG,LLB,57.0,16,8,0,,605,,205,,Jacquian Williams,WillJa02
 2014,26,NYG,RLB,57.0,9,9,0,,563,,55,,Jacquian Williams,WillJa02
@@ -75,7 +75,7 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2022,23,BUF,RB,28.0,16,0,269,,0,,1,,James Cook,CookJa01
 2023*,24,BUF,RB,4.0,17,13,634,,0,,0,,James Cook,CookJa01
 2024*,25,BUF,RB,4.0,16,16,485,,0,,0,,James Cook,CookJa01
-2025,26,BUF,RB,4.0,14,14,570,,0,,0,,James Cook,CookJa01
+2025*,26,BUF,RB,4.0,17,17,639,,0,,0,,James Cook,CookJa01
 2017,21,CIN,RB,28.0,14,7,384,,0,,15,,Joe Mixon,MixoJo00
 2018,22,CIN,RB,28.0,14,13,595,,0,,0,,Joe Mixon,MixoJo00
 2019,23,CIN,RB,28.0,16,15,653,,0,,0,,Joe Mixon,MixoJo00
@@ -87,15 +87,15 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2022,23,SFO,RB,24.0,16,0,82,,0,,246,,Jordan Mason,MasoJo00
 2023,24,SFO,RB,24.0,17,0,99,,0,,248,,Jordan Mason,MasoJo00
 2024,25,SFO,RB,24.0,12,6,378,,0,,27,,Jordan Mason,MasoJo00
-2025,26,MIN,RB,27.0,14,4,382,,0,,1,,Jordan Mason,MasoJo00
+2025,26,MIN,RB,27.0,16,5,413,,0,,1,,Jordan Mason,MasoJo00
 2016,24,DEN,WR,87.0,16,0,277,,0,,188,,Jordan Taylor,TaylJo01
 2017,25,DEN,WR,87.0,10,2,258,,0,,104,,Jordan Taylor,TaylJo01
 2022,22,SEA,RB,9.0,15,11,575,,0,,0,,Kenneth Walker III,WalkKe00
 2023,23,SEA,RB,9.0,15,15,502,,0,,0,,Kenneth Walker III,WalkKe00
 2024,24,SEA,RB,9.0,11,11,469,,0,,0,,Kenneth Walker III,WalkKe00
-2025,25,SEA,RB,9.0,14,14,408,,0,,0,,Kenneth Walker III,WalkKe00
-2025,23,CHI,RB,25.0,14,1,399,,0,,0,,Kyle Monangai,MonaKy00
-2025,22,CLE,RB,10.0,13,13,426,,0,,0,,Quinshon Judkins,JudkQu00
+2025,25,SEA,RB,9.0,17,17,498,,0,,0,,Kenneth Walker III,WalkKe00
+2025,23,CHI,RB,25.0,17,1,478,,0,,0,,Kyle Monangai,MonaKy00
+2025,22,CLE,RB,10.0,14,14,452,,0,,0,,Quinshon Judkins,JudkQu00
 2018*,21,NYG,RB,26.0,16,16,852,,0,,2,,Saquon Barkley,BarkSa00
 2019,22,NYG,RB,26.0,13,13,728,,0,,1,,Saquon Barkley,BarkSa00
 2020,23,NYG,RB,26.0,2,2,67,,0,,0,,Saquon Barkley,BarkSa00
@@ -103,18 +103,18 @@ Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,
 2022*,25,NYG,RB,26.0,16,16,856,,0,,2,,Saquon Barkley,BarkSa00
 2023,26,NYG,RB,26.0,14,14,717,,0,,0,,Saquon Barkley,BarkSa00
 2024*+,27,PHI,RB,26.0,16,16,801,,0,,0,,Saquon Barkley,BarkSa00
-2025,28,PHI,RB,26.0,14,14,676,,0,,0,,Saquon Barkley,BarkSa00
+2025,28,PHI,RB,26.0,16,16,773,,0,,0,,Saquon Barkley,BarkSa00
 2019,22,DAL,RB,20.0,15,0,199,,0,,115,,Tony Pollard,PollTo00
 2020,23,DAL,RB,20.0,16,2,363,,0,,126,,Tony Pollard,PollTo00
 2021,24,DAL,RB,20.0,15,0,374,,0,,100,,Tony Pollard,PollTo00
 2022*,25,DAL,RB,20.0,16,4,569,,0,,6,,Tony Pollard,PollTo00
 2023,26,DAL,RB,20.0,17,17,836,,0,,1,,Tony Pollard,PollTo00
 2024,27,TEN,RB,20.0,16,16,701,,0,,0,,Tony Pollard,PollTo00
-2025,28,TEN,RB,20.0,14,14,546,,0,,0,,Tony Pollard,PollTo00
+2025,28,TEN,RB,20.0,17,17,657,,0,,0,,Tony Pollard,PollTo00
 2022,23,JAX,RB,1.0,17,12,669,,0,,0,,Travis Etienne,EtieTr00
 2023,24,JAX,RB,1.0,17,17,856,,0,,0,,Travis Etienne,EtieTr00
 2024,25,JAX,RB,1.0,15,15,494,,0,,0,,Travis Etienne,EtieTr00
-2025,26,JAX,RB,1.0,14,14,560,,0,,0,,Travis Etienne,EtieTr00
+2025,26,JAX,RB,1.0,17,16,691,,0,,0,,Travis Etienne,EtieTr00
 2019,24,CIN,DB,41.0,4,0,0,,3,,64,,Trayvon Henderson,HendTr01
 2020,25,CIN,DB,41.0,4,0,0,,0,,30,,Trayvon Henderson,HendTr01
 2021,26,CIN,DB,41.0,2,0,0,,57,,29,,Trayvon Henderson,HendTr01

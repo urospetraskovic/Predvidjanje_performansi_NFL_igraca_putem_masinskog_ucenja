@@ -13,6 +13,12 @@ Usage:
 """
 
 import cloudscraper
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
 import pandas as pd
 import os
@@ -186,57 +192,98 @@ class NFLTEScraper:
     Extracts multiple stat tables and saves to organized folders.
     """
     
-    def __init__(self, output_dir='data/raw/te', verbose=True, delay_min=180, delay_max=300):
+    def __init__(self, output_dir='data/raw/te', delay_range=(2, 4), verbose=True, use_selenium=True):
+        """
+        Initialize the scraper.
+        
+        Args:
+            output_dir: Base directory to save CSV files
+            delay_range: (min, max) seconds to wait between requests
+            verbose: Print progress messages
+            use_selenium: Use Selenium browser instead of direct requests (better VPN support)
+        """
+        # Set these first so log() can use them
         self.output_dir = output_dir
+        self.delay_min, self.delay_max = delay_range
         self.verbose = verbose
-        self.delay_min = delay_min
-        self.delay_max = delay_max
-        self.scraper = cloudscraper.create_scraper()
-        # Add proper headers to avoid 403 blocks
-        self.scraper.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Accept-Encoding': 'gzip, deflate',
-            'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1'
-        })
+        
+        self.use_selenium = use_selenium
+        self.driver = None
+        
+        if use_selenium:
+            # Initialize Selenium Chrome driver
+            try:
+                chrome_options = webdriver.ChromeOptions()
+                chrome_options.add_argument('--start-maximized')
+                chrome_options.add_argument('--disable-blink-features=AutomationControlled')
+                chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+                chrome_options.add_experimental_option('useAutomationExtension', False)
+                
+                service = Service(ChromeDriverManager().install())
+                self.driver = webdriver.Chrome(service=service, options=chrome_options)
+                self.log("  Selenium driver initialized")
+            except Exception as e:
+                self.log(f"  [FAIL] Could not initialize Selenium: {e}")
+                self.use_selenium = False
+        
+        if not use_selenium:
+            # Fallback to cloudscraper
+            self.scraper = cloudscraper.create_scraper()
+        
         self.stats = {'success': 0, 'failed': 0, 'skipped': 0}
         
-        # Create output directory if it doesn't exist
-        os.makedirs(output_dir, exist_ok=True)
+        # Ensure output directory exists
+        os.makedirs(self.output_dir, exist_ok=True)
     
     def log(self, msg, end='\n'):
-        """Print log message if verbose mode is enabled."""
+        """Print message if verbose mode is on."""
         if self.verbose:
-            print(msg, end=end, flush=True)
+            try:
+                print(msg, end=end, flush=True)
+            except UnicodeEncodeError:
+                # Replace special unicode characters with ASCII equivalents
+                msg = msg.replace('✓', '[OK]')
+                msg = msg.replace('✗', '[FAIL]')
+                msg = msg.replace('⏳', '[WAIT]')
+                msg = msg.replace('>>','[SKIP]')
+                print(msg, end=end, flush=True)
     
     def delay(self):
-        """Add random delay between requests to avoid rate limiting."""
-        delay_time = random.uniform(self.delay_min, self.delay_max)
-        self.log(f"\n  [Delaying {delay_time:.0f}s to avoid rate limiting...]", end='')
-        time.sleep(delay_time)
-        self.log(" [OK]")
+        """Wait a random amount of time between requests."""
+        wait_time = random.uniform(self.delay_min, self.delay_max)
+        self.log(f"  [WAIT] Waiting {wait_time:.1f}s...")
+        time.sleep(wait_time)
     
     def _get_player_folder_name(self, player_name):
         """Convert player name to folder-safe name."""
+        # Remove special characters and replace spaces with underscores
         safe_name = re.sub(r'[^\w\s-]', '', player_name)
         safe_name = safe_name.replace(' ', '_')
         return safe_name
     
+    def cleanup(self):
+        """Clean up resources, especially Selenium driver."""
+        if self.driver:
+            try:
+                self.driver.quit()
+                self.log("  Selenium driver closed")
+            except:
+                pass
+    
     def scrape_player(self, player_id, player_name=None, save=True, force=False):
         """
-        Scrape all stat tables for a single TE.
+        Scrape all stat tables for a single player from Pro Football Reference.
         
         Args:
             player_id: PFR player ID (e.g., 'KellTr00')
-            player_name: Display name for the player
-            save: Whether to save to CSV files
-            force: Whether to overwrite existing player folder
-            
+            player_name: Optional player name for logging
+            save: Whether to save to CSV
+            force: Force re-scrape even if files exist
+        
         Returns:
-            Dictionary with table DataFrames, or None if failed
+            Dictionary of {table_name: DataFrame} or None if failed
         """
+        # Build URL
         first_letter = player_id[0].upper()
         url = f"https://www.pro-football-reference.com/players/{first_letter}/{player_id}.htm"
         
@@ -245,28 +292,28 @@ class NFLTEScraper:
         self.log(f"  URL: {url}")
         
         try:
-            # Fetch page with retry logic for rate limiting
+            # Fetch page with proper delays to avoid rate limiting
             self.log("  Fetching...", end=' ')
-            max_retries = 15
-            for attempt in range(max_retries):
-                try:
-                    response = self.scraper.get(url, timeout=15)
-                    response.raise_for_status()
-                    break
-                except Exception as e:
-                    if '429' in str(e) and attempt < max_retries - 1:
-                        wait_time = 120 * (attempt + 1)  # 120, 240, 360, etc seconds (exponential backoff)
-                        self.log(f"(rate limited, waiting {wait_time}s, retry {attempt+1})", end=' ')
-                        time.sleep(wait_time)
-                    else:
-                        raise
+            self.delay()  # Random delay to avoid rate limiting
+            
+            if self.use_selenium and self.driver:
+                # Use Selenium to fetch page (works with VPN)
+                self.driver.get(url)
+                # Wait for page to load
+                time.sleep(2)
+                response_text = self.driver.page_source
+                response_status = 200
+            else:
+                # Fallback to cloudscraper
+                response = self.scraper.get(url, timeout=30)
+                response.raise_for_status()
+                response_text = response.text
+                response_status = response.status_code
+            
             self.log("[OK]")
             
-            # Parse HTML (try lxml first, fallback to html.parser)
-            try:
-                soup = BeautifulSoup(response.content, 'lxml')
-            except Exception:
-                soup = BeautifulSoup(response.content, 'html.parser')
+            # Parse HTML with BeautifulSoup
+            soup = BeautifulSoup(response_text, 'lxml')
             
             # Get player name from page
             h1 = soup.find('h1')
@@ -277,17 +324,29 @@ class NFLTEScraper:
             folder_name = self._get_player_folder_name(actual_name)
             player_dir = os.path.join(self.output_dir, folder_name)
             
-            # Check if folder exists and handle force flag
-            if os.path.exists(player_dir):
-                if force:
-                    shutil.rmtree(player_dir)
-                    os.makedirs(player_dir)
-                else:
-                    self.log(f"  ! Skipped (exists, use --force to overwrite)")
+            # Check if already scraped (if not forcing)
+            if not force and os.path.exists(player_dir):
+                existing_files = [f for f in os.listdir(player_dir) if f.endswith('.csv')]
+                if existing_files:
+                    self.log(f"  >> Already scraped ({len(existing_files)} files exist)")
                     self.stats['skipped'] += 1
                     return None
-            else:
-                os.makedirs(player_dir, exist_ok=True)
+            
+            # If forcing, remove existing files (not directory to avoid locking issues)
+            if force and os.path.exists(player_dir):
+                try:
+                    import shutil
+                    # Remove old files one by one to handle locking issues
+                    for filename in os.listdir(player_dir):
+                        if filename.endswith('.csv'):
+                            try:
+                                os.remove(os.path.join(player_dir, filename))
+                            except Exception as e:
+                                self.log(f"    Warning: Could not delete {filename}: {str(e)[:40]}")
+                except Exception as e:
+                    self.log(f"    Warning: Directory cleanup issue: {str(e)[:40]}")
+            
+            os.makedirs(player_dir, exist_ok=True)
             
             # Extract tables
             results = {}
@@ -510,43 +569,48 @@ def main():
     parser = argparse.ArgumentParser(description='NFL TE Stats Scraper')
     parser.add_argument('--player', help='Scrape specific player by ID (e.g., KellTr00)')
     parser.add_argument('--test', action='store_true', help='Test scraper with first TE')
-    parser.add_argument('--force', action='store_true', help='Force re-scrape even if folder exists')
+    parser.add_argument('--force', action='store_true', help='Force re-scrape even if exists')
     parser.add_argument('--combine', action='store_true', help='Combine all CSV files')
     parser.add_argument('--list', action='store_true', help='List all scraped players')
+    parser.add_argument('--no-selenium', action='store_true', help='Use cloudscraper instead of Selenium')
     parser.add_argument('--quiet', action='store_true', help='Suppress output')
     
     args = parser.parse_args()
     
-    scraper = NFLTEScraper(verbose=not args.quiet)
+    scraper = NFLTEScraper(verbose=not args.quiet, use_selenium=not args.no_selenium)
     
-    print("\n" + "=" * 70)
-    print("NFL TE STATS SCRAPER - MULTI-TABLE VERSION")
-    print("Scraping %d players..." % len(NFL_TES))
-    print("Tables: Receiving/Rushing, Advanced Receiving/Rushing,")
-    print("        Snap Counts")
-    print("=" * 70)
-    
-    if args.player:
-        # Find player by ID
-        player = next((p for p in NFL_TES if p[0] == args.player), None)
-        if player:
-            scraper.scrape_player(player[0], player[1], force=args.force)
+    try:
+        print("\n" + "=" * 70)
+        print("NFL TE STATS SCRAPER - MULTI-TABLE VERSION")
+        print("Scraping %d players..." % len(NFL_TES))
+        print("Tables: Receiving/Rushing, Advanced Receiving/Rushing,")
+        print("        Snap Counts")
+        print("=" * 70)
+        
+        if args.player:
+            # Find player by ID
+            player = next((p for p in NFL_TES if p[0] == args.player), None)
+            if player:
+                scraper.scrape_player(player[0], player[1], force=args.force)
+            else:
+                print(f"Player {args.player} not found in list")
+        
+        elif args.test:
+            if NFL_TES:
+                player = NFL_TES[0]
+                scraper.scrape_player(player[0], player[1], force=True)
+        
+        elif args.list:
+            scraper.list_players()
+        
+        elif args.combine:
+            scraper.combine_all_csvs()
+        
         else:
-            print(f"Player {args.player} not found in list")
+            scraper.scrape_all(force=args.force)
     
-    elif args.test:
-        if NFL_TES:
-            player = NFL_TES[0]
-            scraper.scrape_player(player[0], player[1], force=True)
-    
-    elif args.list:
-        scraper.list_players()
-    
-    elif args.combine:
-        scraper.combine_all_csvs()
-    
-    else:
-        scraper.scrape_all(force=args.force)
+    finally:
+        scraper.cleanup()
 
 
 if __name__ == '__main__':

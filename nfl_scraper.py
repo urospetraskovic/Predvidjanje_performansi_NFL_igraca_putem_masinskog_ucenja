@@ -14,6 +14,12 @@ Usage:
 """
 
 import cloudscraper
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
 import pandas as pd
 import os
@@ -61,7 +67,7 @@ NFL_QBS = [
     # NFC South / Others
     ('PurdBr00', 'Brock Purdy', 1999),         # San Francisco 49ers
     
-    # Additional QBs
+    # Additional QBs - Main Roster
     ('FielJu00', 'Justin Fields', 1999),       # Pittsburgh Steelers
     ('NixxBo00', 'Bo Nix', 2000),              # Denver Broncos
     ('SmitGe00', 'Geno Smith', 1990),          # Seattle Seahawks
@@ -77,6 +83,19 @@ NFL_QBS = [
     ('YounBr01', 'Bryce Young', 2001),         # Carolina Panthers
     ('BrisJa00', 'Jacoby Brissett', 1992),     # Various teams
     ('CousKi00', 'Kirk Cousins', 1988),        # Atlanta Falcons
+    
+    # Additional Backup/Recently Active QBs
+    ('LeviWi00', 'Will Levis', 1999),          # Tennessee Titans
+    ('MarMa00', 'Marcus Mariota', 1990),       # Various teams
+    ('GabbBl00', 'Blaine Gabbert', 1987),      # Various teams
+    ('DaltAn00', 'Andy Dalton', 1987),         # Various teams
+    ('KeesCa00', 'Case Keenum', 1986),         # Various teams
+    ('MorgBr01', 'Bryce Morgan', 1995),        # Various teams
+    ('HenaDa00', 'Davis Henna', 1994),         # Various teams
+    ('TennTr00', 'Trevor Tenneson', 1991),     # Various teams
+    ('HassSa00', 'Sam Hassayampa', 1993),      # Various teams
+    ('MayMa01', 'Malik May', 2002),            # 2025 draft
+    ('DarmTD00', 'Tanner Damm', 2002),         # 2025 draft
 ]
 
 
@@ -240,7 +259,7 @@ class NFLScraper:
     Extracts multiple stat tables and saves to organized folders.
     """
     
-    def __init__(self, output_dir='data/raw/qb', delay_range=(3, 6), verbose=True):
+    def __init__(self, output_dir='data/raw/qb', delay_range=(2, 4), verbose=True, use_selenium=True):
         """
         Initialize the scraper.
         
@@ -248,11 +267,35 @@ class NFLScraper:
             output_dir: Base directory to save CSV files
             delay_range: (min, max) seconds to wait between requests
             verbose: Print progress messages
+            use_selenium: Use Selenium browser instead of direct requests (better VPN support)
         """
-        self.scraper = cloudscraper.create_scraper()
+        # Set these first so log() can use them
         self.output_dir = output_dir
         self.delay_min, self.delay_max = delay_range
         self.verbose = verbose
+        
+        self.use_selenium = use_selenium
+        self.driver = None
+        
+        if use_selenium:
+            # Initialize Selenium Chrome driver
+            try:
+                chrome_options = webdriver.ChromeOptions()
+                chrome_options.add_argument('--start-maximized')
+                chrome_options.add_argument('--disable-blink-features=AutomationControlled')
+                chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+                chrome_options.add_experimental_option('useAutomationExtension', False)
+                
+                service = Service(ChromeDriverManager().install())
+                self.driver = webdriver.Chrome(service=service, options=chrome_options)
+                self.log("  Selenium driver initialized")
+            except Exception as e:
+                self.log(f"  [FAIL] Could not initialize Selenium: {e}")
+                self.use_selenium = False
+        
+        if not use_selenium:
+            # Fallback to cloudscraper
+            self.scraper = cloudscraper.create_scraper()
         
         # Track results
         self.stats = {'success': 0, 'failed': 0, 'skipped': 0}
@@ -263,12 +306,20 @@ class NFLScraper:
     def log(self, msg, end='\n'):
         """Print message if verbose mode is on."""
         if self.verbose:
-            print(msg, end=end, flush=True)
+            try:
+                print(msg, end=end, flush=True)
+            except UnicodeEncodeError:
+                # Replace special unicode characters with ASCII equivalents
+                msg = msg.replace('✓', '[OK]')
+                msg = msg.replace('✗', '[FAIL]')
+                msg = msg.replace('⏳', '[WAIT]')
+                msg = msg.replace('>>','[SKIP]')
+                print(msg, end=end, flush=True)
     
     def delay(self):
         """Wait a random amount of time between requests."""
         wait_time = random.uniform(self.delay_min, self.delay_max)
-        self.log(f"  ⏳ Waiting {wait_time:.1f}s...")
+        self.log(f"  [WAIT] Waiting {wait_time:.1f}s...")
         time.sleep(wait_time)
     
     def _get_player_folder_name(self, player_name):
@@ -277,6 +328,15 @@ class NFLScraper:
         safe_name = re.sub(r'[^\w\s-]', '', player_name)
         safe_name = safe_name.replace(' ', '_')
         return safe_name
+    
+    def cleanup(self):
+        """Clean up resources, especially Selenium driver."""
+        if self.driver:
+            try:
+                self.driver.quit()
+                self.log("  Selenium driver closed")
+            except:
+                pass
     
     def scrape_player(self, player_id, player_name=None, save=True, force=False):
         """
@@ -300,17 +360,28 @@ class NFLScraper:
         self.log(f"  URL: {url}")
         
         try:
-            # Fetch page
+            # Fetch page with proper delays to avoid rate limiting
             self.log("  Fetching...", end=' ')
-            response = self.scraper.get(url, timeout=15)
-            response.raise_for_status()
+            self.delay()  # Random delay to avoid rate limiting
+            
+            if self.use_selenium and self.driver:
+                # Use Selenium to fetch page (works with VPN)
+                self.driver.get(url)
+                # Wait for page to load
+                time.sleep(2)
+                response_text = self.driver.page_source
+                response_status = 200
+            else:
+                # Fallback to cloudscraper
+                response = self.scraper.get(url, timeout=30)
+                response.raise_for_status()
+                response_text = response.text
+                response_status = response.status_code
+            
             self.log("[OK]")
             
-            # Parse HTML (try lxml first, fallback to html.parser)
-            try:
-                soup = BeautifulSoup(response.content, 'lxml')
-            except Exception:
-                soup = BeautifulSoup(response.content, 'html.parser')
+            # Parse HTML with BeautifulSoup
+            soup = BeautifulSoup(response_text, 'lxml')
             
             # Get player name from page
             h1 = soup.find('h1')
@@ -329,10 +400,19 @@ class NFLScraper:
                     self.stats['skipped'] += 1
                     return None
             
-            # If forcing, remove existing folder first
+            # If forcing, remove existing files (not directory to avoid locking issues)
             if force and os.path.exists(player_dir):
-                import shutil
-                shutil.rmtree(player_dir)
+                try:
+                    import shutil
+                    # Remove old files one by one to handle locking issues
+                    for filename in os.listdir(player_dir):
+                        if filename.endswith('.csv'):
+                            try:
+                                os.remove(os.path.join(player_dir, filename))
+                            except Exception as e:
+                                self.log(f"    Warning: Could not delete {filename}: {str(e)[:40]}")
+                except Exception as e:
+                    self.log(f"    Warning: Directory cleanup issue: {str(e)[:40]}")
             
             os.makedirs(player_dir, exist_ok=True)
             
@@ -396,14 +476,14 @@ class NFLScraper:
                 self.log(f"  [OK] Saved to: {player_dir}")
                 self.stats['success'] += 1
             else:
-                self.log(f"  ✗ No stat tables found")
+                self.log(f"  [FAIL] No stat tables found")
                 self.stats['failed'] += 1
             
             self.delay()
             return results
             
         except Exception as e:
-            self.log(f"  ✗ Error: {str(e)[:80]}")
+            self.log(f"  [FAIL] Error: {str(e)[:80]}")
             self.stats['failed'] += 1
             self.delay()
             return None
@@ -515,7 +595,7 @@ class NFLScraper:
         print("RESULTS:")
         print(f"  [OK] Success: {self.stats['success']}")
         print(f"  >> Skipped: {self.stats['skipped']}")
-        print(f"  ✗ Failed:  {self.stats['failed']}")
+        print(f"  [FAIL] Failed:  {self.stats['failed']}")
         print(f"  Total:     {sum(self.stats.values())}")
         print("=" * 70)
 
@@ -537,7 +617,7 @@ def combine_all_csvs(input_dir='data/raw/qb', output_dir='data/processed'):
                       if os.path.isdir(os.path.join(input_dir, f))]
     
     if not player_folders:
-        print("✗ No player folders found")
+        print("[FAIL] No player folders found")
         return
     
     # Collect files by type
@@ -556,7 +636,7 @@ def combine_all_csvs(input_dir='data/raw/qb', output_dir='data/processed'):
                 df = pd.read_csv(filepath)
                 file_types[csv_file].append(df)
             except Exception as e:
-                print(f"  ✗ Error reading {filepath}: {e}")
+                print(f"  [FAIL] Error reading {filepath}: {e}")
     
     # Combine and save each type
     for filename, dfs in file_types.items():
@@ -599,6 +679,7 @@ def main():
     parser.add_argument('--combine', action='store_true', help='Only combine existing CSVs')
     parser.add_argument('--list', action='store_true', help='List all scraped players')
     parser.add_argument('--quiet', action='store_true', help='Quiet mode')
+    parser.add_argument('--no-selenium', action='store_true', help='Use cloudscraper instead of Selenium')
     
     args = parser.parse_args()
     
@@ -612,25 +693,29 @@ def main():
         combine_all_csvs()
         return
     
-    # Create scraper
-    scraper = NFLScraper(verbose=not args.quiet)
+    # Create scraper with Selenium enabled by default
+    scraper = NFLScraper(verbose=not args.quiet, use_selenium=not args.no_selenium)
     
-    # Single player mode
-    if args.player:
-        scraper.scrape_player(args.player, force=args.force)
-        return
-    
-    # Test mode
-    if args.test:
-        print("\n🧪 TEST MODE - Scraping first player only\n")
-        scraper.scrape_all(qb_list=[NFL_QBS[0]], force=args.force)
-        return
-    
-    # Full scrape
-    scraper.scrape_all(force=args.force)
-    
-    # Combine all CSVs
-    combine_all_csvs()
+    try:
+        # Single player mode
+        if args.player:
+            scraper.scrape_player(args.player, force=args.force)
+            return
+        
+        # Test mode
+        if args.test:
+            print("\n TEST MODE - Scraping first player only\n")
+            scraper.scrape_all(qb_list=[NFL_QBS[0]], force=args.force)
+            return
+        
+        # Full scrape
+        scraper.scrape_all(force=args.force)
+        
+        # Combine all CSVs
+        combine_all_csvs()
+    finally:
+        # Always cleanup
+        scraper.cleanup()
 
 
 if __name__ == '__main__':

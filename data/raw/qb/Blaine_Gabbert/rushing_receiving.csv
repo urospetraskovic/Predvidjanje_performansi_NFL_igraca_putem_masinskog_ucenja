@@ -1,0 +1,12 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Tgt,Rec,Rec_Yds,rec_yds_per_rec,Rec_TD,Rec_1D,rec_success,rec_long,Rec/G,Rec_Y/G,catch_pct,rec_yds_per_tgt,touches,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,Awards,Player,PlayerID
+2011,22,JAX,QB,15,14,48,98,0,8,29.2,12,2.0,6.5,3.2,0,0,0,,0,0,,,0.0,0.0,,,48,2.0,98,0,14,,Blaine Gabbert,GabbBl00
+2012,23,JAX,QB,10,10,18,56,0,7,55.6,10,3.1,5.6,1.8,0,0,0,,0,0,,,0.0,0.0,,,18,3.1,56,0,5,,Blaine Gabbert,GabbBl00
+2013,24,JAX,QB,3,3,9,32,0,0,55.6,7,3.6,10.7,3.0,0,0,0,,0,0,,,0.0,0.0,,,9,3.6,32,0,2,,Blaine Gabbert,GabbBl00
+2014,25,SFO,QB,1,0,1,5,0,0,0.0,5,5.0,5.0,1.0,0,0,0,,0,0,,,0.0,0.0,,,1,5.0,5,0,0,,Blaine Gabbert,GabbBl00
+2015,26,SFO,QB,8,8,32,185,1,10,50.0,44,5.8,23.1,4.0,0,0,0,,0,0,,,0.0,0.0,,,32,5.8,185,1,4,,Blaine Gabbert,GabbBl00
+2016,27,SFO,QB,6,5,40,173,2,16,52.5,24,4.3,28.8,6.7,1,1,-16,-16.0,0,0,0.0,-16,0.2,-2.7,100.0,-16.0,41,3.8,157,2,0,,Blaine Gabbert,GabbBl00
+2017,28,ARI,QB,5,5,22,82,0,7,45.5,12,3.7,16.4,4.4,0,0,0,,0,0,,,0.0,0.0,,,22,3.7,82,0,7,,Blaine Gabbert,GabbBl00
+2018,29,TEN,QB,8,3,6,0,0,2,33.3,,0.0,0.0,0.8,0,0,0,,0,0,,,0.0,0.0,,,6,0.0,0,0,0,,Blaine Gabbert,GabbBl00
+2020,31,TAM,QB,4,0,9,16,0,0,11.1,16,1.8,4.0,2.3,0,0,0,,0,0,,,0.0,0.0,,,9,1.8,16,0,1,,Blaine Gabbert,GabbBl00
+2021,32,TAM,QB,6,0,9,-7,0,0,0.0,,-0.8,-1.2,1.5,0,0,0,,0,0,,,0.0,0.0,,,9,-0.8,-7,0,0,,Blaine Gabbert,GabbBl00
+2023,34,KAN,QB,2,1,7,45,0,2,42.9,25,6.4,22.5,3.5,0,0,0,,0,0,,,0.0,0.0,,,7,6.4,45,0,0,,Blaine Gabbert,GabbBl00

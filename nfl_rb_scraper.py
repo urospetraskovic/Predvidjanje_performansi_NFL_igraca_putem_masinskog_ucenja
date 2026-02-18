@@ -14,6 +14,12 @@ Usage:
 """
 
 import cloudscraper
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
 import pandas as pd
 import os
@@ -186,21 +192,43 @@ class NFLRBScraper:
     Extracts multiple stat tables and saves to organized folders.
     """
     
-    def __init__(self, output_dir='data/raw/rb', verbose=True, delay_min=60, delay_max=120):
+    def __init__(self, output_dir='data/raw/rb', verbose=True, delay_min=2, delay_max=4, use_selenium=True):
         self.output_dir = output_dir
         self.verbose = verbose
         self.delay_min = delay_min
         self.delay_max = delay_max
-        self.scraper = cloudscraper.create_scraper()
-        # Add proper headers to avoid 403 blocks
-        self.scraper.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Accept-Encoding': 'gzip, deflate',
-            'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1'
-        })
+        self.use_selenium = use_selenium
+        self.driver = None
+        
+        if use_selenium:
+            # Initialize Selenium Chrome driver
+            try:
+                chrome_options = webdriver.ChromeOptions()
+                chrome_options.add_argument('--start-maximized')
+                chrome_options.add_argument('--disable-blink-features=AutomationControlled')
+                chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+                chrome_options.add_experimental_option('useAutomationExtension', False)
+                
+                service = Service(ChromeDriverManager().install())
+                self.driver = webdriver.Chrome(service=service, options=chrome_options)
+                self.log("  Selenium driver initialized")
+            except Exception as e:
+                self.log(f"  [FAIL] Could not initialize Selenium: {e}")
+                self.use_selenium = False
+        
+        if not use_selenium:
+            # Fallback to cloudscraper
+            self.scraper = cloudscraper.create_scraper()
+            # Add proper headers to avoid 403 blocks
+            self.scraper.headers.update({
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.5',
+                'Accept-Encoding': 'gzip, deflate',
+                'Connection': 'keep-alive',
+                'Upgrade-Insecure-Requests': '1'
+            })
+        
         self.stats = {'success': 0, 'failed': 0, 'skipped': 0}
         
         # Create output directory if it doesn't exist
@@ -209,11 +237,28 @@ class NFLRBScraper:
     def log(self, msg, end='\n'):
         """Print log message if verbose mode is enabled."""
         if self.verbose:
-            print(msg, end=end, flush=True)
+            try:
+                print(msg, end=end, flush=True)
+            except UnicodeEncodeError:
+                msg = msg.replace('✓', '[OK]')
+                msg = msg.replace('✗', '[FAIL]')
+                msg = msg.replace('⏳', '[WAIT]')
+                print(msg, end=end, flush=True)
     
     def delay(self):
-        """No delay - go fast!"""
-        pass
+        """Random delay between requests."""
+        wait_time = random.uniform(self.delay_min, self.delay_max)
+        self.log(f"  [WAIT] Waiting {wait_time:.1f}s...")
+        time.sleep(wait_time)
+    
+    def cleanup(self):
+        """Clean up resources, especially Selenium driver."""
+        if self.driver:
+            try:
+                self.driver.quit()
+                self.log("  Selenium driver closed")
+            except:
+                pass
     
     def _get_player_folder_name(self, player_name):
         """Convert player name to folder-safe name."""
@@ -242,27 +287,28 @@ class NFLRBScraper:
         self.log(f"  URL: {url}")
         
         try:
-            # Fetch page with retry logic for rate limiting
+            # Fetch page with proper delays to avoid rate limiting
             self.log("  Fetching...", end=' ')
-            max_retries = 5
-            for attempt in range(max_retries):
-                try:
-                    response = self.scraper.get(url, timeout=15)
-                    response.raise_for_status()
-                    break
-                except Exception as e:
-                    if '429' in str(e) and attempt < max_retries - 1:
-                        self.log(f"(rate limited, retry {attempt+1})", end=' ')
-                        time.sleep(30)  # Wait 30 seconds on 429
-                    else:
-                        raise
+            self.delay()  # Random delay to avoid rate limiting
+            
+            if self.use_selenium and self.driver:
+                # Use Selenium to fetch page (works with VPN)
+                self.driver.get(url)
+                # Wait for page to load
+                time.sleep(2)
+                response_text = self.driver.page_source
+                response_status = 200
+            else:
+                # Fallback to cloudscraper
+                response = self.scraper.get(url, timeout=30)
+                response.raise_for_status()
+                response_text = response.text
+                response_status = response.status_code
+            
             self.log("[OK]")
             
-            # Parse HTML (try lxml first, fallback to html.parser)
-            try:
-                soup = BeautifulSoup(response.content, 'lxml')
-            except Exception:
-                soup = BeautifulSoup(response.content, 'html.parser')
+            # Parse HTML with BeautifulSoup
+            soup = BeautifulSoup(response_text, 'lxml')
             
             # Get player name from page
             h1 = soup.find('h1')
@@ -276,8 +322,13 @@ class NFLRBScraper:
             # Check if folder exists and handle force flag
             if os.path.exists(player_dir):
                 if force:
-                    shutil.rmtree(player_dir)
-                    os.makedirs(player_dir)
+                    # Remove old files one by one to handle locking issues
+                    for filename in os.listdir(player_dir):
+                        if filename.endswith('.csv'):
+                            try:
+                                os.remove(os.path.join(player_dir, filename))
+                            except Exception as e:
+                                self.log(f"    Warning: Could not delete {filename}: {str(e)[:40]}")
                 else:
                     self.log(f"  ! Skipped (exists, use --force to overwrite)")
                     self.stats['skipped'] += 1
@@ -507,10 +558,11 @@ def main():
     parser.add_argument('--combine', action='store_true', help='Combine all CSV files')
     parser.add_argument('--list', action='store_true', help='List all scraped players')
     parser.add_argument('--quiet', action='store_true', help='Suppress output')
+    parser.add_argument('--no-selenium', action='store_true', help='Use cloudscraper instead of Selenium')
     
     args = parser.parse_args()
     
-    scraper = NFLRBScraper(verbose=not args.quiet)
+    scraper = NFLRBScraper(verbose=not args.quiet, use_selenium=not args.no_selenium)
     
     print("\n" + "=" * 70)
     print("NFL RB STATS SCRAPER - MULTI-TABLE VERSION")
@@ -519,27 +571,31 @@ def main():
     print("        Snap Counts")
     print("=" * 70)
     
-    if args.player:
-        # Find player by ID
-        player = next((p for p in NFL_RBS if p[0] == args.player), None)
-        if player:
-            scraper.scrape_player(player[0], player[1], force=args.force)
+    try:
+        if args.player:
+            # Find player by ID
+            player = next((p for p in NFL_RBS if p[0] == args.player), None)
+            if player:
+                scraper.scrape_player(player[0], player[1], force=args.force)
+            else:
+                print(f"Player {args.player} not found in list")
+        
+        elif args.test:
+            if NFL_RBS:
+                player = NFL_RBS[0]
+                scraper.scrape_player(player[0], player[1], force=True)
+        
+        elif args.list:
+            scraper.list_players()
+        
+        elif args.combine:
+            scraper.combine_all_csvs()
+        
         else:
-            print(f"Player {args.player} not found in list")
-    
-    elif args.test:
-        if NFL_RBS:
-            player = NFL_RBS[0]
-            scraper.scrape_player(player[0], player[1], force=True)
-    
-    elif args.list:
-        scraper.list_players()
-    
-    elif args.combine:
-        scraper.combine_all_csvs()
-    
-    else:
-        scraper.scrape_all(force=args.force)
+            scraper.scrape_all(force=args.force)
+    finally:
+        # Always cleanup
+        scraper.cleanup()
 
 
 if __name__ == '__main__':

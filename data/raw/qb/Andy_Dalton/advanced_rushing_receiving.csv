@@ -1,0 +1,9 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,rec_air_yds_per_rec,Rec_YAC,rec_yac_per_rec,rec_adot,Rec_BrkTkl,Rec_Drops,rec_drop_pct,Rec_Int,rec_pass_rating,Awards,Player,PlayerID
+2018,31,CIN,QB,11,11,16,99,4,63,3.9,36,2.3,1,16.0,0,0,0,0,0,,0,,,0,0,,0,,,Andy Dalton,DaltAn00
+2019,32,CIN,QB,13,13,32,73,12,41,1.3,32,1.0,1,32.0,1,1,-4,0,-8,-8.0,4,4.0,-8.0,0,0,0.0,0,79.2,,Andy Dalton,DaltAn00
+2020,33,DAL,QB,11,9,28,114,11,101,3.6,13,0.5,0,,1,1,-3,0,-7,-7.0,4,4.0,-7.0,0,0,0.0,0,79.2,,Andy Dalton,DaltAn00
+2021,34,CHI,QB,8,6,16,76,2,72,4.5,4,0.3,0,,0,0,0,0,0,,0,,,0,0,,0,,,Andy Dalton,DaltAn00
+2022,35,NOR,QB,14,14,30,54,6,45,1.5,9,0.3,0,,0,0,0,0,0,,0,,,0,0,,0,,,Andy Dalton,DaltAn00
+2023,36,CAR,QB,3,1,3,12,2,11,3.7,1,0.3,0,,0,0,0,0,0,,0,,,0,0,,0,,,Andy Dalton,DaltAn00
+2024,37,CAR,QB,6,5,11,34,2,15,1.4,19,1.7,1,11.0,0,0,0,0,0,,0,,,0,0,,0,,,Andy Dalton,DaltAn00
+2025,38,CAR,QB,4,1,5,-2,0,-2,-0.4,0,0.0,0,,0,0,0,0,0,,0,,,0,0,,0,,,Andy Dalton,DaltAn00

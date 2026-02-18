@@ -1,4 +1,4 @@
 Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Tgt,Rec,Rec_Yds,rec_yds_per_rec,Rec_TD,Rec_1D,rec_success,Rec/G,Rec_Y/G,catch_pct,rec_yds_per_tgt,touches,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,Awards,Player,PlayerID
 2023,22,HOU,QB,15,15,39,167,3,17,59.0,16,4.3,11.1,2.6,1,1,0,0.0,0,0,0.0,0.1,0.0,100.0,0.0,40,4.2,167,3,8,"PB,AP MVP-8,AP ORoY-1",C.J. Stroud,StroCJ00
-2024,23,HOU,QB,17,17,52,233,0,14,38.5,25,4.5,13.7,3.1,1,0,0,,0,0,0.0,0.0,0.0,0.0,0.0,52,4.5,233,0,6,,C.J. Stroud,StroCJ00
-2025,24,HOU,QB,11,11,38,204,0,17,55.3,30,5.4,18.5,3.5,0,0,0,,0,0,,0.0,0.0,,,38,5.4,204,0,1,,C.J. Stroud,StroCJ00
+2024,23,HOU,QB,17,17,52,233,0,19,38.5,25,4.5,13.7,3.1,1,0,0,,0,0,0.0,0.0,0.0,0.0,0.0,52,4.5,233,0,6,,C.J. Stroud,StroCJ00
+2025,24,HOU,QB,14,14,48,209,1,18,47.9,30,4.4,14.9,3.4,0,0,0,,0,0,,0.0,0.0,,,48,4.4,209,1,2,,C.J. Stroud,StroCJ00

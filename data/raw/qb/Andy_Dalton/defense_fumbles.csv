@@ -1,0 +1,15 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2011,24,CIN,QB,16,16,0,0,0,0,0,0,4,0,0,0,0.0,0,0,0,0,0,0,"PB,AP ORoY-2",Andy Dalton,DaltAn00
+2012,25,CIN,QB,16,16,0,0,0,0,0,0,4,0,0,0,0.0,0,0,0,,,0,,Andy Dalton,DaltAn00
+2013,26,CIN,QB,16,16,0,0,0,0,0,0,4,0,-14,0,0.0,0,0,0,0,0,0,,Andy Dalton,DaltAn00
+2014,27,CIN,QB,16,16,0,0,0,0,0,0,3,1,-5,0,0.0,0,0,0,0,0,0,PB,Andy Dalton,DaltAn00
+2015,28,CIN,QB,13,13,0,0,0,0,0,0,5,3,-34,0,0.0,0,0,0,0,0,0,,Andy Dalton,DaltAn00
+2016,29,CIN,QB,16,16,0,0,0,0,0,0,9,2,-17,0,0.0,0,0,0,0,0,0,PB,Andy Dalton,DaltAn00
+2017,30,CIN,QB,16,16,0,0,0,0,0,0,4,1,-4,0,0.0,0,0,0,0,0,0,,Andy Dalton,DaltAn00
+2018,31,CIN,QB,11,11,0,0,0,0,0,0,1,1,0,0,0.0,0,0,0,0,0,0,,Andy Dalton,DaltAn00
+2019,32,CIN,QB,13,13,0,0,0,0,0,0,8,2,-8,0,0.0,0,0,0,0,0,0,,Andy Dalton,DaltAn00
+2020,33,DAL,QB,11,9,0,0,0,0,0,0,2,0,-2,0,0.0,0,0,0,0,0,0,,Andy Dalton,DaltAn00
+2021,34,CHI,QB,8,6,0,0,0,0,0,0,1,2,0,0,0.0,2,1,1,0,0,0,,Andy Dalton,DaltAn00
+2022,35,NOR,QB,14,14,0,0,0,0,0,0,5,4,1,0,0.0,1,0,1,0,0,0,,Andy Dalton,DaltAn00
+2024,37,CAR,QB,6,5,0,0,0,0,0,0,2,2,0,0,0.0,0,0,0,0,0,0,,Andy Dalton,DaltAn00
+2025,38,CAR,QB,4,1,0,0,0,0,0,0,2,1,0,0,0.0,0,0,0,0,0,0,,Andy Dalton,DaltAn00
