@@ -10,6 +10,8 @@ This module provides:
 
 import pandas as pd
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')  # Non-interactive backend for script mode
 import matplotlib.pyplot as plt
 import seaborn as sns
 from typing import Dict, List, Tuple, Optional, Any
@@ -17,6 +19,13 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.model_selection import cross_val_predict, learning_curve
 import warnings
 warnings.filterwarnings('ignore')
+
+try:
+    import shap
+    SHAP_AVAILABLE = True
+except ImportError:
+    SHAP_AVAILABLE = False
+    print("Warning: SHAP not installed. Install with: pip install shap")
 
 # Set style for plots
 plt.style.use('seaborn-v0_8-whitegrid')
@@ -134,7 +143,7 @@ class ModelEvaluator:
             plt.savefig(save_path, dpi=150, bbox_inches='tight')
             print(f"Plot saved to {save_path}")
         
-        plt.show()
+        # plt.show()  # Disabled for non-interactive mode
         plt.close()
     
     def plot_residuals(self, save_path: Optional[str] = None):
@@ -173,7 +182,7 @@ class ModelEvaluator:
         if save_path:
             plt.savefig(save_path, dpi=150, bbox_inches='tight')
         
-        plt.show()
+        # plt.show()  # Disabled for non-interactive mode
         plt.close()
     
     def plot_error_distribution(self, save_path: Optional[str] = None):
@@ -208,7 +217,7 @@ class ModelEvaluator:
         if save_path:
             plt.savefig(save_path, dpi=150, bbox_inches='tight')
         
-        plt.show()
+        # plt.show()  # Disabled for non-interactive mode
         plt.close()
 
 
@@ -247,7 +256,7 @@ def plot_feature_importance(feature_importance: pd.DataFrame,
     if save_path:
         plt.savefig(save_path, dpi=150, bbox_inches='tight')
     
-    plt.show()
+    # plt.show()  # Disabled for non-interactive mode
     plt.close()
 
 
@@ -294,7 +303,7 @@ def plot_model_comparison(comparison_results: pd.DataFrame,
     if save_path:
         plt.savefig(save_path, dpi=150, bbox_inches='tight')
     
-    plt.show()
+    # plt.show()  # Disabled for non-interactive mode
     plt.close()
 
 
@@ -346,7 +355,7 @@ def plot_learning_curve(model, X: pd.DataFrame, y: pd.Series,
     if save_path:
         plt.savefig(save_path, dpi=150, bbox_inches='tight')
     
-    plt.show()
+    # plt.show()  # Disabled for non-interactive mode
     plt.close()
 
 
@@ -417,7 +426,7 @@ def create_position_comparison_dashboard(results: Dict[str, Dict],
     if save_path:
         plt.savefig(save_path, dpi=150, bbox_inches='tight')
     
-    plt.show()
+    # plt.show()  # Disabled for non-interactive mode
     plt.close()
 
 
@@ -463,6 +472,95 @@ def generate_full_report(model, X_test, y_test, model_name: str,
         )
     
     return metrics
+
+
+def compute_shap_values(model, X_train: pd.DataFrame, X_test: pd.DataFrame,
+                        model_name: str = "Model",
+                        save_dir: Optional[str] = None) -> Optional[pd.DataFrame]:
+    """
+    Compute SHAP values for feature importance analysis.
+    
+    Uses TreeExplainer for tree-based models (Random Forest, Gradient Boosting)
+    and KernelExplainer as fallback for other model types.
+    
+    Based on methodology from:
+    - Frontiers in Sports and Active Living (2025): SHAP for identifying 
+      most influential predictors in NFL performance prediction
+    
+    Args:
+        model: Trained model (NFLPerformanceModel or sklearn model)
+        X_train: Training features (used for background data)
+        X_test: Test features to explain
+        model_name: Name for plot titles and file names
+        save_dir: Directory to save SHAP plots
+        
+    Returns:
+        DataFrame with feature names and mean absolute SHAP values, or None if SHAP unavailable
+    """
+    if not SHAP_AVAILABLE:
+        print("SHAP library not available. Skipping SHAP analysis.")
+        return None
+    
+    # Get the underlying sklearn model
+    sklearn_model = model.model if hasattr(model, 'model') else model
+    
+    print(f"\nComputing SHAP values for {model_name}...")
+    
+    try:
+        # Use TreeExplainer for tree-based models (much faster)
+        if hasattr(sklearn_model, 'estimators_') or hasattr(sklearn_model, 'feature_importances_'):
+            explainer = shap.TreeExplainer(sklearn_model)
+            shap_values = explainer.shap_values(X_test)
+        else:
+            # KernelExplainer for other models - use a subsample for speed
+            background = shap.sample(X_train, min(100, len(X_train)))
+            explainer = shap.KernelExplainer(sklearn_model.predict, background)
+            shap_values = explainer.shap_values(X_test.values[:min(50, len(X_test))])
+        
+        # Create feature importance from SHAP values
+        feature_names = X_test.columns.tolist()
+        shap_importance = pd.DataFrame({
+            'feature': feature_names,
+            'mean_abs_shap': np.abs(shap_values).mean(axis=0)
+        }).sort_values('mean_abs_shap', ascending=False)
+        
+        print(f"\nTop 10 Features by SHAP Values ({model_name}):")
+        print(shap_importance.head(10).to_string(index=False))
+        
+        # Generate SHAP plots
+        if save_dir:
+            os.makedirs(save_dir, exist_ok=True)
+            
+            # 1. SHAP Summary Plot (beeswarm)
+            fig, ax = plt.subplots(figsize=(12, 8))
+            shap.summary_plot(shap_values, X_test, feature_names=feature_names,
+                            show=False, max_display=15)
+            plt.title(f"{model_name} - SHAP Feature Importance", fontsize=14)
+            plt.tight_layout()
+            plt.savefig(os.path.join(save_dir, f'{model_name}_shap_summary.png'), 
+                       dpi=150, bbox_inches='tight')
+            plt.close()
+            print(f"  SHAP summary plot saved.")
+            
+            # 2. SHAP Bar Plot (mean absolute values)
+            fig, ax = plt.subplots(figsize=(10, 8))
+            shap.summary_plot(shap_values, X_test, feature_names=feature_names,
+                            plot_type="bar", show=False, max_display=15)
+            plt.title(f"{model_name} - Mean |SHAP| Value", fontsize=14)
+            plt.tight_layout()
+            plt.savefig(os.path.join(save_dir, f'{model_name}_shap_bar.png'),
+                       dpi=150, bbox_inches='tight')
+            plt.close()
+            print(f"  SHAP bar plot saved.")
+        
+        return shap_importance
+        
+    except Exception as e:
+        print(f"  SHAP analysis failed: {str(e)}")
+        return None
+
+
+import os
 
 
 if __name__ == "__main__":
