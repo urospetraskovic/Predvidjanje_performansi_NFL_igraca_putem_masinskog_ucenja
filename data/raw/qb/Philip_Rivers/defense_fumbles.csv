@@ -1,0 +1,19 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2004,23,SDG,QB,2,0,0,0,0,0,0,0,1,1,0,0,0.0,,,,,,0,,Philip Rivers,RivePh00
+2005,24,SDG,QB,2,0,0,0,0,0,0,0,2,0,0,0,0.0,0,0,0,0,,0,,Philip Rivers,RivePh00
+2006,25,SDG,QB,16,16,0,0,0,0,0,0,8,4,-25,0,0.0,0,0,0,0,0,0,PB,Philip Rivers,RivePh00
+2007,26,SDG,QB,16,16,0,0,0,0,0,0,11,3,-4,0,0.0,,,,,,0,,Philip Rivers,RivePh00
+2008,27,SDG,QB,16,16,0,0,0,0,0,0,8,2,-5,0,0.0,0,0,0,0,0,0,"AP MVP-6,AP OPoY-4,AP CPoY-8",Philip Rivers,RivePh00
+2009,28,SDG,QB,16,16,0,0,0,0,0,0,6,1,0,0,0.0,0,0,0,,,0,"PB,AP MVP-3,AP OPoY-4",Philip Rivers,RivePh00
+2010,29,SDG,QB,16,16,0,0,0,0,0,0,7,2,-18,0,0.0,0,0,0,0,0,0,"PB,AP OPoY-4",Philip Rivers,RivePh00
+2011,30,SDG,QB,16,16,0,0,0,0,0,0,9,3,-1,0,0.0,0,0,0,0,0,0,PB,Philip Rivers,RivePh00
+2012,31,SDG,QB,16,16,0,0,0,0,0,0,15,2,-8,0,0.0,0,0,0,0,0,0,,Philip Rivers,RivePh00
+2013,32,SDG,QB,16,16,0,0,0,0,0,0,3,1,-6,0,0.0,0,0,0,0,0,0,"PB,AP CPoY-1",Philip Rivers,RivePh00
+2014,33,SDG,QB,16,16,0,0,0,0,0,0,8,5,-18,0,0.0,0,0,0,0,0,0,,Philip Rivers,RivePh00
+2015,34,SDG,QB,16,16,0,0,0,0,0,0,4,3,-5,0,0.0,0,0,0,0,0,0,,Philip Rivers,RivePh00
+2016,35,SDG,QB,16,16,0,0,0,0,0,0,9,3,-10,0,0.0,0,0,0,,,0,PB,Philip Rivers,RivePh00
+2017,36,LAC,QB,16,16,0,0,0,0,0,0,8,5,-4,0,0.0,0,0,0,0,0,0,PB,Philip Rivers,RivePh00
+2018,37,LAC,QB,16,16,0,0,0,0,0,0,2,1,-4,0,0.0,0,0,0,0,0,0,PB,Philip Rivers,RivePh00
+2019,38,LAC,QB,16,16,0,0,0,0,0,0,8,0,-25,0,0.0,0,0,0,0,0,0,,Philip Rivers,RivePh00
+2020,39,IND,QB,16,16,0,0,0,0,0,0,2,0,0,0,0.0,0,0,0,0,0,0,,Philip Rivers,RivePh00
+2025,44,IND,QB,3,3,0,0,0,0,0,0,2,1,-5,0,0.0,0,0,0,0,0,0,,Philip Rivers,RivePh00

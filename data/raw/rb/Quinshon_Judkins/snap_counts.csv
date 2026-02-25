@@ -1,2 +1,2 @@
-Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,PlayerID
-2025,22,CLE,RB,10,14,14,452,,0,,0,,Quinshon Judkins,JudkQu00
+Season,Age,Team,Pos,No.,G,GS,Off_Snaps,Off%,Def_Snaps,Def%,ST_Snaps,ST%,Player,PlayerID
+2025,22,CLE,RB,10,14,14,452,50%,0,0%,0,0%,Quinshon Judkins,JudkQu00

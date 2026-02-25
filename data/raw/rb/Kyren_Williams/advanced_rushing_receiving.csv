@@ -1,0 +1,5 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,awards,Player,PlayerID
+2022,22,LAR,RB,10,0,35,139,6,80,2.3,59,1.7,0,,12,9,76,5,-4,-0.4,80,8.9,1.4,1,9.0,0,0.0,1,56.2,,Kyren Williams,WillKy02
+2023,23,LAR,RB,12,11,228,1144,65,685,3.0,459,2.0,23,9.9,48,32,206,9,-71,-2.2,277,8.7,0.2,1,32.0,4,8.3,1,87.7,"PB,AP-2",Kyren Williams,WillKy02
+2024,24,LAR,RB,16,16,316,1299,92,693,2.2,606,1.9,27,11.7,40,34,182,7,-13,-0.4,195,5.7,-0.7,2,17.0,1,2.5,0,102.3,AP OPoY-11,Kyren Williams,WillKy02
+2025,25,LAR,RB,17,17,259,1252,74,737,2.8,515,2.0,22,11.8,50,36,281,12,126,3.5,155,4.3,2.7,1,36.0,2,4.0,0,105.5,,Kyren Williams,WillKy02

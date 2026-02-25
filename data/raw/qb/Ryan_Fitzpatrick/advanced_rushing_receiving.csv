@@ -1,0 +1,5 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,rec_air_yds_per_rec,Rec_YAC,rec_yac_per_rec,rec_adot,Rec_BrkTkl,Rec_Drops,rec_drop_pct,Rec_Int,rec_pass_rating,Awards,Player,PlayerID
+2018,36,TAM,QB,8,7,36,152,9,148,4.1,4,0.1,0,,0,0,0,0,0,,0,,,0,0,,0,,,Ryan Fitzpatrick,FitzRy00
+2019,37,MIA,QB,15,13,54,243,16,195,3.6,48,0.9,3,18.0,0,0,0,0,0,,0,,,0,0,,0,,,Ryan Fitzpatrick,FitzRy00
+2020,38,MIA,QB,9,7,30,151,12,131,4.4,20,0.7,0,,1,1,0,0,-4,-4.0,4,4.0,-4.0,0,0,0.0,0,79.2,,Ryan Fitzpatrick,FitzRy00
+2021,39,WAS,QB,1,1,1,2,0,2,2.0,0,0.0,0,,0,0,0,0,0,,0,,,0,0,,0,,,Ryan Fitzpatrick,FitzRy00

@@ -1,0 +1,15 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2004,25,CIN,QB,13,13,0,0,0,0,0,0,2,0,0,0,0.0,1,1,0,0,,0,,Carson Palmer,PalmCa00
+2005,26,CIN,QB,16,16,0,0,0,0,0,0,5,1,-2,0,0.0,0,0,0,0,,0,"PB,AP MVP-5,AP OPoY-4",Carson Palmer,PalmCa00
+2006,27,CIN,QB,16,16,0,0,0,0,0,0,15,2,-9,0,0.0,0,0,0,0,0,0,"PB,AP CPoY-3",Carson Palmer,PalmCa00
+2007,28,CIN,QB,16,16,0,0,0,0,0,0,5,2,-1,0,0.0,0,0,0,0,0,0,,Carson Palmer,PalmCa00
+2008,29,CIN,QB,4,4,0,0,0,0,0,0,2,1,0,0,0.0,0,0,0,0,0,0,,Carson Palmer,PalmCa00
+2009,30,CIN,QB,16,16,0,0,0,0,0,0,6,2,-12,0,0.0,0,0,0,0,0,0,,Carson Palmer,PalmCa00
+2010,31,CIN,QB,16,16,0,0,0,0,0,0,7,3,-5,0,0.0,0,0,0,0,0,0,,Carson Palmer,PalmCa00
+2011,32,OAK,QB,10,9,0,0,0,0,0,0,2,1,-1,0,0.0,0,0,0,0,0,0,,Carson Palmer,PalmCa00
+2012,33,OAK,QB,15,15,0,0,0,0,0,0,7,2,-3,0,0.0,0,0,0,0,0,0,,Carson Palmer,PalmCa00
+2013,34,ARI,QB,16,16,0,0,0,0,0,0,6,1,0,0,0.0,0,0,0,0,0,0,,Carson Palmer,PalmCa00
+2014,35,ARI,QB,6,6,0,0,0,0,0,0,3,2,0,0,0.0,0,0,0,0,0,0,,Carson Palmer,PalmCa00
+2015,36,ARI,QB,16,16,0,0,0,0,0,0,6,1,-7,0,0.0,0,0,0,0,0,0,"PB,AP-2,AP MVP-2,AP OPoY-4,AP CPoY-2",Carson Palmer,PalmCa00
+2016,37,ARI,QB,15,15,0,0,0,0,0,0,14,6,-21,0,0.0,0,0,0,0,0,0,,Carson Palmer,PalmCa00
+2017,38,ARI,QB,7,7,0,0,0,0,0,0,2,2,-2,0,0.0,0,0,0,0,0,0,,Carson Palmer,PalmCa00

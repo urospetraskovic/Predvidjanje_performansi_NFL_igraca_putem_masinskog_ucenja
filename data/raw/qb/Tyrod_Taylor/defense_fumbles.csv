@@ -1,0 +1,10 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2015,26,BUF,QB,14,14,0,0,0,0,0,0,9,3,0,0,0.0,0,0,0,0,0,0,PB,Tyrod Taylor,TaylTy00
+2016,27,BUF,QB,15,15,0,0,0,0,0,0,4,3,-6,0,0.0,0,0,0,0,0,0,,Tyrod Taylor,TaylTy00
+2017,28,BUF,QB,15,14,0,0,0,0,0,0,4,0,-7,0,0.0,0,0,0,,,0,,Tyrod Taylor,TaylTy00
+2018,29,CLE,QB,4,3,0,0,0,0,0,0,3,1,0,0,0.0,0,0,0,0,0,0,,Tyrod Taylor,TaylTy00
+2021,32,HOU,QB,6,6,0,0,0,0,0,0,3,2,9,0,0.0,0,0,0,0,0,0,,Tyrod Taylor,TaylTy00
+2022,33,NYG,QB,3,0,0,0,0,0,0,0,2,0,0,0,0.0,0,0,0,0,0,0,,Tyrod Taylor,TaylTy00
+2023,34,NYG,QB,11,5,0,0,0,0,0,0,4,3,-6,0,0.0,0,0,0,0,0,0,,Tyrod Taylor,TaylTy00
+2024,35,NYJ,QB,2,0,0,0,0,0,0,0,1,1,-8,0,0.0,0,0,0,0,0,0,,Tyrod Taylor,TaylTy00
+2025,36,NYJ,QB,6,4,0,0,0,0,0,0,1,0,0,0,0.0,0,0,0,0,0,0,,Tyrod Taylor,TaylTy00

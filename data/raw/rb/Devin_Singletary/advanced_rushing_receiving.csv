@@ -1,0 +1,8 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,awards,Player,PlayerID
+2019,22,BUF,RB,12,8,151,775,37,413,2.7,362,2.4,20,7.6,41,29,194,5,1,0.0,193,6.7,1.5,3,9.7,4,9.8,0,97.0,,Devin Singletary,SingDe00
+2020,23,BUF,RB,16,16,156,687,40,238,1.5,449,2.9,9,17.3,50,38,269,8,0,0.0,269,7.1,1.0,4,9.5,3,6.0,0,87.8,,Devin Singletary,SingDe00
+2021,24,BUF,RB,17,16,188,870,55,429,2.3,441,2.3,13,14.5,50,40,228,14,-13,-0.3,241,6.0,0.2,4,10.0,5,10.0,1,84.0,,Devin Singletary,SingDe00
+2022,25,BUF,RB,16,16,177,819,43,546,3.1,273,1.5,9,19.7,52,38,280,15,23,0.6,257,6.8,0.2,2,19.0,6,11.5,0,91.8,,Devin Singletary,SingDe00
+2023,26,HOU,RB,17,10,216,898,44,550,2.5,348,1.6,10,21.6,38,30,193,7,-24,-0.8,217,7.2,0.3,2,15.0,2,5.3,0,87.8,,Devin Singletary,SingDe00
+2024,27,NYG,RB,15,5,113,437,24,206,1.8,231,2.0,10,11.3,24,21,119,4,-59,-2.8,178,8.5,-2.8,1,21.0,1,4.2,2,52.6,,Devin Singletary,SingDe00
+2025,28,NYG,RB,17,1,119,437,27,219,1.8,218,1.8,4,29.8,19,18,151,4,-11,-0.6,162,9.0,-0.6,4,4.5,1,5.3,0,99.8,,Devin Singletary,SingDe00

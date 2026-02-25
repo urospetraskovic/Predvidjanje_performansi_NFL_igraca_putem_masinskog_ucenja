@@ -1,0 +1,11 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+1997,23,ARI,QB,10,9,0,0,0,0,,0,6,1,-1,0,0.0,0,0,0,,,0,AP ORoY-3,Jake Plummer,PlumJa00
+1998,24,ARI,QB,16,16,0,0,0,0,,0,12,3,-2,0,0.0,0,0,0,,,0,,Jake Plummer,PlumJa00
+1999,25,ARI,QB,12,11,0,0,0,0,0,0,7,5,-4,0,0.0,0,0,0,0,,0,,Jake Plummer,PlumJa00
+2000,26,ARI,QB,14,14,0,0,0,0,0,0,8,4,-1,0,0.0,0,0,0,0,,0,,Jake Plummer,PlumJa00
+2001,27,ARI,QB,16,16,0,0,0,0,0,0,8,5,-3,0,0.0,0,0,0,0,,0,,Jake Plummer,PlumJa00
+2002,28,ARI,QB,16,16,0,0,0,0,0,0,13,4,-10,0,0.0,0,0,0,0,,0,,Jake Plummer,PlumJa00
+2003,29,DEN,QB,11,11,0,0,0,0,0,0,4,3,0,0,0.0,0,0,0,0,,0,AP CPoY-8,Jake Plummer,PlumJa00
+2004,30,DEN,QB,16,16,0,0,0,0,0,0,6,6,-8,0,0.0,0,0,0,0,,0,,Jake Plummer,PlumJa00
+2005,31,DEN,QB,16,16,0,0,0,0,0,0,4,1,-10,0,0.0,0,0,0,0,,0,PB,Jake Plummer,PlumJa00
+2006,32,DEN,QB,16,11,0,0,0,0,0,0,7,1,-5,0,0.0,0,0,0,0,0,0,,Jake Plummer,PlumJa00

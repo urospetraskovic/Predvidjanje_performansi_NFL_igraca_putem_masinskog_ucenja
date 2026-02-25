@@ -1,0 +1,8 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,awards,Player,PlayerID
+2019,22,PHI,RB,16,11,179,818,30,445,2.5,373,2.1,16,11.2,63,50,509,19,89,1.8,420,8.4,2.0,4,12.5,3,4.8,0,116.2,AP ORoY-4,Miles Sanders,SandMi01
+2020,23,PHI,RB,12,11,164,867,39,497,3.0,370,2.3,9,18.2,52,28,197,8,-11,-0.4,208,7.4,1.9,3,9.3,7,13.5,2,46.7,,Miles Sanders,SandMi01
+2021,24,PHI,RB,12,12,137,754,34,471,3.4,283,2.1,12,11.4,34,26,158,6,-69,-2.7,227,8.7,-0.5,6,4.3,1,2.9,0,85.2,,Miles Sanders,SandMi01
+2022,25,PHI,RB,17,15,259,1269,65,837,3.2,432,1.7,13,19.9,26,20,78,2,-19,-1.0,97,4.9,0.9,2,10.0,2,7.7,0,78.7,PB,Miles Sanders,SandMi01
+2023,26,CAR,RB,16,5,129,432,24,208,1.6,224,1.7,8,16.1,41,27,154,8,-4,-0.1,158,5.9,0.6,4,6.8,4,9.8,1,62.4,,Miles Sanders,SandMi01
+2024,27,CAR,RB,11,2,55,205,12,124,2.3,81,1.5,2,27.5,30,24,148,5,-2,-0.1,150,6.3,1.4,1,24.0,0,0.0,1,84.4,,Miles Sanders,SandMi01
+2025,28,DAL,RB,4,0,20,117,5,81,4.1,36,1.8,1,20.0,8,8,30,0,-14,-1.8,44,5.5,-1.8,0,,0,0.0,0,82.3,,Miles Sanders,SandMi01

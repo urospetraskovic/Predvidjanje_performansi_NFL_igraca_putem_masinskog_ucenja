@@ -1,0 +1,13 @@
+Season,Age,Team,Pos,G,GS,Def_Int,Def_Int_Yds,Def_Int_TD,Def_Int_Lng,PD,FF,Fmb,FR,FR_Yds,FR_TD,Sk,Tkl_Comb,Tkl_Solo,Tkl_Ast,TFL,Sfty,awards,Player,PlayerID
+1994,21,IND,RB,16,16,0,0,0,0,,0,5,1,0,0,0.0,0,0,0,,0,"PB,AP-2,AP ORoY-1",Marshall Faulk,FaulMa00
+1995,22,IND,RB,16,16,0,0,0,0,,0,8,1,0,0,0.0,0,0,0,,0,"PB,AP-2",Marshall Faulk,FaulMa00
+1996,23,IND,RB,13,13,0,0,0,0,,0,2,0,0,0,0.0,0,0,0,,0,,Marshall Faulk,FaulMa00
+1997,24,IND,RB,16,16,0,0,0,0,,0,5,1,0,0,0.0,0,0,0,,0,,Marshall Faulk,FaulMa00
+1998,25,IND,RB,16,15,0,0,0,0,,0,3,2,13,0,0.0,0,0,0,,0,"PB,AP-2,AP OPoY-4",Marshall Faulk,FaulMa00
+1999,26,STL,RB,16,16,0,0,0,0,0,0,2,0,0,0,0.0,0,0,0,0,0,"PB,AP-1,AP MVP-2,AP OPoY-1",Marshall Faulk,FaulMa00
+2000,27,STL,RB,14,14,0,0,0,0,0,0,0,2,0,0,0.0,0,0,0,0,0,"PB,AP-1,AP MVP-1,AP OPoY-1",Marshall Faulk,FaulMa00
+2001,28,STL,RB,14,14,0,0,0,0,0,0,3,2,0,0,0.0,0,0,0,0,0,"PB,AP-1,AP MVP-2,AP OPoY-1",Marshall Faulk,FaulMa00
+2002,29,STL,RB,14,10,0,0,0,0,0,0,4,2,5,0,0.0,0,0,0,0,0,PB,Marshall Faulk,FaulMa00
+2003,30,STL,RB,11,11,0,0,0,0,0,0,0,1,0,0,0.0,0,0,0,0,0,AP CPoY-11,Marshall Faulk,FaulMa00
+2004,31,STL,RB,14,14,0,0,0,0,0,0,2,0,0,0,0.0,0,0,0,0,0,,Marshall Faulk,FaulMa00
+2005,32,STL,RB,16,1,0,0,0,0,0,0,2,1,0,0,0.0,0,0,0,0,0,,Marshall Faulk,FaulMa00

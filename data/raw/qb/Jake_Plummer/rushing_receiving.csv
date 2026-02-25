@@ -1,0 +1,11 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Tgt,Rec,Rec_Yds,rec_yds_per_rec,Rec_TD,Rec_1D,rec_success,rec_long,Rec/G,Rec_Y/G,catch_pct,rec_yds_per_tgt,touches,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,Awards,Player,PlayerID
+1997,23,ARI,QB,10,9,39,216,2,15,43.6,31,5.5,21.6,3.9,1,1,2,2.0,0,0,0.0,2,0.1,0.2,100.0,2.0,40,5.5,218,2,6,AP ORoY-3,Jake Plummer,PlumJa00
+1998,24,ARI,QB,16,16,51,217,4,24,52.9,27,4.3,13.6,3.2,0,0,0,,0,0,,,0.0,0.0,,,51,4.3,217,4,12,,Jake Plummer,PlumJa00
+1999,25,ARI,QB,12,11,39,121,2,16,35.9,17,3.1,10.1,3.3,0,0,0,,0,0,,,0.0,0.0,,,39,3.1,121,2,7,,Jake Plummer,PlumJa00
+2000,26,ARI,QB,14,14,37,183,0,12,45.9,24,4.9,13.1,2.6,0,0,0,,0,0,,,0.0,0.0,,,37,4.9,183,0,8,,Jake Plummer,PlumJa00
+2001,27,ARI,QB,16,16,35,163,0,8,34.3,21,4.7,10.2,2.2,0,0,0,,0,0,,,0.0,0.0,,,35,4.7,163,0,8,,Jake Plummer,PlumJa00
+2002,28,ARI,QB,16,16,46,283,2,22,60.9,34,6.2,17.7,2.9,1,1,2,2.0,0,0,0.0,2,0.1,0.1,100.0,2.0,47,6.1,285,2,13,,Jake Plummer,PlumJa00
+2003,29,DEN,QB,11,11,37,205,3,17,62.2,40,5.5,18.6,3.4,0,0,0,,0,0,,,0.0,0.0,,,37,5.5,205,3,4,AP CPoY-8,Jake Plummer,PlumJa00
+2004,30,DEN,QB,16,16,62,202,1,16,38.7,22,3.3,12.6,3.9,0,0,0,,0,0,,,0.0,0.0,,,62,3.3,202,1,6,,Jake Plummer,PlumJa00
+2005,31,DEN,QB,16,16,46,151,2,14,37.0,22,3.3,9.4,2.9,0,0,0,,0,0,,,0.0,0.0,,,46,3.3,151,2,4,PB,Jake Plummer,PlumJa00
+2006,32,DEN,QB,16,11,36,112,1,10,38.9,19,3.1,7.0,2.3,0,0,0,,0,0,,,0.0,0.0,,,36,3.1,112,1,7,,Jake Plummer,PlumJa00

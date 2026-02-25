@@ -1,0 +1,6 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,rec_air_yds_per_rec,Rec_YAC,rec_yac_per_rec,rec_adot,Rec_BrkTkl,Rec_Drops,rec_drop_pct,Rec_Int,rec_pass_rating,Awards,Player,PlayerID
+2018,41,NWE,QB,16,16,23,35,10,21,0.9,14,0.6,0,,1,1,6,0,0,0.0,6,6.0,0.0,0,0,0.0,0,91.7,PB,Tom Brady,BradTo00
+2019,42,NWE,QB,16,16,26,34,8,30,1.2,4,0.2,0,,0,0,0,0,0,,0,,,0,0,,0,,,Tom Brady,BradTo00
+2020,43,TAM,QB,16,16,30,6,6,-2,-0.1,8,0.3,1,30.0,0,0,0,0,0,,0,,,0,0,,0,,,Tom Brady,BradTo00
+2021,44,TAM,QB,17,17,28,81,14,67,2.4,14,0.5,0,,0,0,0,0,0,,0,,,0,0,,0,,"PB,AP-2,AP MVP-2,AP OPoY-3",Tom Brady,BradTo00
+2022,45,TAM,QB,17,17,29,-1,5,-6,-0.2,5,0.2,0,,1,0,0,0,0,,0,,16.0,0,0,0.0,1,0.0,,Tom Brady,BradTo00

@@ -1,0 +1,9 @@
+Season,Age,Team,Pos,G,GS,Cmp,Att,pass_target_yds,pass_tgt_yds_per_att,pass_air_yds,pass_air_yds_per_cmp,pass_air_yds_per_att,pass_yac,pass_yac_per_cmp,pass_batted_passes,pass_throwaways,pass_spikes,pass_drops,pass_drop_pct,pass_poor_throws,pass_poor_throw_pct,pass_on_target,pass_on_target_pct,pocket_time,pass_blitzed,pass_hurried,pass_hits,pass_pressured,pass_pressured_pct,rush_scrambles,rush_scrambles_yds_per_att,pass_rpo,pass_rpo_yds,pass_rpo_pass_att,pass_rpo_pass_yds,pass_rpo_rush_att,pass_rpo_rush_yds,pass_play_action,pass_play_action_pass_yds,Awards,Player,PlayerID
+2018,24,CHI,QB,14,14,289,434,3836,8.8,1809,6.3,4.2,1414,4.9,0,10,1,11,2.6,78,18.4,,,2.4,120,59,18,101,20.4,36,8.9,,,,,,,,,PB,Mitchell Trubisky,TrubMi00
+2019,25,CHI,QB,15,15,326,516,4108,8.0,1729,5.3,3.4,1409,4.3,8,7,3,28,5.5,93,18.4,377,74.5,2.3,140,56,32,126,21.9,22,5.5,40,203,26,132,14,71,86,692,,Mitchell Trubisky,TrubMi00
+2020,26,CHI,QB,10,9,199,297,2329,7.8,1052,5.3,3.5,1003,5.0,1,4,0,9,3.1,53,18.1,222,75.8,2.3,80,25,21,64,19.3,17,9.8,31,213,25,200,6,13,96,798,,Mitchell Trubisky,TrubMi00
+2021,27,BUF,QB,6,0,6,8,41,5.1,26,4.3,3.3,17,2.8,0,0,0,1,12.5,1,12.5,7,87.5,2.2,1,0,0,0,0.0,2,15.0,1,1,1,1,0,0,3,24,,Mitchell Trubisky,TrubMi00
+2022,28,PIT,QB,7,5,117,180,1730,9.6,870,7.4,4.8,382,3.3,4,2,1,7,4.0,25,14.1,130,73.4,2.3,43,9,10,30,15.4,4,4.5,13,103,11,96,2,7,29,287,,Mitchell Trubisky,TrubMi00
+2023,29,PIT,QB,5,2,67,107,983,9.2,358,5.3,3.3,274,4.1,1,1,1,5,4.8,20,19.0,82,78.1,2.4,18,6,8,21,17.2,8,6.3,4,24,3,19,1,5,8,37,,Mitchell Trubisky,TrubMi00
+2024,30,BUF,QB,9,0,19,26,144,5.5,30,1.6,1.2,149,7.8,0,1,0,0,0.0,4,16.0,21,84.0,2.2,8,2,1,3,11.1,1,8.0,0,0,0,0,0,0,0,0,,Mitchell Trubisky,TrubMi00
+2025,31,BUF,QB,4,0,25,35,255,7.3,177,7.1,5.1,136,5.4,0,1,0,3,8.8,4,11.8,29,85.3,2.6,5,0,0,0,0.0,1,4.0,4,56,4,56,0,0,15,153,,Mitchell Trubisky,TrubMi00

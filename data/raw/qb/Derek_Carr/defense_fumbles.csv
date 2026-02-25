@@ -1,0 +1,12 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2014,23,OAK,QB,16,16,0,0,0,0,0,0,10,4,-30,0,0.0,0,0,0,0,0,0,,Derek Carr,CarrDe02
+2015,24,OAK,QB,16,16,0,0,0,0,0,0,10,2,-13,0,0.0,0,0,0,0,0,0,PB,Derek Carr,CarrDe02
+2016,25,OAK,QB,15,15,0,0,0,0,0,0,5,0,-11,0,0.0,0,0,0,,,0,"PB,AP MVP-3,AP OPoY-6",Derek Carr,CarrDe02
+2017,26,OAK,QB,15,15,0,0,0,0,0,0,8,1,-2,0,0.0,0,0,0,0,0,0,PB,Derek Carr,CarrDe02
+2018,27,OAK,QB,16,16,0,0,0,0,0,0,12,2,-6,0,0.0,0,0,0,0,0,0,,Derek Carr,CarrDe02
+2019,28,OAK,QB,16,16,0,0,0,0,0,0,7,5,-19,0,0.0,0,0,0,0,0,0,,Derek Carr,CarrDe02
+2020,29,LVR,QB,16,16,0,0,0,0,0,0,11,0,-6,0,0.0,0,0,0,0,0,0,,Derek Carr,CarrDe02
+2021,30,LVR,QB,17,17,0,0,0,0,0,0,13,5,-15,0,0.0,0,0,0,0,0,0,,Derek Carr,CarrDe02
+2022,31,LVR,QB,15,15,0,0,0,0,0,0,4,1,0,0,0.0,0,0,0,0,0,0,PB,Derek Carr,CarrDe02
+2023,32,NOR,QB,17,17,0,0,0,0,0,0,7,0,0,0,0.0,0,0,0,0,0,0,,Derek Carr,CarrDe02
+2024,33,NOR,QB,10,10,0,0,0,0,0,0,3,3,-5,0,0.0,0,0,0,0,0,0,,Derek Carr,CarrDe02

@@ -1,0 +1,13 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2006,23,DEN,QB,5,5,0,0,0,0,0,0,8,3,-8,0,0.0,0,0,0,0,0,0,,Jay Cutler,CutlJa00
+2007,24,DEN,QB,16,16,0,0,0,0,0,0,11,3,-31,0,0.0,0,0,0,0,0,0,,Jay Cutler,CutlJa00
+2008,25,DEN,QB,16,16,0,0,0,0,0,0,5,0,-11,0,0.0,0,0,0,0,0,0,PB,Jay Cutler,CutlJa00
+2009,26,CHI,QB,16,16,0,0,0,0,0,0,9,5,-8,0,0.0,0,0,0,0,0,0,,Jay Cutler,CutlJa00
+2010,27,CHI,QB,15,15,0,0,0,0,0,0,10,1,0,0,0.0,1,1,0,,,0,,Jay Cutler,CutlJa00
+2011,28,CHI,QB,10,10,0,0,0,0,0,0,7,4,-8,0,0.0,0,0,0,0,0,0,,Jay Cutler,CutlJa00
+2012,29,CHI,QB,15,15,0,0,0,0,0,0,8,1,-7,0,0.0,0,0,0,0,0,0,,Jay Cutler,CutlJa00
+2013,30,CHI,QB,11,11,0,0,0,0,0,0,5,1,-10,0,0.0,0,0,0,0,0,0,,Jay Cutler,CutlJa00
+2014,31,CHI,QB,15,15,0,0,0,0,0,0,12,4,-29,0,0.0,0,0,0,0,0,0,,Jay Cutler,CutlJa00
+2015,32,CHI,QB,15,15,0,0,0,0,0,0,8,2,-8,0,0.0,0,0,0,0,0,0,,Jay Cutler,CutlJa00
+2016,33,CHI,QB,5,5,0,0,0,0,0,0,6,2,0,0,0.0,0,0,0,0,0,0,,Jay Cutler,CutlJa00
+2017,34,MIA,QB,14,14,0,0,0,0,0,0,6,6,-5,0,0.0,0,0,0,,,0,,Jay Cutler,CutlJa00

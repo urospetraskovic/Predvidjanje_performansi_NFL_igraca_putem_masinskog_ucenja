@@ -1,0 +1,12 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Tgt,Rec,Rec_Yds,rec_yds_per_rec,Rec_TD,Rec_1D,rec_success,rec_long,Rec/G,Rec_Y/G,catch_pct,rec_yds_per_tgt,touches,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,Awards,Player,PlayerID
+2015,21,TAM,QB,16,16,54,213,6,19,42.6,21,3.9,13.3,3.4,0,0,0,,0,0,,,0.0,0.0,,,54,3.9,213,6,6,"PB,AP ORoY-2",Jameis Winston,WinsJa00
+2016,22,TAM,QB,16,16,53,165,1,13,32.1,14,3.1,10.3,3.3,0,0,0,,0,0,,,0.0,0.0,,,53,3.1,165,1,10,,Jameis Winston,WinsJa00
+2017,23,TAM,QB,13,13,33,135,1,8,45.5,17,4.1,10.4,2.5,0,0,0,,0,0,,,0.0,0.0,,,33,4.1,135,1,15,,Jameis Winston,WinsJa00
+2018,24,TAM,QB,11,9,49,281,1,19,53.1,18,5.7,25.5,4.5,0,0,0,,0,0,,,0.0,0.0,,,49,5.7,281,1,7,,Jameis Winston,WinsJa00
+2019,25,TAM,QB,16,16,59,250,1,18,37.3,26,4.2,15.6,3.7,0,0,0,,0,0,,,0.0,0.0,,,59,4.2,250,1,12,,Jameis Winston,WinsJa00
+2020,26,NOR,QB,4,0,8,-6,0,0,12.5,3,-0.8,-1.5,2.0,0,0,0,,0,0,,,0.0,0.0,,,8,-0.8,-6,0,0,,Jameis Winston,WinsJa00
+2021,27,NOR,QB,7,7,32,166,1,17,56.3,20,5.2,23.7,4.6,0,0,0,,0,0,,,0.0,0.0,,,32,5.2,166,1,2,,Jameis Winston,WinsJa00
+2022,28,NOR,QB,3,3,5,16,0,0,40.0,6,3.2,5.3,1.7,0,0,0,,0,0,,,0.0,0.0,,,5,3.2,16,0,3,,Jameis Winston,WinsJa00
+2023,29,NOR,QB,7,0,5,-6,0,0,0.0,-1,-1.2,-0.9,0.7,0,0,0,,0,0,,,0.0,0.0,,,5,-1.2,-6,0,0,,Jameis Winston,WinsJa00
+2024,30,CLE,QB,12,7,25,83,1,17,76.0,13,3.3,6.9,2.1,0,0,0,,0,0,,,0.0,0.0,,,25,3.3,83,1,5,,Jameis Winston,WinsJa00
+2025,31,NYG,QB,3,2,7,23,1,3,42.9,11,3.3,7.7,2.3,1,1,33,33.0,1,1,100.0,33,0.3,11.0,100.0,33.0,8,7.0,56,2,1,,Jameis Winston,WinsJa00

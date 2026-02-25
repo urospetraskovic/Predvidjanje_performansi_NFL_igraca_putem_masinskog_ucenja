@@ -1,0 +1,9 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,rec_air_yds_per_rec,Rec_YAC,rec_yac_per_rec,rec_adot,Rec_BrkTkl,Rec_Drops,rec_drop_pct,Rec_Int,rec_pass_rating,Awards,Player,PlayerID
+2018,30,SEA,QB,16,16,67,376,23,305,4.6,71,1.1,3,22.3,1,1,-11,0,-10,-10.0,-1,-1.0,-10.0,0,0,0.0,0,79.2,PB,Russell Wilson,WilsRu00
+2019,31,SEA,QB,16,16,75,342,17,290,3.9,52,0.7,1,75.0,0,0,0,0,0,,0,,,0,0,,0,,"PB,AP-2,AP OPoY-4",Russell Wilson,WilsRu00
+2020,32,SEA,QB,16,16,83,513,25,489,5.9,24,0.3,0,,0,0,0,0,0,,0,,,0,0,,0,,PB,Russell Wilson,WilsRu00
+2021,33,SEA,QB,14,14,43,183,17,135,3.1,48,1.1,1,43.0,0,0,0,0,0,,0,,,0,0,,0,,PB,Russell Wilson,WilsRu00
+2022,34,DEN,QB,15,15,55,277,21,256,4.7,21,0.4,0,,1,1,1,0,-1,-1.0,2,2.0,-1.0,0,0,0.0,0,79.2,,Russell Wilson,WilsRu00
+2023,35,DEN,QB,15,15,80,341,38,293,3.7,48,0.6,1,80.0,0,0,0,0,0,,0,,,0,0,,0,,,Russell Wilson,WilsRu00
+2024,36,PIT,QB,11,11,43,155,16,142,3.3,13,0.3,0,,0,0,0,0,0,,0,,,0,0,,0,,"PB,AP CPoY-14",Russell Wilson,WilsRu00
+2025,37,NYG,QB,6,3,18,106,6,91,5.1,15,0.8,0,,0,0,0,0,0,,0,,,0,0,,0,,,Russell Wilson,WilsRu00

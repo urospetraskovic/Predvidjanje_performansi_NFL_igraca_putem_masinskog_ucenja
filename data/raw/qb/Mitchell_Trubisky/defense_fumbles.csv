@@ -1,0 +1,8 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2017,23,CHI,QB,12,12,0,0,0,0,0,0,10,6,-13,0,0.0,0,0,0,0,0,0,,Mitchell Trubisky,TrubMi00
+2018,24,CHI,QB,14,14,0,0,0,0,0,0,6,1,-8,0,0.0,0,0,0,0,0,0,PB,Mitchell Trubisky,TrubMi00
+2019,25,CHI,QB,15,15,0,0,0,0,0,0,5,3,-10,0,0.0,0,0,0,0,0,0,,Mitchell Trubisky,TrubMi00
+2020,26,CHI,QB,10,9,0,0,0,0,0,0,6,3,-1,0,0.0,0,0,0,0,0,0,,Mitchell Trubisky,TrubMi00
+2022,28,PIT,QB,7,5,0,0,0,0,0,0,0,1,0,0,0.0,0,0,0,0,0,0,,Mitchell Trubisky,TrubMi00
+2023,29,PIT,QB,5,2,0,0,0,0,0,0,1,1,-6,0,0.0,0,0,0,0,0,0,,Mitchell Trubisky,TrubMi00
+2024,30,BUF,QB,9,0,0,0,0,0,0,0,1,1,0,0,0.0,0,0,0,0,0,0,,Mitchell Trubisky,TrubMi00

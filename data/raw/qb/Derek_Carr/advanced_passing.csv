@@ -1,0 +1,8 @@
+Season,Age,Team,Pos,G,GS,Cmp,Att,pass_target_yds,pass_tgt_yds_per_att,pass_air_yds,pass_air_yds_per_cmp,pass_air_yds_per_att,pass_yac,pass_yac_per_cmp,pass_batted_passes,pass_throwaways,pass_spikes,pass_drops,pass_drop_pct,pass_poor_throws,pass_poor_throw_pct,pass_on_target,pass_on_target_pct,pocket_time,pass_blitzed,pass_hurried,pass_hits,pass_pressured,pass_pressured_pct,rush_scrambles,rush_scrambles_yds_per_att,pass_rpo,pass_rpo_yds,pass_rpo_pass_att,pass_rpo_pass_yds,pass_rpo_rush_att,pass_rpo_rush_yds,pass_play_action,pass_play_action_pass_yds,Awards,Player,PlayerID
+2018,27,OAK,QB,16,16,381,553,3784,6.8,2066,5.4,3.7,1983,5.2,0,21,7,33,6.3,66,12.6,,,2.3,141,69,28,148,24.2,8,6.4,,,,,,,,,,Derek Carr,CarrDe02
+2019,28,OAK,QB,16,16,361,513,3364,6.6,1932,5.4,3.8,2122,5.9,9,28,2,25,5.2,53,11.0,399,82.6,2.5,107,67,17,113,20.3,14,5.5,18,120,17,108,1,12,84,709,,Derek Carr,CarrDe02
+2020,29,LVR,QB,16,16,348,517,4184,8.1,2147,6.2,4.2,1956,5.6,5,20,4,20,4.1,79,16.0,389,78.9,2.5,173,56,30,112,19.8,23,5.4,27,163,22,130,4,33,91,614,,Derek Carr,CarrDe02
+2021,30,LVR,QB,17,17,428,626,5086,8.1,2525,5.9,4.0,2279,5.3,10,22,3,26,4.3,94,15.6,466,77.5,2.5,168,58,48,146,21.4,17,6.3,31,228,29,228,1,0,93,909,,Derek Carr,CarrDe02
+2022,31,LVR,QB,15,15,305,502,4589,9.1,2009,6.6,4.0,1513,5.0,11,27,0,25,5.3,95,20.0,341,71.8,2.6,119,33,40,100,18.4,14,6.9,17,92,17,92,0,0,108,906,PB,Derek Carr,CarrDe02
+2023,32,NOR,QB,17,17,375,548,4280,7.8,2182,5.8,4.0,1696,4.5,5,25,0,20,3.8,80,15.3,417,79.7,2.3,172,24,35,90,15.3,9,5.7,23,114,23,114,0,0,87,813,,Derek Carr,CarrDe02
+2024,33,NOR,QB,10,10,189,279,2167,7.8,1058,5.6,3.8,1087,5.8,5,17,0,10,3.8,37,14.1,201,76.7,2.4,79,42,21,71,24.1,8,6.3,1,5,1,5,0,0,8,53,,Derek Carr,CarrDe02

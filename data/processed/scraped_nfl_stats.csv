@@ -1,6 +1,0 @@
-player_id,name,position,team,season,passing_yards,passing_tds,interceptions,rushing_yards,rushing_tds,qb_rating,receiving_yards,receiving_tds,receptions,targets,Player
-maho00pa,Patrick Mahomes,QB,KC,2024,4694.0,27.0,11.0,520.0,4.0,95.9,,,,,nfl_sample
-allen00jo,Josh Allen,QB,BUF,2024,4532.0,28.0,6.0,531.0,12.0,101.9,,,,,nfl_sample
-henry00de,Derrick Henry,RB,BAL,2024,,,,1921.0,18.0,,138.0,1.0,15.0,,nfl_sample
-kelce00tr,Travis Kelce,TE,KC,2024,,,,,,,1229.0,9.0,93.0,110.0,nfl_sample
-reev00br,Brandon Reeves,WR,NYJ,2024,,,,,,,1245.0,8.0,76.0,112.0,nfl_sample

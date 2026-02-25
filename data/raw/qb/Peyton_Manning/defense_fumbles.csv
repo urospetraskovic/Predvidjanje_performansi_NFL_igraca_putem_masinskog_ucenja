@@ -1,0 +1,18 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+1998,22,IND,QB,16,16,0,0,0,0,,0,3,0,0,0,0.0,0,0,0,,,0,AP ORoY-2,Peyton Manning,MannPe00
+1999,23,IND,QB,16,16,0,0,0,0,0,0,6,2,-5,0,0.0,0,0,0,0,,0,"PB,AP-2,AP MVP-2,AP OPoY-3",Peyton Manning,MannPe00
+2000,24,IND,QB,16,16,0,0,0,0,0,0,5,1,-3,0,0.0,,,,,,0,"PB,AP-2,AP MVP-5,AP OPoY-8",Peyton Manning,MannPe00
+2001,25,IND,QB,16,16,0,0,0,0,0,0,7,3,-2,0,0.0,0,0,0,0,,0,,Peyton Manning,MannPe00
+2002,26,IND,QB,16,16,0,0,0,0,0,0,6,2,-1,0,0.0,0,0,0,0,,0,PB,Peyton Manning,MannPe00
+2003,27,IND,QB,16,16,0,0,0,0,0,0,6,4,-9,0,0.0,0,0,0,0,,0,"PB,AP-1,AP MVP-1,AP OPoY-3",Peyton Manning,MannPe00
+2004,28,IND,QB,16,16,0,0,0,0,0,0,5,3,-3,0,0.0,0,0,0,0,,0,"PB,AP-1,AP MVP-1,AP OPoY-1",Peyton Manning,MannPe00
+2005,29,IND,QB,16,16,0,0,0,0,0,0,5,0,-1,0,0.0,0,0,0,0,,0,"PB,AP-1,AP MVP-2,AP OPoY-2",Peyton Manning,MannPe00
+2006,30,IND,QB,16,16,0,0,0,0,0,0,2,0,0,0,0.0,,,,,,0,"PB,AP-2,AP MVP-3,AP OPoY-3",Peyton Manning,MannPe00
+2007,31,IND,QB,16,16,0,0,0,0,0,0,6,3,0,0,0.0,0,0,0,0,0,0,PB,Peyton Manning,MannPe00
+2008,32,IND,QB,16,16,0,0,0,0,0,0,1,0,0,0,0.0,0,0,0,,,0,"PB,AP-1,AP MVP-1,AP OPoY-2",Peyton Manning,MannPe00
+2009,33,IND,QB,16,16,0,0,0,0,0,0,2,0,-4,0,0.0,0,0,0,,,0,"PB,AP-1,AP MVP-1,AP OPoY-3",Peyton Manning,MannPe00
+2010,34,IND,QB,16,16,0,0,0,0,0,0,3,1,-2,0,0.0,0,0,0,,,0,PB,Peyton Manning,MannPe00
+2012,36,DEN,QB,16,16,0,0,0,0,0,0,2,1,0,0,0.0,0,0,0,,,0,"PB,AP-1,AP MVP-2,AP OPoY-2,AP CPoY-1",Peyton Manning,MannPe00
+2013,37,DEN,QB,16,16,0,0,0,0,0,0,10,2,-4,0,0.0,0,0,0,0,0,0,"PB,AP-1,AP MVP-1,AP OPoY-1",Peyton Manning,MannPe00
+2014,38,DEN,QB,16,16,0,0,0,0,0,0,5,1,-11,0,0.0,0,0,0,0,0,0,PB,Peyton Manning,MannPe00
+2015,39,DEN,QB,10,9,0,0,0,0,0,0,1,0,0,0,0.0,0,0,0,,,0,,Peyton Manning,MannPe00

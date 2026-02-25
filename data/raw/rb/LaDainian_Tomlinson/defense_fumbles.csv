@@ -1,0 +1,10 @@
+Season,Age,Team,Pos,G,GS,Def_Int,Def_Int_Yds,Def_Int_TD,Def_Int_Lng,PD,FF,Fmb,FR,FR_Yds,FR_TD,Sk,Tkl_Comb,Tkl_Solo,Tkl_Ast,TFL,QBHits,Sfty,awards,Player,PlayerID
+2001,22,SDG,RB,16,16,0,0,0,0,0,0,8,0,0,0,0.0,0,0,0,0,,0,AP ORoY-2,LaDainian Tomlinson,TomlLa00
+2002,23,SDG,RB,16,16,0,0,0,0,0,0,3,0,0,0,0.0,,,,,,0,"PB,AP-2",LaDainian Tomlinson,TomlLa00
+2003,24,SDG,RB,16,16,0,0,0,0,0,0,2,2,0,0,0.0,0,0,0,0,,0,"AP-2,AP OPoY-2",LaDainian Tomlinson,TomlLa00
+2004,25,SDG,RB,15,15,0,0,0,0,0,0,6,2,0,0,0.0,0,0,0,0,,0,"PB,AP-1,AP OPoY-5",LaDainian Tomlinson,TomlLa00
+2005,26,SDG,RB,16,16,0,0,0,0,0,0,3,1,0,0,0.0,0,0,0,0,,0,"PB,AP-2",LaDainian Tomlinson,TomlLa00
+2006,27,SDG,RB,16,16,0,0,0,0,0,0,2,1,0,0,0.0,,,,,,0,"PB,AP-1,AP MVP-1,AP OPoY-1",LaDainian Tomlinson,TomlLa00
+2008,29,SDG,RB,16,16,0,0,0,0,0,0,1,1,0,0,0.0,0,0,0,0,0,0,,LaDainian Tomlinson,TomlLa00
+2009,30,SDG,RB,14,14,0,0,0,0,0,0,2,0,0,0,0.0,0,0,0,,,0,,LaDainian Tomlinson,TomlLa00
+2010,31,NYJ,RB,15,13,0,0,0,0,0,0,4,2,0,0,0.0,0,0,0,0,0,0,,LaDainian Tomlinson,TomlLa00

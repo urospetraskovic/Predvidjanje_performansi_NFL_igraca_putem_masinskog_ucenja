@@ -1,0 +1,20 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+1987,24,TAM,QB,6,4,0,0,0,0,,0,7,4,-3,0,0.0,0,0,0,,,0,,Vinny Testaverde,TestVi00
+1988,25,TAM,QB,15,15,0,0,0,0,,0,8,2,0,0,0.0,0,0,0,,,0,,Vinny Testaverde,TestVi00
+1989,26,TAM,QB,14,14,0,0,0,0,,0,4,2,0,0,0.0,0,0,0,,,0,,Vinny Testaverde,TestVi00
+1990,27,TAM,QB,14,13,0,0,0,0,,0,10,3,0,0,0.0,0,0,0,,,0,,Vinny Testaverde,TestVi00
+1991,28,TAM,QB,13,12,0,0,0,0,,0,5,3,0,0,0.0,0,0,0,,,0,,Vinny Testaverde,TestVi00
+1992,29,TAM,QB,14,14,0,0,0,0,,0,4,4,-8,0,0.0,0,0,0,,,0,,Vinny Testaverde,TestVi00
+1993,30,CLE,QB,10,6,0,0,0,0,,0,4,0,0,0,0.0,0,0,0,,,0,,Vinny Testaverde,TestVi00
+1994,31,CLE,QB,14,13,0,0,0,0,,0,3,2,2,0,0.0,0,0,0,,,0,,Vinny Testaverde,TestVi00
+1995,32,CLE,QB,13,12,0,0,0,0,,0,4,0,-5,0,0.0,0,0,0,,,0,,Vinny Testaverde,TestVi00
+1996,33,BAL,QB,16,16,0,0,0,0,,0,9,0,-11,0,0.0,0,0,0,,,0,PB,Vinny Testaverde,TestVi00
+1997,34,BAL,QB,13,13,0,0,0,0,,0,11,5,-9,0,0.0,0,0,0,,,0,,Vinny Testaverde,TestVi00
+1998,35,NYJ,QB,14,13,0,0,0,0,,0,7,3,-6,0,0.0,0,0,0,,,0,"PB,AP OPoY-7,AP CPoY-3",Vinny Testaverde,TestVi00
+2000,37,NYJ,QB,16,16,0,0,0,0,0,0,7,0,-5,0,0.0,0,0,0,0,,0,AP CPoY-7,Vinny Testaverde,TestVi00
+2001,38,NYJ,QB,16,16,0,0,0,0,0,0,12,5,-28,0,0.0,0,0,0,0,,0,,Vinny Testaverde,TestVi00
+2002,39,NYJ,QB,5,4,0,0,0,0,0,0,2,0,0,0,0.0,,,,,,0,,Vinny Testaverde,TestVi00
+2003,40,NYJ,QB,7,7,0,0,0,0,0,0,1,0,-6,0,0.0,,,,,,0,,Vinny Testaverde,TestVi00
+2004,41,DAL,QB,16,15,0,0,0,0,0,0,8,4,-3,0,0.0,0,0,0,0,,0,,Vinny Testaverde,TestVi00
+2005,42,NYJ,QB,6,4,0,0,0,0,0,0,8,1,-11,0,0.0,0,0,0,0,,0,,Vinny Testaverde,TestVi00
+2007,44,CAR,QB,7,6,0,0,0,0,0,0,3,1,0,0,0.0,0,0,0,0,0,0,,Vinny Testaverde,TestVi00

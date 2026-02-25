@@ -1,0 +1,4 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,awards,Player,PlayerID
+2018,30,BUF,RB,14,13,161,514,22,287,1.8,227,1.4,2,80.5,46,34,238,10,-50,-1.5,288,8.5,-1.1,4,8.5,2,4.3,1,76.2,,LeSean McCoy,McCoLe01
+2019,31,KAN,RB,13,9,101,465,24,265,2.6,200,2.0,5,20.2,34,28,181,6,-55,-2.0,236,8.4,-0.7,1,28.0,1,2.9,0,98.7,,LeSean McCoy,McCoLe01
+2020,32,TAM,RB,10,0,10,31,2,23,2.3,8,0.8,0,,19,15,101,3,-1,-0.1,102,6.8,1.0,0,,2,10.5,0,88.8,,LeSean McCoy,McCoLe01

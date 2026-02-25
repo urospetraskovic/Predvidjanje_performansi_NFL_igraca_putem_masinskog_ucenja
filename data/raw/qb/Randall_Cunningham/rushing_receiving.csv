@@ -1,0 +1,16 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Tgt,Rec,Rec_Yds,rec_yds_per_rec,Rec_TD,Rec_1D,rec_success,rec_long,Rec/G,Rec_Y/G,catch_pct,rec_yds_per_tgt,touches,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,Awards,Player,PlayerID
+1985,22,PHI,QB,6,4,29,205,0,9,55.2,37,7.1,34.2,4.8,0,0,0,,0,0,,,0.0,0.0,,,29,7.1,205,0,3,,Randall Cunningham,CunnRa00
+1986,23,PHI,QB,15,5,66,540,5,38,66.7,20,8.2,36.0,4.4,0,0,0,,0,0,,,0.0,0.0,,,66,8.2,540,5,7,,Randall Cunningham,CunnRa00
+1987,24,PHI,QB,12,12,76,505,3,31,50.0,45,6.6,42.1,6.3,2,1,-3,-3.0,0,0,0.0,-3,0.1,-0.3,50.0,-1.5,77,6.5,502,3,12,,Randall Cunningham,CunnRa00
+1988,25,PHI,QB,16,16,93,624,6,42,59.1,33,6.7,39.0,5.8,0,0,0,,0,0,,,0.0,0.0,,,93,6.7,624,6,12,"PB,AP-2,AP MVP-2,AP OPoY-3",Randall Cunningham,CunnRa00
+1989,26,PHI,QB,16,16,104,621,4,35,51.9,51,6.0,38.8,6.5,0,0,0,,0,0,,,0.0,0.0,,,104,6.0,621,4,17,PB,Randall Cunningham,CunnRa00
+1990,27,PHI,QB,16,16,118,942,5,52,66.1,52,8.0,58.9,7.4,0,0,0,,0,0,,,0.0,0.0,,,118,8.0,942,5,9,"PB,AP MVP-2,AP OPoY-2",Randall Cunningham,CunnRa00
+1992,29,PHI,QB,15,15,87,549,5,34,56.3,30,6.3,36.6,5.8,1,0,0,,0,0,0.0,,0.0,0.0,0.0,0.0,87,6.3,549,5,13,AP-2,Randall Cunningham,CunnRa00
+1993,30,PHI,QB,4,4,18,110,1,5,50.0,26,6.1,27.5,4.5,0,0,0,,0,0,,,0.0,0.0,,,18,6.1,110,1,3,,Randall Cunningham,CunnRa00
+1994,31,PHI,QB,14,14,65,288,3,25,52.3,22,4.4,20.6,4.6,0,0,0,,0,0,,,0.0,0.0,,,65,4.4,288,3,10,,Randall Cunningham,CunnRa00
+1995,32,PHI,QB,7,4,21,98,0,8,42.9,20,4.7,14.0,3.0,0,0,0,,0,0,,,0.0,0.0,,,21,4.7,98,0,3,,Randall Cunningham,CunnRa00
+1997,34,MIN,QB,6,3,19,127,0,5,42.1,28,6.7,21.2,3.2,0,0,0,,0,0,,,0.0,0.0,,,19,6.7,127,0,4,,Randall Cunningham,CunnRa00
+1998,35,MIN,QB,15,14,32,132,1,11,50.0,22,4.1,8.8,2.1,1,1,-3,-3.0,0,0,0.0,-3,0.1,-0.2,100.0,-3.0,33,3.9,129,1,2,"PB,AP-1,AP MVP-2,AP OPoY-2,AP CPoY-2",Randall Cunningham,CunnRa00
+1999,36,MIN,QB,6,6,10,58,0,7,70.0,14,5.8,9.7,1.7,0,0,0,,0,0,,,0.0,0.0,,,10,5.8,58,0,2,,Randall Cunningham,CunnRa00
+2000,37,DAL,QB,6,3,23,89,1,9,47.8,19,3.9,14.8,3.8,0,0,0,,0,0,,,0.0,0.0,,,23,3.9,89,1,4,,Randall Cunningham,CunnRa00
+2001,38,BAL,QB,6,2,14,40,1,3,35.7,15,2.9,6.7,2.3,0,0,0,,0,0,,,0.0,0.0,,,14,2.9,40,1,4,,Randall Cunningham,CunnRa00

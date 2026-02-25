@@ -1,0 +1,8 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,awards,Player,PlayerID
+2018,23,DAL,RB,15,15,304,1434,74,839,2.8,595,2.0,19,16.0,95,77,567,22,-9,-0.1,576,7.5,0.3,3,25.7,2,2.1,0,102.1,"PB,AP-2",Ezekiel Elliott,ElliEz00
+2019,24,DAL,RB,16,16,301,1357,78,678,2.3,679,2.3,24,12.5,71,54,420,21,25,0.5,395,7.3,0.6,6,9.0,4,5.6,0,99.5,PB,Ezekiel Elliott,ElliEz00
+2020,25,DAL,RB,15,15,244,979,62,458,1.9,521,2.1,15,16.3,71,52,338,20,-22,-0.4,360,6.9,-0.2,2,26.0,8,11.3,3,74.7,,Ezekiel Elliott,ElliEz00
+2021,26,DAL,RB,17,17,237,1002,59,593,2.5,409,1.7,9,26.3,65,47,287,17,9,0.2,278,5.9,0.5,3,15.7,3,4.6,1,84.6,,Ezekiel Elliott,ElliEz00
+2022,27,DAL,RB,15,14,231,876,55,520,2.3,356,1.5,9,25.7,23,17,92,4,4,0.2,88,5.2,0.0,1,17.0,2,8.7,0,80.3,,Ezekiel Elliott,ElliEz00
+2023,28,NWE,RB,17,5,184,642,33,350,1.9,292,1.6,5,36.8,65,51,313,12,-61,-1.2,374,7.3,-0.6,8,6.4,2,3.1,0,97.0,,Ezekiel Elliott,ElliEz00
+2024,29,DAL,RB,15,2,74,226,14,115,1.6,111,1.5,2,37.0,15,12,69,3,-28,-2.3,97,8.1,-1.8,1,12.0,0,0.0,0,85.8,,Ezekiel Elliott,ElliEz00

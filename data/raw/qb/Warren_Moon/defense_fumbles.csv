@@ -1,0 +1,17 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,safety_md,Awards,Player,PlayerID
+1984,28,HOU,QB,16,16,0,0,0,0,,0,17,7,-1,0,0.0,0,0,0,,0,,Warren Moon,MoonWa00
+1985,29,HOU,QB,14,14,0,0,0,0,,0,12,5,-8,0,0.0,0,0,0,,0,,Warren Moon,MoonWa00
+1986,30,HOU,QB,15,15,0,0,0,0,,0,11,3,-4,0,0.0,0,0,0,,0,,Warren Moon,MoonWa00
+1987,31,HOU,QB,12,12,0,0,0,0,,1,8,6,-7,0,0.0,0,0,0,,0,,Warren Moon,MoonWa00
+1988,32,HOU,QB,11,11,0,0,0,0,,0,8,4,-12,0,0.0,0,0,0,,0,"PB,AP MVP-5",Warren Moon,MoonWa00
+1989,33,HOU,QB,16,16,0,0,0,0,,0,11,6,-13,0,0.0,0,0,0,,0,PB,Warren Moon,MoonWa00
+1990,34,HOU,QB,15,15,0,0,0,0,,0,18,4,0,0,0.0,0,0,0,,0,"PB,AP-2,AP MVP-3,AP OPoY-1",Warren Moon,MoonWa00
+1991,35,HOU,QB,16,16,0,0,0,0,,0,11,4,-4,0,0.0,0,0,0,,0,PB,Warren Moon,MoonWa00
+1992,36,HOU,QB,11,10,0,0,0,0,,0,7,0,-6,0,0.0,0,0,0,,0,PB,Warren Moon,MoonWa00
+1993,37,HOU,QB,15,14,0,0,0,0,,0,13,5,-7,0,0.0,0,0,0,,0,"PB,AP MVP-6",Warren Moon,MoonWa00
+1994,38,MIN,QB,15,15,0,0,0,0,,0,9,2,-5,0,0.0,0,0,0,,0,PB,Warren Moon,MoonWa00
+1995,39,MIN,QB,16,16,0,0,0,0,,0,13,5,-12,0,0.0,0,0,0,,0,PB,Warren Moon,MoonWa00
+1996,40,MIN,QB,8,8,0,0,0,0,,0,7,2,0,0,0.0,0,0,0,,0,,Warren Moon,MoonWa00
+1997,41,SEA,QB,15,14,0,0,0,0,,0,7,1,-2,0,0.0,0,0,0,,0,PB,Warren Moon,MoonWa00
+1998,42,SEA,QB,10,10,0,0,0,0,,0,8,1,-12,0,0.0,0,0,0,,0,,Warren Moon,MoonWa00
+2000,44,KAN,QB,2,1,0,0,0,0,0,0,1,1,0,0,0.0,0,0,0,0,0,,Warren Moon,MoonWa00

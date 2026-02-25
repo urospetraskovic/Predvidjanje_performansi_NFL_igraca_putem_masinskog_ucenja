@@ -1,0 +1,14 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+1994,24,GNB,QB,2,0,0,0,0,0,,0,1,0,-2,0,0.0,0,0,0,,,0,,Mark Brunell,BrunMa00
+1995,25,JAX,QB,13,10,0,0,0,0,,0,5,3,0,0,0.0,0,0,0,,,0,,Mark Brunell,BrunMa00
+1996,26,JAX,QB,16,16,0,0,0,0,,0,14,5,-14,0,0.0,0,0,0,,,0,PB,Mark Brunell,BrunMa00
+1997,27,JAX,QB,14,14,0,0,0,0,,0,4,0,-5,0,0.0,0,0,0,,,0,PB,Mark Brunell,BrunMa00
+1998,28,JAX,QB,13,13,0,0,0,0,,0,3,2,-1,0,0.0,0,0,0,,,0,,Mark Brunell,BrunMa00
+1999,29,JAX,QB,15,15,0,0,0,0,0,0,6,3,-2,0,0.0,0,0,0,0,,0,PB,Mark Brunell,BrunMa00
+2000,30,JAX,QB,16,16,0,0,0,0,0,0,7,3,-2,0,0.0,0,0,0,0,,0,,Mark Brunell,BrunMa00
+2001,31,JAX,QB,15,15,0,0,0,0,0,0,8,2,-8,0,0.0,0,0,0,0,,0,,Mark Brunell,BrunMa00
+2002,32,JAX,QB,15,15,0,0,0,0,0,0,5,2,0,0,0.0,0,0,0,0,,0,,Mark Brunell,BrunMa00
+2003,33,JAX,QB,3,3,0,0,0,0,0,0,1,0,-5,0,0.0,,,,,,0,,Mark Brunell,BrunMa00
+2004,34,WAS,QB,9,9,0,0,0,0,0,0,6,2,-6,0,0.0,,,,,,0,,Mark Brunell,BrunMa00
+2005,35,WAS,QB,16,15,0,0,0,0,0,0,11,1,-17,0,0.0,0,0,0,0,,0,AP CPoY-3,Mark Brunell,BrunMa00
+2006,36,WAS,QB,10,9,0,0,0,0,0,0,5,1,-8,0,0.0,0,0,0,0,0,0,,Mark Brunell,BrunMa00

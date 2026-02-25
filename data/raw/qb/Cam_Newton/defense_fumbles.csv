@@ -1,0 +1,12 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2011,22,CAR,QB,16,16,0,0,0,0,0,0,5,3,-4,0,0.0,0,0,0,0,0,0,"PB,AP ORoY-1",Cam Newton,NewtCa00
+2012,23,CAR,QB,16,16,0,0,0,0,0,0,10,3,-8,0,0.0,0,0,0,0,0,0,,Cam Newton,NewtCa00
+2013,24,CAR,QB,16,16,0,0,0,0,0,0,3,1,-8,0,0.0,0,0,0,0,0,0,PB,Cam Newton,NewtCa00
+2014,25,CAR,QB,14,14,0,0,0,0,0,0,9,3,-10,0,0.0,0,0,0,0,0,0,,Cam Newton,NewtCa00
+2015,26,CAR,QB,16,16,0,0,0,0,0,0,5,1,-10,0,0.0,0,0,0,0,0,0,"PB,AP-1,AP MVP-1,AP OPoY-1",Cam Newton,NewtCa00
+2016,27,CAR,QB,15,14,0,0,0,0,0,0,3,1,0,0,0.0,0,0,0,0,0,0,,Cam Newton,NewtCa00
+2017,28,CAR,QB,16,16,0,0,0,0,0,0,9,3,-17,0,0.0,0,0,0,0,0,0,,Cam Newton,NewtCa00
+2018,29,CAR,QB,14,14,0,0,0,0,0,0,6,1,0,0,0.0,0,0,0,0,0,0,,Cam Newton,NewtCa00
+2019,30,CAR,QB,2,2,0,0,0,0,0,0,2,0,0,0,0.0,0,0,0,0,0,0,,Cam Newton,NewtCa00
+2020,31,NWE,QB,15,15,0,0,0,0,0,0,6,3,-29,0,0.0,0,0,0,0,0,0,,Cam Newton,NewtCa00
+2021,32,CAR,QB,8,5,0,0,0,0,0,0,4,1,3,0,0.0,0,0,0,0,0,0,,Cam Newton,NewtCa00

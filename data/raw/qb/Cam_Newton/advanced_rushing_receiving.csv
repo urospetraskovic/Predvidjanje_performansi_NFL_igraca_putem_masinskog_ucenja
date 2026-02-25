@@ -1,0 +1,5 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,rec_air_yds_per_rec,Rec_YAC,rec_yac_per_rec,rec_adot,Rec_BrkTkl,Rec_Drops,rec_drop_pct,Rec_Int,rec_pass_rating,Awards,Player,PlayerID
+2018,29,CAR,QB,14,14,101,488,36,270,2.7,218,2.2,7,14.4,0,0,0,0,0,,0,,,0,0,,0,,,Cam Newton,NewtCa00
+2019,30,CAR,QB,2,2,5,-2,0,-2,-0.4,0,0.0,0,,0,0,0,0,0,,0,,,0,0,,0,,,Cam Newton,NewtCa00
+2020,31,NWE,QB,15,15,137,592,55,411,3.0,181,1.3,4,34.3,2,2,35,2,17,8.5,18,9.0,8.5,0,0,0.0,0,158.3,,Cam Newton,NewtCa00
+2021,32,CAR,QB,8,5,47,230,20,147,3.1,83,1.8,5,9.4,0,0,0,0,0,,0,,,0,0,,0,,,Cam Newton,NewtCa00

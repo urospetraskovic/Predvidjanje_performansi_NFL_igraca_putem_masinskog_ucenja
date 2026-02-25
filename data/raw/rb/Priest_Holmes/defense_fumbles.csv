@@ -1,0 +1,9 @@
+Season,Age,Team,Pos,G,GS,Def_Int,Def_Int_Yds,Def_Int_TD,Def_Int_Lng,PD,FF,Fmb,FR,FR_Yds,FR_TD,Sk,Tkl_Comb,Tkl_Solo,Tkl_Ast,TFL,Sfty,awards,Player,PlayerID
+1998,25,BAL,RB,16,13,0,0,0,0,,0,3,1,1,0,0.0,0,0,0,,0,,Priest Holmes,HolmPr00
+1999,26,BAL,RB,9,4,0,0,0,0,0,0,0,1,0,0,0.0,0,0,0,0,0,,Priest Holmes,HolmPr00
+2000,27,BAL,RB,16,2,0,0,0,0,0,0,2,1,0,0,0.0,0,0,0,0,0,,Priest Holmes,HolmPr00
+2001,28,KAN,RB,16,16,0,0,0,0,0,0,4,0,0,0,0.0,0,0,0,0,0,"PB,AP-1,AP OPoY-4",Priest Holmes,HolmPr00
+2002,29,KAN,RB,14,14,0,0,0,0,0,0,1,0,0,0,0.0,,,,,0,"PB,AP-1,AP MVP-4,AP OPoY-1",Priest Holmes,HolmPr00
+2003,30,KAN,RB,16,16,0,0,0,0,0,0,1,0,0,0,0.0,,,,,0,"PB,AP-1,AP MVP-5,AP OPoY-4,AP CPoY-11",Priest Holmes,HolmPr00
+2004,31,KAN,RB,8,8,0,0,0,0,0,0,4,0,0,0,0.0,,,,,0,,Priest Holmes,HolmPr00
+2005,32,KAN,RB,7,7,0,0,0,0,0,0,1,0,0,0,0.0,,,,,0,,Priest Holmes,HolmPr00

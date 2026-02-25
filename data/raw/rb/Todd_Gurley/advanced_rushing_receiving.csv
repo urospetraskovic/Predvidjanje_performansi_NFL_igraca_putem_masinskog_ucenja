@@ -1,0 +1,4 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,awards,Player,PlayerID
+2018,24,LAR,RB,14,14,256,1251,70,634,2.5,617,2.4,17,15.1,81,59,580,26,-7,-0.1,587,9.9,0.6,8,7.4,7,8.6,1,103.9,"PB,AP-1,AP OPoY-3",Todd Gurley,GurlTo01
+2019,25,LAR,RB,15,15,223,857,51,483,2.2,374,1.7,21,10.6,49,31,207,8,11,0.4,196,6.3,0.6,1,31.0,7,14.3,0,86.0,,Todd Gurley,GurlTo01
+2020,26,ATL,RB,15,15,195,678,45,329,1.7,349,1.8,19,10.3,35,25,164,7,41,1.6,123,4.9,1.5,3,8.3,4,11.4,0,81.1,,Todd Gurley,GurlTo01

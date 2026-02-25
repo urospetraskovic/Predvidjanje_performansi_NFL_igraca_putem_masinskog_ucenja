@@ -1,0 +1,6 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,Fmb,av,awards,Player,PlayerID
+2020,22,DAL,RB,15,0,7,24,0,1,42.9,7,3.4,1.6,0.5,0,0,0,,0,0,,,0.0,0.0,,,7,3.4,24,0,0,0,,Rico Dowdle,DowdRi01
+2022,24,DAL,RB,5,0,0,0,0,0,,,,0.0,0.0,0,0,0,,0,0,,,0.0,0.0,,,0,,0,0,0,0,,Rico Dowdle,DowdRi01
+2023,25,DAL,RB,16,0,89,361,2,17,47.2,21,4.1,22.6,5.6,22,17,144,8.5,2,8,40.9,32,1.1,9.0,77.3,6.5,106,4.8,505,4,0,4,,Rico Dowdle,DowdRi01
+2024,26,DAL,RB,16,15,235,1079,2,53,53.6,27,4.6,67.4,14.7,49,39,249,6.4,3,13,53.1,22,2.4,15.6,79.6,5.1,274,4.8,1328,5,3,8,,Rico Dowdle,DowdRi01
+2025,27,CAR,RB,17,11,236,1076,6,51,47.9,53,4.6,63.3,13.9,50,39,297,7.6,1,14,46.0,36,2.3,17.5,78.0,5.9,275,5.0,1373,7,2,10,,Rico Dowdle,DowdRi01

@@ -1,0 +1,8 @@
+Season,Age,Team,Pos,G,GS,Cmp,Att,pass_target_yds,pass_tgt_yds_per_att,pass_air_yds,pass_air_yds_per_cmp,pass_air_yds_per_att,pass_yac,pass_yac_per_cmp,pass_batted_passes,pass_throwaways,pass_spikes,pass_drops,pass_drop_pct,pass_poor_throws,pass_poor_throw_pct,pass_on_target,pass_on_target_pct,pocket_time,pass_blitzed,pass_hurried,pass_hits,pass_pressured,pass_pressured_pct,rush_scrambles,rush_scrambles_yds_per_att,pass_rpo,pass_rpo_yds,pass_rpo_pass_att,pass_rpo_pass_yds,pass_rpo_rush_att,pass_rpo_rush_yds,pass_play_action,pass_play_action_pass_yds,Awards,Player,PlayerID
+2018,27,SFO,QB,3,3,53,89,792,8.9,350,6.6,3.9,368,6.9,0,2,0,5,5.7,16,18.4,,,2.4,21,16,4,33,30.8,5,6.6,,,,,,,,,,Jimmy Garoppolo,GaroJi00
+2019,28,SFO,QB,16,16,329,476,3106,6.5,1819,5.5,3.8,2159,6.6,6,7,2,28,6.0,64,13.7,377,80.7,2.4,201,41,32,109,20.8,12,4.7,24,349,23,349,0,0,125,1438,AP CPoY-2,Jimmy Garoppolo,GaroJi00
+2020,29,SFO,QB,6,6,94,140,879,6.3,382,4.1,2.7,714,7.6,1,0,0,9,6.4,24,17.1,109,77.9,2.3,50,8,14,33,21.3,4,5.3,10,57,8,57,0,0,40,385,,Jimmy Garoppolo,GaroJi00
+2021,30,SFO,QB,15,15,301,441,3304,7.5,1844,6.1,4.2,1966,6.5,5,11,3,23,5.4,55,12.9,348,81.5,2.4,100,24,36,89,18.7,6,3.7,38,339,37,334,1,5,100,1017,,Jimmy Garoppolo,GaroJi00
+2022,31,SFO,QB,11,10,207,308,2115,6.9,990,4.8,3.2,1447,7.0,10,2,0,21,6.9,39,12.7,228,74.5,2.3,87,9,24,51,15.5,3,3.7,32,190,29,189,1,1,52,420,,Jimmy Garoppolo,GaroJi00
+2023,32,LVR,QB,7,6,110,169,1380,8.2,737,6.7,4.4,468,4.3,5,3,1,5,3.0,30,18.2,117,70.9,2.5,51,5,15,34,17.8,8,4.9,3,16,3,16,0,0,37,309,,Jimmy Garoppolo,GaroJi00
+2024,33,LAR,QB,1,1,27,41,221,5.4,102,3.8,2.5,232,8.6,0,1,0,0,0.0,8,20.0,27,67.5,2.2,13,0,5,8,17.8,1,5.0,0,0,0,0,0,0,0,0,,Jimmy Garoppolo,GaroJi00

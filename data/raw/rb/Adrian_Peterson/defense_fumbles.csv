@@ -1,0 +1,14 @@
+Season,Age,Team,Pos,G,GS,Def_Int,Def_Int_Yds,Def_Int_TD,Def_Int_Lng,PD,FF,Fmb,FR,FR_Yds,FR_TD,Sk,Tkl_Comb,Tkl_Solo,Tkl_Ast,TFL,QBHits,Sfty,awards,Player,PlayerID
+2007,22,MIN,RB,14,9,0,0,0,0,0,0,4,3,0,0,0.0,0,0,0,0,0,0,"PB,AP-2,AP ORoY-1",Adrian Peterson,PeteAd01
+2008,23,MIN,RB,16,15,0,0,0,0,0,0,9,2,0,0,0.0,0,0,0,0,0,0,"PB,AP-1,AP MVP-4,AP OPoY-2",Adrian Peterson,PeteAd01
+2009,24,MIN,RB,16,15,0,0,0,0,0,0,7,0,-12,0,0.0,0,0,0,,,0,"PB,AP-1",Adrian Peterson,PeteAd01
+2010,25,MIN,RB,15,15,0,0,0,0,0,0,1,0,0,0,0.0,0,0,0,0,0,0,"PB,AP-2",Adrian Peterson,PeteAd01
+2011,26,MIN,RB,12,12,0,0,0,0,0,0,1,3,0,0,0.0,0,0,0,0,0,0,,Adrian Peterson,PeteAd01
+2012,27,MIN,RB,16,16,0,0,0,0,0,0,4,0,0,0,0.0,0,0,0,0,0,0,"PB,AP-1,AP MVP-1,AP OPoY-1,AP CPoY-2",Adrian Peterson,PeteAd01
+2013,28,MIN,RB,14,14,0,0,0,0,0,0,5,1,0,0,0.0,0,0,0,0,0,0,"PB,AP-2",Adrian Peterson,PeteAd01
+2015,30,MIN,RB,16,16,0,0,0,0,0,0,7,3,0,0,0.0,0,0,0,,,0,"PB,AP-1,AP OPoY-7,AP CPoY-3",Adrian Peterson,PeteAd01
+2016,31,MIN,RB,3,3,0,0,0,0,0,0,1,0,0,0,0.0,0,0,0,0,0,0,,Adrian Peterson,PeteAd01
+2017,32,2TM,RB,10,7,0,0,0,0,0,0,3,1,0,0,0.0,0,0,0,0,0,0,,Adrian Peterson,PeteAd01
+2018,33,WAS,RB,16,16,0,0,0,0,0,0,3,0,0,0,0.0,0,0,0,0,0,0,AP CPoY-3,Adrian Peterson,PeteAd01
+2019,34,WAS,RB,15,15,0,0,0,0,0,0,3,3,0,0,0.0,0,0,0,0,0,0,,Adrian Peterson,PeteAd01
+2021,36,2TM,RB,4,3,0,0,0,0,0,0,1,1,0,0,0.0,0,0,0,0,0,0,,Adrian Peterson,PeteAd01

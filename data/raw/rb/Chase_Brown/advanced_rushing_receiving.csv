@@ -1,0 +1,4 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,awards,Player,PlayerID
+2023,23,CIN,RB,12,0,44,179,6,52,1.2,127,2.9,2,22.0,15,14,156,4,-38,-2.7,194,13.9,-3.0,2,7.0,0,0.0,0,132.2,,Chase Brown,BrowCh10
+2024,24,CIN,RB,16,10,229,990,49,599,2.6,391,1.7,23,10.0,65,54,360,23,34,0.6,326,6.0,0.8,2,27.0,2,3.1,0,110.3,,Chase Brown,BrowCh10
+2025,25,CIN,RB,17,17,232,1019,52,525,2.3,494,2.1,16,14.5,88,69,437,18,-13,-0.2,450,6.5,0.5,8,8.6,5,5.7,2,96.8,,Chase Brown,BrowCh10

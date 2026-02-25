@@ -1,0 +1,3 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,awards,Player,PlayerID
+2018,32,OAK,RB,6,6,90,376,20,90,1.0,286,3.2,6,15.0,20,15,84,6,-6,-0.4,90,6.0,-0.3,1,15.0,4,20.0,0,82.1,,Marshawn Lynch,LyncMa00
+2019,33,SEA,RB,1,0,12,34,2,20,1.7,14,1.2,0,,0,0,0,0,0,,0,,,0,,0,,0,,,Marshawn Lynch,LyncMa00

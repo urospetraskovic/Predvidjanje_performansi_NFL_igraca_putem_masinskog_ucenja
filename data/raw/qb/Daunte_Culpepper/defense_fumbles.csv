@@ -1,0 +1,12 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+1999,22,MIN,QB,1,0,0,0,0,0,0,0,1,1,-2,0,0.0,0,0,0,0,,0,,Daunte Culpepper,CulpDa00
+2000,23,MIN,QB,16,16,0,0,0,0,0,0,11,5,-23,0,0.0,0,0,0,0,,0,PB,Daunte Culpepper,CulpDa00
+2001,24,MIN,QB,11,11,0,0,0,0,0,0,16,7,-17,0,0.0,0,0,0,0,,0,,Daunte Culpepper,CulpDa00
+2002,25,MIN,QB,16,16,0,0,0,0,0,0,23,6,-9,0,0.0,0,0,0,0,,0,,Daunte Culpepper,CulpDa00
+2003,26,MIN,QB,14,14,0,0,0,0,0,0,16,6,0,0,0.0,0,0,0,0,,0,"PB,AP CPoY-8",Daunte Culpepper,CulpDa00
+2004,27,MIN,QB,16,16,0,0,0,0,0,0,9,0,-11,0,0.0,0,0,0,0,,0,"PB,AP OPoY-2",Daunte Culpepper,CulpDa00
+2005,28,MIN,QB,7,7,0,0,0,0,0,0,5,0,-4,0,0.0,0,0,0,0,,0,,Daunte Culpepper,CulpDa00
+2006,29,MIA,QB,4,4,0,0,0,0,0,0,3,1,0,0,0.0,,,,,,0,,Daunte Culpepper,CulpDa00
+2007,30,OAK,QB,7,6,0,0,0,0,0,0,9,4,-7,0,0.0,0,0,0,0,0,0,,Daunte Culpepper,CulpDa00
+2008,31,DET,QB,5,5,0,0,0,0,0,0,5,1,-1,0,0.0,0,0,0,0,0,0,,Daunte Culpepper,CulpDa00
+2009,32,DET,QB,8,5,0,0,0,0,0,0,4,4,-8,0,0.0,0,0,0,0,0,0,,Daunte Culpepper,CulpDa00

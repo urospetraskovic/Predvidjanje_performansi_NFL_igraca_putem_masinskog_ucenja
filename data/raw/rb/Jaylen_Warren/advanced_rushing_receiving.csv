@@ -1,0 +1,5 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,awards,Player,PlayerID
+2022,24,PIT,RB,16,0,77,379,20,242,3.1,137,1.8,5,15.4,33,28,214,14,-11,-0.4,225,8.0,-0.5,3,9.3,3,9.1,0,93.7,,Jaylen Warren,WarrJa01
+2023,25,PIT,RB,17,0,149,784,38,427,2.9,357,2.4,27,5.5,74,61,370,20,-112,-1.8,482,7.9,-1.6,7,8.7,5,6.8,0,87.5,,Jaylen Warren,WarrJa01
+2024,26,PIT,RB,15,0,120,511,29,279,2.3,232,1.9,10,12.0,47,38,310,17,-5,-0.1,315,8.3,-0.1,5,7.6,1,2.1,0,94.1,,Jaylen Warren,WarrJa01
+2025,27,PIT,RB,16,15,211,958,52,461,2.2,497,2.4,23,9.2,45,40,333,13,-106,-2.7,439,11.0,-2.4,9,4.4,1,2.2,0,112.3,,Jaylen Warren,WarrJa01

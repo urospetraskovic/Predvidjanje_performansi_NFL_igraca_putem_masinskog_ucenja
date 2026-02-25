@@ -1,0 +1,16 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,safety_md,Awards,Player,PlayerID
+1985,22,PHI,QB,6,4,0,0,0,0,,0,3,0,0,0,0.0,0,0,0,,0,,Randall Cunningham,CunnRa00
+1986,23,PHI,QB,15,5,0,0,0,0,,0,7,4,0,0,0.0,0,0,0,,0,,Randall Cunningham,CunnRa00
+1987,24,PHI,QB,12,12,0,0,0,0,,0,12,6,-7,0,0.0,0,0,0,,0,,Randall Cunningham,CunnRa00
+1988,25,PHI,QB,16,16,0,0,0,0,,0,12,6,0,0,0.0,0,0,0,,0,"PB,AP-2,AP MVP-2,AP OPoY-3",Randall Cunningham,CunnRa00
+1989,26,PHI,QB,16,16,0,0,0,0,,0,17,4,-6,0,0.0,0,0,0,,0,PB,Randall Cunningham,CunnRa00
+1990,27,PHI,QB,16,16,0,0,0,0,,0,9,3,-4,0,0.0,0,0,0,,0,"PB,AP MVP-2,AP OPoY-2",Randall Cunningham,CunnRa00
+1992,29,PHI,QB,15,15,0,0,0,0,,0,13,3,0,0,0.0,0,0,0,,0,AP-2,Randall Cunningham,CunnRa00
+1993,30,PHI,QB,4,4,0,0,0,0,,0,3,0,0,0,0.0,0,0,0,,0,,Randall Cunningham,CunnRa00
+1994,31,PHI,QB,14,14,0,0,0,0,,0,10,2,-15,0,0.0,0,0,0,,0,,Randall Cunningham,CunnRa00
+1995,32,PHI,QB,7,4,0,0,0,0,,0,3,1,-5,0,0.0,0,0,0,,0,,Randall Cunningham,CunnRa00
+1997,34,MIN,QB,6,3,0,0,0,0,,0,4,2,0,0,0.0,0,0,0,,0,,Randall Cunningham,CunnRa00
+1998,35,MIN,QB,15,14,0,0,0,0,,0,2,0,0,0,0.0,0,0,0,,0,"PB,AP-1,AP MVP-2,AP OPoY-2,AP CPoY-2",Randall Cunningham,CunnRa00
+1999,36,MIN,QB,6,6,0,0,0,0,0,0,2,0,-1,0,0.0,0,0,0,0,0,,Randall Cunningham,CunnRa00
+2000,37,DAL,QB,6,3,0,0,0,0,0,0,4,3,-2,0,0.0,0,0,0,0,0,,Randall Cunningham,CunnRa00
+2001,38,BAL,QB,6,2,0,0,0,0,0,0,4,3,-9,0,0.0,,,,,0,,Randall Cunningham,CunnRa00

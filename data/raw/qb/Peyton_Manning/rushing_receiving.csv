@@ -1,0 +1,18 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Tgt,Rec,Rec_Yds,rec_yds_per_rec,Rec_TD,Rec_1D,rec_success,rec_long,Rec/G,Rec_Y/G,catch_pct,rec_yds_per_tgt,touches,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,Awards,Player,PlayerID
+1998,22,IND,QB,16,16,15,62,0,5,40.0,15,4.1,3.9,0.9,0,0,0,,0,0,,,0.0,0.0,,,15,4.1,62,0,3,AP ORoY-2,Peyton Manning,MannPe00
+1999,23,IND,QB,16,16,35,73,2,15,34.3,13,2.1,4.6,2.2,0,0,0,,0,0,,,0.0,0.0,,,35,2.1,73,2,6,"PB,AP-2,AP MVP-2,AP OPoY-3",Peyton Manning,MannPe00
+2000,24,IND,QB,16,16,37,116,1,11,35.1,14,3.1,7.3,2.3,0,0,0,,0,0,,,0.0,0.0,,,37,3.1,116,1,5,"PB,AP-2,AP MVP-5,AP OPoY-8",Peyton Manning,MannPe00
+2001,25,IND,QB,16,16,35,157,4,10,45.7,33,4.5,9.8,2.2,0,0,0,,0,0,,,0.0,0.0,,,35,4.5,157,4,7,,Peyton Manning,MannPe00
+2002,26,IND,QB,16,16,38,148,2,11,44.7,13,3.9,9.3,2.4,0,0,0,,0,0,,,0.0,0.0,,,38,3.9,148,2,6,PB,Peyton Manning,MannPe00
+2003,27,IND,QB,16,16,28,26,0,3,14.3,10,0.9,1.6,1.8,1,1,-2,-2.0,0,0,0.0,-2,0.1,-0.1,100.0,-2.0,29,0.8,24,0,6,"PB,AP-1,AP MVP-1,AP OPoY-3",Peyton Manning,MannPe00
+2004,28,IND,QB,16,16,25,38,0,4,20.0,19,1.5,2.4,1.6,0,0,0,,0,0,,,0.0,0.0,,,25,1.5,38,0,5,"PB,AP-1,AP MVP-1,AP OPoY-1",Peyton Manning,MannPe00
+2005,29,IND,QB,16,16,33,45,0,6,21.2,12,1.4,2.8,2.1,0,0,0,,0,0,,,0.0,0.0,,,33,1.4,45,0,5,"PB,AP-1,AP MVP-2,AP OPoY-2",Peyton Manning,MannPe00
+2006,30,IND,QB,16,16,23,36,4,7,30.4,12,1.6,2.3,1.4,0,0,0,,0,0,,,0.0,0.0,,,23,1.6,36,4,2,"PB,AP-2,AP MVP-3,AP OPoY-3",Peyton Manning,MannPe00
+2007,31,IND,QB,16,16,20,-5,3,4,20.0,4,-0.3,-0.3,1.3,0,0,0,,0,0,,,0.0,0.0,,,20,-0.3,-5,3,6,PB,Peyton Manning,MannPe00
+2008,32,IND,QB,16,16,20,21,1,4,25.0,12,1.1,1.3,1.3,0,0,0,,0,0,,,0.0,0.0,,,20,1.1,21,1,1,"PB,AP-1,AP MVP-1,AP OPoY-2",Peyton Manning,MannPe00
+2009,33,IND,QB,16,16,19,-13,0,0,0.0,3,-0.7,-0.8,1.2,0,0,0,,0,0,,,0.0,0.0,,,19,-0.7,-13,0,2,"PB,AP-1,AP MVP-1,AP OPoY-3",Peyton Manning,MannPe00
+2010,34,IND,QB,16,16,18,18,0,2,11.1,27,1.0,1.1,1.1,0,0,0,,0,0,,,0.0,0.0,,,18,1.0,18,0,3,PB,Peyton Manning,MannPe00
+2012,36,DEN,QB,16,16,23,6,0,2,17.4,10,0.3,0.4,1.4,0,0,0,,0,0,,,0.0,0.0,,,23,0.3,6,0,2,"PB,AP-1,AP MVP-2,AP OPoY-2,AP CPoY-1",Peyton Manning,MannPe00
+2013,37,DEN,QB,16,16,32,-31,1,1,3.1,1,-1.0,-1.9,2.0,0,0,0,,0,0,,,0.0,0.0,,,32,-1.0,-31,1,10,"PB,AP-1,AP MVP-1,AP OPoY-1",Peyton Manning,MannPe00
+2014,38,DEN,QB,16,16,24,-24,0,0,0.0,4,-1.0,-1.5,1.5,0,0,0,,0,0,,,0.0,0.0,,,24,-1.0,-24,0,5,PB,Peyton Manning,MannPe00
+2015,39,DEN,QB,10,9,6,-6,0,0,0.0,-1,-1.0,-0.6,0.6,0,0,0,,0,0,,,0.0,0.0,,,6,-1.0,-6,0,1,,Peyton Manning,MannPe00

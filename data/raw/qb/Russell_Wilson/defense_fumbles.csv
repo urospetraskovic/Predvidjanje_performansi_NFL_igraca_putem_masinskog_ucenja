@@ -1,0 +1,15 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2012,24,SEA,QB,16,16,0,0,0,0,0,0,6,3,-9,0,0.0,0,0,0,0,0,0,"PB,AP ORoY-3",Russell Wilson,WilsRu00
+2013,25,SEA,QB,16,16,0,0,0,0,0,0,10,5,-4,0,0.0,0,0,0,0,0,0,"PB,AP OPoY-4",Russell Wilson,WilsRu00
+2014,26,SEA,QB,16,16,0,0,0,0,0,0,11,6,-4,0,0.0,0,0,0,0,0,0,PB,Russell Wilson,WilsRu00
+2015,27,SEA,QB,16,16,0,0,0,0,0,0,7,2,-3,0,0.0,0,0,0,0,0,0,"PB,AP OPoY-3",Russell Wilson,WilsRu00
+2016,28,SEA,QB,16,16,0,0,0,0,0,0,8,4,-7,0,0.0,0,0,0,0,0,0,,Russell Wilson,WilsRu00
+2017,29,SEA,QB,16,16,0,0,0,0,0,0,14,6,-11,0,0.0,0,0,0,0,0,0,PB,Russell Wilson,WilsRu00
+2018,30,SEA,QB,16,16,0,0,0,0,0,0,10,4,-17,0,0.0,0,0,0,0,0,0,PB,Russell Wilson,WilsRu00
+2019,31,SEA,QB,16,16,0,0,0,0,0,0,8,2,-11,0,0.0,0,0,0,0,0,0,"PB,AP-2,AP OPoY-4",Russell Wilson,WilsRu00
+2020,32,SEA,QB,16,16,0,0,0,0,0,0,7,0,-18,0,0.0,0,0,0,0,0,0,PB,Russell Wilson,WilsRu00
+2021,33,SEA,QB,14,14,0,0,0,0,0,0,6,3,0,0,0.0,0,0,0,0,0,0,PB,Russell Wilson,WilsRu00
+2022,34,DEN,QB,15,15,0,0,0,0,0,0,6,4,7,0,0.0,0,0,0,0,0,0,,Russell Wilson,WilsRu00
+2023,35,DEN,QB,15,15,0,0,0,0,0,0,10,2,7,0,0.0,0,0,0,0,0,0,,Russell Wilson,WilsRu00
+2024,36,PIT,QB,11,11,0,0,0,0,0,0,5,2,-6,0,0.0,0,0,0,0,0,0,"PB,AP CPoY-14",Russell Wilson,WilsRu00
+2025,37,NYG,QB,6,3,0,0,0,0,0,0,3,2,0,0,0.0,0,0,0,0,0,0,,Russell Wilson,WilsRu00

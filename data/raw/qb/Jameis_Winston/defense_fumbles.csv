@@ -1,0 +1,10 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+2015,21,TAM,QB,16,16,0,0,0,0,0,0,6,4,-8,0,0.0,0,0,0,0,0,0,"PB,AP ORoY-2",Jameis Winston,WinsJa00
+2016,22,TAM,QB,16,16,0,0,0,0,0,0,10,3,-21,0,0.0,0,0,0,0,0,0,,Jameis Winston,WinsJa00
+2017,23,TAM,QB,13,13,0,0,0,0,0,0,15,7,-9,0,0.0,0,0,0,0,0,0,,Jameis Winston,WinsJa00
+2018,24,TAM,QB,11,9,0,0,0,0,0,0,7,2,-18,0,0.0,0,0,0,0,0,0,,Jameis Winston,WinsJa00
+2019,25,TAM,QB,16,16,0,0,0,0,0,0,12,3,-14,0,0.0,0,0,0,0,0,0,,Jameis Winston,WinsJa00
+2021,27,NOR,QB,7,7,0,0,0,0,0,0,2,1,0,0,0.0,0,0,0,0,0,0,,Jameis Winston,WinsJa00
+2022,28,NOR,QB,3,3,0,0,0,0,0,0,3,2,-2,0,0.0,0,0,0,0,0,0,,Jameis Winston,WinsJa00
+2024,30,CLE,QB,12,7,0,0,0,0,0,0,5,3,0,0,0.0,0,0,0,0,0,0,,Jameis Winston,WinsJa00
+2025,31,NYG,QB,3,2,0,0,0,0,0,0,1,0,0,0,0.0,0,0,0,0,0,0,,Jameis Winston,WinsJa00

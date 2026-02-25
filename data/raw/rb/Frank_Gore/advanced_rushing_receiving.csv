@@ -1,0 +1,4 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,awards,Player,PlayerID
+2018,35,MIA,RB,14,14,156,722,25,353,2.3,369,2.4,11,14.2,16,12,124,8,9,0.8,115,9.6,1.3,5,2.4,0,0.0,0,117.7,,Frank Gore,GoreFr00
+2019,36,BUF,RB,16,8,166,599,30,260,1.6,339,2.0,10,16.6,16,13,100,5,12,0.9,88,6.8,0.9,1,13.0,1,6.3,0,92.7,,Frank Gore,GoreFr00
+2020,37,NYJ,RB,15,14,187,653,32,279,1.5,374,2.0,8,23.4,19,16,89,3,16,1.0,73,4.6,1.8,1,16.0,0,0.0,0,86.2,,Frank Gore,GoreFr00

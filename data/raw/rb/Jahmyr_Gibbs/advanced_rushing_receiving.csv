@@ -1,0 +1,4 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,awards,Player,PlayerID
+2023,21,DET,RB,15,3,182,945,46,487,2.7,458,2.5,21,8.7,71,52,316,24,2,0.0,314,6.0,0.1,7,7.4,8,11.3,1,80.5,"PB,AP ORoY-4",Jahmyr Gibbs,GibbJa01
+2024,22,DET,RB,17,4,250,1412,76,813,3.3,599,2.4,21,11.9,63,52,517,30,-76,-1.5,593,11.4,-0.2,4,13.0,2,3.2,1,115.4,"PB,AP OPoY-8",Jahmyr Gibbs,GibbJa01
+2025,23,DET,RB,17,17,243,1223,56,819,3.4,404,1.7,18,13.5,94,77,616,28,1,0.0,615,8.0,0.6,7,11.0,4,4.3,0,111.7,PB,Jahmyr Gibbs,GibbJa01

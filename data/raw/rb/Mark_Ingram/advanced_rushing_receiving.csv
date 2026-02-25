@@ -1,0 +1,6 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,awards,Player,PlayerID
+2018,29,NOR,RB,12,6,138,645,34,274,2.0,371,2.7,18,7.7,27,21,170,5,15,0.7,155,7.4,0.3,1,21.0,0,0.0,1,89.8,,Mark Ingram,IngrMa01
+2019,30,BAL,RB,15,15,202,1018,53,494,2.4,524,2.6,18,11.2,29,26,247,16,27,1.0,220,8.5,1.5,2,13.0,0,0.0,0,141.7,PB,Mark Ingram,IngrMa01
+2020,31,BAL,RB,11,9,72,299,14,173,2.4,126,1.8,6,12.0,8,6,50,2,1,0.2,49,8.2,1.5,1,6.0,0,0.0,0,90.6,,Mark Ingram,IngrMa01
+2021,32,2TM,RB,14,10,160,554,23,237,1.5,317,2.0,9,17.8,35,27,162,9,-2,-0.1,164,6.1,0.0,2,13.5,0,0.0,0,85.7,,Mark Ingram,IngrMa01
+2022,33,NOR,RB,10,3,62,233,12,139,2.2,94,1.5,4,15.5,18,16,68,2,-10,-0.6,78,4.9,-0.9,1,16.0,0,0.0,0,82.4,,Mark Ingram,IngrMa01

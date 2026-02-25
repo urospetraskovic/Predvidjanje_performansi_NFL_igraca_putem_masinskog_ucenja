@@ -1,2 +1,2 @@
-Season,Age,Team,Lg,Pos,G,GS,Att,Yds,TD,1D,Succ%,Lng,Y/A,Y/G,A/G,Tgt,Rec,Yds,Y/R,TD,1D,rec_success,rec_long,R/G,Y/G,catch_pct,Y/Tgt,Touch,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,av,awards,Player,PlayerID
-2025,22,CLE,NFL,RB,14,14,230,827,7,50,40.9,46,3.6,59.1,16.4,36,26,171,6.6,0,7,33.3,58,1.9,12.2,72.2,4.8,256,3.9,998,7,0,4,,Quinshon Judkins,JudkQu00
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,Fmb,av,awards,Player,PlayerID
+2025,22,CLE,RB,14,14,230,827,7,50,40.9,46,3.6,59.1,16.4,36,26,171,6.6,0,7,33.3,58,1.9,12.2,72.2,4.8,256,3.9,998,7,0,4,,Quinshon Judkins,JudkQu00

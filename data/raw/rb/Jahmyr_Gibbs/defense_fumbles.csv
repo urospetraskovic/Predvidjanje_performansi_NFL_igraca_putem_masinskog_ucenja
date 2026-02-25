@@ -1,0 +1,4 @@
+Season,Age,Team,Pos,G,GS,Def_Int,Def_Int_Yds,Def_Int_TD,Def_Int_Lng,PD,FF,Fmb,FR,FR_Yds,FR_TD,Sk,Tkl_Comb,Tkl_Solo,Tkl_Ast,TFL,QBHits,Sfty,awards,Player,PlayerID
+2023,21,DET,RB,15,3,0,0,0,0,0,0,2,0,0,0,0.0,0,0,0,0,0,0,"PB,AP ORoY-4",Jahmyr Gibbs,GibbJa01
+2024,22,DET,RB,17,4,0,0,0,0,0,0,1,0,0,0,0.0,0,0,0,0,0,0,"PB,AP OPoY-8",Jahmyr Gibbs,GibbJa01
+2025,23,DET,RB,17,17,0,0,0,0,0,0,2,2,0,0,0.0,0,0,0,0,0,0,PB,Jahmyr Gibbs,GibbJa01

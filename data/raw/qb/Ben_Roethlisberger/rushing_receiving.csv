@@ -1,0 +1,19 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Tgt,Rec,Rec_Yds,rec_yds_per_rec,Rec_TD,Rec_1D,rec_success,rec_long,Rec/G,Rec_Y/G,catch_pct,rec_yds_per_tgt,touches,yds_per_touch,yds_from_scrimmage,rush_receive_td,Fmb,Awards,Player,PlayerID
+2004,22,PIT,QB,14,13,56,144,1,12,26.8,20,2.6,10.3,4.0,0,0,0,,0,0,,,0.0,0.0,,,56,2.6,144,1,2,AP ORoY-1,Ben Roethlisberger,RoetBe00
+2005,23,PIT,QB,12,12,31,69,3,10,32.3,13,2.2,5.8,2.6,0,0,0,,0,0,,,0.0,0.0,,,31,2.2,69,3,2,,Ben Roethlisberger,RoetBe00
+2006,24,PIT,QB,15,15,32,98,2,11,34.4,20,3.1,6.5,2.1,0,0,0,,0,0,,,0.0,0.0,,,32,3.1,98,2,5,,Ben Roethlisberger,RoetBe00
+2007,25,PIT,QB,15,15,35,204,2,17,60.0,30,5.8,13.6,2.3,0,0,0,,0,0,,,0.0,0.0,,,35,5.8,204,2,9,"PB,AP CPoY-3",Ben Roethlisberger,RoetBe00
+2008,26,PIT,QB,16,16,34,101,2,8,35.3,17,3.0,6.3,2.1,1,1,-7,-7.0,0,1,0.0,-7,0.1,-0.4,100.0,-7.0,35,2.7,94,2,14,,Ben Roethlisberger,RoetBe00
+2009,27,PIT,QB,15,15,40,82,2,16,40.0,15,2.1,5.5,2.7,0,0,0,,0,0,,,0.0,0.0,,,40,2.1,82,2,7,,Ben Roethlisberger,RoetBe00
+2010,28,PIT,QB,12,12,34,176,2,15,50.0,31,5.2,14.7,2.8,0,0,0,,0,0,,,0.0,0.0,,,34,5.2,176,2,7,,Ben Roethlisberger,RoetBe00
+2011,29,PIT,QB,15,15,31,70,0,6,22.6,11,2.3,4.7,2.1,0,0,0,,0,0,,,0.0,0.0,,,31,2.3,70,0,8,PB,Ben Roethlisberger,RoetBe00
+2012,30,PIT,QB,13,13,26,92,0,5,42.3,14,3.5,7.1,2.0,0,0,0,,0,0,,,0.0,0.0,,,26,3.5,92,0,6,,Ben Roethlisberger,RoetBe00
+2013,31,PIT,QB,16,16,27,99,1,5,33.3,19,3.7,6.2,1.7,0,0,5,,0,0,,5,0.0,0.3,,,27,3.9,104,1,9,,Ben Roethlisberger,RoetBe00
+2014,32,PIT,QB,16,16,33,27,0,6,24.2,8,0.8,1.7,2.1,0,0,-6,,0,0,,-6,0.0,-0.4,,,33,0.6,21,0,9,PB,Ben Roethlisberger,RoetBe00
+2015,33,PIT,QB,12,11,15,29,0,4,26.7,13,1.9,2.4,1.3,0,0,-3,,0,0,,,0.0,-0.3,,,15,1.7,26,0,2,PB,Ben Roethlisberger,RoetBe00
+2016,34,PIT,QB,14,14,16,14,1,3,18.8,14,0.9,1.0,1.1,0,0,0,,0,0,,,0.0,0.0,,,16,0.9,14,1,8,PB,Ben Roethlisberger,RoetBe00
+2017,35,PIT,QB,15,15,28,47,0,7,21.4,14,1.7,3.1,1.9,0,0,0,,0,0,,,0.0,0.0,,,28,1.7,47,0,3,PB,Ben Roethlisberger,RoetBe00
+2018,36,PIT,QB,16,16,31,98,3,13,51.6,18,3.2,6.1,1.9,1,1,-1,-1.0,0,0,0.0,-1,0.1,-0.1,100.0,-1.0,32,3.0,97,3,7,,Ben Roethlisberger,RoetBe00
+2019,37,PIT,QB,2,2,1,7,0,0,100.0,7,7.0,3.5,0.5,0,0,0,,0,0,,,0.0,0.0,,,1,7.0,7,0,1,,Ben Roethlisberger,RoetBe00
+2020,38,PIT,QB,15,15,25,11,0,3,12.0,11,0.4,0.7,1.7,0,0,0,,0,0,,,0.0,0.0,,,25,0.4,11,0,5,AP CPoY-2,Ben Roethlisberger,RoetBe00
+2021,39,PIT,QB,16,16,20,5,1,3,20.0,8,0.3,0.3,1.3,0,0,0,,0,0,,,0.0,0.0,,,20,0.3,5,1,11,,Ben Roethlisberger,RoetBe00

@@ -1,0 +1,14 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+1995,27,MIN,QB,5,0,0,0,0,0,,0,2,0,0,0,0.0,0,0,0,,,0,,Brad Johnson,JohnBr00
+1996,28,MIN,QB,12,8,0,0,0,0,,0,5,3,-8,0,0.0,0,0,0,,,0,,Brad Johnson,JohnBr00
+1997,29,MIN,QB,13,13,0,0,0,0,,0,4,3,0,0,0.0,0,0,0,,,0,,Brad Johnson,JohnBr00
+1998,30,MIN,QB,4,2,0,0,0,0,,0,1,0,0,0,0.0,0,0,0,,,0,,Brad Johnson,JohnBr00
+1999,31,WAS,QB,16,16,0,0,0,0,0,0,12,2,-8,0,0.0,0,0,0,0,,0,"PB,AP CPoY-2",Brad Johnson,JohnBr00
+2000,32,WAS,QB,12,11,0,0,0,0,0,0,5,2,-14,0,0.0,0,0,0,0,,0,,Brad Johnson,JohnBr00
+2001,33,TAM,QB,16,16,0,0,0,0,0,0,4,2,-1,0,0.0,0,0,0,0,,0,,Brad Johnson,JohnBr00
+2002,34,TAM,QB,13,13,0,0,0,0,0,0,8,2,0,0,0.0,0,0,0,0,,0,PB,Brad Johnson,JohnBr00
+2003,35,TAM,QB,16,16,0,0,0,0,0,0,6,4,0,0,0.0,0,0,0,0,,0,,Brad Johnson,JohnBr00
+2004,36,TAM,QB,4,4,0,0,0,0,0,0,2,0,0,0,0.0,,,,,,0,,Brad Johnson,JohnBr00
+2005,37,MIN,QB,15,9,0,0,0,0,0,0,5,1,-1,0,0.0,0,0,0,0,,0,,Brad Johnson,JohnBr00
+2006,38,MIN,QB,15,14,0,0,0,0,0,0,9,1,-9,0,0.0,0,0,0,0,0,0,,Brad Johnson,JohnBr00
+2008,40,DAL,QB,16,3,0,0,0,0,0,0,1,1,-15,0,0.0,0,0,0,0,0,0,,Brad Johnson,JohnBr00

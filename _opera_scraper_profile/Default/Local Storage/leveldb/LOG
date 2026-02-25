@@ -1,0 +1,5 @@
+2026/02/25-20:51:28.598 c24 Creating DB C:\Users\Win10\Documents\GitHub\Analiza-i-Obrada\_opera_scraper_profile\Default\Local Storage\leveldb since it was missing.
+2026/02/25-20:51:28.946 c24 Reusing MANIFEST C:\Users\Win10\Documents\GitHub\Analiza-i-Obrada\_opera_scraper_profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/02/25-20:52:28.963 2210 Level-0 table #5: started
+2026/02/25-20:52:28.976 2210 Level-0 table #5: 75834 bytes OK
+2026/02/25-20:52:28.981 2210 Delete type=0 #3

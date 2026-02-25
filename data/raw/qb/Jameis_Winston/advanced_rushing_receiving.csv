@@ -1,0 +1,9 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,rec_air_yds_per_rec,Rec_YAC,rec_yac_per_rec,rec_adot,Rec_BrkTkl,rec_broken_tackles_per_rec,Rec_Drops,rec_drop_pct,Rec_Int,rec_pass_rating,Awards,Player,PlayerID
+2018,24,TAM,QB,11,9,49,281,19,147,3.0,134,2.7,1,49.0,0,0,0,0,0,,0,,,0,,0,,0,,,Jameis Winston,WinsJa00
+2019,25,TAM,QB,16,16,59,250,18,193,3.3,57,1.0,2,29.5,0,0,0,0,0,,0,,,0,,0,,0,,,Jameis Winston,WinsJa00
+2020,26,NOR,QB,4,0,8,-6,0,-7,-0.9,1,0.1,0,,0,0,0,0,0,,0,,,0,,0,,0,,,Jameis Winston,WinsJa00
+2021,27,NOR,QB,7,7,32,166,17,113,3.5,53,1.7,2,16.0,0,0,0,0,0,,0,,,0,,0,,0,,,Jameis Winston,WinsJa00
+2022,28,NOR,QB,3,3,5,16,0,7,1.4,9,1.8,0,,0,0,0,0,0,,0,,,0,,0,,0,,,Jameis Winston,WinsJa00
+2023,29,NOR,QB,7,0,5,-6,0,-6,-1.2,0,0.0,0,,0,0,0,0,0,,0,,,0,,0,,0,,,Jameis Winston,WinsJa00
+2024,30,CLE,QB,12,7,25,83,17,72,2.9,11,0.4,0,,0,0,0,0,0,,0,,,0,,0,,0,,,Jameis Winston,WinsJa00
+2025,31,NYG,QB,3,2,7,23,3,11,1.6,12,1.7,0,,1,1,33,1,13,13.0,20,20.0,13.0,1,1.0,0,0.0,0,158.3,,Jameis Winston,WinsJa00

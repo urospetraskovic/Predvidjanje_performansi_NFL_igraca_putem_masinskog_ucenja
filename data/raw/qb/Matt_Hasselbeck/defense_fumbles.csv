@@ -1,0 +1,16 @@
+Season,Age,Team,Pos,G,GS,def_int,def_int_yds,def_int_td,def_int_long,pass_defended,FF,Fmb,FR,FR_Yds,FR_TD,sacks,tackles_combined,tackles_solo,tackles_assists,tackles_loss,qb_hits,safety_md,Awards,Player,PlayerID
+1999,24,GNB,QB,16,0,0,0,0,0,0,0,1,1,-16,0,0.0,1,0,1,0,,0,,Matt Hasselbeck,HassMa00
+2001,26,SEA,QB,13,12,0,0,0,0,0,0,6,0,-16,0,0.0,0,0,0,0,,0,,Matt Hasselbeck,HassMa00
+2002,27,SEA,QB,16,10,0,0,0,0,0,0,5,1,0,0,0.0,0,0,0,0,,0,,Matt Hasselbeck,HassMa00
+2003,28,SEA,QB,16,16,0,0,0,0,0,0,4,0,-7,0,0.0,0,0,0,0,,0,PB,Matt Hasselbeck,HassMa00
+2004,29,SEA,QB,14,14,0,0,0,0,0,0,5,2,-8,0,0.0,0,0,0,0,,0,,Matt Hasselbeck,HassMa00
+2005,30,SEA,QB,16,16,0,0,0,0,0,0,4,0,0,0,0.0,0,0,0,0,,0,PB,Matt Hasselbeck,HassMa00
+2006,31,SEA,QB,12,12,0,0,0,0,0,0,3,2,-3,0,0.0,0,0,0,0,0,0,,Matt Hasselbeck,HassMa00
+2007,32,SEA,QB,16,16,0,0,0,0,0,0,9,3,-8,0,0.0,0,0,0,0,0,0,PB,Matt Hasselbeck,HassMa00
+2008,33,SEA,QB,7,7,0,0,0,0,0,0,1,0,0,0,0.0,0,0,0,,,0,,Matt Hasselbeck,HassMa00
+2009,34,SEA,QB,14,14,0,0,0,0,0,0,11,5,-17,0,0.0,0,0,0,0,0,0,,Matt Hasselbeck,HassMa00
+2010,35,SEA,QB,14,14,0,0,0,0,0,0,7,1,0,0,0.0,0,0,0,0,0,0,,Matt Hasselbeck,HassMa00
+2011,36,TEN,QB,16,16,0,0,0,0,0,0,4,1,0,0,0.0,0,0,0,0,0,0,,Matt Hasselbeck,HassMa00
+2012,37,TEN,QB,8,5,0,0,0,0,0,0,3,2,-4,0,0.0,0,0,0,0,0,0,,Matt Hasselbeck,HassMa00
+2014,39,IND,QB,4,0,0,0,0,0,0,0,1,0,0,0,0.0,0,0,0,,,0,,Matt Hasselbeck,HassMa00
+2015,40,IND,QB,8,8,0,0,0,0,0,0,3,0,0,0,0.0,0,0,0,,,0,,Matt Hasselbeck,HassMa00

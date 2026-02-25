@@ -1,0 +1,16 @@
+Season,Age,Team,Pos,G,GS,Def_Int,Def_Int_Yds,Def_Int_TD,Def_Int_Lng,PD,FF,Fmb,FR,FR_Yds,FR_TD,Sk,Tkl_Comb,Tkl_Solo,Tkl_Ast,TFL,Sfty,awards,Player,PlayerID
+1990,21,DAL,RB,16,15,0,0,0,0,,0,7,0,0,0,0.0,0,0,0,,0,"PB,AP ORoY-1",Emmitt Smith,SmitEm00
+1991,22,DAL,RB,16,16,0,0,0,0,,0,8,1,0,0,0.0,0,0,0,,0,"PB,AP-2",Emmitt Smith,SmitEm00
+1992,23,DAL,RB,16,16,0,0,0,0,,0,4,1,0,0,0.0,0,0,0,,0,"PB,AP-1,AP MVP-3,AP OPoY-3",Emmitt Smith,SmitEm00
+1993,24,DAL,RB,14,13,0,0,0,0,,0,4,3,0,0,0.0,0,0,0,,0,"PB,AP-1,AP MVP-1,AP OPoY-3",Emmitt Smith,SmitEm00
+1994,25,DAL,RB,15,15,0,0,0,0,,0,1,0,0,0,0.0,0,0,0,,0,"PB,AP-1",Emmitt Smith,SmitEm00
+1995,26,DAL,RB,16,16,0,0,0,0,,0,7,0,0,0,0.0,0,0,0,,0,"PB,AP-1,AP MVP-3,AP OPoY-2",Emmitt Smith,SmitEm00
+1996,27,DAL,RB,15,15,0,0,0,0,,0,5,1,0,0,0.0,0,0,0,,0,,Emmitt Smith,SmitEm00
+1997,28,DAL,RB,16,16,0,0,0,0,,0,1,1,0,0,0.0,0,0,0,,0,,Emmitt Smith,SmitEm00
+1998,29,DAL,RB,16,16,0,0,0,0,,0,3,1,0,0,0.0,0,0,0,,0,PB,Emmitt Smith,SmitEm00
+1999,30,DAL,RB,15,15,0,0,0,0,0,0,5,1,0,0,0.0,0,0,0,0,0,PB,Emmitt Smith,SmitEm00
+2000,31,DAL,RB,16,16,0,0,0,0,0,0,6,1,0,0,0.0,0,0,0,0,0,,Emmitt Smith,SmitEm00
+2001,32,DAL,RB,14,14,0,0,0,0,0,0,1,1,0,0,0.0,0,0,0,0,0,,Emmitt Smith,SmitEm00
+2002,33,DAL,RB,16,16,0,0,0,0,0,0,3,2,0,0,0.0,0,0,0,0,0,,Emmitt Smith,SmitEm00
+2003,34,ARI,RB,10,5,0,0,0,0,0,0,2,0,-19,0,0.0,1,1,0,0,0,,Emmitt Smith,SmitEm00
+2004,35,ARI,RB,15,15,0,0,0,0,0,0,4,2,4,0,0.0,0,0,0,0,0,,Emmitt Smith,SmitEm00

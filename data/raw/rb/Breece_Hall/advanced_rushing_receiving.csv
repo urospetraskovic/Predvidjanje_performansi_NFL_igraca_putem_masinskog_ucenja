@@ -1,0 +1,5 @@
+Season,Age,Team,Pos,G,GS,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,awards,Player,PlayerID
+2022,21,NYJ,RB,7,2,80,463,20,332,4.2,131,1.6,3,26.7,31,19,218,8,47,2.5,171,9.0,4.7,2,9.5,5,16.1,1,79.8,,Breece Hall,HallBr03
+2023,22,NYJ,RB,17,16,223,994,40,500,2.2,494,2.2,19,11.7,95,76,591,28,-58,-0.8,649,8.5,-0.5,10,7.6,5,5.3,1,102.2,AP CPoY-7,Breece Hall,HallBr03
+2024,23,NYJ,RB,16,16,209,876,40,432,2.1,444,2.1,7,29.9,76,57,483,15,-13,-0.2,496,8.7,0.2,6,9.5,9,11.8,0,104.2,,Breece Hall,HallBr03
+2025,24,NYJ,RB,16,16,243,1065,57,618,2.5,447,1.8,12,20.3,48,36,350,13,29,0.8,321,8.9,0.4,1,36.0,2,4.2,0,101.9,,Breece Hall,HallBr03
