@@ -1,20 +1,3 @@
-#!/usr/bin/env python3
-"""
-NFL QB Stats Scraper - Opera GX Version
-Scrapes Pro Football Reference for QB statistics across multiple stat tables.
-Uses Opera GX browser with VPN support to bypass Cloudflare/rate limiting.
-
-Extracts: Passing, Advanced Passing, Adjusted Passing, Rushing/Receiving, 
-          Advanced Rushing/Receiving, Defense/Fumbles, and Snap Counts.
-
-Usage:
-    python nfl_qb_scraper.py                    # Scrape all QBs in the list
-    python nfl_qb_scraper.py --player MahoPa00  # Scrape single player
-    python nfl_qb_scraper.py --test             # Test with one player
-    python nfl_qb_scraper.py --force            # Re-scrape even if exists
-    python nfl_qb_scraper.py --combine          # Combine all CSVs
-"""
-
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
@@ -25,74 +8,46 @@ import random
 import argparse
 import re
 
-
-# =============================================================================
-# OPERA GX CONFIGURATION
-# =============================================================================
 OPERA_BINARY = r"C:\Users\Win10\AppData\Local\Programs\Opera GX\opera.exe"
 CHROMEDRIVER_PATH = os.path.expanduser(r"~\.cache\selenium\chromedriver\win64\143.0.7499.42\chromedriver.exe")
 
-
-# =============================================================================
-# QB DATA - Player IDs, Names, and Birth Years
-# =============================================================================
-# Format: (PlayerID, Full Name, Birth Year)
-# Find player IDs at: https://www.pro-football-reference.com/players/
+# player IDs at: https://www.pro-football-reference.com/players/
 # The ID is in the URL: /players/A/AlleJo02.htm -> AlleJo02
 
 NFL_QBS = [
-    # AFC East
-    ('AlleJo02', 'Josh Allen', 1996),          # Buffalo Bills
-    ('RodgAa00', 'Aaron Rodgers', 1983),       # New York Jets
-    ('TagoTu00', 'Tua Tagovailoa', 1998),      # Miami Dolphins
-    ('MayeDr00', 'Drake Maye', 2002),          # New England Patriots
-    
-    # AFC North
-    ('JackLa00', 'Lamar Jackson', 1997),       # Baltimore Ravens
-    ('BurrJo01', 'Joe Burrow', 1996),          # Cincinnati Bengals
-    
-    # AFC South
-    ('StroCJ00', 'CJ Stroud', 2001),           # Houston Texans
-    ('LawrTr00', 'Trevor Lawrence', 1999),     # Jacksonville Jaguars
-    
-    # AFC West
-    ('MahoPa00', 'Patrick Mahomes', 1995),     # Kansas City Chiefs
-    ('HerbJu00', 'Justin Herbert', 1998),      # Los Angeles Chargers
-    
-    # NFC East
-    ('HurtJa00', 'Jalen Hurts', 1998),         # Philadelphia Eagles
-    ('PresDa01', 'Dak Prescott', 1993),        # Dallas Cowboys
-    
-    # NFC North
-    ('GoffJa00', 'Jared Goff', 1994),          # Detroit Lions
-    ('DarnSa00', 'Sam Darnold', 1997),         # Minnesota Vikings
-    
-    # NFC South / Others
-    ('PurdBr00', 'Brock Purdy', 1999),         # San Francisco 49ers
-    
-    # Additional QBs - Main Roster
-    ('FielJu00', 'Justin Fields', 1999),       # Pittsburgh Steelers
-    ('NixxBo00', 'Bo Nix', 2000),              # Denver Broncos
-    ('SmitGe00', 'Geno Smith', 1990),          # Seattle Seahawks
-    ('JoneDa05', 'Daniel Jones', 1997),        # New York Giants
-    ('WardCa00', 'Cam Ward', 2002),            # Miami Dolphins (2025 draft)
-    ('FlacJo00', 'Joe Flacco', 1985),          # Various teams
-    ('MurrKy00', 'Kyler Murray', 1997),        # Arizona Cardinals
-    ('StafMa00', 'Matthew Stafford', 1988),    # Los Angeles Rams
-    ('WillCa03', 'Caleb Williams', 2001),      # Chicago Bears
-    ('LoveJo03', 'Jordan Love', 1998),         # Green Bay Packers
-    ('McCaJJ00', 'JJ McCarthy', 2002),         # Minnesota Vikings
-    ('DaniJa02', 'Jayden Daniels', 2001),      # Washington Commanders
-    ('YounBr01', 'Bryce Young', 2001),         # Carolina Panthers
-    ('BrisJa00', 'Jacoby Brissett', 1992),     # Various teams
-    ('CousKi00', 'Kirk Cousins', 1988),        # Atlanta Falcons
-    
-    # Additional Backup/Recently Active QBs
-    ('LeviWi00', 'Will Levis', 1999),          # Tennessee Titans
-    ('GabbBl00', 'Blaine Gabbert', 1987),      # Various teams
-    ('DaltAn00', 'Andy Dalton', 1987),         # Various teams
-    
-    # Legacy / Retired QBs
+    ('AlleJo02', 'Josh Allen', 1996),          
+    ('RodgAa00', 'Aaron Rodgers', 1983),       
+    ('TagoTu00', 'Tua Tagovailoa', 1998),      
+    ('MayeDr00', 'Drake Maye', 2002),          
+    ('JackLa00', 'Lamar Jackson', 1997),       
+    ('BurrJo01', 'Joe Burrow', 1996),          
+    ('StroCJ00', 'CJ Stroud', 2001),           
+    ('LawrTr00', 'Trevor Lawrence', 1999),     
+    ('MahoPa00', 'Patrick Mahomes', 1995),     
+    ('HerbJu00', 'Justin Herbert', 1998),      
+    ('HurtJa00', 'Jalen Hurts', 1998),         
+    ('PresDa01', 'Dak Prescott', 1993),        
+    ('GoffJa00', 'Jared Goff', 1994),         
+    ('DarnSa00', 'Sam Darnold', 1997),         
+    ('PurdBr00', 'Brock Purdy', 1999),         
+    ('FielJu00', 'Justin Fields', 1999),       
+    ('NixxBo00', 'Bo Nix', 2000),              
+    ('SmitGe00', 'Geno Smith', 1990),          
+    ('JoneDa05', 'Daniel Jones', 1997),        
+    ('WardCa00', 'Cam Ward', 2002),            
+    ('FlacJo00', 'Joe Flacco', 1985),         
+    ('MurrKy00', 'Kyler Murray', 1997),       
+    ('StafMa00', 'Matthew Stafford', 1988),    
+    ('WillCa03', 'Caleb Williams', 2001),      
+    ('LoveJo03', 'Jordan Love', 1998),         
+    ('McCaJJ00', 'JJ McCarthy', 2002),         
+    ('DaniJa02', 'Jayden Daniels', 2001),      
+    ('YounBr01', 'Bryce Young', 2001),         
+    ('BrisJa00', 'Jacoby Brissett', 1992),     
+    ('CousKi00', 'Kirk Cousins', 1988),        
+    ('LeviWi00', 'Will Levis', 1999),         
+    ('GabbBl00', 'Blaine Gabbert', 1987),      
+    ('DaltAn00', 'Andy Dalton', 1987),        
     ('BradTo00', 'Tom Brady', 1977),
     ('BreeDr00', 'Drew Brees', 1979),
     ('MannPe00', 'Peyton Manning', 1976),
@@ -136,11 +91,6 @@ NFL_QBS = [
     ('TrubMi00', 'Mitchell Trubisky', 1994),
 ]
 
-
-# =============================================================================
-# TABLE DEFINITIONS - Maps table IDs to filenames and column mappings
-# =============================================================================
-
 TABLES_TO_SCRAPE = {
     'passing': {
         'filename': 'passing.csv',
@@ -159,7 +109,7 @@ TABLES_TO_SCRAPE = {
         'description': 'Rushing and Receiving Stats'
     },
     'receiving_and_rushing': {
-        'filename': 'rushing_receiving.csv',  # Some players have this ID instead
+        'filename': 'rushing_receiving.csv',  
         'description': 'Rushing and Receiving Stats'
     },
     'adv_rushing_and_receiving': {
@@ -184,9 +134,8 @@ TABLES_TO_SCRAPE = {
     },
 }
 
-# Common column name mappings for cleaner output
 COLUMN_MAPPING = {
-    # Basic info
+    # basic info
     'year_id': 'Season',
     'age': 'Age',
     'team': 'Team',
@@ -195,14 +144,12 @@ COLUMN_MAPPING = {
     'comp_name_abbr': 'Lg',
     'pos': 'Pos',
     'uniform_number': 'No.',
-    
-    # Games
+    # games
     'g': 'G',
     'games': 'G',
     'gs': 'GS',
     'games_started': 'GS',
-    
-    # Passing
+    # passing
     'qb_rec': 'QBrec',
     'pass_cmp': 'Cmp',
     'pass_att': 'Att',
@@ -243,8 +190,7 @@ COLUMN_MAPPING = {
     'gwd': 'GWD',
     'av': 'AV',
     'awards': 'Awards',
-    
-    # Rushing
+    # rushing
     'rush_att': 'Rush_Att',
     'rush_yds': 'Rush_Yds',
     'rush_td': 'Rush_TD',
@@ -254,8 +200,7 @@ COLUMN_MAPPING = {
     'rush_yds_per_att': 'Rush_Y/A',
     'rush_yds_per_g': 'Rush_Y/G',
     'rush_att_per_g': 'Rush_A/G',
-    
-    # Receiving
+    # receiving
     'targets': 'Tgt',
     'rec': 'Rec',
     'rec_yds': 'Rec_Yds',
@@ -263,15 +208,13 @@ COLUMN_MAPPING = {
     'rec_first_down': 'Rec_1D',
     'rec_per_g': 'Rec/G',
     'rec_yds_per_g': 'Rec_Y/G',
-    
-    # Fumbles
+    # fumbles
     'fumbles': 'Fmb',
     'fumbles_forced': 'FF',
     'fumbles_rec': 'FR',
     'fumbles_rec_yds': 'FR_Yds',
     'fumbles_rec_td': 'FR_TD',
-    
-    # Advanced Rushing and Receiving
+    # advanced Rushing and Receiving
     'rush_yds_before_contact': 'Rush_YBC',
     'rush_yds_bc_per_rush': 'Rush_YBC/A',
     'rush_yac': 'Rush_YAC',
@@ -283,30 +226,23 @@ COLUMN_MAPPING = {
     'rec_drops': 'Rec_Drops',
     'rec_broken_tackles': 'Rec_BrkTkl',
     'rec_target_int': 'Rec_Int',
-    
-    # Snap counts
+    # snap counts
     'off_pct': 'Off%',
     'def_pct': 'Def%',
     'st_pct': 'ST%',
 }
 
-
-# =============================================================================
-# HELPER FUNCTIONS
-# =============================================================================
-
 OUTPUT_DIR = 'data/raw/qb'
 
-
 def get_player_folder_name(player_name):
-    """Convert player name to folder-safe name."""
+    """Convert player name to folder name"""
     safe_name = re.sub(r'[^\w\s-]', '', player_name)
     safe_name = safe_name.replace(' ', '_')
     return safe_name
 
 
 def parse_table(table):
-    """Parse an HTML table using data-stat attributes."""
+    """Parse an HTML table using data-stat attributes"""
     rows = []
     tbody = table.find('tbody')
     if tbody:
@@ -331,7 +267,7 @@ def parse_table(table):
 
 
 def clean_dataframe(df):
-    """Clean and validate the dataframe."""
+    """Clean and validate the dataframe"""
     df = df.copy()
     if 'Season' in df.columns:
         df['Season'] = pd.to_numeric(df['Season'], errors='coerce')
@@ -350,16 +286,16 @@ def clean_dataframe(df):
 
 
 def create_driver():
-    """Create and return an Opera GX Selenium driver."""
+    """Create and return an Opera GX selenium driver"""
     options = webdriver.ChromeOptions()
     options.binary_location = OPERA_BINARY
 
-    # Use a fresh profile so we don't conflict with running Opera
+    # use a fresh profile so we don't conflict with running Opera
     temp_profile = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '_opera_scraper_profile')
     os.makedirs(temp_profile, exist_ok=True)
     options.add_argument(f"user-data-dir={os.path.abspath(temp_profile)}")
 
-    # Anti-detection
+    # anti-detection
     options.add_argument('--disable-blink-features=AutomationControlled')
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option('useAutomationExtension', False)
@@ -374,14 +310,14 @@ def create_driver():
 
 
 def scrape_player(driver, player_id, player_name, force=False):
-    """Scrape all stat tables for a single player."""
+    """Scrape all stat tables for a single player"""
     first_letter = player_id[0].upper()
     url = f"https://www.pro-football-reference.com/players/{first_letter}/{player_id}.htm"
 
     print(f"\n> Scraping: {player_name}")
     print(f"  URL: {url}")
 
-    # Check if already scraped
+    # check if already scraped
     folder_name = get_player_folder_name(player_name)
     player_dir = os.path.join(OUTPUT_DIR, folder_name)
     if not force and os.path.exists(player_dir):
@@ -390,7 +326,7 @@ def scrape_player(driver, player_id, player_name, force=False):
             print(f"  >> Already scraped ({len(existing_files)} files exist) - SKIPPING")
             return 'skipped'
 
-    # If forcing, remove existing CSV files
+    # if forcing, remove existing CSV files
     if force and os.path.exists(player_dir):
         for filename in os.listdir(player_dir):
             if filename.endswith('.csv'):
@@ -399,23 +335,23 @@ def scrape_player(driver, player_id, player_name, force=False):
                 except Exception as e:
                     print(f"    Warning: Could not delete {filename}: {str(e)[:40]}")
 
-    # Random delay
-    wait_time = random.uniform(3, 7)
+    # six seven delay andom delay
+    wait_time = random.uniform(6, 7)
     print(f"  [WAIT] Waiting {wait_time:.1f}s...")
     time.sleep(wait_time)
 
     try:
         driver.get(url)
-        # Wait for page to fully load
+        # wait for page to fully load
         time.sleep(5)
 
-        # Opera GX sometimes stays on start page - retry navigation
+        # opera gx sometimes stays on start page so we retry navigation
         if "pro-football-reference" not in driver.current_url:
             print(f"  Redirected to {driver.current_url}, retrying...")
             driver.get(url)
             time.sleep(5)
 
-        # Check if we hit Cloudflare
+        # check if we hit Cloudflare
         page_source = driver.page_source
         if 'Just a moment' in page_source or 'Checking your browser' in page_source:
             print("  [WAIT] Cloudflare challenge detected, waiting 15s...")
@@ -433,12 +369,12 @@ def scrape_player(driver, player_id, player_name, force=False):
 
         soup = BeautifulSoup(page_source, 'lxml')
 
-        # Get actual player name from page
+        # get actual player name from page
         h1 = soup.find('h1')
         actual_name = h1.get_text(strip=True) if h1 else player_name
         print(f"  Found: {actual_name}")
 
-        # Create player folder with actual name
+        # c  reate player folder with actual name
         folder_name = get_player_folder_name(actual_name)
         player_dir = os.path.join(OUTPUT_DIR, folder_name)
         os.makedirs(player_dir, exist_ok=True)
@@ -450,14 +386,14 @@ def scrape_player(driver, player_id, player_name, force=False):
         for table_id, table_info in TABLES_TO_SCRAPE.items():
             target_filename = table_info['filename']
 
-            # Skip if we already saved this filename from another table id
+            # skip if we already saved this filename from another table id
             if target_filename in saved_filenames:
                 continue
 
-            # Find table directly
+            # find table directly
             table = soup.find('table', {'id': table_id})
 
-            # If not found, check in HTML comments (PFR hides some tables)
+            # if not found, check in HTML comments (PFR hides some tables)
             if not table:
                 for element in soup.find_all(string=True):
                     if isinstance(element, str) and table_id in element:
@@ -507,7 +443,7 @@ def combine_all_csvs(input_dir='data/raw/qb', output_dir='data/processed'):
     
     os.makedirs(output_dir, exist_ok=True)
     
-    # Get all player folders
+    # get all player folders
     player_folders = [f for f in os.listdir(input_dir) 
                       if os.path.isdir(os.path.join(input_dir, f))]
     
@@ -515,7 +451,7 @@ def combine_all_csvs(input_dir='data/raw/qb', output_dir='data/processed'):
         print("[FAIL] No player folders found")
         return
     
-    # Collect files by type
+    # collect files by type
     file_types = {}
     
     for folder in sorted(player_folders):
@@ -533,7 +469,7 @@ def combine_all_csvs(input_dir='data/raw/qb', output_dir='data/processed'):
             except Exception as e:
                 print(f"  [FAIL] Error reading {filepath}: {e}")
     
-    # Combine and save each type
+    # combine and save each type
     for filename, dfs in file_types.items():
         if dfs:
             combined = pd.concat(dfs, ignore_index=True)
@@ -545,25 +481,6 @@ def combine_all_csvs(input_dir='data/raw/qb', output_dir='data/processed'):
     print(f"\n[OK] Combined {len(player_folders)} player folders")
 
 
-def list_players(input_dir='data/raw/qb'):
-    """List all scraped players and their stats."""
-    print(f"\nScraped players in {input_dir}:\n")
-    
-    player_folders = sorted([f for f in os.listdir(input_dir) 
-                            if os.path.isdir(os.path.join(input_dir, f))])
-    
-    for folder in player_folders:
-        folder_path = os.path.join(input_dir, folder)
-        csv_files = [f for f in os.listdir(folder_path) if f.endswith('.csv')]
-        print(f"  {folder}: {len(csv_files)} files")
-        for csv_file in sorted(csv_files):
-            filepath = os.path.join(folder_path, csv_file)
-            try:
-                df = pd.read_csv(filepath)
-                print(f"    - {csv_file}: {len(df)} rows")
-            except:
-                print(f"    - {csv_file}: (error reading)")
-
 
 def main():
     """Main entry point."""
@@ -572,21 +489,15 @@ def main():
     parser.add_argument('--test', action='store_true', help='Test mode - scrape first player only')
     parser.add_argument('--force', action='store_true', help='Force re-scrape even if files exist')
     parser.add_argument('--combine', action='store_true', help='Only combine existing CSVs')
-    parser.add_argument('--list', action='store_true', help='List all scraped players')
-    
+
     args = parser.parse_args()
-    
-    # List mode
-    if args.list:
-        list_players()
-        return
-    
-    # Combine only mode
+
+
     if args.combine:
         combine_all_csvs()
         return
     
-    # Determine which QBs to scrape
+    # determine which QBs to scrape
     if args.player:
         qb_list = [(args.player, args.player, 0)]
     elif args.test:
@@ -605,7 +516,6 @@ def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     driver = create_driver()
 
-    # Track results
     stats = {'success': 0, 'failed': 0, 'skipped': 0}
 
     try:
@@ -614,7 +524,6 @@ def main():
             result = scrape_player(driver, player_id, name, force=args.force)
             stats[result] += 1
 
-        # Print summary
         print(f"\n{'='*70}")
         print(f"RESULTS:")
         print(f"  [OK] Success: {stats['success']}")
@@ -623,7 +532,6 @@ def main():
         print(f"  Total:        {sum(stats.values())}")
         print(f"{'='*70}")
 
-        # Combine all CSVs
         if stats['success'] > 0:
             print("\nCombining all QB CSVs...")
             combine_all_csvs(input_dir='data/raw/qb', output_dir='data/processed')
