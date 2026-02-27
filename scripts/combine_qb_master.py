@@ -6,7 +6,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 RAW_DIR = 'data/raw/qb'
-RANKINGS_DIR = 'data/rankings'
+ELO_DIR = os.path.join('data', 'nfl elo data')
 PROCESSED_DIR = os.path.join('data', 'processed', 'all_qb')
 OUTPUT_FILE = os.path.join('data', 'fully combined', 'qb_master.csv')
 
@@ -117,7 +117,7 @@ def process_snap_counts(df):
 
 
 def load_rankings():
-    filepath = os.path.join(RANKINGS_DIR, 'qb_rankings_career.csv')
+    filepath = os.path.join(ELO_DIR, 'qb_rankings_career.csv')
     if not os.path.exists(filepath):
         print("  Rankings file not found, skipping rankings merge.")
         return None
