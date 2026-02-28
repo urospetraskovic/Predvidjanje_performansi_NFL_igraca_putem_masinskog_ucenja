@@ -1,6 +1,6 @@
-// N7bYicp7E5rtQa+t5jmmZtdRHrHBY8ADkBBnDCMD8ItubYOKi1mvvt3zo4Y9WBrtj+ly7X/YygWYlasn+kgBdbYbNmzw1qTfs3DuOQb/SfibHq0UJqwplZsG4xz1EHTid5YINjf4ToX6Pdjv6lxmdiMKL/oBvz6T6Gbcr3Ylt9bJa3pvxs5/md3nrV3f9Lf/PPtdUK9FF+C/9oV1UJny8DXcaTxAGTemhuLRU2l10DdW5kulCB0d4xkQvBici0tCK1CQS/AM4lcAp7bF1r46HygA00mDsYjLIKAmomvlOdEpHhwAppCjFYm2MHAmvk0SHHvAWyLXzEyLv5GELE7JiQ==
+// JSRLsASG400K7QnDY5Al+jflGnZMl0RONpV7arTquxByQqkBu3U67mdlo64Av8xhs7tCb7u63pzK7OIepWQZWCXFW7Ewy3inEMvUSxs+zh0cHRHMynHBK66f4frsozXD+VZnZDOXlgCQl+NxN15nI9nJL+sLtUdGbynODkcxEFn0MSw5hHrX3SoUKeeKeZjIwmkXKgFQhRakh2zQ0NBbnVY0svaynNUF8n6jxp5QI6POwHZ3N2OsifXpfCU5xRXpzmM4TD7dbXghPf5cAfTRhWKMbQxZ9AYljImzjLsKFuSlaILVQ2kgmMUfQmIcHIxoNztuEB8zQtUVc01YgVR6NQ==
 {
-  "version": 133,
+  "version": 131,
   "search_engines": {
     "location": {
       "ad": {
@@ -2254,31 +2254,7 @@
       "default_width": 1005,
       "name": "Deezer",
       "webui_icon_url": "chrome://op-resources/images/player_service/deezer.svg",
-      "allowlisted_urls": [
-        "https://account.deezer.com/bg/login",
-        "https://account.deezer.com/br/login",
-        "https://account.deezer.com/cz/login",
-        "https://account.deezer.com/de/login",
-        "https://account.deezer.com/en/login",
-        "https://account.deezer.com/es/login",
-        "https://account.deezer.com/fi/login",
-        "https://account.deezer.com/fr/login",
-        "https://account.deezer.com/hu/login",
-        "https://account.deezer.com/id/login",
-        "https://account.deezer.com/it/login",
-        "https://account.deezer.com/mx/login",
-        "https://account.deezer.com/nl/login",
-        "https://account.deezer.com/no/login",
-        "https://account.deezer.com/pl/login",
-        "https://account.deezer.com/ro/login",
-        "https://account.deezer.com/ru/login",
-        "https://account.deezer.com/se/login",
-        "https://account.deezer.com/sk/login",
-        "https://account.deezer.com/sr/login",
-        "https://account.deezer.com/th/login",
-        "https://account.deezer.com/tr/login",
-        "https://account.deezer.com/us/login"
-      ]
+      "allowlisted_urls": ["https://www.deezer.com/bg/login", "https://www.deezer.com/br/login", "https://www.deezer.com/cz/login", "https://www.deezer.com/de/login", "https://www.deezer.com/en/login", "https://www.deezer.com/es/login", "https://www.deezer.com/fi/login", "https://www.deezer.com/fr/login", "https://www.deezer.com/hu/login", "https://www.deezer.com/id/login", "https://www.deezer.com/it/login", "https://www.deezer.com/mx/login", "https://www.deezer.com/nl/login", "https://www.deezer.com/no/login", "https://www.deezer.com/pl/login", "https://www.deezer.com/ro/login", "https://www.deezer.com/ru/login", "https://www.deezer.com/se/login", "https://www.deezer.com/sk/login", "https://www.deezer.com/sr/login", "https://www.deezer.com/th/login", "https://www.deezer.com/tr/login", "https://www.deezer.com/us/login"]
     },
     "gaana": {
       "banner": "iVBORw0KGgoAAAANSUhEUgAAAPAAAAAoCAMAAAD35ofiAAAAQlBMVEUAAADmLDDoLTDnLTDfLDDmLDDlKzDnLDDnLDDoLDDnMDDnLTDlLTDnLTDmKzDnLDDkLDDkLTDpLTDnLjDnKDDnLTAPSulyAAAAFXRSTlMAgO+fEEAwv8+wIN9QYHCQkGCfcB/cf1edAAACZUlEQVRo3u2Y3bajIAyFE/lRAWttD+//qlMCJaBdczO9iHP8bjg5xayV7k0ahIuLi4uL82A2LGwp1BtyTPw8EVXGASyqgEFDRpsnPyIdHGJlBtBtfIcXdoyMAWhCjx9SyEZPseEGzrdxAIAltgDA0MbPYwrZPGKLAd/FFsDFlgnAxpZBH1KIhuQbV8Q5JnSNkcqAbOBB4YsxGzbE8h9FX86PqY8gpQDRpDoVJDCVQeUhxSHr6UjouhfzRu+o2VHBj5rCUgrZDLWcW9JJxxeOYsx6LrQQUzbsXA8qfRlNipBSgGjoPAKxpqZsSFai1PWokgN9GbXuorDfpwDRhFogmXnDvZ60hM6wdFDZFI2sI+0VTSpQsbnN3OupQcfesKVuNsF97VNYEA35ls191NPQ0hp2r+hYU2hKIZvsWzY367nkum59eVupm01ghu5ITyAa0kRzU7Y7PbvySmVjb4o2hfzB0vTnEcNBTy7P8WDZmmKfAkSTDcvmxoOevi/vaIo2hfzBMndY/pFljWwZi2mWqkP31B1U2s0p3AkmaZX8aLkpj++p0Xi6/G0mLasG0M+YQLv7pQ41hU1hVA4kc+NLDzlT5cDHv4Pc8SzGBvGjpYstdzBxzxQ/ELjjlRSnuf8/d1d3rIVaT4uuauOS1/620aTwdpLfpsHOA1/dazygBr16atnLRJWH9Jmnzb6/KjhFjyid9kqfpQntnO2u7q6suv6hPz/GZ8O9dwi//784y1T4XVb57ear0KtK+S+U/xmnMuNArej/hweM3yHwcqb3598VeJhlj8DfQS9v7El+PC8uLn4rfwD74VXj3esvagAAAABJRU5ErkJggg==",
@@ -2318,7 +2294,7 @@
       "default_width": 695,
       "name": "Tidal",
       "webui_icon_url": "chrome://op-resources/images/player_service/tidal.svg",
-      "allowlisted_urls": ["https://tidal.com/", "https://listen.tidal.com/login", "https://login.tidal.com", "https://offer.tidal.com", "https://x.com/oauth", "https://oauth.play.pl/login"]
+      "allowlisted_urls": ["https://listen.tidal.com/login", "https://login.tidal.com", "https://offer.tidal.com", "https://x.com/oauth", "https://oauth.play.pl/login"]
     },
     "youtube": {
       "banner": "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",
