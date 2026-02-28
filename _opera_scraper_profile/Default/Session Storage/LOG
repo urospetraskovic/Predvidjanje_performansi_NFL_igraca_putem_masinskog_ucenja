@@ -1,5 +1,5 @@
-2026/02/28-17:23:46.603 1660 Creating DB C:\Users\Korisnik\Documents\GitHub\Analiza-i-Obrada\_opera_scraper_profile\Default\Session Storage since it was missing.
-2026/02/28-17:23:46.615 1660 Reusing MANIFEST C:\Users\Korisnik\Documents\GitHub\Analiza-i-Obrada\_opera_scraper_profile\Default\Session Storage/MANIFEST-000001
-2026/02/28-17:24:00.624 4670 Level-0 table #5: started
-2026/02/28-17:24:00.632 4670 Level-0 table #5: 1232335 bytes OK
-2026/02/28-17:24:00.634 4670 Delete type=0 #3
+2026/02/25-20:51:33.680 c24 Creating DB C:\Users\Win10\Documents\GitHub\Analiza-i-Obrada\_opera_scraper_profile\Default\Session Storage since it was missing.
+2026/02/25-20:51:33.742 c24 Reusing MANIFEST C:\Users\Win10\Documents\GitHub\Analiza-i-Obrada\_opera_scraper_profile\Default\Session Storage/MANIFEST-000001
+2026/02/25-20:58:51.100 c24 Level-0 table #5: started
+2026/02/25-20:58:51.150 c24 Level-0 table #5: 1232244 bytes OK
+2026/02/25-20:58:51.156 c24 Delete type=0 #3
