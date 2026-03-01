@@ -111,6 +111,23 @@ def process_snap_counts(df):
 
 
 
+def add_team_change_and_prev_yards(df):
+    """Add Team_Changed (0/1) and Prev_Season_Yds columns.
+    
+    Team_Changed: 1 if the player's team differs from previous season, else 0.
+    Prev_Season_Yds: rushing yards from the player's previous season (0 if none).
+    """
+    df = df.sort_values(['Player', 'Season']).reset_index(drop=True)
+
+    prev_team = df.groupby('Player')['Team'].shift(1)
+    df['Team_Changed'] = ((df['Team'] != prev_team) & prev_team.notna()).astype(int)
+
+    prev_yards = df.groupby('Player')['Rush_Yds'].shift(1)
+    df['Prev_Season_Yds'] = prev_yards.fillna(0)
+
+    return df
+
+
 def build_master():
     """Build the master RB CSV from all raw data."""
 
@@ -207,6 +224,9 @@ def build_master():
 
     # sort and save
     master = master.sort_values(['Player', 'Season']).reset_index(drop=True)
+
+    # Add team change and previous season rushing yards columns
+    master = add_team_change_and_prev_yards(master)
 
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     master.to_csv(OUTPUT_FILE, index=False)

@@ -129,6 +129,50 @@ def build_season_aggregated(df):
     return grouped
 
 
+def derive_player_teams(weekly_df):
+    """Derive player team abbreviation from game_ids for each player-season.
+    
+    The game_id format is '{year}_{week}_{away}_{home}'. The player's team
+    appears in EVERY game_id they play in, while opponents appear only once each.
+    So the most frequently occurring team abbreviation across all game_ids
+    for a player-season is their team.
+    """
+    from collections import Counter
+    weekly_df = weekly_df.copy()
+    parts = weekly_df['game_id'].str.split('_')
+    weekly_df['_away'] = parts.str[2]
+    weekly_df['_home'] = parts.str[3]
+
+    def most_common_team(group):
+        all_teams = list(group['_away']) + list(group['_home'])
+        counts = Counter(all_teams)
+        return counts.most_common(1)[0][0]
+
+    team_map = weekly_df.groupby(['receiver_player_id', 'season']).apply(most_common_team).reset_index()
+    team_map.columns = ['receiver_player_id', 'season', 'player_team']
+    return team_map
+
+
+def add_team_change_and_prev_yards(df, team_map):
+    """Add team_changed (0/1), player_team, and prev_season_rec_yds columns.
+    
+    team_changed: 1 if the player's team differs from previous season, else 0.
+    prev_season_rec_yds: receiving yards from the player's previous season (0 if none).
+    """
+    # Merge derived player_team into the aggregated data
+    df = df.merge(team_map, on=['receiver_player_id', 'season'], how='left')
+
+    df = df.sort_values(['receiver_player_id', 'season']).reset_index(drop=True)
+
+    prev_team = df.groupby('receiver_player_id')['player_team'].shift(1)
+    df['team_changed'] = ((df['player_team'] != prev_team) & prev_team.notna()).astype(int)
+
+    prev_yards = df.groupby('receiver_player_id')['receiving_yards'].shift(1)
+    df['prev_season_rec_yds'] = prev_yards.fillna(0)
+
+    return df
+
+
 def main():
     print("=" * 70)
     print("WR DATA COMBINER")
@@ -153,10 +197,18 @@ def main():
     all_data.to_csv(processed_path, index=False)
     print(f"[OK] Copy saved: {processed_path}")
 
+    # Derive player team mapping from weekly game_ids
+    print(f"\nDeriving player teams from game_ids...")
+    team_map = derive_player_teams(all_data)
+    print(f"  {len(team_map)} player-season team mappings")
+
     # make season-aggregated CSV ─────────────────────────────
     print(f"\nAggregating to per-player per-season...")
     season_data = build_season_aggregated(all_data)
     print(f"  {len(season_data)} player-seasons from {season_data['receiver_player_name'].nunique()} players")
+
+    # Add team change and previous season receiving yards columns
+    season_data = add_team_change_and_prev_yards(season_data, team_map)
 
     season_path = os.path.join(OUTPUT_DIR, 'wr_all_seasons.csv')
     season_data.to_csv(season_path, index=False)
@@ -173,6 +225,9 @@ def main():
     print(f"  Aggregating to per-player per-season (regular season only)...")
     season_no_playoffs = build_season_aggregated(regular_data)
     print(f"  {len(season_no_playoffs)} player-seasons from {season_no_playoffs['receiver_player_name'].nunique()} players")
+
+    # Add team change and previous season receiving yards columns (no playoffs)
+    season_no_playoffs = add_team_change_and_prev_yards(season_no_playoffs, team_map)
 
     no_playoffs_path = os.path.join(OUTPUT_DIR, 'wr_all_seasons_without_playoffs.csv')
     season_no_playoffs.to_csv(no_playoffs_path, index=False)
