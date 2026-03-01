@@ -1,4 +1,4 @@
-Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,Fmb,AV,Awards,Player,PlayerID
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,fumbles,AV,Awards,Player,PlayerID
 2015,22,CIN,TE,5,0,1,1,4,4.0,0,1,100.0,4,0.2,0.8,100.0,4.0,0,0,0,0,0.0,0.0,1,4.0,4,0,0,0,,C.J. Uzomah,UzomC.00
 2016,23,CIN,TE,10,8,38,25,234,9.4,1,14,52.6,54,2.5,23.4,65.8,6.2,0,0,0,0,0.0,0.0,25,9.4,234,1,0,2,,C.J. Uzomah,UzomC.00
 2017,24,CIN,TE,14,4,15,10,92,9.2,1,7,53.3,21,0.7,6.6,66.7,6.1,0,0,0,0,0.0,0.0,10,9.2,92,1,0,1,,C.J. Uzomah,UzomC.00

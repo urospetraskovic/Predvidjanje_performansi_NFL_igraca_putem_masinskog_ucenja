@@ -27,3 +27,5 @@ ipykernel>=6.25.0
 # Optional: Neural Networks (for future extension)
 # tensorflow>=2.15.0
 # torch>=2.1.0
+# & .\.venv\Scripts\python.exe scrapers\nfl_te_scraper.py --test
+# & .\.venv\Scripts\python.exe scripts\combine_wr_master.py

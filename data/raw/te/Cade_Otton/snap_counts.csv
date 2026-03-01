@@ -1,5 +1,5 @@
-Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,PlayerID
-2022,23,TAM,TE,88,16,11,803,,0,,107,,Cade Otton,OttoCa00
-2023,24,TAM,TE,88,17,17,1064,,0,,4,,Cade Otton,OttoCa00
-2024,25,TAM,TE,88,14,14,856,,0,,1,,Cade Otton,OttoCa00
-2025,26,TAM,TE,88,16,16,993,,0,,2,,Cade Otton,OttoCa00
+Season,Age,Team,Pos,No.,G,GS,Off_Snaps,Off%,Def_Snaps,Def%,ST_Snaps,ST%,Player,PlayerID
+2022,23,TAM,TE,88,16,11,803,70%,0,0%,107,25%,Cade Otton,OttoCa00
+2023,24,TAM,TE,88,17,17,1064,97%,0,0%,4,1%,Cade Otton,OttoCa00
+2024,25,TAM,TE,88,14,14,856,92%,0,0%,1,0%,Cade Otton,OttoCa00
+2025,26,TAM,TE,88,16,16,993,93%,0,0%,2,1%,Cade Otton,OttoCa00

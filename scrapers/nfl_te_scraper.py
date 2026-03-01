@@ -8,8 +8,8 @@ import random
 import argparse
 import re
 
-
-OPERA_BINARY = r"C:\Users\Win10\AppData\Local\Programs\Opera GX\opera.exe"
+# "C:\Users\Win10\AppData\Local\Programs\Opera GX\opera.exe";
+OPERA_BINARY = os.path.expanduser(r"~\AppData\Local\Programs\Opera GX\opera.exe")
 CHROMEDRIVER_PATH = os.path.expanduser(r"~\.cache\selenium\chromedriver\win64\143.0.7499.42\chromedriver.exe")
 
 NFL_TES = [
@@ -50,6 +50,7 @@ NFL_TES = [
     ('GrahJi00', 'Jimmy Graham'),
     ('CookJa02', 'Jared Cook'),
     ('WatsBe00', 'Ben Watson'),
+    ('LewiMa00', 'Marcedes Lewis'),
 ]
 
 TABLES_TO_SCRAPE = {
@@ -68,14 +69,6 @@ TABLES_TO_SCRAPE = {
     'adv_rushing_and_receiving': {
         'filename': 'advanced_receiving_rushing.csv',
         'description': 'Advanced Receiving and Rushing Stats (alt ID)'
-    },
-    'defense': {
-        'filename': 'defense_fumbles.csv',
-        'description': 'Defense and Fumbles'
-    },
-    'defense_and_fumbles': {
-        'filename': 'defense_fumbles.csv',
-        'description': 'Defense and Fumbles (alt ID)'
     },
     'snap_counts': {
         'filename': 'snap_counts.csv',
@@ -155,26 +148,6 @@ COLUMN_MAPPING = {
     'rush_yac_per_rush': 'Rush_YAC/A',
     'rush_broken_tackles': 'Rush_BrkTkl',
     'rush_broken_tackles_per_rush': 'Rush_BrkTkl/A',
-    # defense / Fumbles
-    'def_int': 'Def_Int',
-    'def_int_yds': 'Def_Int_Yds',
-    'def_int_td': 'Def_Int_TD',
-    'def_int_long': 'Def_Int_Lng',
-    'pass_defended': 'PD',
-    'fumbles_forced': 'FF',
-    'fumbles': 'Fmb',
-    'fumbles_rec': 'FR',
-    'fumbles_rec_yds': 'FR_Yds',
-    'fumbles_rec_td': 'FR_TD',
-    'sacks': 'Sk',
-    'tackles_combined': 'Tkl_Comb',
-    'tackles_solo': 'Tkl_Solo',
-    'tackles_assists': 'Tkl_Ast',
-    'tackles_loss': 'TFL',
-    'tackles_for_loss': 'TFL',
-    'qb_hits': 'QBHits',
-    'safety_md': 'Sfty',
-    'safeties': 'Sfty',
     # snap counts
     'offense': 'Off_Snaps',
     'off_pct': 'Off%',
@@ -245,10 +218,10 @@ def create_driver():
     options = webdriver.ChromeOptions()
     options.binary_location = OPERA_BINARY
 
-    # use a fresh profile so we don't conflict with running Opera
-    temp_profile = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '_opera_scraper_profile')
-    os.makedirs(temp_profile, exist_ok=True)
-    options.add_argument(f"user-data-dir={os.path.abspath(temp_profile)}")
+    # use a unique temp profile each time so we don't conflict with running Opera
+    import tempfile
+    temp_profile = tempfile.mkdtemp(prefix='opera_scraper_')
+    options.add_argument(f"user-data-dir={temp_profile}")
 
     # anti-detection
     options.add_argument('--disable-blink-features=AutomationControlled')
@@ -279,14 +252,14 @@ def scrape_player(driver, player_id, player_name, force=False):
         existing_files = [f for f in os.listdir(player_dir) if f.endswith('.csv')]
         # need at least receiving_rushing (the universal TE table)
         has_rr = 'receiving_rushing.csv' in existing_files
-        if has_rr and len(existing_files) >= 2:
-            print(f"  >> Already scraped ({len(existing_files)} files exist) - SKIPPING")
-            return 'skipped'
-        elif existing_files:
-            print(f"  >> Incomplete ({len(existing_files)} files) - RE-SCRAPING")
+        #if has_rr and len(existing_files) >= 2:
+        #    print(f"  >> Already scraped ({len(existing_files)} files exist) - SKIPPING")
+        #    return 'skipped'
+        #elif existing_files:
+        #    print(f"  >> Incomplete ({len(existing_files)} files) - RE-SCRAPING")
 
-    # six seven delay to avoid rate limiting
-    wait_time = random.uniform(6, 7)
+    # longer delay between requests to avoid PFR rate-limiting
+    wait_time = random.uniform(8, 12)
     print(f"  [WAIT] Waiting {wait_time:.1f}s...")
     time.sleep(wait_time)
 
@@ -295,7 +268,7 @@ def scrape_player(driver, player_id, player_name, force=False):
         page_source = None
         for attempt in range(3):
             if attempt > 0:
-                extra_wait = random.uniform(8, 15)
+                extra_wait = random.uniform(20, 35)
                 print(f"  [RETRY {attempt+1}/3] Waiting {extra_wait:.1f}s before retry...")
                 time.sleep(extra_wait)
 
@@ -312,13 +285,18 @@ def scrape_player(driver, player_id, player_name, force=False):
             # check for Cloudflare
             page_source = driver.page_source
             if 'Just a moment' in page_source or 'Checking your browser' in page_source:
-                print("  [WAIT] Cloudflare challenge detected, waiting 15s...")
-                time.sleep(15)
+                print("  [WAIT] Cloudflare challenge detected, waiting 20s...")
+                time.sleep(20)
                 page_source = driver.page_source
 
             if 'Just a moment' in page_source:
-                print("  [WAIT] Still on Cloudflare, waiting 20s more...")
-                time.sleep(20)
+                print("  [WAIT] Still on Cloudflare, waiting 30s more...")
+                time.sleep(30)
+                page_source = driver.page_source
+
+            if 'Just a moment' in page_source:
+                print("  [WAIT] Last Cloudflare wait, 30s...")
+                time.sleep(30)
                 page_source = driver.page_source
 
             if 'Just a moment' in page_source:
@@ -373,12 +351,14 @@ def scrape_player(driver, player_id, player_name, force=False):
             # find table directly
             table = soup.find('table', {'id': table_id})
 
-            # if not found, check in HTML comments (nasty PFR hides some tables)
+            # if not found, check in HTML comments (PFR hides some tables in comments)
             if not table:
-                for element in soup.find_all(string=True):
-                    if isinstance(element, str) and table_id in element:
+                from bs4 import Comment
+                comments = soup.find_all(string=lambda text: isinstance(text, Comment))
+                for comment in comments:
+                    if table_id in str(comment):
                         try:
-                            comment_soup = BeautifulSoup(element, 'lxml')
+                            comment_soup = BeautifulSoup(str(comment), 'lxml')
                             table = comment_soup.find('table', {'id': table_id})
                             if table:
                                 break
@@ -484,7 +464,7 @@ def main():
     print(f"\n{'='*70}")
     print(f"NFL TE STATS SCRAPER - Opera GX with VPN")
     print(f"{len(te_list)} players queued")
-    print(f"Tables: Receiving/Rushing, Advanced Rec/Rush, Defense/Fumbles, Snap Counts")
+    print(f"Tables: Receiving/Rushing, Advanced Rec/Rush, Snap Counts")
     print(f"{'='*70}")
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -503,12 +483,79 @@ def main():
         print("  Warm-up failed, continuing anyway...")
 
     stats = {'success': 0, 'failed': 0, 'skipped': 0}
+    failed_players = []
+    consecutive_fails = 0
 
     try:
         for i, (player_id, name) in enumerate(te_list, 1):
+            # every 10 players, take a long cooldown to avoid rate-limiting
+            if i > 1 and (i - 1) % 10 == 0:
+                cooldown = random.uniform(45, 70)
+                print(f"\n  [COOLDOWN] Pausing {cooldown:.0f}s after {i-1} players to avoid rate-limit...")
+                time.sleep(cooldown)
+
             print(f"\n[{i}/{len(te_list)}]", end='')
             result = scrape_player(driver, player_id, name, force=args.force)
             stats[result] += 1
+
+            if result == 'failed':
+                failed_players.append((player_id, name))
+                consecutive_fails += 1
+                # if we get 3 consecutive fails, restart browser (Cloudflare is sticky)
+                if consecutive_fails >= 3:
+                    print("\n  [RESTART] 3 consecutive failures - restarting browser...")
+                    try:
+                        driver.quit()
+                    except:
+                        pass
+                    time.sleep(random.uniform(30, 45))
+                    driver = create_driver()
+                    # warm up again
+                    try:
+                        driver.get("https://www.pro-football-reference.com/")
+                        time.sleep(8)
+                        if 'Just a moment' in driver.page_source:
+                            time.sleep(20)
+                    except:
+                        pass
+                    consecutive_fails = 0
+            else:
+                consecutive_fails = 0
+
+        # retry failed players once with fresh browser and longer delays
+        if failed_players:
+            print(f"\n{'='*70}")
+            print(f"RETRYING {len(failed_players)} failed players with fresh browser...")
+            print(f"{'='*70}")
+            try:
+                driver.quit()
+            except:
+                pass
+            time.sleep(random.uniform(60, 90))
+            driver = create_driver()
+            # warm up
+            try:
+                driver.get("https://www.pro-football-reference.com/")
+                time.sleep(8)
+                if 'Just a moment' in driver.page_source:
+                    time.sleep(20)
+            except:
+                pass
+
+            retry_success = 0
+            for j, (player_id, name) in enumerate(failed_players, 1):
+                if j > 1 and (j - 1) % 5 == 0:
+                    cooldown = random.uniform(45, 70)
+                    print(f"\n  [COOLDOWN] Retry pause {cooldown:.0f}s...")
+                    time.sleep(cooldown)
+
+                print(f"\n[RETRY {j}/{len(failed_players)}]", end='')
+                result = scrape_player(driver, player_id, name, force=True)
+                if result == 'success':
+                    stats['success'] += 1
+                    stats['failed'] -= 1
+                    retry_success += 1
+            print(f"\n  Retry recovered {retry_success}/{len(failed_players)} players")
 
         print(f"\n{'='*70}")
         print(f"RESULTS:")

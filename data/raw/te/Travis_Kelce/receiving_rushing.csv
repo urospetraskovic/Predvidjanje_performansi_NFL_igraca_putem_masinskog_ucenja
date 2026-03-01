@@ -1,4 +1,4 @@
-Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,Fmb,AV,Awards,Player,PlayerID
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,fumbles,AV,Awards,Player,PlayerID
 2013,24,KAN,TE,1,0,0,0,0,,0,0,,,0.0,0.0,,,0,0,0,0,,,,0.0,0.0,0,,0,0,0,0,,Travis Kelce,KelcTr00
 2014,25,KAN,TE,16,11,87,67,862,12.9,5,46,69.0,34,4.2,53.9,77.0,9.9,0,0,0,0,,,,0.0,0.0,67,12.9,862,5,4,9,,Travis Kelce,KelcTr00
 2015,26,KAN,TE,16,16,103,72,875,12.2,5,40,55.3,42,4.5,54.7,69.9,8.5,0,0,0,0,,,,0.0,0.0,72,12.2,875,5,2,9,PB,Travis Kelce,KelcTr00

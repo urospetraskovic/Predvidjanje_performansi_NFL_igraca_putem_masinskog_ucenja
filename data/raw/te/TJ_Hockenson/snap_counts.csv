@@ -1,8 +1,6 @@
-Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,PlayerID
-2019,22,DET,TE,88,12,7,525,,0,,2,,T.J. Hockenson,HockTJ00
-2020*,23,DET,TE,88,16,16,766,,0,,1,,T.J. Hockenson,HockTJ00
-2021,24,DET,TE,88,12,12,658,,0,,0,,T.J. Hockenson,HockTJ00
-2022*,25,2TM,TE,,17,14,987,,0,,0,,T.J. Hockenson,HockTJ00
-2023,26,MIN,TE,87,15,11,790,,0,,0,,T.J. Hockenson,HockTJ00
-2024,27,MIN,TE,87,10,9,423,,0,,3,,T.J. Hockenson,HockTJ00
-2025,28,MIN,TE,87,15,15,691,,0,,1,,T.J. Hockenson,HockTJ00
+Season,Age,Team,Pos,No.,G,GS,Off_Snaps,Off%,Def_Snaps,Def%,ST_Snaps,ST%,Player,PlayerID
+2019,22,DET,TE,88,12,7,525,63%,0,0%,2,1%,T.J. Hockenson,HockTJ00
+2021,24,DET,TE,88,12,12,658,84%,0,0%,0,0%,T.J. Hockenson,HockTJ00
+2023,26,MIN,TE,87,15,11,790,79%,0,0%,0,0%,T.J. Hockenson,HockTJ00
+2024,27,MIN,TE,87,10,9,423,61%,0,0%,3,1%,T.J. Hockenson,HockTJ00
+2025,28,MIN,TE,87,15,15,691,79%,0,0%,1,0%,T.J. Hockenson,HockTJ00

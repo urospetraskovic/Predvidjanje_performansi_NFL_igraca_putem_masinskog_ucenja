@@ -1,3 +1,3 @@
 Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,Y/R,TD,1D,rec_success,rec_long,R/G,Y/G,catch_pct,Y/Tgt,Att,Yds,TD,1D,Succ%,Lng,Y/A,Y/G,A/G,Touch,yds_per_touch,yds_from_scrimmage,rush_receive_td,fumbles,av,awards,Player,PlayerID
-2024,22,LVR,NFL,TE,17,16,153,112,1194,10.7,5,61,60.8,57,6.6,70.2,73.2,7.8,5,13,0,2,60.0,12,2.6,0.8,0.3,117,10.3,1207,5,0,9,,Brock Bowers,BoweBr01
-2025,23,LVR,NFL,TE,12,8,86,64,680,10.6,7,36,60.5,38,5.3,56.7,74.4,7.9,2,2,0,0,50.0,6,1.0,0.2,0.2,66,10.3,682,7,0,5,,Brock Bowers,BoweBr01
+2024,22,LVR,NFL,TE,17,16,153,112,1194,10.7,5,61,60.8,57,6.6,70.2,73.2,7.8,5,13,0,2,60.0,12,2.6,0.8,0.3,117,10.3,1207,5,0,9,PB AP-1 AP ORoY-2,Brock Bowers,BoweBr01
+2025,23,LVR,NFL,TE,12,8,86,64,680,10.6,7,36,60.5,38,5.3,56.7,74.4,7.9,2,2,0,0,50.0,6,1.0,0.2,0.2,66,10.3,682,7,0,5,PB,Brock Bowers,BoweBr01

@@ -1,4 +1,4 @@
-Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,Fmb,AV,Awards,Player,PlayerID
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,fumbles,AV,Awards,Player,PlayerID
 2018,22,DAL,TE,11,7,17,12,116,9.7,0,6,64.7,17,1.1,10.5,70.6,6.8,0,0,0,0,0.0,0.0,12,9.7,116,0,0,1,,Dalton Schultz,SchuDa00
 2019,23,DAL,TE,16,0,2,1,6,6.0,0,0,50.0,6,0.1,0.4,50.0,3.0,0,0,0,0,0.0,0.0,1,6.0,6,0,0,0,,Dalton Schultz,SchuDa00
 2020,24,DAL,TE,16,14,89,63,615,9.8,4,33,61.8,28,3.9,38.4,70.8,6.9,0,0,0,0,0.0,0.0,63,9.8,615,4,1,5,,Dalton Schultz,SchuDa00

@@ -1,4 +1,4 @@
-Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Y/A,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,Fmb,AV,Awards,Player,PlayerID
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Y/A,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,fumbles,AV,Awards,Player,PlayerID
 2018,25,BAL,TE,12,0,23,13,163,12.5,1,8,39.1,32,1.1,13.6,56.5,7.1,1,0,0,0,0.0,0.0,0.0,0.1,14,11.6,163,1,0,1,,Hayden Hurst,HursHa00
 2019,26,BAL,TE,16,4,39,30,349,11.6,2,16,69.2,61,1.9,21.8,76.9,8.9,0,0,0,0,,,0.0,0.0,30,11.6,349,2,0,5,,Hayden Hurst,HursHa00
 2020,27,ATL,TE,16,9,88,56,571,10.2,6,35,51.1,42,3.5,35.7,63.6,6.5,0,0,0,0,,,0.0,0.0,56,10.2,571,6,0,5,,Hayden Hurst,HursHa00

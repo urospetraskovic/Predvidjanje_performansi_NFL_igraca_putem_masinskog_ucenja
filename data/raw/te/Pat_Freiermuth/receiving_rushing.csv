@@ -1,4 +1,4 @@
-Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,Fmb,AV,Awards,Player,PlayerID
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,fumbles,AV,Awards,Player,PlayerID
 2021,23,PIT,TE,16,9,79,60,497,8.3,7,35,55.7,24,3.8,31.1,75.9,6.3,0,0,0,0,0.0,0.0,60,8.3,497,7,1,4,,Pat Freiermuth,FreiPa00
 2022,24,PIT,TE,16,8,98,63,732,11.6,2,37,53.1,57,3.9,45.8,64.3,7.5,0,0,0,0,0.0,0.0,63,11.6,732,2,0,6,,Pat Freiermuth,FreiPa00
 2023,25,PIT,TE,12,9,47,32,308,9.6,2,20,48.9,29,2.7,25.7,68.1,6.6,0,0,0,0,0.0,0.0,32,9.6,308,2,0,3,,Pat Freiermuth,FreiPa00

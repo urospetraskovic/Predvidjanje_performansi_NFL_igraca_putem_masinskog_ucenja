@@ -1,4 +1,4 @@
-Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,Fmb,AV,Awards,Player,PlayerID
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,fumbles,AV,Awards,Player,PlayerID
 2022,22,DEN,TE,10,6,55,33,411,12.5,2,18,50.9,39,3.3,41.1,60.0,7.5,0,0,0,0,,,,0.0,0.0,33,12.5,411,2,0,3,,Greg Dulcich,DulcGr00
 2023,23,DEN,TE,2,1,4,3,25,8.3,0,2,50.0,13,1.5,12.5,75.0,6.3,0,0,0,0,,,,0.0,0.0,3,8.3,25,0,0,0,,Greg Dulcich,DulcGr00
 2024,24,2TM,TE,9,3,12,5,28,5.6,0,0,8.3,9,0.6,3.1,41.7,2.3,0,0,0,0,,,,0.0,0.0,5,5.6,28,0,0,0,,Greg Dulcich,DulcGr00

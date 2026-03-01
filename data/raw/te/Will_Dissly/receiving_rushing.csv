@@ -1,4 +1,4 @@
-Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,Fmb,AV,Awards,Player,PlayerID
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,fumbles,AV,Awards,Player,PlayerID
 2018,22,SEA,TE,4,4,14,8,156,19.5,2,5,50.0,66,2.0,39.0,57.1,11.1,0,0,0,0,,,,0.0,0.0,8,19.5,156,2,0,1,,Will Dissly,DissWi00
 2019,23,SEA,TE,6,6,27,23,262,11.4,4,14,66.7,38,3.8,43.7,85.2,9.7,1,7,0,0,100.0,7,7.0,1.2,0.2,24,11.2,269,4,1,2,,Will Dissly,DissWi00
 2020,24,SEA,TE,16,12,29,24,251,10.5,2,12,62.1,28,1.5,15.7,82.8,8.7,0,0,0,0,,,,0.0,0.0,24,10.5,251,2,0,2,,Will Dissly,DissWi00

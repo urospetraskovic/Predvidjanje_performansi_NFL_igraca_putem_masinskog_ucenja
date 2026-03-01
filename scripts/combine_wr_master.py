@@ -32,7 +32,7 @@ def filter_regular_season(df):
     """Remove playoff weeks. Regular season: weeks 1-16 before 2021, weeks 1-17 from 2021+."""
     df = df.copy()
     week = df['game_id'].apply(lambda gid: int(gid.split('_')[1]))
-    mask = ((df['season'] < 2021) & (week <= 16)) | ((df['season'] >= 2021) & (week <= 17))
+    mask = ((df['season'] < 2021) & (week <= 17)) | ((df['season'] >= 2021) & (week <= 18))
     return df[mask]
 
 

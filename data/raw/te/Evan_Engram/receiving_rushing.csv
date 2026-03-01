@@ -1,4 +1,4 @@
-Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,Fmb,AV,Awards,Player,PlayerID
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,fumbles,AV,Awards,Player,PlayerID
 2017,23,NYG,TE,15,11,115,64,722,11.3,6,37,44.3,35,4.3,48.1,55.7,6.3,1,14,0,1,100.0,14,14.0,0.9,0.1,65,11.3,736,6,0,5,,Evan Engram,EngrEv00
 2018,24,NYG,TE,11,8,64,45,577,12.8,3,22,43.8,54,4.1,52.5,70.3,9.0,3,36,0,3,100.0,14,12.0,3.3,0.3,48,12.8,613,3,0,5,,Evan Engram,EngrEv00
 2019,25,NYG,TE,8,6,68,44,467,10.6,3,23,41.2,75,5.5,58.4,64.7,6.9,3,7,0,0,66.7,5,2.3,0.9,0.4,47,10.1,474,3,0,4,,Evan Engram,EngrEv00
