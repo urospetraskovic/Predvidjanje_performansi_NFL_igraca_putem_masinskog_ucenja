@@ -1,0 +1,56 @@
+2026/03/01-01:38:59.847 4270 Reusing MANIFEST C:\Users\Win10\Documents\GitHub\Analiza-i-Obrada\_opera_scraper_profile\Default\Session Storage/MANIFEST-000001
+2026/03/01-01:38:59.849 4270 Recovering log #7
+2026/03/01-01:38:59.852 4270 Reusing old log C:\Users\Win10\Documents\GitHub\Analiza-i-Obrada\_opera_scraper_profile\Default\Session Storage/000007.log 
+2026/03/01-01:39:12.316 4194 Level-0 table #11: started
+2026/03/01-01:39:12.364 4194 Level-0 table #11: 1245142 bytes OK
+2026/03/01-01:39:12.370 4194 Delete type=0 #7
+2026/03/01-01:39:17.566 4270 Level-0 table #13: started
+2026/03/01-01:39:17.636 4270 Level-0 table #13: 1280418 bytes OK
+2026/03/01-01:39:17.649 4270 Delete type=0 #10
+2026/03/01-01:39:31.395 4270 Level-0 table #15: started
+2026/03/01-01:39:31.455 4270 Level-0 table #15: 1283008 bytes OK
+2026/03/01-01:39:31.466 4270 Delete type=0 #12
+2026/03/01-01:39:51.178 4270 Level-0 table #17: started
+2026/03/01-01:39:51.223 4270 Level-0 table #17: 1281106 bytes OK
+2026/03/01-01:39:51.229 4270 Delete type=0 #14
+2026/03/01-01:39:51.237 4270 Compacting 4@0 + 1@1 files
+2026/03/01-01:39:51.353 4270 Generated table #18@0: 42 keys, 2505854 bytes
+2026/03/01-01:39:51.445 4270 Generated table #19@0: 98 keys, 2560593 bytes
+2026/03/01-01:39:51.461 4270 Generated table #20@0: 141 keys, 21862 bytes
+2026/03/01-01:39:51.462 4270 Compacted 4@0 + 1@1 files => 5088309 bytes
+2026/03/01-01:39:51.464 4270 compacted to: files[ 0 3 1 0 0 0 0 ]
+2026/03/01-01:39:51.467 4270 Delete type=2 #8
+2026/03/01-01:39:51.467 4270 Delete type=2 #11
+2026/03/01-01:39:51.467 4270 Delete type=2 #13
+2026/03/01-01:39:51.467 4270 Delete type=2 #15
+2026/03/01-01:39:51.467 4270 Delete type=2 #17
+2026/03/01-01:39:57.046 4194 Level-0 table #22: started
+2026/03/01-01:39:57.093 4194 Level-0 table #22: 1278234 bytes OK
+2026/03/01-01:39:57.097 4194 Delete type=0 #16
+2026/03/01-01:40:17.746 4270 Level-0 table #24: started
+2026/03/01-01:40:17.805 4270 Level-0 table #24: 1283749 bytes OK
+2026/03/01-01:40:17.810 4270 Delete type=0 #21
+2026/03/01-01:40:26.861 4194 Level-0 table #26: started
+2026/03/01-01:40:26.908 4194 Level-0 table #26: 1280881 bytes OK
+2026/03/01-01:40:26.912 4194 Delete type=0 #23
+2026/03/01-01:40:41.538 4270 Level-0 table #28: started
+2026/03/01-01:40:41.580 4270 Level-0 table #28: 1280860 bytes OK
+2026/03/01-01:40:41.584 4270 Delete type=0 #25
+2026/03/01-01:40:41.585 4270 Compacting 4@0 + 3@1 files
+2026/03/01-01:40:41.662 4270 Generated table #29@0: 59 keys, 2542009 bytes
+2026/03/01-01:40:41.736 4270 Generated table #30@0: 51 keys, 2523895 bytes
+2026/03/01-01:40:41.832 4270 Generated table #31@0: 61 keys, 2559402 bytes
+2026/03/01-01:40:41.902 4270 Generated table #32@0: 97 keys, 2560382 bytes
+2026/03/01-01:40:41.916 4270 Generated table #33@0: 241 keys, 24578 bytes
+2026/03/01-01:40:41.916 4270 Compacted 4@0 + 3@1 files => 10210266 bytes
+2026/03/01-01:40:41.918 4270 compacted to: files[ 0 5 1 0 0 0 0 ]
+2026/03/01-01:40:41.920 4270 Delete type=2 #18
+2026/03/01-01:40:41.920 4270 Delete type=2 #19
+2026/03/01-01:40:41.920 4270 Delete type=2 #20
+2026/03/01-01:40:41.920 4270 Delete type=2 #22
+2026/03/01-01:40:41.920 4270 Delete type=2 #24
+2026/03/01-01:40:41.920 4270 Delete type=2 #26
+2026/03/01-01:40:41.920 4270 Delete type=2 #28
+2026/03/01-01:40:50.732 4194 Level-0 table #35: started
+2026/03/01-01:40:50.778 4194 Level-0 table #35: 1280575 bytes OK
+2026/03/01-01:40:50.782 4194 Delete type=0 #27

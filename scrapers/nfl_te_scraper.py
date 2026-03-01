@@ -182,6 +182,9 @@ COLUMN_MAPPING = {
     'def_pct': 'Def%',
     'special_teams': 'ST_Snaps',
     'st_pct': 'ST%',
+    # other
+    'av': 'AV',
+    'awards': 'Awards',
 }
 
 OUTPUT_DIR = 'data/raw/te'

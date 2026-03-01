@@ -28,6 +28,14 @@ def load_all_years():
     return combined
 
 
+def filter_regular_season(df):
+    """Remove playoff weeks. Regular season: weeks 1-16 before 2021, weeks 1-17 from 2021+."""
+    df = df.copy()
+    week = df['game_id'].apply(lambda gid: int(gid.split('_')[1]))
+    mask = ((df['season'] < 2021) & (week <= 16)) | ((df['season'] >= 2021) & (week <= 17))
+    return df[mask]
+
+
 def build_season_aggregated(df):
     id_cols = ['receiver_player_id', 'receiver_player_name', 'season']
 
@@ -156,10 +164,27 @@ def main():
     print(f"\n[OK] Season aggregated saved: {season_path}")
     print(f"     {len(season_data)} rows, {len(season_data.columns)} cols, {size_kb:.1f} KB")
 
+    # make season-aggregated CSV WITHOUT playoffs ─────────────────────────────
+    print(f"\nFiltering to regular season only (no playoffs)...")
+    regular_data = filter_regular_season(all_data)
+    removed = len(all_data) - len(regular_data)
+    print(f"  Kept {len(regular_data)} weekly rows, removed {removed} playoff rows")
+
+    print(f"  Aggregating to per-player per-season (regular season only)...")
+    season_no_playoffs = build_season_aggregated(regular_data)
+    print(f"  {len(season_no_playoffs)} player-seasons from {season_no_playoffs['receiver_player_name'].nunique()} players")
+
+    no_playoffs_path = os.path.join(OUTPUT_DIR, 'wr_all_seasons_without_playoffs.csv')
+    season_no_playoffs.to_csv(no_playoffs_path, index=False)
+    size_kb = os.path.getsize(no_playoffs_path) / 1024
+    print(f"\n[OK] Season aggregated (no playoffs) saved: {no_playoffs_path}")
+    print(f"     {len(season_no_playoffs)} rows, {len(season_no_playoffs.columns)} cols, {size_kb:.1f} KB")
+
     print(f"\n{'=' * 70}")
     print(f"SUMMARY:")
-    print(f"  wr_all_weeks.csv:   {len(all_data)} rows (game-level, 2015-2025)")
-    print(f"  wr_all_seasons.csv: {len(season_data)} rows (player-season aggregated)")
+    print(f"  wr_all_weeks.csv:                      {len(all_data)} rows (game-level, 2015-2025)")
+    print(f"  wr_all_seasons.csv:                     {len(season_data)} rows (player-season aggregated)")
+    print(f"  wr_all_seasons_without_playoffs.csv:    {len(season_no_playoffs)} rows (regular season only)")
     print(f"  Seasons: {all_data['season'].min()} - {all_data['season'].max()}")
     print(f"  Players: {all_data['receiver_player_name'].nunique()} unique")
     print(f"{'=' * 70}")

@@ -1,5 +1,5 @@
-Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,1D,YBC,YBC/R,YAC,YAC/R,ADOT,BrkTkl,Rec/Br,Drop,Drop%,Int,rec_pass_rating,Att,Yds,1D,YBC,YBC/Att,YAC,YAC/Att,BrkTkl,awards,Player,PlayerID
-2022,23,TEN,NFL,TE,17,8,46,32,450,22,196,6.1,254,7.9,7.6,3,10.7,3,6.5,0,122.6,3,2,0,0,0.0,2,0.7,0,,Chigoziem Okonkwo,OkonCh00
-2023,24,TEN,NFL,TE,17,11,77,54,528,25,268,5.0,260,4.8,6.8,5,10.8,6,7.8,1,88.0,2,6,1,4,2.0,2,1.0,0,,Chigoziem Okonkwo,OkonCh00
-2024,25,TEN,NFL,TE,17,11,70,52,479,19,230,4.4,249,4.8,5.9,5,10.4,3,4.3,4,78.2,1,17,1,14,14.0,3,3.0,0,,Chigoziem Okonkwo,OkonCh00
-2025,26,TEN,NFL,TE,17,12,79,56,560,24,218,3.9,342,6.1,4.7,6,9.3,5,6.3,1,93.9,0,0,0,0,,0,,0,,Chigoziem Okonkwo,OkonCh00
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Awards,Player,PlayerID
+2022,23,TEN,TE,17,8,46,32,450,22,196,6.1,254,7.9,7.6,3,10.7,3,6.5,0,122.6,3,2,0,0,0.0,2,0.7,0,,Chigoziem Okonkwo,OkonCh00
+2023,24,TEN,TE,17,11,77,54,528,25,268,5.0,260,4.8,6.8,5,10.8,6,7.8,1,88.0,2,6,1,4,2.0,2,1.0,0,,Chigoziem Okonkwo,OkonCh00
+2024,25,TEN,TE,17,11,70,52,479,19,230,4.4,249,4.8,5.9,5,10.4,3,4.3,4,78.2,1,17,1,14,14.0,3,3.0,0,,Chigoziem Okonkwo,OkonCh00
+2025,26,TEN,TE,17,12,79,56,560,24,218,3.9,342,6.1,4.7,6,9.3,5,6.3,1,93.9,0,0,0,0,,0,,0,,Chigoziem Okonkwo,OkonCh00

@@ -1,10 +1,9 @@
-Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,PlayerID
-2017,21,CLE,TE,85,16,5,500,,0,,167,,David Njoku,NjokDa00
-2018,22,CLE,TE,85,16,14,871,,0,,0,,David Njoku,NjokDa00
-2019,23,CLE,TE,85,4,1,99,,0,,0,,David Njoku,NjokDa00
-2020,24,CLE,TE,85,13,5,410,,0,,0,,David Njoku,NjokDa00
-2021,25,CLE,TE,85,16,11,670,,0,,0,,David Njoku,NjokDa00
-2022,26,CLE,TE,85,14,14,817,,0,,0,,David Njoku,NjokDa00
-2023*,27,CLE,TE,85,16,16,970,,0,,0,,David Njoku,NjokDa00
-2024,28,CLE,TE,85,11,11,589,,0,,0,,David Njoku,NjokDa00
-2025,29,CLE,TE,85,12,11,514,,0,,0,,David Njoku,NjokDa00
+Season,Age,Team,Pos,No.,G,GS,Off_Snaps,Off%,Def_Snaps,Def%,ST_Snaps,ST%,Player,PlayerID
+2017,21,CLE,TE,85,16,5,500,47%,0,0%,167,39%,David Njoku,NjokDa00
+2018,22,CLE,TE,85,16,14,871,80%,0,0%,0,0%,David Njoku,NjokDa00
+2019,23,CLE,TE,85,4,1,99,40%,0,0%,0,0%,David Njoku,NjokDa00
+2020,24,CLE,TE,85,13,5,410,47%,0,0%,0,0%,David Njoku,NjokDa00
+2021,25,CLE,TE,85,16,11,670,64%,0,0%,0,0%,David Njoku,NjokDa00
+2022,26,CLE,TE,85,14,14,817,84%,0,0%,0,0%,David Njoku,NjokDa00
+2024,28,CLE,TE,85,11,11,589,75%,0,0%,0,0%,David Njoku,NjokDa00
+2025,29,CLE,TE,85,12,11,514,64%,0,0%,0,0%,David Njoku,NjokDa00

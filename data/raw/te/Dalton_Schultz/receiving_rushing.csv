@@ -1,9 +1,9 @@
-Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,Y/R,TD,1D,rec_success,rec_long,R/G,Y/G,catch_pct,Y/Tgt,Att,Yds,TD,1D,Y/G,A/G,Touch,yds_per_touch,yds_from_scrimmage,rush_receive_td,fumbles,av,awards,Player,PlayerID
-2018,22,DAL,NFL,TE,11,7,17,12,116,9.7,0,6,64.7,17,1.1,10.5,70.6,6.8,0,0,0,0,0.0,0.0,12,9.7,116,0,0,1,,Dalton Schultz,SchuDa00
-2019,23,DAL,NFL,TE,16,0,2,1,6,6.0,0,0,50.0,6,0.1,0.4,50.0,3.0,0,0,0,0,0.0,0.0,1,6.0,6,0,0,0,,Dalton Schultz,SchuDa00
-2020,24,DAL,NFL,TE,16,14,89,63,615,9.8,4,33,61.8,28,3.9,38.4,70.8,6.9,0,0,0,0,0.0,0.0,63,9.8,615,4,1,5,,Dalton Schultz,SchuDa00
-2021,25,DAL,NFL,TE,17,15,104,78,808,10.4,8,47,62.5,32,4.6,47.5,75.0,7.8,0,0,0,0,0.0,0.0,78,10.4,808,8,0,7,,Dalton Schultz,SchuDa00
-2022,26,DAL,NFL,TE,15,15,89,57,577,10.1,5,32,55.1,30,3.8,38.5,64.0,6.5,0,0,0,0,0.0,0.0,57,10.1,577,5,1,6,,Dalton Schultz,SchuDa00
-2023,27,HOU,NFL,TE,15,8,88,59,635,10.8,5,36,52.3,31,3.9,42.3,67.0,7.2,0,0,0,0,0.0,0.0,59,10.8,635,5,1,5,,Dalton Schultz,SchuDa00
-2024,28,HOU,NFL,TE,17,13,85,53,532,10.0,2,30,49.4,32,3.1,31.3,62.4,6.3,0,0,0,0,0.0,0.0,53,10.0,532,2,0,4,,Dalton Schultz,SchuDa00
-2025,29,HOU,NFL,TE,17,6,106,82,777,9.5,3,39,60.4,47,4.8,45.7,77.4,7.3,0,0,0,0,0.0,0.0,82,9.5,777,3,1,6,,Dalton Schultz,SchuDa00
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,Fmb,AV,Awards,Player,PlayerID
+2018,22,DAL,TE,11,7,17,12,116,9.7,0,6,64.7,17,1.1,10.5,70.6,6.8,0,0,0,0,0.0,0.0,12,9.7,116,0,0,1,,Dalton Schultz,SchuDa00
+2019,23,DAL,TE,16,0,2,1,6,6.0,0,0,50.0,6,0.1,0.4,50.0,3.0,0,0,0,0,0.0,0.0,1,6.0,6,0,0,0,,Dalton Schultz,SchuDa00
+2020,24,DAL,TE,16,14,89,63,615,9.8,4,33,61.8,28,3.9,38.4,70.8,6.9,0,0,0,0,0.0,0.0,63,9.8,615,4,1,5,,Dalton Schultz,SchuDa00
+2021,25,DAL,TE,17,15,104,78,808,10.4,8,47,62.5,32,4.6,47.5,75.0,7.8,0,0,0,0,0.0,0.0,78,10.4,808,8,0,7,,Dalton Schultz,SchuDa00
+2022,26,DAL,TE,15,15,89,57,577,10.1,5,32,55.1,30,3.8,38.5,64.0,6.5,0,0,0,0,0.0,0.0,57,10.1,577,5,1,6,,Dalton Schultz,SchuDa00
+2023,27,HOU,TE,15,8,88,59,635,10.8,5,36,52.3,31,3.9,42.3,67.0,7.2,0,0,0,0,0.0,0.0,59,10.8,635,5,1,5,,Dalton Schultz,SchuDa00
+2024,28,HOU,TE,17,13,85,53,532,10.0,2,30,49.4,32,3.1,31.3,62.4,6.3,0,0,0,0,0.0,0.0,53,10.0,532,2,0,4,,Dalton Schultz,SchuDa00
+2025,29,HOU,TE,17,6,106,82,777,9.5,3,39,60.4,47,4.8,45.7,77.4,7.3,0,0,0,0,0.0,0.0,82,9.5,777,3,1,6,,Dalton Schultz,SchuDa00

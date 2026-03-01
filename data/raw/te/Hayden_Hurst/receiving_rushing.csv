@@ -1,8 +1,8 @@
-Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,Y/R,TD,1D,rec_success,rec_long,R/G,Y/G,catch_pct,Y/Tgt,Att,Yds,TD,1D,Succ%,Y/A,Y/G,A/G,Touch,yds_per_touch,yds_from_scrimmage,rush_receive_td,fumbles,av,awards,Player,PlayerID
-2018,25,BAL,NFL,TE,12,0,23,13,163,12.5,1,8,39.1,32,1.1,13.6,56.5,7.1,1,0,0,0,0.0,0.0,0.0,0.1,14,11.6,163,1,0,1,,Hayden Hurst,HursHa00
-2019,26,BAL,NFL,TE,16,4,39,30,349,11.6,2,16,69.2,61,1.9,21.8,76.9,8.9,0,0,0,0,,,0.0,0.0,30,11.6,349,2,0,5,,Hayden Hurst,HursHa00
-2020,27,ATL,NFL,TE,16,9,88,56,571,10.2,6,35,51.1,42,3.5,35.7,63.6,6.5,0,0,0,0,,,0.0,0.0,56,10.2,571,6,0,5,,Hayden Hurst,HursHa00
-2021,28,ATL,NFL,TE,13,5,31,26,221,8.5,3,11,58.1,33,2.0,17.0,83.9,7.1,0,0,0,0,,,0.0,0.0,26,8.5,221,3,3,2,,Hayden Hurst,HursHa00
-2022,29,CIN,NFL,TE,13,13,68,52,414,8.0,2,26,61.8,29,4.0,31.8,76.5,6.1,0,0,0,0,,,0.0,0.0,52,8.0,414,2,0,4,,Hayden Hurst,HursHa00
-2023,30,CAR,NFL,TE,9,8,32,18,184,10.2,1,7,46.9,48,2.0,20.4,56.3,5.8,0,0,0,0,,,0.0,0.0,18,10.2,184,1,0,1,,Hayden Hurst,HursHa00
-2024,31,LAC,NFL,TE,9,2,13,8,73,9.1,0,2,38.5,27,0.9,8.1,61.5,5.6,0,0,0,0,,,0.0,0.0,8,9.1,73,0,0,1,,Hayden Hurst,HursHa00
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Y/A,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,Fmb,AV,Awards,Player,PlayerID
+2018,25,BAL,TE,12,0,23,13,163,12.5,1,8,39.1,32,1.1,13.6,56.5,7.1,1,0,0,0,0.0,0.0,0.0,0.1,14,11.6,163,1,0,1,,Hayden Hurst,HursHa00
+2019,26,BAL,TE,16,4,39,30,349,11.6,2,16,69.2,61,1.9,21.8,76.9,8.9,0,0,0,0,,,0.0,0.0,30,11.6,349,2,0,5,,Hayden Hurst,HursHa00
+2020,27,ATL,TE,16,9,88,56,571,10.2,6,35,51.1,42,3.5,35.7,63.6,6.5,0,0,0,0,,,0.0,0.0,56,10.2,571,6,0,5,,Hayden Hurst,HursHa00
+2021,28,ATL,TE,13,5,31,26,221,8.5,3,11,58.1,33,2.0,17.0,83.9,7.1,0,0,0,0,,,0.0,0.0,26,8.5,221,3,3,2,,Hayden Hurst,HursHa00
+2022,29,CIN,TE,13,13,68,52,414,8.0,2,29,61.8,29,4.0,31.8,76.5,6.1,0,0,0,0,,,0.0,0.0,52,8.0,414,2,0,4,,Hayden Hurst,HursHa00
+2023,30,CAR,TE,9,8,32,18,184,10.2,1,7,46.9,48,2.0,20.4,56.3,5.8,0,0,0,0,,,0.0,0.0,18,10.2,184,1,0,1,,Hayden Hurst,HursHa00
+2024,31,LAC,TE,9,2,13,8,73,9.1,0,2,38.5,27,0.9,8.1,61.5,5.6,0,0,0,0,,,0.0,0.0,8,9.1,73,0,0,1,,Hayden Hurst,HursHa00
