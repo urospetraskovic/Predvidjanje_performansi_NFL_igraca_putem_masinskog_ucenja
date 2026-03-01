@@ -1,0 +1,5 @@
+Pozicija,Najbolji model,MAE,RMSE,R²,Train size,Test size,Broj feature-a
+QB,KNeighbors,30.84,43.94,-0.073,620,29,40
+RB,KNeighbors,18.87,24.37,0.046,471,34,36
+TE,Lasso,10.65,11.59,0.571,253,27,34
+WR,ElasticNet,9.42,12.42,0.612,2744,342,29
