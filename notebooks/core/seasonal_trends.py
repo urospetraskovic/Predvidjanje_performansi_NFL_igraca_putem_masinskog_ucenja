@@ -27,10 +27,10 @@ def plot_qb_yards_by_era(qb, era_bins=None, era_labels=None):
 
 
 QB_PASSING_METRICS = [
-    ('Yds',  'Prosječni Passing Yards',  '#3498db'),
-    ('TD',   'Prosječni Passing TDs',    '#e74c3c'),
-    ('Rate', 'Prosječni Passer Rating',  '#2ecc71'),
-    ('Cmp%', 'Prosječni Completion %',   '#f39c12'),
+    ('Yds',  'Prosečni Passing Yards',  '#3498db'),
+    ('TD',   'Prosečni Passing TDs',    '#e74c3c'),
+    ('Rate', 'Prosečni Passer Rating',  '#2ecc71'),
+    ('Cmp%', 'Prosečni Completion %',   '#f39c12'),
 ]
 
 def plot_qb_passing_trends(qb, metrics=None, min_season=1985):
@@ -83,10 +83,10 @@ def plot_rb_yards_by_era(rb, era_bins=None, era_labels=None):
 
 
 RB_RUSHING_METRICS = [
-    ('Rush_Yds', 'Prosječni Rushing Yards',    '#e74c3c'),
-    ('Rush_TD',  'Prosječni Rushing TDs',       '#c0392b'),
-    ('Rush_Y/A', 'Prosječni Yards per Attempt', '#e67e22'),
-    ('Rush_A/G', 'Prosječni Attempts per Game', '#d35400'),
+    ('Rush_Yds', 'Prosečni Rushing Yards',    '#e74c3c'),
+    ('Rush_TD',  'Prosečni Rushing TDs',       '#c0392b'),
+    ('Rush_Y/A', 'Prosečni Yards per Attempt', '#e67e22'),
+    ('Rush_A/G', 'Prosečni Attempts per Game', '#d35400'),
 ]
 
 def plot_rb_rushing_trends(rb, metrics=None):
