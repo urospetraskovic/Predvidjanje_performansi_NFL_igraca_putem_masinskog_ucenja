@@ -20,7 +20,7 @@ _RB_CAREER_MARKERS = {'Adrian Peterson': 'D', 'Alvin Kamara': 'v', 'Saquon Barkl
 def _career_axes(players, colors, markers, df, y_col, ylabel, fmt):
     fig, axes = plt.subplots(1, 3, figsize=(18, 5), sharey=True)
     fig.patch.set_facecolor('white')
-    y_max = df[y_col].max() * 1.12
+    y_max = df[y_col].max() * 1.28
     for idx, player in enumerate(players):
         ax = axes[idx]
         data = df[df['Player'] == player].sort_values('Season')
@@ -37,6 +37,7 @@ def _career_axes(players, colors, markers, df, y_col, ylabel, fmt):
                     fontsize=9, fontweight='bold', color=colors[player],
                     ha='center', va='bottom',
                     arrowprops=dict(arrowstyle='->', color=colors[player], lw=1.2))
+        ax.set_ylim(bottom=0, top=y_max)
         ax.set_title(player, fontsize=14, fontweight='bold', color=colors[player], pad=10)
         ax.set_xlabel('Sezona', fontsize=11)
         if idx == 0:
