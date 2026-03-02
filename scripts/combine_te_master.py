@@ -43,25 +43,10 @@ def prefix_columns(df, prefix, keep_cols):
 
 
 def process_receiving_rushing(df):
-    """Normalize receiving_rushing columns across old and new PFR formats.
-    
-    Old format (pre-2024 scrapes): columns already mapped by scraper
-        Rec_Yds, Rec_Y/R, Rec_TD, Rec_1D, Rec_Succ%, Rec_Lng, Rec/G, Rec_Y/G,
-        Catch%, Rec_Y/Tgt, Rush_Att, Rush_Yds, Rush_TD, Rush_1D, Rush_Succ%,
-        Rush_Lng, Rush_Y/A, Rush_Y/G, Rush_A/G, Touches, Y/Touch,
-        Scrimmage_Yds, Rush_Rec_TD, fumbles, AV, Awards
-    
-    New format (2024+ scrapes): raw PFR data-stat names, pandas adds .1 suffixes
-        Yds, Y/R, TD, 1D, rec_success, rec_long, R/G, Y/G, catch_pct, Y/Tgt,
-        Att, Yds.1, TD.1, 1D.1, Succ%, Lng, Y/A, Y/G.1, A/G, Touch,
-        yds_per_touch, yds_from_scrimmage, rush_receive_td, fumbles, av, awards
-    """
     if df is None:
         return None
 
-    # Unified rename map: handles BOTH old-format (already mapped) AND new-format (raw)
     renames = {
-        # --- Receiving (new format -> standard) ---
         'Yds': 'Rec_Yds',
         'Y/R': 'Rec_Y/R',
         'TD': 'Rec_TD',
@@ -69,11 +54,10 @@ def process_receiving_rushing(df):
         'rec_success': 'Rec_Succ%',
         'rec_long': 'Rec_Lng',
         'R/G': 'Rec/G',
-        'Rec_R/G': 'Rec/G',         # alternate old mapping
+        'Rec_R/G': 'Rec/G',         
         'Y/G': 'Rec_Y/G',
         'catch_pct': 'Catch%',
         'Y/Tgt': 'Rec_Y/Tgt',
-        # --- Rushing (new format -> standard) ---
         'Att': 'Rush_Att',
         'Yds.1': 'Rush_Yds',
         'TD.1': 'Rush_TD',
@@ -83,42 +67,27 @@ def process_receiving_rushing(df):
         'Y/A': 'Rush_Y/A',
         'Y/G.1': 'Rush_Y/G',
         'A/G': 'Rush_A/G',
-        # --- Totals (new format -> standard) ---
         'Touch': 'Touches',
         'yds_per_touch': 'Y/Touch',
         'yds_from_scrimmage': 'Scrimmage_Yds',
         'rush_receive_td': 'Rush_Rec_TD',
-        # --- Other (new format -> standard) ---
         'av': 'AV',
         'awards': 'Awards',
         'fumbles': 'Fmb',
-        'Fmb': 'Fmb',    # keep consistent
+        'Fmb': 'Fmb',   
     }
     df = df.rename(columns={k: v for k, v in renames.items() if k in df.columns})
 
-    # Drop Lg if present
     df = df.drop(columns=['Lg'], errors='ignore')
 
     return df
 
 
 def process_advanced_receiving_rushing(df):
-    """Normalize advanced receiving_rushing columns across old and new PFR formats.
-    
-    Old format: Rec_AirYds, Rec_AirYds/R, Rec_YAC, Rec_YAC/R, Rec_aDOT,
-                Rec_BrkTkl, Rec_BrkTkl/R, Rec_Drops, Rec_Drop%, Rec_Int,
-                Rec_PassRtg, Rush_YBC, Rush_YBC/A, Rush_YAC, Rush_YAC/A,
-                Rush_BrkTkl
-    
-    New format: YBC, YBC/R, YAC, YAC/R, ADOT, BrkTkl, Rec/Br, Drop, Drop%,
-                Int, rec_pass_rating, YBC.1, YBC/Att, YAC.1, YAC/Att,
-                BrkTkl.1, Att/Br
-    """
     if df is None:
         return None
 
     renames = {
-        # --- Receiving advanced (new format -> standard) ---
         'Tgt': '_drop_Tgt',
         'Rec': '_drop_Rec',
         'Yds': '_drop_Yds',
@@ -134,28 +103,24 @@ def process_advanced_receiving_rushing(df):
         'Drop%': 'Rec_Drop%',
         'Int': 'Rec_Int',
         'rec_pass_rating': 'Rec_PassRtg',
-        # --- Receiving advanced (old format already correct, just ensure consistency) ---
         'Rec_AirYds': 'Rec_AirYds',
         'Rec_AirYds/R': 'Rec_AirYds/R',
         'Rec_BrkTkl/R': 'Rec_BrkTkl/R',
-        # --- Rushing advanced (new format -> standard) ---
         'Att': '_drop_Att',
         'Yds.1': '_drop_Yds1',
         '1D.1': '_drop_1D1',
         'YBC.1': 'Rush_YBC',
         'YBC/Att': 'Rush_YBC/A',
-        'Rush_YBC/A': 'Rush_YBC/A',  # keep consistent
+        'Rush_YBC/A': 'Rush_YBC/A',  
         'YAC.1': 'Rush_YAC',
         'YAC/Att': 'Rush_YAC/A',
-        'Rush_YAC/A': 'Rush_YAC/A',  # keep consistent
+        'Rush_YAC/A': 'Rush_YAC/A',  
         'BrkTkl.1': 'Rush_BrkTkl',
         'Att/Br': 'Rush_Att/Br',
-        # --- Other ---
         'awards': '_drop_awards',
     }
     df = df.rename(columns={k: v for k, v in renames.items() if k in df.columns})
 
-    # Drop duplicate/redundant columns and shared identity columns
     drop_cols = [c for c in df.columns if c.startswith('_drop_')]
     drop_cols += [c for c in SHARED_COLS if c in df.columns]
     drop_cols += ['Awards', 'Lg']
@@ -167,11 +132,6 @@ def process_advanced_receiving_rushing(df):
 
 
 def process_snap_counts(df):
-    """Normalize snap count columns across old and new PFR formats.
-    
-    Old format: Off_Snaps, Off%, Def_Snaps, Def%, ST_Snaps, ST%
-    New format: offense, Off%, defense, Def%, special_teams, ST%
-    """
     if df is None:
         return None
 
@@ -191,11 +151,6 @@ def process_snap_counts(df):
 
 
 def add_team_change_and_prev_yards(df):
-    """Add Team_Changed (0/1) and Prev_Season_Yds columns.
-    
-    Team_Changed: 1 if the player's team differs from previous season, else 0.
-    Prev_Season_Yds: receiving yards from the player's previous season (0 if none).
-    """
     df = df.sort_values(['Player', 'Season']).reset_index(drop=True)
 
     prev_team = df.groupby('Player')['Team'].shift(1)
@@ -208,7 +163,6 @@ def add_team_change_and_prev_yards(df):
 
 
 def combine_intermediate():
-    """Combine individual TE CSVs into per-table files in data/processed/."""
     print(f"\nWriting intermediate all_te_*.csv files to {PROCESSED_DIR}/...")
     os.makedirs(PROCESSED_DIR, exist_ok=True)
 
@@ -239,8 +193,6 @@ def combine_intermediate():
 
 
 def build_master():
-    """Build the master TE CSV from all raw data."""
-
     print("=" * 70)
     print("BUILDING TE MASTER TABLE")
     print("=" * 70)
@@ -276,7 +228,7 @@ def build_master():
             processed = processor(table_df)
             if processed is not None:
                 table_counts[filename] += 1
-                base_df = base_df.merge(
+                base_df = base_df.merge( # type: ignore
                     processed,
                     on=KEY_COLS,
                     how='left'

@@ -130,13 +130,6 @@ def build_season_aggregated(df):
 
 
 def derive_player_teams(weekly_df):
-    """Derive player team abbreviation from game_ids for each player-season.
-    
-    The game_id format is '{year}_{week}_{away}_{home}'. The player's team
-    appears in EVERY game_id they play in, while opponents appear only once each.
-    So the most frequently occurring team abbreviation across all game_ids
-    for a player-season is their team.
-    """
     from collections import Counter
     weekly_df = weekly_df.copy()
     parts = weekly_df['game_id'].str.split('_')
@@ -154,12 +147,7 @@ def derive_player_teams(weekly_df):
 
 
 def add_team_change_and_prev_yards(df, team_map):
-    """Add team_changed (0/1), player_team, and prev_season_rec_yds columns.
-    
-    team_changed: 1 if the player's team differs from previous season, else 0.
-    prev_season_rec_yds: receiving yards from the player's previous season (0 if none).
-    """
-    # Merge derived player_team into the aggregated data
+    # merge derived player_team into the aggregated data
     df = df.merge(team_map, on=['receiver_player_id', 'season'], how='left')
 
     df = df.sort_values(['receiver_player_id', 'season']).reset_index(drop=True)
@@ -216,7 +204,7 @@ def main():
     print(f"\n[OK] Season aggregated saved: {season_path}")
     print(f"     {len(season_data)} rows, {len(season_data.columns)} cols, {size_kb:.1f} KB")
 
-    # make season-aggregated CSV WITHOUT playoffs ─────────────────────────────
+    # make season-aggregated CSV WITHOUT playoffs 
     print(f"\nFiltering to regular season only (no playoffs)...")
     regular_data = filter_regular_season(all_data)
     removed = len(all_data) - len(regular_data)
@@ -226,7 +214,7 @@ def main():
     season_no_playoffs = build_season_aggregated(regular_data)
     print(f"  {len(season_no_playoffs)} player-seasons from {season_no_playoffs['receiver_player_name'].nunique()} players")
 
-    # Add team change and previous season receiving yards columns (no playoffs)
+    # add team change and previous season receiving yards columns (no playoffs)
     season_no_playoffs = add_team_change_and_prev_yards(season_no_playoffs, team_map)
 
     no_playoffs_path = os.path.join(OUTPUT_DIR, 'wr_all_seasons_without_playoffs.csv')

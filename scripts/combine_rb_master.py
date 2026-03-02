@@ -31,7 +31,6 @@ def load_table(folder_path, filename):
 
 
 def prefix_columns(df, prefix, keep_cols):
-    """Add prefix to all columns except those in keep_cols."""
     rename_map = {}
     for col in df.columns:
         if col not in keep_cols:
@@ -112,11 +111,6 @@ def process_snap_counts(df):
 
 
 def add_team_change_and_prev_yards(df):
-    """Add Team_Changed (0/1) and Prev_Season_Yds columns.
-    
-    Team_Changed: 1 if the player's team differs from previous season, else 0.
-    Prev_Season_Yds: rushing yards from the player's previous season (0 if none).
-    """
     df = df.sort_values(['Player', 'Season']).reset_index(drop=True)
 
     prev_team = df.groupby('Player')['Team'].shift(1)
@@ -166,7 +160,7 @@ def build_master():
             processed = process_snap_counts(snap_df)
             if processed is not None:
                 table_counts['snap_counts.csv'] += 1
-                base_df = base_df.merge(processed, on=KEY_COLS, how='left')
+                base_df = base_df.merge(processed, on=KEY_COLS, how='left') # type: ignore
             all_player_dfs.append(base_df)
             continue
 
@@ -179,7 +173,7 @@ def build_master():
             processed = processor(table_df)
             if processed is not None:
                 table_counts[filename] += 1
-                base_df = base_df.merge(
+                base_df = base_df.merge( # type: ignore
                     processed,
                     on=KEY_COLS,
                     how='left'
