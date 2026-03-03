@@ -1,7 +1,10 @@
+import re
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.patheffects as pe
 import seaborn as sns
+from matplotlib.colors import Normalize
 
 
 QB_ERA_BINS   = [1984, 1990, 2000, 2010, 2020, 2026]
@@ -27,10 +30,10 @@ def plot_qb_yards_by_era(qb, era_bins=None, era_labels=None):
 
 
 QB_PASSING_METRICS = [
-    ('Yds',  'Prosečni Passing Yards',  '#3498db'),
-    ('TD',   'Prosečni Passing TDs',    '#e74c3c'),
-    ('Rate', 'Prosečni Passer Rating',  '#2ecc71'),
-    ('Cmp%', 'Prosečni Completion %',   '#f39c12'),
+    ('Yds',  'Prosječni Passing Yards',  '#3498db'),
+    ('TD',   'Prosječni Passing TDs',    '#e74c3c'),
+    ('Rate', 'Prosječni Passer Rating',  '#2ecc71'),
+    ('Cmp%', 'Prosječni Completion %',   '#f39c12'),
 ]
 
 def plot_qb_passing_trends(qb, metrics=None, min_season=1985):
@@ -83,10 +86,10 @@ def plot_rb_yards_by_era(rb, era_bins=None, era_labels=None):
 
 
 RB_RUSHING_METRICS = [
-    ('Rush_Yds', 'Prosečni Rushing Yards',    '#e74c3c'),
-    ('Rush_TD',  'Prosečni Rushing TDs',       '#c0392b'),
-    ('Rush_Y/A', 'Prosečni Yards per Attempt', '#e67e22'),
-    ('Rush_A/G', 'Prosečni Attempts per Game', '#d35400'),
+    ('Rush_Yds', 'Prosječni Rushing Yards',    '#e74c3c'),
+    ('Rush_TD',  'Prosječni Rushing TDs',       '#c0392b'),
+    ('Rush_Y/A', 'Prosječni Yards per Attempt', '#e67e22'),
+    ('Rush_A/G', 'Prosječni Attempts per Game', '#d35400'),
 ]
 
 def plot_rb_rushing_trends(rb, metrics=None):
@@ -177,5 +180,77 @@ def plot_top10_seasons(qb, rb, te, wr_seasons, data_dir=None):
         ax.text(val + 5, bar.get_y() + bar.get_height() / 2, f'{val:,.0f}', va='center', fontsize=9)
 
     fig.suptitle('Top 10 pojedinačnih sezona', fontsize=16, fontweight='bold', y=1.02)
+    plt.tight_layout()
+    plt.show()
+
+
+def _col(df, *opts):
+    low = {c.lower(): c for c in df.columns}
+    return next((low[o.lower()] for o in opts if o.lower() in low), None)
+
+
+def plot_qb_career_scatter(qb, xlim=(3.0, 6.6), ylim=(150, 290), vmin=0.25, vmax=0.80):
+    """Career TD% vs Yds/Game bubble chart for QBs.
+
+    Parameters
+    ----------
+    qb   : QB DataFrame (per-season rows)
+    xlim : (min, max) for Career TD% x-axis
+    ylim : (min, max) for Career Yds/Game y-axis
+    vmin / vmax : Win% color scale bounds
+    """
+    from adjustText import adjust_text
+
+    C_NAME = _col(qb, 'Player', 'Name', 'QB')
+    C_ATT  = _col(qb, 'Att',  'PA',    'Attempts')
+    C_TD   = _col(qb, 'TD',   'TDs',   'PassingTD')
+    C_YDS  = _col(qb, 'Yds',  'Yards', 'PassingYds')
+    C_G    = _col(qb, 'G',    'Games', 'games')
+    C_REC  = _col(qb, 'QBrec','W-L',   'Record')
+
+    def _win_pct(records):
+        w = l = 0
+        for v in records.astype(str):
+            m = re.search(r'(\d+)\s*[-–]\s*(\d+)', v)
+            if m:
+                w += int(m.group(1)); l += int(m.group(2))
+        return w / (w + l) if w + l > 0 else np.nan
+
+    g = qb.groupby(C_NAME)
+    career = pd.DataFrame({
+        'TD_pct':       100 * g[C_TD].sum() / g[C_ATT].sum(),
+        'Yds_per_Game': g[C_YDS].sum() / g[C_G].sum(),
+        'Games':        g[C_G].sum(),
+        'Win_pct':      g[C_REC].apply(_win_pct),
+    }).reset_index().dropna(subset=['TD_pct', 'Yds_per_Game'])
+
+    x = career['TD_pct']
+    y = career['Yds_per_Game']
+    s = 20 + 380 * (career['Games'] - career['Games'].min()) / (career['Games'].max() - career['Games'].min() + 1e-6)
+    c = career['Win_pct'].fillna(0.5).clip(vmin, vmax)
+
+    fig, ax = plt.subplots(figsize=(14, 8))
+    ax.set(xlim=xlim, ylim=ylim,
+           xlabel='Career TD%', ylabel='Career Yards per Game',
+           title='Career TD% vs Yds/Game   (bubble size = career games  |  color = career Win %)')
+
+    sc = ax.scatter(x, y, s=s, c=c, cmap='RdYlGn', norm=Normalize(vmin, vmax),
+                    edgecolor='k', linewidths=0.6, alpha=0.88, zorder=3)
+
+    cb = fig.colorbar(sc, ax=ax)
+    cb.set_label('Career Win %')
+    cb.set_ticks([vmin, 0.4, 0.55, 0.7, vmax])
+    cb.set_ticklabels(['25%', '40%', '55%', '70%', '80%'])
+
+    stroke = [pe.withStroke(linewidth=2.5, foreground='white')]
+    vis = career[(x.values >= xlim[0]) & (x.values <= xlim[1]) &
+                 (y.values >= ylim[0]) & (y.values <= ylim[1])]
+
+    texts = [ax.text(r.TD_pct, r.Yds_per_Game, getattr(r, C_NAME),
+                     fontsize=7.5, ha='center', va='center', zorder=5,
+                     path_effects=stroke)
+             for r in vis.itertuples()]
+
+    adjust_text(texts, ax=ax, expand_points=(1.5, 1.5), expand_text=(1.3, 1.3))
     plt.tight_layout()
     plt.show()
