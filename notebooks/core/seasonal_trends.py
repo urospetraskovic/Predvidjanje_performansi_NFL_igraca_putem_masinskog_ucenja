@@ -190,15 +190,6 @@ def _col(df, *opts):
 
 
 def plot_qb_career_scatter(qb, xlim=(3.0, 6.6), ylim=(150, 290), vmin=0.25, vmax=0.80):
-    """Career TD% vs Yds/Game bubble chart for QBs.
-
-    Parameters
-    ----------
-    qb   : QB DataFrame (per-season rows)
-    xlim : (min, max) for Career TD% x-axis
-    ylim : (min, max) for Career Yds/Game y-axis
-    vmin / vmax : Win% color scale bounds
-    """
     from adjustText import adjust_text
 
     C_NAME = _col(qb, 'Player', 'Name', 'QB')
