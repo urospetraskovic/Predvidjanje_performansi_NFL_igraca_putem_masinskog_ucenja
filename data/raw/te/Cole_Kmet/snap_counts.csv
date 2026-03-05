@@ -1,7 +1,7 @@
-Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,PlayerID
-2020,21,CHI,TE,85,16,9,603,,0,,109,,Cole Kmet,KmetCo00
-2021,22,CHI,TE,85,17,17,935,,0,,121,,Cole Kmet,KmetCo00
-2022,23,CHI,TE,85,17,17,971,,0,,57,,Cole Kmet,KmetCo00
-2023,24,CHI,TE,85,17,17,878,,0,,58,,Cole Kmet,KmetCo00
-2024,25,CHI,TE,85,17,16,994,,0,,52,,Cole Kmet,KmetCo00
-2025,26,CHI,TE,85,16,15,768,,0,,74,,Cole Kmet,KmetCo00
+Season,Age,Team,Pos,No.,G,GS,Off_Snaps,Off%,Def_Snaps,Def%,ST_Snaps,ST%,Player,PlayerID
+2020,21,CHI,TE,85,16,9,603,56%,0,0%,109,24%,Cole Kmet,KmetCo00
+2021,22,CHI,TE,85,17,17,935,83%,0,0%,121,29%,Cole Kmet,KmetCo00
+2022,23,CHI,TE,85,17,17,971,94%,0,0%,57,13%,Cole Kmet,KmetCo00
+2023,24,CHI,TE,85,17,17,878,77%,0,0%,58,13%,Cole Kmet,KmetCo00
+2024,25,CHI,TE,85,17,16,994,88%,0,0%,52,12%,Cole Kmet,KmetCo00
+2025,26,CHI,TE,85,16,15,768,70%,0,0%,74,17%,Cole Kmet,KmetCo00

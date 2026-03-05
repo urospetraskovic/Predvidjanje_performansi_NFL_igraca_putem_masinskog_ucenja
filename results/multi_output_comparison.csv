@@ -1,0 +1,49 @@
+Pozicija,Model,Target,MAE,RMSE,R²
+QB,MO Ridge,Yds_per_G,35.09,46.83,-0.219
+QB,MO Ridge,TD_per_G,0.36,0.45,0.054
+QB,MO Ridge,Cmp%,3.18,3.79,-0.558
+QB,MO Ridge,Rate,7.14,8.68,0.195
+QB,MO Random Forest,Yds_per_G,35.92,49.19,-0.345
+QB,MO Random Forest,TD_per_G,0.36,0.47,-0.052
+QB,MO Random Forest,Cmp%,3.57,4.56,-1.258
+QB,MO Random Forest,Rate,7.53,9.47,0.041
+QB,MO ElasticNet,Yds_per_G,37.34,52.1,-0.509
+QB,MO ElasticNet,TD_per_G,0.38,0.5,-0.154
+QB,MO ElasticNet,Cmp%,3.74,5.33,-2.088
+QB,MO ElasticNet,Rate,8.63,10.6,-0.202
+RB,MO Ridge,Rush_Yds_per_G,20.56,24.65,0.023
+RB,MO Ridge,Rush_TD_per_G,0.22,0.27,0.149
+RB,MO Ridge,Rec_Yds_per_G,5.19,6.28,0.499
+RB,MO Random Forest,Rush_Yds_per_G,19.0,22.94,0.154
+RB,MO Random Forest,Rush_TD_per_G,0.23,0.28,0.092
+RB,MO Random Forest,Rec_Yds_per_G,5.42,6.36,0.487
+RB,MO ElasticNet,Rush_Yds_per_G,20.33,24.42,0.042
+RB,MO ElasticNet,Rush_TD_per_G,0.23,0.28,0.093
+RB,MO ElasticNet,Rec_Yds_per_G,5.12,6.17,0.516
+TE,MO Ridge,Rec_Yds_per_G,12.03,13.98,0.377
+TE,MO Ridge,Rec_TD_per_G,0.15,0.19,0.103
+TE,MO Random Forest,Rec_Yds_per_G,10.7,11.93,0.546
+TE,MO Random Forest,Rec_TD_per_G,0.16,0.19,0.128
+TE,MO ElasticNet,Rec_Yds_per_G,11.44,13.06,0.456
+TE,MO ElasticNet,Rec_TD_per_G,0.17,0.19,0.095
+WR,MO Ridge,rec_yds_per_G,9.51,12.52,0.606
+WR,MO Ridge,tds_per_G,0.12,0.16,0.307
+WR,MO Ridge,rec_per_G,0.75,0.99,0.568
+WR,MO Random Forest,rec_yds_per_G,9.72,12.68,0.596
+WR,MO Random Forest,tds_per_G,0.12,0.17,0.262
+WR,MO Random Forest,rec_per_G,0.78,1.02,0.543
+WR,MO ElasticNet,rec_yds_per_G,9.44,12.45,0.611
+WR,MO ElasticNet,tds_per_G,0.13,0.18,0.154
+WR,MO ElasticNet,rec_per_G,0.76,1.01,0.55
+QB,MLP Multi-Output,Yds_per_G,41.78,55.72,-0.726
+QB,MLP Multi-Output,TD_per_G,0.48,0.58,-0.584
+QB,MLP Multi-Output,Cmp%,7.1,12.27,-15.36
+QB,MLP Multi-Output,Rate,11.67,17.29,-2.195
+RB,MLP Multi-Output,Rush_Yds_per_G,58.63,63.68,-5.517
+RB,MLP Multi-Output,Rush_TD_per_G,0.36,0.43,-1.121
+RB,MLP Multi-Output,Rec_Yds_per_G,18.89,20.88,-4.539
+TE,MLP Multi-Output,Rec_Yds_per_G,16.82,19.75,-0.244
+TE,MLP Multi-Output,Rec_TD_per_G,0.4,0.47,-4.497
+WR,MLP Multi-Output,rec_yds_per_G,9.28,12.31,0.62
+WR,MLP Multi-Output,tds_per_G,0.16,0.21,-0.136
+WR,MLP Multi-Output,rec_per_G,0.78,1.02,0.543

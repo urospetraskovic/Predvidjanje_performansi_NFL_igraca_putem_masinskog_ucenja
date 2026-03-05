@@ -1,4 +1,4 @@
-Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,Y/R,TD,1D,rec_success,rec_long,R/G,Y/G,catch_pct,Y/Tgt,Att,Yds,TD,1D,Succ%,Lng,Y/A,Y/G,A/G,Touch,yds_per_touch,yds_from_scrimmage,rush_receive_td,fumbles,av,awards,Player,PlayerID
-2023,22,DET,NFL,TE,17,14,120,86,889,10.3,10,54,55.8,48,5.1,52.3,71.7,7.4,1,4,0,0,100.0,4.0,4.0,0.2,0.1,87,10.3,893,10,0,9,,Sam LaPorta,LaPoSa01
-2024,23,DET,NFL,TE,16,16,83,60,726,12.1,7,42,56.6,52,3.8,45.4,72.3,8.7,0,0,0,0,,,,0.0,0.0,60,12.1,726,7,0,8,,Sam LaPorta,LaPoSa01
-2025,24,DET,NFL,TE,9,9,49,40,489,12.2,3,23,69.4,40,4.4,54.3,81.6,10.0,0,0,0,0,,,,0.0,0.0,40,12.2,489,3,0,5,,Sam LaPorta,LaPoSa01
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_Y/R,Rec_TD,Rec_1D,Rec_Succ%,Rec_Lng,Rec/G,Rec_Y/G,Catch%,Rec_Y/Tgt,Rush_Att,Rush_Yds,Rush_TD,Rush_1D,Rush_Succ%,Rush_Lng,Rush_Y/A,Rush_Y/G,Rush_A/G,Touches,Y/Touch,Scrimmage_Yds,Rush_Rec_TD,fumbles,AV,Awards,Player,PlayerID
+2023,22,DET,TE,17,14,120,86,889,10.3,10,54,55.8,48,5.1,52.3,71.7,7.4,1,4,0,0,100.0,4,4.0,0.2,0.1,87,10.3,893,10,0,9,"PB,AP-2,AP ORoY-3",Sam LaPorta,LaPoSa01
+2024,23,DET,TE,16,16,83,60,726,12.1,7,42,56.6,52,3.8,45.4,72.3,8.7,0,0,0,0,,,,0.0,0.0,60,12.1,726,7,0,8,,Sam LaPorta,LaPoSa01
+2025,24,DET,TE,9,9,49,40,489,12.2,3,23,69.4,40,4.4,54.3,81.6,10.0,0,0,0,0,,,,0.0,0.0,40,12.2,489,3,0,5,,Sam LaPorta,LaPoSa01

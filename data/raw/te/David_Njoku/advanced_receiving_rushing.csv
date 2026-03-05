@@ -1,9 +1,9 @@
-Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,1D,YBC,YBC/R,YAC,YAC/R,ADOT,BrkTkl,Rec/Br,Drop,Drop%,Int,rec_pass_rating,Att,Yds,1D,YBC,YBC/Att,YAC,YAC/Att,BrkTkl,awards,Player,PlayerID
-2018,22,CLE,NFL,TE,16,14,88,56,639,27,333,5.9,306,5.5,8.7,6,9.3,6,6.8,3,86.3,0,0,0,0,,0,,0,,David Njoku,NjokDa00
-2019,23,CLE,NFL,TE,4,1,10,5,41,3,25,5.0,16,3.2,6.4,0,,2,20.0,1,54.6,0,0,0,0,,0,,0,,David Njoku,NjokDa00
-2020,24,CLE,NFL,TE,13,5,29,19,213,13,126,6.6,87,4.6,7.4,2,9.5,1,3.4,0,110.3,0,0,0,0,,0,,0,,David Njoku,NjokDa00
-2021,25,CLE,NFL,TE,16,11,53,36,475,17,228,6.3,247,6.9,8.2,2,18.0,2,3.8,1,113.3,1,1,0,0,0.0,1,1.0,0,,David Njoku,NjokDa00
-2022,26,CLE,NFL,TE,14,14,80,58,628,36,290,5.0,338,5.8,6.5,3,19.3,3,3.8,1,106.7,2,-8,0,-8,-4.0,0,0.0,0,,David Njoku,NjokDa00
-2023,27,CLE,NFL,TE,16,16,123,81,882,39,283,3.5,599,7.4,4.5,10,8.1,11,8.9,4,89.5,0,0,0,0,,0,,0,,David Njoku,NjokDa00
-2024,28,CLE,NFL,TE,11,11,97,64,505,23,254,4.0,251,3.9,5.2,4,16.0,7,7.2,3,83.1,0,0,0,0,,0,,0,,David Njoku,NjokDa00
-2025,29,CLE,NFL,TE,12,11,48,33,293,11,133,4.0,160,4.8,5.3,3,11.0,1,2.1,2,95.2,0,0,0,0,,0,,0,,David Njoku,NjokDa00
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Awards,Player,PlayerID
+2018,22,CLE,TE,16,14,88,56,639,27,333,5.9,306,5.5,8.7,6,9.3,6,6.8,3,86.3,0,0,0,0,,0,,0,,David Njoku,NjokDa00
+2019,23,CLE,TE,4,1,10,5,41,3,25,5.0,16,3.2,6.4,0,,2,20.0,1,54.6,0,0,0,0,,0,,0,,David Njoku,NjokDa00
+2020,24,CLE,TE,13,5,29,19,213,13,126,6.6,87,4.6,7.4,2,9.5,1,3.4,0,110.3,0,0,0,0,,0,,0,,David Njoku,NjokDa00
+2021,25,CLE,TE,16,11,53,36,475,17,228,6.3,247,6.9,8.2,2,18.0,2,3.8,1,113.3,1,1,0,0,0.0,1,1.0,0,,David Njoku,NjokDa00
+2022,26,CLE,TE,14,14,80,58,628,36,290,5.0,338,5.8,6.5,3,19.3,3,3.8,1,106.7,2,-8,0,-8,-4.0,0,0.0,0,,David Njoku,NjokDa00
+2023,27,CLE,TE,16,16,123,81,882,39,283,3.5,599,7.4,4.5,10,8.1,11,8.9,4,89.5,0,0,0,0,,0,,0,PB,David Njoku,NjokDa00
+2024,28,CLE,TE,11,11,97,64,505,23,254,4.0,251,3.9,5.2,4,16.0,7,7.2,3,83.1,0,0,0,0,,0,,0,,David Njoku,NjokDa00
+2025,29,CLE,TE,12,11,48,33,293,11,133,4.0,160,4.8,5.3,3,11.0,1,2.1,2,95.2,0,0,0,0,,0,,0,,David Njoku,NjokDa00

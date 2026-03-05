@@ -1,8 +1,8 @@
-Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,1D,YBC,YBC/R,YAC,YAC/R,ADOT,BrkTkl,Rec/Br,Drop,Drop%,Int,rec_pass_rating,Att,Yds,1D,YBC,YBC/Att,YAC,YAC/Att,BrkTkl,awards,Player,PlayerID
-2018,26,OAK,NFL,WR,4,0,6,6,75,4,19,3.2,56,9.3,3.2,1,6.0,0,0.0,0,118.7,1,21,1,16,16.0,5,5.0,0,,Darren Waller,WallDa01
-2019,27,OAK,NFL,TE,16,16,117,90,1145,53,575,6.4,570,6.3,7.3,8,11.3,5,4.3,2,108.4,2,5,0,2,1.0,3,1.5,0,,Darren Waller,WallDa01
-2020,28,LVR,NFL,TE,16,15,145,107,1196,68,624,5.8,572,5.3,7.8,7,15.3,4,2.8,3,110.0,0,0,0,0,,0,,0,,Darren Waller,WallDa01
-2021,29,LVR,NFL,TE,11,11,93,55,665,36,423,7.7,242,4.4,9.8,3,18.3,5,5.4,2,79.4,0,0,0,0,,0,,0,,Darren Waller,WallDa01
-2022,30,LVR,NFL,TE,9,6,43,28,388,18,308,11.0,80,2.9,13.5,0,,3,7.0,2,97.8,0,0,0,0,,0,,0,,Darren Waller,WallDa01
-2023,31,NYG,NFL,TE,12,11,74,52,552,25,341,6.6,211,4.1,8.0,0,,3,4.1,2,85.0,0,0,0,0,,0,,0,,Darren Waller,WallDa01
-2025,33,MIA,NFL,TE,9,3,34,24,283,19,210,8.8,73,3.0,10.6,0,,0,0.0,0,135.2,1,4,1,1,1.0,3,3.0,0,,Darren Waller,WallDa01
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Awards,Player,PlayerID
+2018,26,OAK,WR,4,0,6,6,75,4,19,3.2,56,9.3,3.2,1,6.0,0,0.0,0,118.7,1,21,1,16,16.0,5,5.0,0,,Darren Waller,WallDa01
+2019,27,OAK,TE,16,16,117,90,1145,53,575,6.4,570,6.3,7.3,8,11.3,5,4.3,2,108.4,2,5,0,2,1.0,3,1.5,0,AP CPoY-3,Darren Waller,WallDa01
+2020,28,LVR,TE,16,15,145,107,1196,68,624,5.8,572,5.3,7.8,7,15.3,4,2.8,3,110.0,0,0,0,0,,0,,0,PB,Darren Waller,WallDa01
+2021,29,LVR,TE,11,11,93,55,665,36,423,7.7,242,4.4,9.8,3,18.3,5,5.4,2,79.4,0,0,0,0,,0,,0,,Darren Waller,WallDa01
+2022,30,LVR,TE,9,6,43,28,388,18,308,11.0,80,2.9,13.5,0,,3,7.0,2,97.8,0,0,0,0,,0,,0,,Darren Waller,WallDa01
+2023,31,NYG,TE,12,11,74,52,552,25,341,6.6,211,4.1,8.0,0,,3,4.1,2,85.0,0,0,0,0,,0,,0,,Darren Waller,WallDa01
+2025,33,MIA,TE,9,3,34,24,283,19,210,8.8,73,3.0,10.6,0,,0,0.0,0,135.2,1,4,1,1,1.0,3,3.0,0,,Darren Waller,WallDa01

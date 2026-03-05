@@ -24,6 +24,8 @@ shap>=0.42.0
 jupyter>=1.0.0
 ipykernel>=6.25.0
 
-# Optional: Neural Networks (for future extension)
+# Neural Networks 
 # tensorflow>=2.15.0
 # torch>=2.1.0
+# & .venv\Scripts\Activate.ps1; python scrapers/nfl_te_scraper.py --test
+# .\.venv\Scripts\python.exe scripts\combine_rb_master.py

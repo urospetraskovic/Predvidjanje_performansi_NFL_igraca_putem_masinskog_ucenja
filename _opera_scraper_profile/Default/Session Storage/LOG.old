@@ -1,0 +1,19 @@
+2026/03/01-02:34:49.047 3ddc Reusing MANIFEST C:\Users\Korisnik\Documents\GitHub\Analiza-i-Obrada\_opera_scraper_profile\Default\Session Storage/MANIFEST-000001
+2026/03/01-02:34:49.054 3ddc Recovering log #39
+2026/03/01-02:34:49.056 3ddc Reusing old log C:\Users\Korisnik\Documents\GitHub\Analiza-i-Obrada\_opera_scraper_profile\Default\Session Storage/000039.log 
+2026/03/01-02:35:08.422 4cfc Level-0 table #43: started
+2026/03/01-02:35:08.431 4cfc Level-0 table #43: 1232896 bytes OK
+2026/03/01-02:35:08.432 4cfc Delete type=0 #39
+2026/03/01-02:35:08.433 4cfc Compacting 4@0 + 5@1 files
+2026/03/01-02:35:08.475 4cfc Generated table #44@0: 467 keys, 1241957 bytes
+2026/03/01-02:35:08.475 4cfc Compacted 4@0 + 5@1 files => 1241957 bytes
+2026/03/01-02:35:08.476 4cfc compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/03/01-02:35:08.477 4cfc Delete type=2 #29
+2026/03/01-02:35:08.477 4cfc Delete type=2 #30
+2026/03/01-02:35:08.477 4cfc Delete type=2 #31
+2026/03/01-02:35:08.477 4cfc Delete type=2 #32
+2026/03/01-02:35:08.477 4cfc Delete type=2 #33
+2026/03/01-02:35:08.477 4cfc Delete type=2 #35
+2026/03/01-02:35:08.477 4cfc Delete type=2 #38
+2026/03/01-02:35:08.477 4cfc Delete type=2 #40
+2026/03/01-02:35:08.477 4cfc Delete type=2 #43

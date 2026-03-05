@@ -1,0 +1,5 @@
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YAC,Rush_BrkTkl,Awards,Player,PlayerID
+2018,31,OAK,TE,16,14,101,68,896,46,553,8.1,343,5.0,8.3,4,17.0,9,8.9,4,98.5,0,0,0,0,0,0,PB,Jared Cook,CookJa02
+2019,32,NOR,TE,14,7,65,43,705,32,451,10.5,254,5.9,10.3,3,14.3,4,6.2,1,135.6,0,0,0,0,0,0,PB,Jared Cook,CookJa02
+2020,33,NOR,TE,15,5,60,37,504,27,380,10.3,124,3.4,11.5,2,18.5,2,3.3,1,120.4,0,0,0,0,0,0,,Jared Cook,CookJa02
+2021,34,LAC,TE,16,10,83,48,564,31,326,6.8,238,5.0,8.3,0,,6,7.2,4,74.6,0,0,0,0,0,0,,Jared Cook,CookJa02

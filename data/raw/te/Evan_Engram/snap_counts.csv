@@ -1,10 +1,8 @@
-Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,PlayerID
-2017,23,NYG,TE,88,15,11,777,,0,,115,,Evan Engram,EngrEv00
-2018,24,NYG,TE,88,11,8,475,,0,,7,,Evan Engram,EngrEv00
-2019,25,NYG,TE,88,8,6,444,,0,,1,,Evan Engram,EngrEv00
-2020*,26,NYG,TE,88,16,14,837,,0,,35,,Evan Engram,EngrEv00
-2021,27,NYG,TE,88,15,12,722,,0,,0,,Evan Engram,EngrEv00
-2022,28,JAX,TE,17,17,14,868,,0,,1,,Evan Engram,EngrEv00
-2023*,29,JAX,TE,17,17,15,917,,0,,7,,Evan Engram,EngrEv00
-2024,30,JAX,TE,17,9,9,363,,0,,1,,Evan Engram,EngrEv00
-2025,31,DEN,TE,1,16,2,458,,0,,0,,Evan Engram,EngrEv00
+Season,Age,Team,Pos,No.,G,GS,Off_Snaps,Off%,Def_Snaps,Def%,ST_Snaps,ST%,Player,PlayerID
+2017,23,NYG,TE,88,15,11,777,77%,0,0%,115,27%,Evan Engram,EngrEv00
+2018,24,NYG,TE,88,11,8,475,67%,0,0%,7,2%,Evan Engram,EngrEv00
+2019,25,NYG,TE,88,8,6,444,80%,0,0%,1,1%,Evan Engram,EngrEv00
+2021,27,NYG,TE,88,15,12,722,74%,0,0%,0,0%,Evan Engram,EngrEv00
+2022,28,JAX,TE,17,17,14,868,77%,0,0%,1,0%,Evan Engram,EngrEv00
+2024,30,JAX,TE,17,9,9,363,72%,0,0%,1,1%,Evan Engram,EngrEv00
+2025,31,DEN,TE,1,16,2,458,42%,0,0%,0,0%,Evan Engram,EngrEv00

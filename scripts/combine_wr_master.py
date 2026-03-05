@@ -28,6 +28,14 @@ def load_all_years():
     return combined
 
 
+def filter_regular_season(df):
+    """Remove playoff weeks. Regular season: weeks 1-16 before 2021, weeks 1-17 from 2021+."""
+    df = df.copy()
+    week = df['game_id'].apply(lambda gid: int(gid.split('_')[1]))
+    mask = ((df['season'] < 2021) & (week <= 17)) | ((df['season'] >= 2021) & (week <= 18))
+    return df[mask]
+
+
 def build_season_aggregated(df):
     id_cols = ['receiver_player_id', 'receiver_player_name', 'season']
 
@@ -121,6 +129,38 @@ def build_season_aggregated(df):
     return grouped
 
 
+def derive_player_teams(weekly_df):
+    from collections import Counter
+    weekly_df = weekly_df.copy()
+    parts = weekly_df['game_id'].str.split('_')
+    weekly_df['_away'] = parts.str[2]
+    weekly_df['_home'] = parts.str[3]
+
+    def most_common_team(group):
+        all_teams = list(group['_away']) + list(group['_home'])
+        counts = Counter(all_teams)
+        return counts.most_common(1)[0][0]
+
+    team_map = weekly_df.groupby(['receiver_player_id', 'season']).apply(most_common_team).reset_index()
+    team_map.columns = ['receiver_player_id', 'season', 'player_team']
+    return team_map
+
+
+def add_team_change_and_prev_yards(df, team_map):
+    # merge derived player_team into the aggregated data
+    df = df.merge(team_map, on=['receiver_player_id', 'season'], how='left')
+
+    df = df.sort_values(['receiver_player_id', 'season']).reset_index(drop=True)
+
+    prev_team = df.groupby('receiver_player_id')['player_team'].shift(1)
+    df['team_changed'] = ((df['player_team'] != prev_team) & prev_team.notna()).astype(int)
+
+    prev_yards = df.groupby('receiver_player_id')['receiving_yards'].shift(1)
+    df['prev_season_rec_yds'] = prev_yards.fillna(0)
+
+    return df
+
+
 def main():
     print("=" * 70)
     print("WR DATA COMBINER")
@@ -145,10 +185,18 @@ def main():
     all_data.to_csv(processed_path, index=False)
     print(f"[OK] Copy saved: {processed_path}")
 
+    # Derive player team mapping from weekly game_ids
+    print(f"\nDeriving player teams from game_ids...")
+    team_map = derive_player_teams(all_data)
+    print(f"  {len(team_map)} player-season team mappings")
+
     # make season-aggregated CSV ─────────────────────────────
     print(f"\nAggregating to per-player per-season...")
     season_data = build_season_aggregated(all_data)
     print(f"  {len(season_data)} player-seasons from {season_data['receiver_player_name'].nunique()} players")
+
+    # Add team change and previous season receiving yards columns
+    season_data = add_team_change_and_prev_yards(season_data, team_map)
 
     season_path = os.path.join(OUTPUT_DIR, 'wr_all_seasons.csv')
     season_data.to_csv(season_path, index=False)
@@ -156,10 +204,30 @@ def main():
     print(f"\n[OK] Season aggregated saved: {season_path}")
     print(f"     {len(season_data)} rows, {len(season_data.columns)} cols, {size_kb:.1f} KB")
 
+    # make season-aggregated CSV WITHOUT playoffs 
+    print(f"\nFiltering to regular season only (no playoffs)...")
+    regular_data = filter_regular_season(all_data)
+    removed = len(all_data) - len(regular_data)
+    print(f"  Kept {len(regular_data)} weekly rows, removed {removed} playoff rows")
+
+    print(f"  Aggregating to per-player per-season (regular season only)...")
+    season_no_playoffs = build_season_aggregated(regular_data)
+    print(f"  {len(season_no_playoffs)} player-seasons from {season_no_playoffs['receiver_player_name'].nunique()} players")
+
+    # add team change and previous season receiving yards columns (no playoffs)
+    season_no_playoffs = add_team_change_and_prev_yards(season_no_playoffs, team_map)
+
+    no_playoffs_path = os.path.join(OUTPUT_DIR, 'wr_all_seasons_without_playoffs.csv')
+    season_no_playoffs.to_csv(no_playoffs_path, index=False)
+    size_kb = os.path.getsize(no_playoffs_path) / 1024
+    print(f"\n[OK] Season aggregated (no playoffs) saved: {no_playoffs_path}")
+    print(f"     {len(season_no_playoffs)} rows, {len(season_no_playoffs.columns)} cols, {size_kb:.1f} KB")
+
     print(f"\n{'=' * 70}")
     print(f"SUMMARY:")
-    print(f"  wr_all_weeks.csv:   {len(all_data)} rows (game-level, 2015-2025)")
-    print(f"  wr_all_seasons.csv: {len(season_data)} rows (player-season aggregated)")
+    print(f"  wr_all_weeks.csv:                      {len(all_data)} rows (game-level, 2015-2025)")
+    print(f"  wr_all_seasons.csv:                     {len(season_data)} rows (player-season aggregated)")
+    print(f"  wr_all_seasons_without_playoffs.csv:    {len(season_no_playoffs)} rows (regular season only)")
     print(f"  Seasons: {all_data['season'].min()} - {all_data['season'].max()}")
     print(f"  Players: {all_data['receiver_player_name'].nunique()} unique")
     print(f"{'=' * 70}")

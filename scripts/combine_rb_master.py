@@ -31,7 +31,6 @@ def load_table(folder_path, filename):
 
 
 def prefix_columns(df, prefix, keep_cols):
-    """Add prefix to all columns except those in keep_cols."""
     rename_map = {}
     for col in df.columns:
         if col not in keep_cols:
@@ -111,6 +110,18 @@ def process_snap_counts(df):
 
 
 
+def add_team_change_and_prev_yards(df):
+    df = df.sort_values(['Player', 'Season']).reset_index(drop=True)
+
+    prev_team = df.groupby('Player')['Team'].shift(1)
+    df['Team_Changed'] = ((df['Team'] != prev_team) & prev_team.notna()).astype(int)
+
+    prev_yards = df.groupby('Player')['Rush_Yds'].shift(1)
+    df['Prev_Season_Yds'] = prev_yards.fillna(0)
+
+    return df
+
+
 def build_master():
     """Build the master RB CSV from all raw data."""
 
@@ -149,7 +160,7 @@ def build_master():
             processed = process_snap_counts(snap_df)
             if processed is not None:
                 table_counts['snap_counts.csv'] += 1
-                base_df = base_df.merge(processed, on=KEY_COLS, how='left')
+                base_df = base_df.merge(processed, on=KEY_COLS, how='left') # type: ignore
             all_player_dfs.append(base_df)
             continue
 
@@ -162,7 +173,7 @@ def build_master():
             processed = processor(table_df)
             if processed is not None:
                 table_counts[filename] += 1
-                base_df = base_df.merge(
+                base_df = base_df.merge( # type: ignore
                     processed,
                     on=KEY_COLS,
                     how='left'
@@ -207,6 +218,9 @@ def build_master():
 
     # sort and save
     master = master.sort_values(['Player', 'Season']).reset_index(drop=True)
+
+    # Add team change and previous season rushing yards columns
+    master = add_team_change_and_prev_yards(master)
 
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     master.to_csv(OUTPUT_FILE, index=False)

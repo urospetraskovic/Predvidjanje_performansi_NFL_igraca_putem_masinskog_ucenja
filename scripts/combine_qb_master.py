@@ -38,7 +38,6 @@ def load_table(folder_path, filename):
 
 
 def prefix_columns(df, prefix, keep_cols):
-    """Add prefix to all columns except those in keep_cols."""
     rename_map = {}
     for col in df.columns:
         if col not in keep_cols:
@@ -116,6 +115,18 @@ def process_snap_counts(df):
     return df
 
 
+def add_team_change_and_prev_yards(df):
+    df = df.sort_values(['Player', 'Season']).reset_index(drop=True)
+
+    prev_team = df.groupby('Player')['Team'].shift(1)
+    df['Team_Changed'] = ((df['Team'] != prev_team) & prev_team.notna()).astype(int)
+
+    prev_yards = df.groupby('Player')['Yds'].shift(1)
+    df['Prev_Season_Yds'] = prev_yards.fillna(0)
+
+    return df
+
+
 def load_rankings():
     filepath = os.path.join(ELO_DIR, 'qb_rankings_career.csv')
     if not os.path.exists(filepath):
@@ -165,8 +176,6 @@ def combine_intermediate():
 
 
 def build_master():
-    """Build the master QB CSV from all raw data + rankings."""
-
     print("=" * 70)
     print("BUILDING QB MASTER TABLE")
     print("=" * 70)
@@ -211,7 +220,7 @@ def build_master():
             processed = processor(table_df)
             if processed is not None:
                 table_counts[filename] += 1
-                base_df = base_df.merge(
+                base_df = base_df.merge( # type: ignore
                     processed,
                     on=KEY_COLS,
                     how='left'
@@ -279,6 +288,9 @@ def build_master():
 
     # sort and save
     master = master.sort_values(['Player', 'Season']).reset_index(drop=True)
+
+    # Add team change and previous season passing yards columns
+    master = add_team_change_and_prev_yards(master)
 
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     master.to_csv(OUTPUT_FILE, index=False)

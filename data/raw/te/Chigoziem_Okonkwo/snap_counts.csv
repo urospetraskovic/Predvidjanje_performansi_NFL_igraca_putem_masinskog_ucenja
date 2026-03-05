@@ -1,5 +1,5 @@
-Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,PlayerID
-2022,23,TEN,TE,85,17,8,378,,0,,224,,Chigoziem Okonkwo,OkonCh00
-2023,24,TEN,TE,85,17,11,692,,0,,85,,Chigoziem Okonkwo,OkonCh00
-2024,25,TEN,TE,85,17,11,665,,0,,168,,Chigoziem Okonkwo,OkonCh00
-2025,26,TEN,TE,85,17,12,666,,0,,1,,Chigoziem Okonkwo,OkonCh00
+Season,Age,Team,Pos,No.,G,GS,Off_Snaps,Off%,Def_Snaps,Def%,ST_Snaps,ST%,Player,PlayerID
+2022,23,TEN,TE,85,17,8,378,37%,0,0%,224,50%,Chigoziem Okonkwo,OkonCh00
+2023,24,TEN,TE,85,17,11,692,66%,0,0%,85,19%,Chigoziem Okonkwo,OkonCh00
+2024,25,TEN,TE,85,17,11,665,61%,0,0%,168,37%,Chigoziem Okonkwo,OkonCh00
+2025,26,TEN,TE,85,17,12,666,63%,0,0%,1,0%,Chigoziem Okonkwo,OkonCh00
