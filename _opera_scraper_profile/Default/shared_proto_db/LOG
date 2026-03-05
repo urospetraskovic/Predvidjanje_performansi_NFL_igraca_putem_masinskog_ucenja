@@ -1,2 +1,3 @@
-2026/02/25-20:51:33.622 27ac Creating DB C:\Users\Win10\Documents\GitHub\Analiza-i-Obrada\_opera_scraper_profile\Default\shared_proto_db since it was missing.
-2026/02/25-20:51:33.633 27ac Reusing MANIFEST C:\Users\Win10\Documents\GitHub\Analiza-i-Obrada\_opera_scraper_profile\Default\shared_proto_db/MANIFEST-000001
+2026/03/01-01:51:06.587 284 Reusing MANIFEST C:\Users\Win10\Documents\GitHub\Analiza-i-Obrada\_opera_scraper_profile\Default\shared_proto_db/MANIFEST-000001
+2026/03/01-01:51:06.590 284 Recovering log #3
+2026/03/01-01:51:06.591 284 Reusing old log C:\Users\Win10\Documents\GitHub\Analiza-i-Obrada\_opera_scraper_profile\Default\shared_proto_db/000003.log 

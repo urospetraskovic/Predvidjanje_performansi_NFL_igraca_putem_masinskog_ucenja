@@ -1,0 +1,6 @@
+{
+    "extraPaths": [
+        "notebooks/core"
+    ],
+    "typeCheckingMode": "off"
+}

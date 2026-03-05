@@ -235,14 +235,12 @@ COLUMN_MAPPING = {
 OUTPUT_DIR = 'data/raw/qb'
 
 def get_player_folder_name(player_name):
-    """Convert player name to folder name"""
     safe_name = re.sub(r'[^\w\s-]', '', player_name)
     safe_name = safe_name.replace(' ', '_')
     return safe_name
 
 
 def parse_table(table):
-    """Parse an HTML table using data-stat attributes"""
     rows = []
     tbody = table.find('tbody')
     if tbody:
@@ -267,7 +265,6 @@ def parse_table(table):
 
 
 def clean_dataframe(df):
-    """Clean and validate the dataframe"""
     df = df.copy()
     if 'Season' in df.columns:
         df['Season'] = pd.to_numeric(df['Season'], errors='coerce')
@@ -286,8 +283,7 @@ def clean_dataframe(df):
 
 
 def create_driver():
-    """Create and return an Opera GX selenium driver"""
-    options = webdriver.ChromeOptions()
+    options = webdriver.ChromeOptions() # type: ignore
     options.binary_location = OPERA_BINARY
 
     # use a fresh profile so we don't conflict with running Opera
@@ -304,13 +300,12 @@ def create_driver():
 
     print(f"Using ChromeDriver: {CHROMEDRIVER_PATH}")
     service = Service(executable_path=CHROMEDRIVER_PATH)
-    driver = webdriver.Chrome(service=service, options=options)
+    driver = webdriver.Chrome(service=service, options=options) # type: ignore
     print("Opera GX browser launched successfully!")
     return driver
 
 
 def scrape_player(driver, player_id, player_name, force=False):
-    """Scrape all stat tables for a single player"""
     first_letter = player_id[0].upper()
     url = f"https://www.pro-football-reference.com/players/{first_letter}/{player_id}.htm"
 
@@ -432,13 +427,6 @@ def scrape_player(driver, player_id, player_name, force=False):
 
 
 def combine_all_csvs(input_dir='data/raw/qb', output_dir='data/processed'):
-    """
-    Combine all individual QB CSV files into master files by stat type.
-    
-    Args:
-        input_dir: Directory containing player folders
-        output_dir: Path for combined output files
-    """
     print(f"\nCombining CSV files from {input_dir}...")
     
     os.makedirs(output_dir, exist_ok=True)
@@ -483,7 +471,6 @@ def combine_all_csvs(input_dir='data/raw/qb', output_dir='data/processed'):
 
 
 def main():
-    """Main entry point."""
     parser = argparse.ArgumentParser(description='NFL QB Stats Scraper - Opera GX')
     parser.add_argument('--player', type=str, help='Scrape single player by ID (e.g., MahoPa00)')
     parser.add_argument('--test', action='store_true', help='Test mode - scrape first player only')

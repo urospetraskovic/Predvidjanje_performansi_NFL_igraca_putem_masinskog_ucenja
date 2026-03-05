@@ -1,9 +1,9 @@
-Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,1D,YBC,YBC/R,YAC,YAC/R,ADOT,BrkTkl,Rec/Br,Drop,Drop%,Int,rec_pass_rating,Att,Yds,1D,YBC,YBC/Att,YAC,YAC/Att,BrkTkl,awards,Player,PlayerID
-2018,25,LAR,NFL,TE,16,16,34,24,292,16,155,6.5,137,5.7,6.7,3,8.0,1,2.9,0,116.3,0,0,0,0,,0,,0,,Tyler Higbee,HigbTy00
-2019,26,LAR,NFL,TE,15,15,89,69,734,36,338,4.9,396,5.7,6.6,5,13.8,2,2.2,1,107.6,0,0,0,0,,0,,0,,Tyler Higbee,HigbTy00
-2020,27,LAR,NFL,TE,15,15,60,44,521,27,283,6.4,238,5.4,8.0,4,11.0,3,5.0,0,127.2,1,1,0,1,1.0,0,0.0,0,,Tyler Higbee,HigbTy00
-2021,28,LAR,NFL,TE,15,15,85,61,560,40,279,4.6,281,4.6,5.3,1,61.0,3,3.5,3,94.2,0,0,0,0,,0,,0,,Tyler Higbee,HigbTy00
-2022,29,LAR,NFL,TE,17,17,108,72,620,32,216,3.0,404,5.6,3.0,3,24.0,7,6.5,3,79.2,0,0,0,0,,0,,0,,Tyler Higbee,HigbTy00
-2023,30,LAR,NFL,TE,15,15,70,47,495,26,249,5.3,246,5.2,5.8,2,23.5,7,10.0,0,97.0,0,0,0,0,,0,,0,,Tyler Higbee,HigbTy00
-2024,31,LAR,NFL,TE,3,3,12,8,66,10,18,2.3,48,6.0,2.2,0,,0,0.0,0,120.1,0,0,0,0,,0,,0,,Tyler Higbee,HigbTy00
-2025,32,LAR,NFL,TE,10,8,36,25,281,17,141,5.6,140,5.6,5.9,0,,3,8.3,0,120.3,0,0,0,0,,0,,0,,Tyler Higbee,HigbTy00
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Awards,Player,PlayerID
+2018,25,LAR,TE,16,16,34,24,292,16,155,6.5,137,5.7,6.7,3,8.0,1,2.9,0,116.3,0,0,0,0,,0,,0,,Tyler Higbee,HigbTy00
+2019,26,LAR,TE,15,15,89,69,734,36,338,4.9,396,5.7,6.6,5,13.8,2,2.2,1,107.6,0,0,0,0,,0,,0,,Tyler Higbee,HigbTy00
+2020,27,LAR,TE,15,15,60,44,521,27,283,6.4,238,5.4,8.0,4,11.0,3,5.0,0,127.2,1,1,0,1,1.0,0,0.0,0,,Tyler Higbee,HigbTy00
+2021,28,LAR,TE,15,15,85,61,560,40,279,4.6,281,4.6,5.3,1,61.0,3,3.5,3,94.2,0,0,0,0,,0,,0,,Tyler Higbee,HigbTy00
+2022,29,LAR,TE,17,17,108,72,620,32,216,3.0,404,5.6,3.0,3,24.0,7,6.5,3,79.2,0,0,0,0,,0,,0,,Tyler Higbee,HigbTy00
+2023,30,LAR,TE,15,15,70,47,495,26,249,5.3,246,5.2,5.8,2,23.5,7,10.0,0,97.0,0,0,0,0,,0,,0,,Tyler Higbee,HigbTy00
+2024,31,LAR,TE,3,3,12,8,66,10,18,2.3,48,6.0,2.2,0,,0,0.0,0,120.1,0,0,0,0,,0,,0,,Tyler Higbee,HigbTy00
+2025,32,LAR,TE,10,8,36,25,281,17,141,5.6,140,5.6,5.9,0,,3,8.3,0,120.3,0,0,0,0,,0,,0,,Tyler Higbee,HigbTy00

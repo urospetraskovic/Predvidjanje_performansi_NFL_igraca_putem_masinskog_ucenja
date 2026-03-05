@@ -1,8 +1,8 @@
-Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,1D,YBC,YBC/R,YAC,YAC/R,ADOT,BrkTkl,Rec/Br,Drop,Drop%,Int,rec_pass_rating,Att,Yds,1D,YBC,YBC/Att,YAC,YAC/Att,BrkTkl,awards,Player,PlayerID
-2019,22,DET,NFL,TE,12,7,59,32,367,19,167,5.2,200,6.3,7.5,4,8.0,2,3.4,0,84.5,0,0,0,0,,0,,0,,T.J. Hockenson,HockTJ00
-2020,23,DET,NFL,TE,16,16,101,67,723,40,394,5.9,329,4.9,7.0,4,16.8,7,6.9,4,90.5,1,0,0,0,0.0,0,0.0,0,,T.J. Hockenson,HockTJ00
-2021,24,DET,NFL,TE,12,12,84,61,583,32,384,6.3,199,3.3,7.4,4,15.3,1,1.2,3,92.5,0,0,0,0,,0,,0,,T.J. Hockenson,HockTJ00
-2022,25,2TM,NFL,TE,17,14,129,86,914,50,511,5.9,403,4.7,7.5,7,12.3,7,5.4,4,89.7,0,0,0,0,,0,,0,,T.J. Hockenson,HockTJ00
-2023,26,MIN,NFL,TE,15,11,127,95,960,48,624,6.6,336,3.5,7.7,4,23.8,4,3.1,1,105.8,0,0,0,0,,0,,0,,T.J. Hockenson,HockTJ00
-2024,27,MIN,NFL,TE,10,9,62,41,455,33,310,7.6,145,3.5,8.4,1,41.0,2,3.2,2,74.3,0,0,0,0,,0,,0,,T.J. Hockenson,HockTJ00
-2025,28,MIN,NFL,TE,15,15,66,51,438,22,219,4.3,219,4.3,5.2,2,25.5,3,4.5,0,109.3,1,0,0,0,0.0,0,0.0,0,,T.J. Hockenson,HockTJ00
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Awards,Player,PlayerID
+2019,22,DET,TE,12,7,59,32,367,19,167,5.2,200,6.3,7.5,4,8.0,2,3.4,0,84.5,0,0,0,0,,0,,0,,T.J. Hockenson,HockTJ00
+2020,23,DET,TE,16,16,101,67,723,40,394,5.9,329,4.9,7.0,4,16.8,7,6.9,4,90.5,1,0,0,0,0.0,0,0.0,0,PB,T.J. Hockenson,HockTJ00
+2021,24,DET,TE,12,12,84,61,583,32,384,6.3,199,3.3,7.4,4,15.3,1,1.2,3,92.5,0,0,0,0,,0,,0,,T.J. Hockenson,HockTJ00
+2022,25,2TM,TE,17,14,129,86,914,50,511,5.9,403,4.7,7.5,7,12.3,7,5.4,4,89.7,0,0,0,0,,0,,0,PB,T.J. Hockenson,HockTJ00
+2023,26,MIN,TE,15,11,127,95,960,48,624,6.6,336,3.5,7.7,4,23.8,4,3.1,1,105.8,0,0,0,0,,0,,0,,T.J. Hockenson,HockTJ00
+2024,27,MIN,TE,10,9,62,41,455,33,310,7.6,145,3.5,8.4,1,41.0,2,3.2,2,74.3,0,0,0,0,,0,,0,AP CPoY-19,T.J. Hockenson,HockTJ00
+2025,28,MIN,TE,15,15,66,51,438,22,219,4.3,219,4.3,5.2,2,25.5,3,4.5,0,109.3,1,0,0,0,0.0,0,0.0,0,,T.J. Hockenson,HockTJ00

@@ -1,9 +1,9 @@
-Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,PlayerID
-2018,22,CAR,TE,80,16,6,526,,0,,107,,Ian Thomas,ThomIa00
-2019,23,CAR,TE,80,16,3,302,,0,,39,,Ian Thomas,ThomIa00
-2020,24,CAR,TE,80,16,8,672,,0,,19,,Ian Thomas,ThomIa00
-2021,25,CAR,TE,80,17,13,703,,0,,48,,Ian Thomas,ThomIa00
-2022,26,CAR,TE,80,17,17,556,,0,,169,,Ian Thomas,ThomIa00
-2023,27,CAR,TE,80,12,5,216,,0,,105,,Ian Thomas,ThomIa00
-2024,28,CAR,TE,80,5,2,94,,0,,9,,Ian Thomas,ThomIa00
-2025,29,LVR,TE,80,15,10,318,,0,,96,,Ian Thomas,ThomIa00
+Season,Age,Team,Pos,No.,G,GS,Off_Snaps,Off%,Def_Snaps,Def%,ST_Snaps,ST%,Player,PlayerID
+2018,22,CAR,TE,80,16,6,526,50%,0,0%,107,26%,Ian Thomas,ThomIa00
+2019,23,CAR,TE,80,16,3,302,27%,0,0%,39,8%,Ian Thomas,ThomIa00
+2020,24,CAR,TE,80,16,8,672,65%,0,0%,19,5%,Ian Thomas,ThomIa00
+2021,25,CAR,TE,80,17,13,703,61%,0,0%,48,11%,Ian Thomas,ThomIa00
+2022,26,CAR,TE,80,17,17,556,55%,0,0%,169,36%,Ian Thomas,ThomIa00
+2023,27,CAR,TE,80,12,5,216,27%,0,0%,105,33%,Ian Thomas,ThomIa00
+2024,28,CAR,TE,80,5,2,94,33%,0,0%,9,7%,Ian Thomas,ThomIa00
+2025,29,LVR,TE,80,15,10,318,36%,0,0%,96,26%,Ian Thomas,ThomIa00

@@ -1,10 +1,9 @@
-Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,PlayerID
-2017,22,TEN,TE,81,16,13,552,,0,,99,,Jonnu Smith,SmitJo01
-2018,23,TEN,TE,81,13,12,611,,0,,43,,Jonnu Smith,SmitJo01
-2019,24,TEN,TE,81,16,14,701,,0,,65,,Jonnu Smith,SmitJo01
-2020,25,TEN,TE,81,15,14,745,,0,,12,,Jonnu Smith,SmitJo01
-2021,26,NWE,TE,81,16,11,526,,0,,10,,Jonnu Smith,SmitJo01
-2022,27,NWE,TE,81,14,8,423,,0,,54,,Jonnu Smith,SmitJo01
-2023,28,ATL,TE,81,17,6,653,,0,,0,,Jonnu Smith,SmitJo01
-2024*,29,MIA,TE,9,17,6,626,,0,,1,,Jonnu Smith,SmitJo01
-2025,30,PIT,TE,81,17,7,536,,0,,4,,Jonnu Smith,SmitJo01
+Season,Age,Team,Pos,No.,G,GS,Off_Snaps,Off%,Def_Snaps,Def%,ST_Snaps,ST%,Player,PlayerID
+2017,22,TEN,TE,81,16,13,552,54%,0,0%,99,21%,Jonnu Smith,SmitJo01
+2018,23,TEN,TE,81,13,12,611,75%,0,0%,43,13%,Jonnu Smith,SmitJo01
+2019,24,TEN,TE,81,16,14,701,71%,0,0%,65,15%,Jonnu Smith,SmitJo01
+2020,25,TEN,TE,81,15,14,745,74%,0,0%,12,3%,Jonnu Smith,SmitJo01
+2021,26,NWE,TE,81,16,11,526,51%,0,0%,10,2%,Jonnu Smith,SmitJo01
+2022,27,NWE,TE,81,14,8,423,49%,0,0%,54,14%,Jonnu Smith,SmitJo01
+2023,28,ATL,TE,81,17,6,653,58%,0,0%,0,0%,Jonnu Smith,SmitJo01
+2025,30,PIT,TE,81,17,7,536,52%,0,0%,4,1%,Jonnu Smith,SmitJo01

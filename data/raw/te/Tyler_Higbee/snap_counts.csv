@@ -1,11 +1,11 @@
-Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,PlayerID
-2016,23,LAR,TE,89,16,7,403,,0,,20,,Tyler Higbee,HigbTy00
-2017,24,LAR,TE,89,16,16,730,,0,,131,,Tyler Higbee,HigbTy00
-2018,25,LAR,TE,89,16,16,788,,0,,50,,Tyler Higbee,HigbTy00
-2019,26,LAR,TE,89,15,15,696,,0,,41,,Tyler Higbee,HigbTy00
-2020,27,LAR,TE,89,15,15,814,,0,,38,,Tyler Higbee,HigbTy00
-2021,28,LAR,TE,89,15,15,883,,0,,73,,Tyler Higbee,HigbTy00
-2022,29,LAR,TE,89,17,17,888,,0,,14,,Tyler Higbee,HigbTy00
-2023,30,LAR,TE,89,15,15,866,,0,,6,,Tyler Higbee,HigbTy00
-2024,31,LAR,TE,89,3,3,58,,0,,0,,Tyler Higbee,HigbTy00
-2025,32,LAR,TE,89,10,8,366,,0,,5,,Tyler Higbee,HigbTy00
+Season,Age,Team,Pos,No.,G,GS,Off_Snaps,Off%,Def_Snaps,Def%,ST_Snaps,ST%,Player,PlayerID
+2016,23,LAR,TE,89,16,7,403,40%,0,0%,20,4%,Tyler Higbee,HigbTy00
+2017,24,LAR,TE,89,16,16,730,71%,0,0%,131,26%,Tyler Higbee,HigbTy00
+2018,25,LAR,TE,89,16,16,788,72%,0,0%,50,11%,Tyler Higbee,HigbTy00
+2019,26,LAR,TE,89,15,15,696,67%,0,0%,41,9%,Tyler Higbee,HigbTy00
+2020,27,LAR,TE,89,15,15,814,78%,0,0%,38,9%,Tyler Higbee,HigbTy00
+2021,28,LAR,TE,89,15,15,883,92%,0,0%,73,18%,Tyler Higbee,HigbTy00
+2022,29,LAR,TE,89,17,17,888,87%,0,0%,14,3%,Tyler Higbee,HigbTy00
+2023,30,LAR,TE,89,15,15,866,86%,0,0%,6,2%,Tyler Higbee,HigbTy00
+2024,31,LAR,TE,89,3,3,58,33%,0,0%,0,0%,Tyler Higbee,HigbTy00
+2025,32,LAR,TE,89,10,8,366,56%,0,0%,5,2%,Tyler Higbee,HigbTy00

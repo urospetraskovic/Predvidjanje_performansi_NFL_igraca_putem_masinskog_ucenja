@@ -1,5 +1,5 @@
-Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,1D,YBC,YBC/R,YAC,YAC/R,ADOT,BrkTkl,Rec/Br,Drop,Drop%,Int,rec_pass_rating,Att,Yds,1D,YBC,YBC/Att,YAC,YAC/Att,BrkTkl,awards,Player,PlayerID
-2022,22,DEN,NFL,TE,10,6,55,33,411,18,256,7.8,155,4.7,11.5,1,33.0,2,3.6,3,72.6,0,0,0,0,,0,,0,,Greg Dulcich,DulcGr00
-2023,23,DEN,NFL,TE,2,1,4,3,25,2,20,6.7,5,1.7,5.8,0,,0,0.0,1,51.0,0,0,0,0,,0,,0,,Greg Dulcich,DulcGr00
-2024,24,2TM,NFL,TE,9,3,12,5,28,0,13,2.6,15,3.0,5.9,0,,2,16.7,0,49.3,0,0,0,0,,0,,0,,Greg Dulcich,DulcGr00
-2025,25,MIA,NFL,TE,10,3,33,26,335,14,136,5.2,199,7.7,4.8,2,13.0,0,0.0,0,119.1,1,-7,0,-7,-7.0,0,0.0,0,,Greg Dulcich,DulcGr00
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Awards,Player,PlayerID
+2022,22,DEN,TE,10,6,55,33,411,18,256,7.8,155,4.7,11.5,1,33.0,2,3.6,3,72.6,0,0,0,0,,0,,0,,Greg Dulcich,DulcGr00
+2023,23,DEN,TE,2,1,4,3,25,2,20,6.7,5,1.7,5.8,0,,0,0.0,1,51.0,0,0,0,0,,0,,0,,Greg Dulcich,DulcGr00
+2024,24,2TM,TE,9,3,12,5,28,0,13,2.6,15,3.0,5.9,0,,2,16.7,0,49.3,0,0,0,0,,0,,0,,Greg Dulcich,DulcGr00
+2025,25,MIA,TE,10,3,33,26,335,14,136,5.2,199,7.7,4.8,2,13.0,0,0.0,0,119.1,1,-7,0,-7,-7.0,0,0.0,0,,Greg Dulcich,DulcGr00

@@ -1,10 +1,10 @@
-Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,PlayerID
-2016,22,SDG,TE,86,15,10,573,,0,,64,,Hunter Henry,HenrHu00
-2017,23,LAC,TE,86,14,13,598,,0,,23,,Hunter Henry,HenrHu00
-2019,25,LAC,TE,86,12,12,614,,0,,2,,Hunter Henry,HenrHu00
-2020,26,LAC,TE,86,14,14,913,,0,,15,,Hunter Henry,HenrHu00
-2021,27,NWE,TE,85,17,10,750,,0,,45,,Hunter Henry,HenrHu00
-2022,28,NWE,TE,85,17,14,797,,0,,24,,Hunter Henry,HenrHu00
-2023,29,NWE,TE,85,14,10,664,,0,,6,,Hunter Henry,HenrHu00
-2024,30,NWE,TE,85,16,16,835,,0,,0,,Hunter Henry,HenrHu00
-2025,31,NWE,TE,85,17,17,869,,0,,9,,Hunter Henry,HenrHu00
+Season,Age,Team,Pos,No.,G,GS,Off_Snaps,Off%,Def_Snaps,Def%,ST_Snaps,ST%,Player,PlayerID
+2016,22,SDG,TE,86,15,10,573,58%,0,0%,64,15%,Hunter Henry,HenrHu00
+2017,23,LAC,TE,86,14,13,598,65%,0,0%,23,6%,Hunter Henry,HenrHu00
+2019,25,LAC,TE,86,12,12,614,79%,0,0%,2,1%,Hunter Henry,HenrHu00
+2020,26,LAC,TE,86,14,14,913,87%,0,0%,15,4%,Hunter Henry,HenrHu00
+2021,27,NWE,TE,85,17,10,750,68%,0,0%,45,10%,Hunter Henry,HenrHu00
+2022,28,NWE,TE,85,17,14,797,76%,0,0%,24,5%,Hunter Henry,HenrHu00
+2023,29,NWE,TE,85,14,10,664,75%,0,0%,6,2%,Hunter Henry,HenrHu00
+2024,30,NWE,TE,85,16,16,835,81%,0,0%,0,0%,Hunter Henry,HenrHu00
+2025,31,NWE,TE,85,17,17,869,79%,0,0%,9,2%,Hunter Henry,HenrHu00

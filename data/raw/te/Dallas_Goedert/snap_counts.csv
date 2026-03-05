@@ -1,9 +1,9 @@
-Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,PlayerID
-2018,23,PHI,TE,88,16,8,523,,0,,187,,Dallas Goedert,GoedDa00
-2019,24,PHI,TE,88,15,9,770,,0,,143,,Dallas Goedert,GoedDa00
-2020,25,PHI,TE,88,11,9,604,,0,,41,,Dallas Goedert,GoedDa00
-2021,26,PHI,TE,88,15,14,781,,0,,27,,Dallas Goedert,GoedDa00
-2022,27,PHI,TE,88,12,12,735,,0,,4,,Dallas Goedert,GoedDa00
-2023,28,PHI,TE,88,14,14,809,,0,,3,,Dallas Goedert,GoedDa00
-2024,29,PHI,TE,88,10,10,446,,0,,3,,Dallas Goedert,GoedDa00
-2025,30,PHI,TE,88,15,15,787,,0,,3,,Dallas Goedert,GoedDa00
+Season,Age,Team,Pos,No.,G,GS,Off_Snaps,Off%,Def_Snaps,Def%,ST_Snaps,ST%,Player,PlayerID
+2018,23,PHI,TE,88,16,8,523,48%,0,0%,187,43%,Dallas Goedert,GoedDa00
+2019,24,PHI,TE,88,15,9,770,71%,0,0%,143,34%,Dallas Goedert,GoedDa00
+2020,25,PHI,TE,88,11,9,604,77%,0,0%,41,13%,Dallas Goedert,GoedDa00
+2021,26,PHI,TE,88,15,14,781,79%,0,0%,27,7%,Dallas Goedert,GoedDa00
+2022,27,PHI,TE,88,12,12,735,90%,0,0%,4,1%,Dallas Goedert,GoedDa00
+2023,28,PHI,TE,88,14,14,809,85%,0,0%,3,1%,Dallas Goedert,GoedDa00
+2024,29,PHI,TE,88,10,10,446,66%,0,0%,3,1%,Dallas Goedert,GoedDa00
+2025,30,PHI,TE,88,15,15,787,85%,0,0%,3,1%,Dallas Goedert,GoedDa00

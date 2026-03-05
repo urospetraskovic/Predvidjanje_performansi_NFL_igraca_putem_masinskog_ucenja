@@ -1,8 +1,8 @@
-Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,1D,YBC,YBC/R,YAC,YAC/R,ADOT,BrkTkl,Rec/Br,Drop,Drop%,Int,rec_pass_rating,Att,Yds,1D,YBC,YBC/Att,YAC,YAC/Att,BrkTkl,awards,Player,PlayerID
-2018,25,BAL,NFL,TE,12,0,23,13,163,8,89,6.8,74,5.7,7.2,1,13.0,0,0.0,0,93.2,1,0,0,0,0.0,0,0.0,0,,Hayden Hurst,HursHa00
-2019,26,BAL,NFL,TE,16,4,39,30,349,16,201,6.7,148,4.9,8.5,1,30.0,0,0.0,0,120.6,0,0,0,0,,0,,0,,Hayden Hurst,HursHa00
-2020,27,ATL,NFL,TE,16,9,88,56,571,35,326,5.8,245,4.4,6.8,2,28.0,4,4.5,2,95.4,0,0,0,0,,0,,0,,Hayden Hurst,HursHa00
-2021,28,ATL,NFL,TE,13,5,31,26,221,11,132,5.1,89,3.4,6.6,2,13.0,0,0.0,1,115.2,0,0,0,0,,0,,0,,Hayden Hurst,HursHa00
-2022,29,CIN,NFL,TE,13,13,68,52,414,26,222,4.3,192,3.7,4.9,5,10.4,2,2.9,1,94.9,0,0,0,0,,0,,0,,Hayden Hurst,HursHa00
-2023,30,CAR,NFL,TE,9,8,32,18,184,7,117,6.5,67,3.7,7.6,1,18.0,2,6.3,2,57.3,0,0,0,0,,0,,0,,Hayden Hurst,HursHa00
-2024,31,LAC,NFL,TE,9,2,13,8,73,2,53,6.6,20,2.5,4.8,0,,2,15.4,0,76.8,0,0,0,0,,0,,0,,Hayden Hurst,HursHa00
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Awards,Player,PlayerID
+2018,25,BAL,TE,12,0,23,13,163,8,89,6.8,74,5.7,7.2,1,13.0,0,0.0,0,93.2,1,0,0,0,0.0,0,0.0,0,,Hayden Hurst,HursHa00
+2019,26,BAL,TE,16,4,39,30,349,16,201,6.7,148,4.9,8.5,1,30.0,0,0.0,0,120.6,0,0,0,0,,0,,0,,Hayden Hurst,HursHa00
+2020,27,ATL,TE,16,9,88,56,571,35,326,5.8,245,4.4,6.8,2,28.0,4,4.5,2,95.4,0,0,0,0,,0,,0,,Hayden Hurst,HursHa00
+2021,28,ATL,TE,13,5,31,26,221,11,132,5.1,89,3.4,6.6,2,13.0,0,0.0,1,115.2,0,0,0,0,,0,,0,,Hayden Hurst,HursHa00
+2022,29,CIN,TE,13,13,68,52,414,29,222,4.3,192,3.7,4.9,5,10.4,2,2.9,1,94.9,0,0,0,0,,0,,0,,Hayden Hurst,HursHa00
+2023,30,CAR,TE,9,8,32,18,184,7,117,6.5,67,3.7,7.6,1,18.0,2,6.3,2,57.3,0,0,0,0,,0,,0,,Hayden Hurst,HursHa00
+2024,31,LAC,TE,9,2,13,8,73,2,53,6.6,20,2.5,4.8,0,,2,15.4,0,76.8,0,0,0,0,,0,,0,,Hayden Hurst,HursHa00

@@ -1,9 +1,9 @@
-Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,1D,YBC,YBC/R,YAC,YAC/R,ADOT,BrkTkl,Rec/Br,Drop,Drop%,Int,rec_pass_rating,Att,Yds,1D,YBC,YBC/Att,YAC,YAC/Att,BrkTkl,Att/Br,awards,Player,PlayerID
-2018,23,TEN,NFL,TE,13,12,30,20,258,10,78,3.9,180,9.0,5.2,4,5.0,3,10.0,2,99.0,0,0,0,0,,0,,0,,,Jonnu Smith,SmitJo01
-2019,24,TEN,NFL,TE,16,14,44,35,439,16,166,4.7,273,7.8,5.3,6,5.8,2,4.5,1,121.5,4,78,2,7,1.8,71,17.8,1,4.0,,Jonnu Smith,SmitJo01
-2020,25,TEN,NFL,TE,15,14,65,41,448,25,210,5.1,238,5.8,5.5,2,20.5,3,4.6,2,110.1,2,4,1,4,2.0,0,0.0,0,,,Jonnu Smith,SmitJo01
-2021,26,NWE,NFL,TE,16,11,45,28,294,15,62,2.2,232,8.3,5.5,2,14.0,4,8.9,2,70.0,9,40,2,16,1.8,24,2.7,0,,,Jonnu Smith,SmitJo01
-2022,27,NWE,NFL,TE,14,8,38,27,245,9,45,1.7,200,7.4,3.1,9,3.0,2,5.3,1,77.2,1,5,1,5,5.0,0,0.0,0,,,Jonnu Smith,SmitJo01
-2023,28,ATL,NFL,TE,17,6,70,50,582,26,225,4.5,357,7.1,6.5,6,8.3,4,5.7,2,98.6,1,0,0,0,0.0,0,0.0,0,,,Jonnu Smith,SmitJo01
-2024,29,MIA,NFL,TE,17,6,111,88,884,55,374,4.3,510,5.8,4.9,8,11.0,6,5.4,0,123.9,2,-1,0,-1,-0.5,0,0.0,0,,,Jonnu Smith,SmitJo01
-2025,30,PIT,NFL,TE,17,7,54,38,222,10,43,1.1,179,4.7,4.3,3,12.7,2,3.7,0,90.2,9,70,3,29,3.2,41,4.6,3,3.0,,Jonnu Smith,SmitJo01
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Awards,Player,PlayerID
+2018,23,TEN,TE,13,12,30,20,258,10,78,3.9,180,9.0,5.2,4,5.0,3,10.0,2,99.0,0,0,0,0,,0,,0,,,Jonnu Smith,SmitJo01
+2019,24,TEN,TE,16,14,44,35,439,16,166,4.7,273,7.8,5.3,6,5.8,2,4.5,1,121.5,4,78,2,7,1.8,71,17.8,1,4.0,,Jonnu Smith,SmitJo01
+2020,25,TEN,TE,15,14,65,41,448,25,210,5.1,238,5.8,5.5,2,20.5,3,4.6,2,110.1,2,4,1,4,2.0,0,0.0,0,,,Jonnu Smith,SmitJo01
+2021,26,NWE,TE,16,11,45,28,294,15,62,2.2,232,8.3,5.5,2,14.0,4,8.9,2,70.0,9,40,2,16,1.8,24,2.7,0,,,Jonnu Smith,SmitJo01
+2022,27,NWE,TE,14,8,38,27,245,9,45,1.7,200,7.4,3.1,9,3.0,2,5.3,1,77.2,1,5,1,5,5.0,0,0.0,0,,,Jonnu Smith,SmitJo01
+2023,28,ATL,TE,17,6,70,50,582,26,225,4.5,357,7.1,6.5,6,8.3,4,5.7,2,98.6,1,0,0,0,0.0,0,0.0,0,,,Jonnu Smith,SmitJo01
+2024,29,MIA,TE,17,6,111,88,884,55,374,4.3,510,5.8,4.9,8,11.0,6,5.4,0,123.9,2,-1,0,-1,-0.5,0,0.0,0,,PB,Jonnu Smith,SmitJo01
+2025,30,PIT,TE,17,7,54,38,222,10,43,1.1,179,4.7,4.3,3,12.7,2,3.7,0,90.2,9,70,3,29,3.2,41,4.6,3,3.0,,Jonnu Smith,SmitJo01

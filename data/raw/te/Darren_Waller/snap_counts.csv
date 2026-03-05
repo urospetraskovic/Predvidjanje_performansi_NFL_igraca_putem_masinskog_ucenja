@@ -1,10 +1,9 @@
-Season,Age,Team,Pos,No.,G,GS,offense,Off%,defense,Def%,special_teams,ST%,Player,PlayerID
-2015,23,BAL,WR,12,6,1,45,,0,,95,,Darren Waller,WallDa01
-2016,24,BAL,WR,84,12,3,234,,0,,213,,Darren Waller,WallDa01
-2018,26,OAK,WR,83,4,0,42,,0,,36,,Darren Waller,WallDa01
-2019,27,OAK,TE,83,16,16,922,,0,,4,,Darren Waller,WallDa01
-2020*,28,LVR,TE,83,16,15,993,,0,,3,,Darren Waller,WallDa01
-2021,29,LVR,TE,83,11,11,608,,0,,3,,Darren Waller,WallDa01
-2022,30,LVR,TE,83,9,6,346,,0,,0,,Darren Waller,WallDa01
-2023,31,NYG,TE,12,12,11,568,,0,,0,,Darren Waller,WallDa01
-2025,33,MIA,TE,83,9,3,234,,0,,2,,Darren Waller,WallDa01
+Season,Age,Team,Pos,No.,G,GS,Off_Snaps,Off%,Def_Snaps,Def%,ST_Snaps,ST%,Player,PlayerID
+2015,23,BAL,WR,12,6,1,45,11%,0,0%,95,52%,Darren Waller,WallDa01
+2016,24,BAL,WR,84,12,3,234,28%,0,0%,213,61%,Darren Waller,WallDa01
+2018,26,OAK,WR,83,4,0,42,17%,0,0%,36,34%,Darren Waller,WallDa01
+2019,27,OAK,TE,83,16,16,922,90%,0,0%,4,1%,Darren Waller,WallDa01
+2021,29,LVR,TE,83,11,11,608,81%,0,0%,3,1%,Darren Waller,WallDa01
+2022,30,LVR,TE,83,9,6,346,58%,0,0%,0,0%,Darren Waller,WallDa01
+2023,31,NYG,TE,12,12,11,568,69%,0,0%,0,0%,Darren Waller,WallDa01
+2025,33,MIA,TE,83,9,3,234,45%,0,0%,2,1%,Darren Waller,WallDa01

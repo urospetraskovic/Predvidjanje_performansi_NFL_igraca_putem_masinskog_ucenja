@@ -1,5 +1,5 @@
-Season,Age,Team,Lg,Pos,G,GS,Tgt,Rec,Yds,1D,YBC,YBC/R,YAC,YAC/R,ADOT,BrkTkl,Rec/Br,Drop,Drop%,Int,rec_pass_rating,Att,Yds,1D,YBC,YBC/Att,YAC,YAC/Att,BrkTkl,Att/Br,awards,Player,PlayerID
-2022,23,TAM,NFL,TE,16,11,65,42,391,23,217,5.2,174,4.1,4.9,2,21.0,5,7.7,0,91.2,0,0,0,0,,0,,0,,,Cade Otton,OttoCa00
-2023,24,TAM,NFL,TE,17,17,67,47,455,27,232,4.9,223,4.7,6.7,4,11.8,3,4.5,1,102.5,0,0,0,0,,0,,0,,,Cade Otton,OttoCa00
-2024,25,TAM,NFL,TE,14,14,87,59,600,33,289,4.9,311,5.3,5.5,6,9.8,8,9.2,3,88.3,1,-4,0,-4,-4.0,0,0.0,1,1.0,,Cade Otton,OttoCa00
-2025,26,TAM,NFL,TE,16,16,81,59,572,25,263,4.5,309,5.2,5.1,6,9.8,1,1.2,2,86.0,0,0,0,0,,0,,0,,,Cade Otton,OttoCa00
+Season,Age,Team,Pos,G,GS,Tgt,Rec,Rec_Yds,Rec_1D,Rec_AirYds,Rec_AirYds/R,Rec_YAC,Rec_YAC/R,Rec_aDOT,Rec_BrkTkl,Rec_BrkTkl/R,Rec_Drops,Rec_Drop%,Rec_Int,Rec_PassRtg,Rush_Att,Rush_Yds,Rush_1D,Rush_YBC,Rush_YBC/A,Rush_YAC,Rush_YAC/A,Rush_BrkTkl,Rush_BrkTkl/A,Awards,Player,PlayerID
+2022,23,TAM,TE,16,11,65,42,391,23,217,5.2,174,4.1,4.9,2,21.0,5,7.7,0,91.2,0,0,0,0,,0,,0,,,Cade Otton,OttoCa00
+2023,24,TAM,TE,17,17,67,47,455,27,232,4.9,223,4.7,6.7,4,11.8,3,4.5,1,102.5,0,0,0,0,,0,,0,,,Cade Otton,OttoCa00
+2024,25,TAM,TE,14,14,87,59,600,33,289,4.9,311,5.3,5.5,6,9.8,8,9.2,3,88.3,1,-4,0,-4,-4.0,0,0.0,1,1.0,,Cade Otton,OttoCa00
+2025,26,TAM,TE,16,16,81,59,572,25,263,4.5,309,5.2,5.1,6,9.8,1,1.2,2,86.0,0,0,0,0,,0,,0,,,Cade Otton,OttoCa00

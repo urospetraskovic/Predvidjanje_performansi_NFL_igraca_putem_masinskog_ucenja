@@ -1,0 +1,13 @@
+Pozicija,Pristup,MAE,RMSE,R²
+QB,Single-Output RF,36.55,49.57,-0.366
+QB,Multi-Output RF,35.92,49.19,-0.345
+QB,NN (MLP (128-64)),37.4,49.88,-0.383
+RB,Single-Output RF,19.44,23.52,0.111
+RB,Multi-Output RF,19.0,22.94,0.154
+RB,NN (MLP (128-64)),20.68,25.42,-0.039
+TE,Single-Output RF,10.86,12.07,0.535
+TE,Multi-Output RF,10.7,11.93,0.546
+TE,NN (MLP (128-64)),12.57,14.88,0.294
+WR,Single-Output RF,9.63,12.61,0.6
+WR,Multi-Output RF,9.72,12.68,0.596
+WR,NN (MLP (128-64)),9.3,12.4,0.614
