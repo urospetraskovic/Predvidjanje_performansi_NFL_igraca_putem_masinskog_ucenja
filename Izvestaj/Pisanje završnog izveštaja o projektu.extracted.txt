@@ -1,0 +1,213 @@
+Pisanje zavrs nog izves taja o projektu 
+Kako bi v aš projekat zadovoljio standarde i očekivanja , najbolje je da se pre pisanja  konsultujete sa 
+profesorom i asistentom da li ste izvršili odgovarajuće istraživanje. U ovom cilju smo na predmetu 
+definisali dve kontrolne tačke. Pored sugestija koje ćete dobiti na kontrolnim tačkama, u svakom 
+trenutku možete zakazati konsultacije kako biste proverili da li vaš projekat ispunjava očekivanja za 
+najvišu ocenu i šta bi eventualno trebalo doraditi. 
+Tekst u ovom dokumen tu sadrži upustva vezana za sadržaj završnog izveštaja o projektu, kao i par 
+pomoćnih tehničkih uputstava.  
+Finalnu verziju završnog izveštaja o projektu  potrebno je poslati asistentu koji vodi projekat  na mail 
+do dogovorenog roka. Nepoštovanje roka povlači da maksimalna ocena koju možete osvojiti na projektu 
+bude 6, bez obzira na njegov kvalitet. 
+Ukoliko ste ispoštovali prvu i drugu kontrolnu tačku i napisali završni izveštaj pre isteka roka , tekst 
+možete poslati asistentu na reviziju kako biste dobili sugestije za ispravku teksta.  Ovo možete uraditi u 
+najviše dva navrata. Zbog toga se potrudite da u svakoj iteraciji adresirate sve sugestije koje ste dobili  
+kako biste dobili dodatne sugesti je u narednoj iteraciji . Nakon isteka propisanog roka za predaju, ne 
+možete vipe ispravljati tekst izveštaja. 
+Format za izradu seminarskog rada možete naći na sajtu predmeta (/Izrada 
+projekta/Sablon_zavrsni_izvestaj.doc). Ako želite da koristite LaTeX, odgovarajući templejt možete 
+skinuti sa sajta http://www.ieee.org/conferences_events/conferences/publishing/templates.html. 
+Projekat mož ete pisati na srpskom ili na engleskom jeziku.  Rad mora da bude propisanog obima 6-8 
+strana za grupe od 2 člana i 8-10 strana za grupe od 3 člana.  
+Napomena: Svaki član tima će se na odbrani morati izjasniti koji deo projekta je radio. Svaki član 
+tima bi t rebao da učestvuje u pisanju rada. Svaki član tima mora da učestvuje u odbrani rada i ocene 
+članova jednog tima se mogu međusobno razlikovati. 
+Česte greške u izradi proketa 
+1. Niste obrazložili sve izbore parametara (zašto takva podela na trening/test skup , zašto ta mera 
+evaluacije, zašto smatrate da je rejting od 3 pa naviše pozitivan, itd.). Mogući razlozi:  
+ do njih došli empirijski (optimizacijom modela, isprobavanjem,…) 
+ prilikom eksplorativne analize ste uočili neki šablon  
+ na osnovu domenskog iskustva  
+ drugi autori koriste slične postavke parametara 
+2. Primenili ste model a zaboravili da optimizujete vrednosti njegovih parametara 
+3. Trenirali ste model ili optimizovali parametre na istim podacima (ili na podskupu podataka) na 
+kome evaluirate model. Napravite razliku između trening/validacionog/test skupa 
+4. „Dodatne poene“ možete osvojiti analizom grešaka modela. Izdvojite podskup primera na 
+kojima je vaš model pogrešio i pokušajte da razumete razlog. Npr. napravili ste model za 
+automatsko prepoznavanje sentimenta teksta. Po inspekciji grešaka koje model pravi utvrdili ste 
+da ne prepoznaje negaciju ili sarkastične komentare. 
+
+Strukura završnoh izveštaja 
+Struktura rada zavisi od teme, ali svakako treba da sadr ži bar: naslov, apstrakt, ključne reči, uvod,  
+pregled literature, metod, rezultati i diskusija i zaključak. 
+Naslov rada 
+Naslov treba da je kratak (do 10 reči) i da adekvatno ilustruje sadržaj rada. Probajte da odaberete 
+nešto što kratko predstavlja problem koji ste rešavali. Koristite termine i koncepte koje  biste vi uneli u 
+pretraživač da tražite takav rad na interetu.  
+Primer: “Identification of User Patterns in Social Networks by data mining techniques: Facebook 
+case” – definiše problem koji se rešava (identifikacija šablona korisnika socijalnih mreža), me tod 
+(primena tehnika istraživanja podataka) i govori da će rezultati biti prikazani konkretno na Facebook 
+socijalnoj mreži. 
+Ne gubite prostor na prazne fraze „Neka razmatranja...“, „Jedna studija o...“, „Neki aspekti...“, 
+„Uticaj raznih...“, „Prilog prouča vanju...“, “novel”, “very efficient” . Bez skraćenica (sa izuzetkom onih 
+koje su u najširoj upotrebi, npr. WWW). 
+Apstrakt 
+Apstrakt je sažetak rada u jednom pasusu. Treba da bude kratak, jasan i nezavisan od ostatka rada. 
+Dužina apstrakta mora da bude između  150 i 300 reči. Preporuka je da se napiše na kraju, nakon 
+završetka teksta rada.  
+Četiri glavna elementa su: (1) Predmet istraživanja/definicija problema – šta se rešava i zbog čega je 
+bitno da se reši (motivacija);  (2) Kratak prikaz metoda ; (3) Glavni rezultati; (4) Objašnjenje rezultata uz 
+isticanje njihove važnosti i mogućih implikacija. 
+Primer (Ahn, Y.Y., Ahnert, S.E., Bagrow, J.P. and Barabási, A.L., 2011. Flavor network and the 
+principles of food pairing. Scientific reports, 1.): “The cultural diversity of culinary practice, as illustrated 
+by the variety of regional cuisines, raises the question of whether there are any general patterns that 
+determine the ingredient combinations used in food today or principles that transcend individual tastes 
+and recipes.  We introduce a flavor network that captures the flavor compounds shared by culinary 
+ingredients. Western cuisines show a tendency to use ingredient pairs that share many flavor 
+compounds, supporting the so -called food pairing hypothesis. By con trast, East Asian cuisines tend to 
+avoid compound sharing ingredients. Given the increasing availability of information on food 
+preparation, our data -driven investigation opens new avenues towards a systematic understanding of 
+culinary practice.” 
+Apstrakt treba da bude kratak, jasan i nezavisan od ostatka rada – zato se u njemu ne referncirajte 
+na literaturu, slike, tabele,… Nemojte koristiti skraćenice (sa izuzetkom onih u najširoj upotrebi)  ili ih 
+odmah po pomenu definišite, npr. semi -supervised learning (SSL) is a set of machine learning 
+techniques… 
+Ključne reči 
+Tri do pet izraza koji najbolje ilustruju vaš rad  (rešavani problem ili metode koje se koriste ). Ako ste 
+dobro napisali naslov i apstrakt – oni u sebi sadrže ključne reči. Odaberite ono što biste vi uneli u 
+pretraživač da tražite rad poput vašeg. 
+Na primer, za rad “Identification of User Patterns in Social Networks by data mining techniques: 
+Facebook case” ključne reči su: social networks; decision trees; association rules; Facebook. 
+
+Uvod 
+U uvodu jasno definišite problem koji rešavate. Motivišite ga – zbog čega je važan i interesantan (ne 
+vama lično već zbog čega je važan za naučnu zajednicu) ? Šta vi planirate da uradite na tu temu? Šta su 
+drugi uradili na zadatu temu? Po čemu je vaše rešenje bolje /po čemu se ističe /gde se naslanja na tu đi 
+rad/kako se va še rešenje uklapa u postojeći naučni okvir ? Dajte kratku sumarizaciju vašeg metoda i 
+glavnih rezultata/doprinosa. Na kraju uvoda upoznajte čitaoca sa time što će biti prezentovano u ostatku 
+dokumenta (U poglavlju 2 biće dat pregled postojećih rešenja…). 
+Uvod ne treba da bude predugačak (okvirno 1-1.5 stranica zajedno sa apstraktom). 
+Pregled postojeće relevantne literature.  
+Ovaj deo možete odabrati da spojite sa uvodom. Navedite radove koji rešavaju isti ili sličan problem. 
+Za svaki rad koji navodite objasnite po čemu se vaš metod/problem razlikuje  ili obrazložite kako 
+navedeni rad doprinosi Vašoj temi. 
+Preuzimanje (dela) teksta iz nekog drugog rada i dodavanje reference u tekstu se ne smatra 
+odgovarajućim načinom citiranja – izdvojite suštinu bitnu za vaš rad i prepričajte je. 
+Metod 
+Opis korišćenih metoda. Ako se radi o veoma poznatim metodama (npr. Naïve Bayes), dovoljno je 
+navesti samo naziv (i eventualno referencu na rad u kojem je taj metod publikovan). Ako se radi o manje 
+poznatom, a već publikovanom metodu, dajte kratak opis metoda i referišite se na rad u kome je taj 
+metod publikovan. Ako se radi o vašem sopstvenom metodu naglasite to u tekstu. 
+Pazite da opis metoda bude jasan. Možete koristiti p seudokod. Ako je moguće, intuitivno razumljiv 
+primer je bolji izlaganja simbola kojima se ne vidi značaj. 
+Ne možete prikazati sve detalje, držite se onih najvažnijih, ali pazite da date dovoljno detalja da 
+drugi mogu da ponove vaš eksperiment. 
+Rezultati i diskusija 
+Opišite eksperimentalnu proceduru na taj način da se eksperiment može reprodukovati: 
+ Opišite šta želite da postignete (i eventualno kakve rezultate očekujete) 
+ Opišite skup podataka, pogotovo ciljnu varijablu 
+ Naglasite koje metode poredite 
+ Definišite eksperimentalnu proceduru (unakrsna validacija, podela na 
+trening/validacioni/test skup,…) 
+ Definišite meru evaluacije metoda 
+ Specificirajte sve korišćene parametre modela /evaluacione procedure i opišite kako ste do 
+njih došli (optimizacija, iz literature,…) 
+ Prikažite rezultate (tabele, grafikoni,...) . Vizuelna reprezentacija je bolja za uočavanje 
+trendova. Tabele su bolje za prikaz konkretnih vrednosti. Ako postoji potreba rezultate 
+prikažite i slikom i tabelom. 
+ Diskusija – prikažite principe, međusobne veze i generalizaciju rezultata, npr. 
+o jedan metod je bolji za neku vrstu podataka – npr. jedan model za automatsku 
+detekciju sentimenta je bolje radi na kraćim komentarima 
+o SVM se pokazao boljim od NB 
+o Navedite svaki izuzetak (odstupanje od očekiva nog ili od prethodnih rezultata 
+izloženih u literaturi). Pokušajte da ga objasnite. 
+
+o Istaknite ako se vaši rezultati slažu sa već publikovanim 
+o Istaknite ograničenja metoda 
+o Istaknite ograničenja podataka (šum, nedostajuće vrednosti,…) – kako je ovo uticalo 
+na metod? 
+Zaključak rada 
+U zaključku sumarizujte rad:  
+ koji ste problem rešavali  
+ koja je motivacija za njegovo rešavanje 
+ kako ste rešavali problem 
+ šta su glavni rezultati/doprinosi rada 
+ koje su glavne prednosti vašeg rešenja i koji su glavni nedostaci 
+ po čemu bi rad trebalo zapamtiti  
+ koje su mogu će praktične primene vašeg rešenja  kako će vaše rešenje doprineti budućim 
+istraživanjima i praktičnim primenama u oblasti istraživanja 
+Pored sumarizacije rada, neophodno je da predlo žite pravce budućeg rada: kako b i se Vaše rešenje 
+moglo proširiti/pobojšati; da li bi bilo dobro da se dodatno evaluira (drugi uslovi, podaci, teorijski dokazi, 
+…); da li se otvorio neki novi problem koji vredi istražiti u budućnosti. 
+Literatura 
+Sve stavke u literaturi moraju barem jednom biti referencirane u tekstu . Reference napravite kao 
+linkove. 
+Navedite sve detalje neophodne da se referencirani rad pronađe: autore, godinu publikacije, naslov, 
+časopis/konferencija, izdanje, stranice. Najlak še je da koristite Cite link na google s cholar pretraživaču 
+(slika 1). 
+
+ 
+Slika 1 Citiranje publikacije 
+Tehnički detalji 
+1. Rad možete pisati na srpskom ili engleskom jeziku koristeći MS Word ili LaTeX 
+2. Obavezno je da rad do detalja ispoštuje propisan šablon (format) . Veličina stranice, margine, 
+širina kolona, fontovi, line spacing, poravnanje i stilovi su ukodirani u šablon koji Vam je dat. 
+Stilovi (type styles) su defi nisani u šablonu – navedeni su njihovi nazivi kurzivom ( italic) u 
+zagradama, npr. za naslov - Introduction (Heading 1) 
+3. Rad mora da bude propisanog obima  6-8 strana za grupe od 2 člana i 8 -10 strana za grupe od 3 
+člana 
+4. Dokument mora biti jednostavan za čita nje i razumevanje. Budite jasni i efikasni (izbacite 
+suvišne reči, nepotrebne fraze, previše formalan jezik i skratite nepotrebno dugačke fraze). Cilj 
+je da se što konciznije prenese poenta 
+5. Svako tvrđenje u radu mora da bude potvrđeno: 
+a. odgovarajućim citiranjem (navodi se referenca iz literature odakle je tvrdnja preuzeta) ili  
+b. sadržajem rada (rezultatima u radu i interpretacijom rezultata 
+6. Stavite referencu svaki put kada: 
+
+
+o tvrdite nešto što niste vi smislili; 
+o preuzimate nešto iz literature; 
+o prvi put uvodite neki pojam (definicija, naziv tehnologije, ...) 
+7. Uz sve novouvedene termine u zagradi naglasiti od koje engleske reči potiču. Naredni primeri 
+ilustruju način uvođenja engleskih termina, kao i citiranje: 
+o Problem zaustavljanja (eng. halting problem) je neodlučiv [3]. 
+o Za prevođenje programa napisanih u programskom jeziku C može se koristiti GCC 
+kompajler [1]. 
+o Da bi se ispitivala ispravost softvera, najpre je potrebno precizno definisati njegovo 
+ponašanje [2]. 
+8. Skraćenice:  
+o Kada se prvi put u tekstu upotrebi skraćeni oblik nekog termina, potrebno je navesti i 
+njegov puni naziv  čak i ukoliko su pre toga definisane u apstraktu . Npr. SOAP (Simpl e 
+Object Access Protocol) je protokol… 
+o Koriste se u originalnom obliku, bez kurziva. 
+o  Nemojte koristiti skraćenice u naslovima ukoliko nisu opštepoznate. 
+9. Tabele i slike: 
+o Tabele i slike imaju naslove koji ih opisuju i numerisane su 
+o Tabele i slike moraju barem jednom biti referencirane iz teksta. Reference napraviti kao 
+linkove. Primer: „Na slici 2 je prikazan dijagram slučajeva korišćenja sistema“ – 
+pokušajte da kliknete na ‘2’. Svako referenciranje na sliku mora da sadrži broj slike. 
+Nemojte pisati nešto poput „Na slici ispod je prikazano“. 
+o Slike moraju biti zadovoljavajućeg kvaliteta. Na slikama se mora dobro videti ono što se 
+predstavlja. Slike koje su prevelike da budu prikazane u jednoj koloni raširite preko dve 
+kolone. 
+ 
+Slika 2 Dijagram slučajeva korišćenja Sistema 
+
+
+10. Za sve simbole u formulama i tabelama potrebno je dati objašnjenje. 
+11. Prilikom predaje izveštaja, imenujte datoteku tako da sadrži vaše ime, prezime i temu 
+12. Ispod svakog naslova mora da stoji barem jedan paragraf – ne može da ide naslov pa podnaslov 
+bez teksta između 
+13. U paragrafu se razrađuje isključivo jedna nova ideja . Ne ostavljajte ideje nedovršenim. Ne 
+cepajte ideje na dva ili više paragrafa. Tok pisanja treba da je logičan. Svaki  paragraf se povezuje 
+sa rečenicom ili dve, koje objašnjavaju na koji način svaka ideja vodi ka sledećoj i kako sve to 
+zajedno doprinosi osnovnoj ideji. 
+14. Ukoliko pišete na srpskom jeziku reči stranog jezika se prikazuju kurzivom. Npr. Database je 
+engleski naziv za pojam baze podataka. Ukoliko je neki engleski termin teško prevodiv na srpski 
+jezik, može se koristiti engleska varijanta u tekstu uz uslov da se kod prvog pominjanja engleskog 
+termina on objasni na odgovarajući način 
+Literatura 
+[1] Free Software Foundation. GNU gcc, 2013. on-line at: http://gcc.gnu.org/. 
+[2] J. Laski and W. Stanley. Software Verication and Analysis. Springer-Verlag, London, 2009. 
+[3] M. Turing. On Computable Numbers, with an application to the Entscheidungsproblem. Proceedings of the Lond on Mathematical 
+Society, 2(42): 230{265, 1936. 
