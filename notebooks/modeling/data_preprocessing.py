@@ -63,6 +63,121 @@ def print_target_summary(qb, rb, te, wr):
     print(f'WR (log1p Yds/G): mean={t_log.mean():.3f}, median={t_log.median():.3f}, min={t_log.min():.3f}, max={t_log.max():.3f}')
 
 
+# ── Multi-Output Targets ──────────────────────────────────────────────
+
+# Konfiguracija ciljnih varijabli za multi-output regresiju po poziciji
+MULTI_TARGET_CONFIG = {
+    'QB': {
+        'target_cols': ['target_yds_per_game', 'target_td_per_game', 'target_rate'],
+        'target_labels': ['Yds/G', 'TD/G', 'Passer Rating'],
+    },
+    'RB': {
+        'target_cols': ['target_yds_per_game', 'target_td_per_game', 'target_ypa'],
+        'target_labels': ['Rush Yds/G', 'Rush TD/G', 'Rush Y/A'],
+    },
+    'TE': {
+        'target_cols': ['target_yds_per_game', 'target_td_per_game', 'target_rec_per_game'],
+        'target_labels': ['Rec Yds/G', 'Rec TD/G', 'Rec/G'],
+    },
+    'WR': {
+        'target_cols': ['target_yds_per_game', 'target_td_per_game', 'target_rec_per_game'],
+        'target_labels': ['log1p(Rec Yds/G)', 'TD/G', 'Rec/G'],
+    },
+}
+
+
+def add_multi_targets_qb(qb_raw):
+    """Kreira višestruke ciljne varijable za QB poziciju.
+
+    Ciljne varijable:
+        target_yds_per_game : Yds / G  (passing yards per game)
+        target_td_per_game  : TD / G   (touchdowns per game)
+        target_rate         : Rate     (passer rating)
+    """
+    qb = qb_raw[qb_raw['GS'] > 0].copy()
+    qb['target_yds_per_game'] = qb['Yds'] / qb['G'].replace(0, np.nan)
+    qb['target_td_per_game']  = qb['TD']  / qb['G'].replace(0, np.nan)
+    qb['target_rate']         = qb['Rate']
+    # Kompatibilnost — zadržavamo i originalni 'target'
+    qb['target'] = qb['target_yds_per_game']
+    return qb
+
+
+def add_multi_targets_rb(rb_raw):
+    """Kreira višestruke ciljne varijable za RB poziciju.
+
+    Ciljne varijable:
+        target_yds_per_game : Rush_Yds / G  (rushing yards per game)
+        target_td_per_game  : Rush_TD / G   (rushing touchdowns per game)
+        target_ypa          : Rush_Y/A      (yards per attempt)
+    """
+    rb = rb_raw.copy()
+    rb['target_yds_per_game'] = rb['Rush_Yds'] / rb['G'].replace(0, np.nan)
+    rb['target_td_per_game']  = rb['Rush_TD']  / rb['G'].replace(0, np.nan)
+    rb['target_ypa']          = rb['Rush_Y/A']
+    # Kompatibilnost
+    rb['target'] = rb['target_yds_per_game']
+    return rb
+
+
+def add_multi_targets_te(te_raw):
+    """Kreira višestruke ciljne varijable za TE poziciju.
+
+    Ciljne varijable:
+        target_yds_per_game : Rec_Yds / G  (receiving yards per game)
+        target_td_per_game  : Rec_TD / G   (receiving touchdowns per game)
+        target_rec_per_game : Rec / G      (receptions per game)
+    """
+    te = te_raw[te_raw['G'] > 0].copy()
+    te['target_yds_per_game'] = te['Rec_Yds'] / te['G']
+    te['target_td_per_game']  = te['Rec_TD']  / te['G']
+    te['target_rec_per_game'] = te['Rec']     / te['G']
+    # Kompatibilnost
+    te['target'] = te['target_yds_per_game']
+    return te
+
+
+def add_multi_targets_wr(wr_raw):
+    """Kreira višestruke ciljne varijable za WR poziciju.
+
+    Ciljne varijable:
+        target_yds_per_game : log1p(receiving_yards / games_played)
+        target_td_per_game  : tds / games_played
+        target_rec_per_game : receptions / games_played
+    """
+    wr = wr_raw.copy()
+    wr['rec_yds_per_game']    = wr['receiving_yards'] / wr['games_played'].replace(0, np.nan)
+    wr['target_yds_per_game'] = np.log1p(wr['rec_yds_per_game'].clip(lower=0))
+    wr['target_td_per_game']  = wr['tds']        / wr['games_played'].replace(0, np.nan)
+    wr['target_rec_per_game'] = wr['receptions']  / wr['games_played'].replace(0, np.nan)
+    # Kompatibilnost
+    wr['target'] = wr['target_yds_per_game']
+    return wr
+
+
+def print_multi_target_summary(datasets_by_pos: dict, config=None):
+    """Prikazuje summary statistike za sve multi-output ciljne varijable.
+
+    datasets_by_pos: dict {pos: DataFrame}
+    config: MULTI_TARGET_CONFIG ili None za default
+    """
+    if config is None:
+        config = MULTI_TARGET_CONFIG
+
+    print('Multi-output ciljne promenljive:')
+    for pos, df in datasets_by_pos.items():
+        cfg = config[pos]
+        print(f'\n  {pos}:')
+        for tcol, label in zip(cfg['target_cols'], cfg['target_labels']):
+            if tcol in df.columns:
+                t = df[tcol].dropna()
+                print(f'    {label:20s} ({tcol}): '
+                      f'mean={t.mean():.3f}, median={t.median():.3f}, '
+                      f'min={t.min():.3f}, max={t.max():.3f}')
+            else:
+                print(f'    {label:20s} ({tcol}): NOT FOUND')
+
+
 # ── Awards ───────────────────────────────────────────────────
 
 
