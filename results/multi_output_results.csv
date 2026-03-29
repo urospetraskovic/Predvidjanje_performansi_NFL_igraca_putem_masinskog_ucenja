@@ -1,0 +1,9 @@
+position,model,target,MAE,RMSE,R2,weighted_score
+QB,RandomForest,yards_per_game,33.7147,42.2809,0.1157,31.2156
+QB,RandomForest,attempts_per_game,4.3922,5.3967,-0.228,31.2156
+RB,RandomForest,yards_per_game,19.6162,23.2392,0.1319,17.4509
+RB,RandomForest,carries_per_game,3.4313,3.945,0.1795,17.4509
+TE,RandomForest,yards_per_game,12.648,15.3381,0.3271,11.162
+TE,RandomForest,receptions_per_game,1.1371,1.4177,0.3348,11.162
+WR,RandomForest,yards_per_game,11.2684,16.2309,0.3282,11.6871
+WR,RandomForest,receptions_per_game,0.8544,1.0847,0.4694,11.6871
