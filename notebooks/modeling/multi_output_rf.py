@@ -41,8 +41,6 @@ MULTI_TARGET_CONFIG = {
         'games_col':  'G',
         'targets': [
             {'col': None,   'label': 'yards_per_game',        'is_total': False, 'is_yards': True},
-            {'col': 'Att',  'label': 'attempts_per_game',     'is_total': True,  'is_yards': False},
-            {'col': 'Cmp',  'label': 'completions_per_game',  'is_total': True,  'is_yards': False},
             {'col': '1D',   'label': 'first_downs_per_game',  'is_total': True,  'is_yards': False},
         ],
     },
@@ -54,7 +52,6 @@ MULTI_TARGET_CONFIG = {
             {'col': None,            'label': 'yards_per_game',     'is_total': False, 'is_yards': True},
             {'col': 'Rush_Att',      'label': 'carries_per_game',   'is_total': True,  'is_yards': False},
             {'col': 'Rush_Y/A',      'label': 'yards_per_attempt',  'is_total': False, 'is_yards': False},
-            {'col': 'adv_Rush_YBC',  'label': 'ybc_per_game',       'is_total': True,  'is_yards': False},
         ],
     },
     'TE': {
@@ -382,15 +379,12 @@ def print_multi_output_summary(eval_detail, multi_target_config=None):
     n_others = sum(1 for pos in eval_detail for lbl in eval_detail[pos]['labels'] if lbl != 'yards_per_game')
     print('=' * 75)
     print('ZAKLJUCAK: Random Forest multi-output regresija')
-    print(f'Tezine: yards={YARDS_WEIGHT}, ostali={OTHER_WEIGHT} (ravnomerno po targetu)')
-    print('=' * 75)
 
     for pos, d in eval_detail.items():
-        ws     = d['weighted_score']
         labels = d['labels']
         print(f'\n{pos}:')
         for label in labels:
             m = d[label]
-            w = m['weight']
-            print(f'  {label:<25} MAE={m["MAE"]:.3f}  RMSE={m["RMSE"]:.3f}  R2={m["R2"]:.3f}  (w={w})')
-        print(f'  {"Weighted score":<25} {ws:.4f}')
+
+            print(f'  {label:<25} MAE={m["MAE"]:.3f}  RMSE={m["RMSE"]:.3f}  R2={m["R2"]:.3f} ')
+        
