@@ -19,6 +19,11 @@ optuna.logging.set_verbosity(optuna.logging.WARNING)
 
 POSITIONS = ['QB', 'RB', 'TE', 'WR']
 
+MODEL_ALIASES = {
+    'KNN': ['KNN', 'KNeighbors'],
+    'KNeighbors': ['KNeighbors', 'KNN'],
+}
+
 RANDOM_SEARCH_GRIDS = {
     'XGBoost': {
         'n_estimators':    randint(50, 400),
@@ -67,6 +72,18 @@ def _eval_on_scale(y_true, y_pred, is_wr):
     rmse = float(np.sqrt(mean_squared_error(y_true, y_pred)))
     r2   = r2_score(y_true, y_pred)
     return mae, rmse, r2
+
+
+def _resolve_model_config(model_name, model_configs):
+    """Vraca (model_key, config) uz podrsku aliasa poput KNN/KNeighbors."""
+    if model_name in model_configs:
+        return model_name, model_configs[model_name]
+
+    for alias in MODEL_ALIASES.get(model_name, []):
+        if alias in model_configs:
+            return alias, model_configs[alias]
+
+    return None, None
 
 
 def _create_refined_grid(best_params, model_name):
@@ -178,7 +195,11 @@ def _make_objective(model_name, model_configs):
         else:
             return 0.0
 
-        model = copy.deepcopy(model_configs[model_name]['model'])
+        cfg_key, cfg = _resolve_model_config(model_name, model_configs)
+        if cfg is None:
+            return 0.0
+
+        model = copy.deepcopy(cfg['model'])
         model.set_params(**params)
         scores = cross_val_score(
             model, X, y,
@@ -215,15 +236,16 @@ def run_random_search(processed, model_configs, exp_logger=None,
         print("-" * 70)
 
         for model_name in models:
-            if model_name not in model_configs:
+            cfg_key, cfg = _resolve_model_config(model_name, model_configs)
+            if cfg is None:
                 continue
 
-            base = copy.deepcopy(model_configs[model_name]['model'])
+            base = copy.deepcopy(cfg['model'])
 
             if model_name == 'LinearRegression':
                 base.fit(X_tr, y_tr)
                 cv_mae = -cross_val_score(
-                    copy.deepcopy(model_configs[model_name]['model']),
+                    copy.deepcopy(cfg['model']),
                     X_tr, y_tr, cv=tscv,
                     scoring='neg_mean_absolute_error', n_jobs=-1,
                 ).mean()
@@ -286,16 +308,17 @@ def run_grid_search(processed, model_configs, random_results, exp_logger=None,
         print("-" * 70)
 
         for model_name in models:
-            if model_name not in model_configs:
+            cfg_key, cfg = _resolve_model_config(model_name, model_configs)
+            if cfg is None:
                 continue
 
-            base         = copy.deepcopy(model_configs[model_name]['model'])
+            base         = copy.deepcopy(cfg['model'])
             best_random  = random_results.get(pos, {}).get(model_name, {}).get('best_params', {})
 
             if model_name == 'LinearRegression':
                 base.fit(X_tr, y_tr)
                 cv_mae = -cross_val_score(
-                    copy.deepcopy(model_configs[model_name]['model']),
+                    copy.deepcopy(cfg['model']),
                     X_tr, y_tr, cv=tscv,
                     scoring='neg_mean_absolute_error', n_jobs=-1,
                 ).mean()
@@ -362,15 +385,16 @@ def run_bayesian_optimization(processed, model_configs, exp_logger=None,
         print("-" * 70)
 
         for model_name in models:
-            if model_name not in model_configs:
+            cfg_key, cfg = _resolve_model_config(model_name, model_configs)
+            if cfg is None:
                 continue
 
             if model_name == 'LinearRegression':
-                base = copy.deepcopy(model_configs[model_name]['model'])
+                base = copy.deepcopy(cfg['model'])
                 base.fit(X_tr, y_tr)
                 tscv = TimeSeriesSplit(n_splits=3)
                 cv_mae = -cross_val_score(
-                    copy.deepcopy(model_configs[model_name]['model']),
+                    copy.deepcopy(cfg['model']),
                     X_tr, y_tr, cv=tscv,
                     scoring='neg_mean_absolute_error', n_jobs=-1,
                 ).mean()
@@ -390,7 +414,7 @@ def run_bayesian_optimization(processed, model_configs, exp_logger=None,
                 cv_mae      = float(study.best_trial.value)
                 n_done      = len(study.trials)
 
-                best_model = copy.deepcopy(model_configs[model_name]['model'])
+                best_model = copy.deepcopy(cfg['model'])
                 best_model.set_params(**best_params)
                 best_model.fit(X_tr, y_tr)
 

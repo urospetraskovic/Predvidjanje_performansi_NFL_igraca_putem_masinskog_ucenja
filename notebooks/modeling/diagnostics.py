@@ -142,9 +142,6 @@ def run_diagnostics(lagged, processed, model_configs, folds,
     plt.suptitle('Dijagnostika: Train vs Validation vs Test RMSE',
                  fontsize=14, fontweight='bold')
     plt.tight_layout()
-    plt.show()
-
-    print('\nSazetak dijagnoze po poziciji:')
-    print(diag_df.groupby(['position', 'diagnosis']).size().unstack(fill_value=0))
+    #plt.show()
 
     return diag_df
