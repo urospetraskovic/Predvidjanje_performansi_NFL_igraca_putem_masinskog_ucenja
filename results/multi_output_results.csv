@@ -4,10 +4,10 @@ QB,RandomForest,first_downs_per_game,1.857,2.2721,0.259,30.3265
 RB,RandomForest,yards_per_game,19.6755,23.3406,0.1243,17.0338
 RB,RandomForest,carries_per_game,3.4347,3.992,0.1599,17.0338
 RB,RandomForest,yards_per_attempt,0.5032,0.6439,0.0457,17.0338
-TE,RandomForest,yards_per_game,12.6051,15.2753,0.3326,11.1131
-TE,RandomForest,receptions_per_game,1.1423,1.4168,0.3356,11.1131
-TE,RandomForest,targets_per_game,1.4662,1.8954,0.3495,11.1131
-TE,RandomForest,first_downs_per_game,0.73,0.8912,0.3597,11.1131
+TE,RandomForest,yards_per_game,12.606,15.2772,0.3325,11.1144
+TE,RandomForest,receptions_per_game,1.1426,1.417,0.3354,11.1144
+TE,RandomForest,targets_per_game,1.4665,1.8956,0.3493,11.1144
+TE,RandomForest,first_downs_per_game,0.73,0.8913,0.3595,11.1144
 WR,RandomForest,yards_per_game,11.7257,16.7299,0.2862,13.9898
 WR,RandomForest,receptions_per_game,0.8481,1.0941,0.4602,13.9898
 WR,RandomForest,targets_per_game,1.1795,1.5321,0.4732,13.9898
