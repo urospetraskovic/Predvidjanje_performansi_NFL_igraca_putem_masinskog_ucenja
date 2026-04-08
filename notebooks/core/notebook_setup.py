@@ -30,12 +30,14 @@ def load_datasets(data_dir: str | None = None) -> dict:
     rb       = pd.read_csv(os.path.join(data_dir, "rb_master.csv"))
     te       = pd.read_csv(os.path.join(data_dir, "te_master.csv"))
     wr_seasons = pd.read_csv(os.path.join(data_dir, "wr_all_seasons.csv"))
+    wr_seasons_all = pd.read_csv(os.path.join(data_dir, "wr_all_weeks.csv"))
 
     datasets = {
         "QB (qb_master)":   qb,
         "RB (rb_master)":   rb,
         "TE (te_master)":   te,
         "WR (wr_all_seasons)": wr_seasons,
+        "WR (wr_all_weeks)": wr_seasons_all,
     }
 
     print("Skupovi podataka uspesno ucitani:\n")

@@ -1,0 +1,8 @@
+Model,MAE,RMSE,R2
+MLP improved (sqrt+weights),19.041914274219245,26.614207419735337,0.3025099675739853
+"MLP tuned (log1p, no weights)",18.9713,27.1969,0.2716
+BiGRU (sqrt+weights),20.8335,28.6505,0.2592
+LSTM (sqrt+weights),20.8711,28.7993,0.2515
+BiLSTM (sqrt+weights),21.4936,29.0174,0.2401
+LSTM (huber only),20.5743,29.5129,0.2139
+LSTM (baseline MSE),21.4732,31.4857,0.1053
