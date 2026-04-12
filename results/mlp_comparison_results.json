@@ -1,0 +1,65 @@
+{
+  "model_a": {
+    "name": "Original MLP (184 features)",
+    "params": {
+      "n_layers": 5,
+      "units": [
+        448,
+        128,
+        320,
+        448,
+        256
+      ],
+      "dropout": 0.5,
+      "use_layernorm": true,
+      "huber_delta": 0.5,
+      "lr": 0.003701177981657943,
+      "weight_decay": 1.5007044511603625e-05,
+      "batch_size": 32
+    },
+    "test_mae": 18.1029,
+    "test_rmse": 25.6247,
+    "test_r2": 0.3079
+  },
+  "model_b": {
+    "name": "Same architecture (40 features)",
+    "params": {
+      "n_layers": 5,
+      "units": [
+        448,
+        128,
+        320,
+        448,
+        256
+      ],
+      "dropout": 0.5,
+      "use_layernorm": true,
+      "huber_delta": 0.5,
+      "lr": 0.003701177981657943,
+      "weight_decay": 1.5007044511603625e-05,
+      "batch_size": 32
+    },
+    "test_mae": 18.195,
+    "test_rmse": 25.2329,
+    "test_r2": 0.3289
+  },
+  "model_c": {
+    "name": "Improved MLP (40 features)",
+    "params": {
+      "batch_size": 64,
+      "mixup_alpha": 0.30000000000000004,
+      "n_layers": 3,
+      "dropout": 0.2,
+      "noise_stddev": 0.2,
+      "huber_delta": 0.5,
+      "lr": 0.00011402884227403158,
+      "weight_decay": 0.0024344461296599384,
+      "units_0": 256,
+      "units_1": 128,
+      "units_2": 64
+    },
+    "test_mae": 17.9103,
+    "test_rmse": 25.4919,
+    "test_r2": 0.3151
+  }
+}
