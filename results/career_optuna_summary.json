@@ -1,0 +1,60 @@
+{
+  "MLP": {
+    "best_val_rmse": 25.786261721342203,
+    "best_params": {
+      "batch_size": 32,
+      "n_layers": 5,
+      "dropout": 0.5,
+      "use_layernorm": true,
+      "huber_delta": 0.5,
+      "lr": 0.003701177981657943,
+      "weight_decay": 1.5007044511603625e-05,
+      "units_0": 448,
+      "units_1": 128,
+      "units_2": 320,
+      "units_3": 448,
+      "units_4": 256
+    },
+    "n_trials": 100
+  },
+  "RNN": {
+    "best_val_rmse": 26.703288426577142,
+    "best_params": {
+      "seq_len": 8,
+      "batch_size": 32,
+      "rnn_type": "GRU",
+      "bidirectional": true,
+      "n_rnn_layers": 4,
+      "use_attention": false,
+      "norm_type": "none",
+      "dropout": 0.30000000000000004,
+      "huber_delta": 0.5,
+      "lr": 0.0003786180520278868,
+      "weight_decay": 0.005728853916957915,
+      "rnn_units_0": 128,
+      "rnn_units_1": 448,
+      "rnn_units_2": 128,
+      "rnn_units_3": 64,
+      "n_dense_layers": 1,
+      "dense_units_0": 96
+    },
+    "n_trials": 100
+  },
+  "TCN": {
+    "best_val_rmse": 27.266592031561718,
+    "best_params": {
+      "tcn_seq_len": 12,
+      "tcn_batch": 32,
+      "n_blocks": 5,
+      "filters": 192,
+      "kernel_size": 4,
+      "tcn_dropout": 0.1,
+      "tcn_huber_delta": 0.5,
+      "tcn_lr": 0.0002214833742132763,
+      "tcn_wd": 0.0008684316285205784,
+      "tcn_attention": false,
+      "tcn_dense": 224
+    },
+    "n_trials": 80
+  }
+}
