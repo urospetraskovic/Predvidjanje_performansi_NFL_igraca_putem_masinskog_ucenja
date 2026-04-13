@@ -1,0 +1,143 @@
+{
+  "best_params": {
+    "seq_len": 12,
+    "batch_size": 32,
+    "sw_strength": 0.6,
+    "rnn_type": "LSTM",
+    "bidirectional": false,
+    "n_rnn_layers": 1,
+    "dropout": 0.30000000000000004,
+    "rnn_dropout": 0.3,
+    "noise_stddev": 0.2,
+    "huber_delta": 0.5,
+    "lr": 0.0003497766177042005,
+    "weight_decay": 0.0019053479572860338,
+    "rnn_units_0": 128,
+    "static_units": 96,
+    "dense_units": 64
+  },
+  "best_val_rmse": 25.40961189126752,
+  "test_mae": 18.0289,
+  "test_rmse": 25.1101,
+  "test_r2": 0.3354,
+  "seq_features": [
+    "receiving_yards",
+    "targets",
+    "receptions",
+    "air_yards",
+    "yac",
+    "first_downs",
+    "tds",
+    "epa",
+    "wpa",
+    "catch_rate",
+    "yards_per_target",
+    "avg_depth",
+    "adot",
+    "success_rate",
+    "target_share",
+    "air_yard_share",
+    "target_share_std",
+    "reception_std",
+    "team_pass_attempts",
+    "team_air_yards",
+    "team_epa",
+    "qb_completions",
+    "qb_attempts",
+    "qb_comp_pct",
+    "qb_cpoe",
+    "avg_score_diff",
+    "wp_var",
+    "yards_Q1",
+    "yards_Q2",
+    "yards_Q3",
+    "def_yards_dev",
+    "def_epa_dev",
+    "weeks_since_last_game"
+  ],
+  "static_features": [
+    "pregame_spread",
+    "pregame_total",
+    "surface",
+    "is_dome",
+    "temp_f",
+    "humidity_pct",
+    "wind_mph",
+    "is_rain",
+    "is_snow",
+    "is_clear",
+    "week",
+    "team_changed",
+    "is_new_season",
+    "weeks_since_last_game",
+    "avg_yards_last_season",
+    "avg_target_share_last_season",
+    "avg_epa_last_season",
+    "avg_air_yard_share_last_season",
+    "avg_catch_rate_last_season",
+    "games_played_last_season"
+  ],
+  "n_seq_features": 33,
+  "n_static_features": 20,
+  "training_metrics": {
+    "Best Epoch": "12",
+    "Train Loss": 1.2857,
+    "Val Loss": 0.8624,
+    "Loss Gap": -0.4233,
+    "Train MAE (sqrt)": 1.9914,
+    "Val MAE (sqrt)": 1.9609,
+    "MAE Gap (sqrt)": -0.0305
+  },
+  "comparison": {
+    "XGBoost (184 feat)": {
+      "Test MAE": 18.15,
+      "Test RMSE": 25.15,
+      "Test R2": 0.3335,
+      "Type": "Tree"
+    },
+    "LightGBM (184 feat)": {
+      "Test MAE": 18.15,
+      "Test RMSE": 25.13,
+      "Test R2": 0.3346,
+      "Type": "Tree"
+    },
+    "MLP-B (40 feat)": {
+      "Test MAE": 18.19,
+      "Test RMSE": 25.23,
+      "Test R2": 0.3289,
+      "Type": "MLP"
+    },
+    "MLP-E Hybrid (40 feat)": {
+      "Test MAE": 17.88,
+      "Test RMSE": 25.35,
+      "Test R2": 0.3225,
+      "Type": "MLP"
+    },
+    "MLP-D Fixed Hybrid (40 feat)": {
+      "Test MAE": 17.83,
+      "Test RMSE": 25.67,
+      "Test R2": 0.3055,
+      "Type": "MLP"
+    },
+    "Original RNN (184 feat)": {
+      "Test MAE": 19.73,
+      "Test RMSE": 27.93,
+      "Test R2": 0.2157,
+      "Type": "RNN (old)"
+    },
+    "Original TCN (184 feat)": {
+      "Test MAE": 19.3,
+      "Test RMSE": 27.59,
+      "Test R2": 0.2453,
+      "Type": "TCN (old)"
+    },
+    "Improved RNN (raw feat)": {
+      "Test MAE": 18.0289,
+      "Test RMSE": 25.1101,
+      "Test R2": 0.3354,
+      "Type": "RNN (new)",
+      "Loss Gap": -0.4233,
+      "Best Epoch": "12"
+    }
+  }
+}
