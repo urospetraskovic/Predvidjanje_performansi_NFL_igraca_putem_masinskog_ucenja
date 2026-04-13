@@ -1,0 +1,8 @@
+Model,RNN,Target,Test MAE,Test RMSE,Test R2,Best Epoch,Loss Gap,Time (s)
+LightGBM,-,-,18.15,25.13,0.3346,-,-,-
+MLP-B,-,sqrt,18.19,25.23,0.3289,-,-,-
+GRU_sqrt,GRU,sqrt,18.4,25.33,0.3236,3,-0.8499,108.2
+LSTM_sqrt,LSTM,sqrt,18.58,25.48,0.3158,3,-0.8366,122.4
+GRU_log1p,GRU,log1p,18.58,25.53,0.3131,3,-0.1514,106.6
+LSTM_log1p,LSTM,log1p,18.65,25.58,0.3104,3,-0.1496,122.8
+Orig RNN,GRU,sqrt,19.73,27.93,0.2157,-,-,-

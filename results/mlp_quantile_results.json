@@ -1,0 +1,40 @@
+{
+  "quantiles": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "test_metrics": {
+    "mae_q50": 17.75834083557129,
+    "rmse_q50": 25.599720762637237,
+    "r2_q50": 0.3092619776725769,
+    "coverage_80pct": 0.7880303274721729,
+    "mean_interval_width": 59.70917510986328
+  },
+  "best_epoch": 29,
+  "n_features": 40,
+  "architecture": {
+    "units": [
+      448,
+      128,
+      320,
+      448,
+      256
+    ],
+    "dropout": 0.5,
+    "lr": 0.0037,
+    "wd": 1.5e-05
+  },
+  "comparison": {
+    "MLP-B (point)": {
+      "mae": 18.19,
+      "rmse": 25.23,
+      "r2": 0.3289
+    },
+    "MLP-Quantile": {
+      "mae": 17.76,
+      "rmse": 25.6,
+      "r2": 0.3093
+    }
+  }
+}
