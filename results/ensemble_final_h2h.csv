@@ -1,0 +1,4 @@
+Ensemble,Members,Test MAE,Test RMSE,Test R2
+Opt1 best (constrained_ls),"MLP Hybrid, MLP Quantile, LightGBM, ElasticNet",17.711,25.403,0.3198
+Opt2 best (constrained_ls),"XGBoost, LightGBM, MLP Hybrid",17.901,25.285,0.3261
+OLD (reference),"XGBoost, LightGBM, MLP (old)",18.05,25.05,0.3384
