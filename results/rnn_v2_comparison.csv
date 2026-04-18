@@ -1,0 +1,10 @@
+Model,Test MAE,Test RMSE,Test R2,Type
+LightGBM (184 feat),18.15,25.13,0.3346,Tree
+XGBoost (184 feat),18.15,25.15,0.3335,Tree
+MLP-B (40 feat),18.19,25.23,0.3289,MLP
+RNN v2 (padded),18.13,25.27,0.3268,RNN (v2)
+MLP-E Hybrid (40 feat),17.88,25.35,0.3225,MLP
+RNN v2 (no-mask),18.78,25.9,0.3168,RNN (v2)
+MLP-D Fixed Hybrid (40 feat),17.83,25.67,0.3055,MLP
+Original TCN (184 feat),19.3,27.59,0.2453,TCN (old)
+Original RNN (184 feat),19.73,27.93,0.2157,RNN (old)

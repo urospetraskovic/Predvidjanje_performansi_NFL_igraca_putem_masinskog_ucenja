@@ -1,0 +1,18 @@
+Category,Model,Test MAE,Test RMSE,Test R2,Source
+Ensemble Opt1,Opt1 / constrained_ls,17.708,25.43,0.3184,this notebook
+Base,MLP Quantile,17.75,25.644,0.3069,this notebook
+Reference,MLP Quantile q50 (standalone),17.76,25.6,0.3093,WR_MLP_Quantile
+Ensemble Opt1,Opt1 / inverse_mae,17.796,25.244,0.3283,this notebook
+Ensemble Opt1,Opt1 / simple_mean,17.798,25.243,0.3284,this notebook
+Ensemble Opt2,Opt2 / constrained_ls,17.921,25.285,0.3262,this notebook
+Ensemble Opt2,Opt2 / inverse_mae,17.927,25.295,0.3256,this notebook
+Ensemble Opt2,Opt2 / simple_mean,17.927,25.295,0.3256,this notebook
+Reference,LSTM Improved (best single RNN),18.029,25.11,0.3354,WR_RNN_Improved
+Base,MLP Hybrid,18.033,25.369,0.3217,this notebook
+Reference,"OLD Ensemble (XGB+LGB+MLP, grid weights)",18.05,25.05,0.3384,WR_Career_RNN_Optuna
+Base,XGBoost,18.093,25.498,0.3148,this notebook
+Reference,GRU Improved (Optuna),18.094,25.164,0.3326,WR_RNN_Improved_GRU
+Base,ElasticNet,18.103,25.416,0.3192,this notebook
+Base,LightGBM,18.11,25.659,0.3061,this notebook
+Ensemble Opt1,Opt1 / ridge_stack,18.147,25.173,0.3321,this notebook
+Ensemble Opt2,Opt2 / ridge_stack,18.22,25.213,0.33,this notebook
