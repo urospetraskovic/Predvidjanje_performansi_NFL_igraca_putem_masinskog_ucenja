@@ -1,0 +1,9 @@
+Model,vs smoothed MAE,vs smoothed R2,vs raw MAE,vs raw R2
+LSTM Improved,7.725,0.7626,19.41,0.2911
+GRU Improved,7.855,0.754,19.413,0.2858
+MLP Quantile q50,7.864,0.7544,19.334,0.2936
+MLP Hybrid,7.866,0.7532,19.326,0.2931
+RandomForest,7.974,0.7503,19.468,0.2933
+XGBoost,8.02,0.7444,19.358,0.2963
+ElasticNet,8.129,0.7404,19.622,0.2778
+LightGBM,8.159,0.7366,19.398,0.2937

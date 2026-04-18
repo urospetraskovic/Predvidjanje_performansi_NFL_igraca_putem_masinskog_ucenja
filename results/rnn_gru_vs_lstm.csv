@@ -1,0 +1,4 @@
+Model,Cell,Test MAE,Test RMSE,Test R2,Source
+LSTM Optuna-best (Improved RNN),LSTM,18.0289,25.1101,0.3354,rnn_improved_results.json
+GRU @ LSTM HPs (controlled),GRU,18.136,25.1289,0.3344,this notebook (E1)
+GRU Optuna-best,GRU,18.0943,25.1642,0.3326,this notebook (E2)

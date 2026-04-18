@@ -1,0 +1,9 @@
+Model,Test MAE,Test RMSE,Test R2,Type,Loss Gap,Best Epoch
+Improved RNN (raw feat),18.028921127319336,25.110070191060796,0.3354330062866211,RNN (new),-0.4232947826385498,12
+LightGBM (184 feat),18.15,25.13,0.3346,Tree,,
+XGBoost (184 feat),18.15,25.15,0.3335,Tree,,
+MLP-B (40 feat),18.19,25.23,0.3289,MLP,,
+MLP-E Hybrid (40 feat),17.88,25.35,0.3225,MLP,,
+MLP-D Fixed Hybrid (40 feat),17.83,25.67,0.3055,MLP,,
+Original TCN (184 feat),19.3,27.59,0.2453,TCN (old),,
+Original RNN (184 feat),19.73,27.93,0.2157,RNN (old),,

@@ -1,0 +1,817 @@
+{
+  "n_selected": 40,
+  "selected_features": [
+    "first_downs_roll5",
+    "target_share_std_lag1",
+    "targets_roll5",
+    "air_yards_roll5",
+    "pregame_total",
+    "avg_yards_last_season",
+    "avg_start_yardline_roll5",
+    "wind_mph",
+    "target_share_std_roll5",
+    "air_yard_share_roll5",
+    "avg_air_yard_share_last_season",
+    "target_share_momentum",
+    "week",
+    "wp_var_lag1",
+    "qb_attempts_roll5",
+    "avg_depth_roll5",
+    "yards_Q1_roll5",
+    "team_air_yards_lag1",
+    "avg_epa_last_season",
+    "yards_wp_55_75_roll5",
+    "humidity_pct",
+    "avg_score_diff_lag1",
+    "target_volume_interaction",
+    "pregame_spread",
+    "avg_catch_rate_last_season",
+    "air_yards_momentum",
+    "yards_Q2_roll5",
+    "reception_std_roll5",
+    "qb_completions_roll5",
+    "temp_f",
+    "avg_start_yardline_lag1",
+    "qb_comp_pct_roll5",
+    "yards_wp_less_than_25_roll5",
+    "targets_wp_55_75_roll5",
+    "wpa_roll5",
+    "yards_Q3_roll5",
+    "surface",
+    "receptions_momentum",
+    "yards_wp_55_75_lag1",
+    "avg_target_share_last_season"
+  ],
+  "feature_importance": [
+    {
+      "feature": "first_downs_roll5",
+      "combined_score": 0.6101672191812535
+    },
+    {
+      "feature": "target_share_std_lag1",
+      "combined_score": 0.5884263440966606
+    },
+    {
+      "feature": "targets_roll5",
+      "combined_score": 0.5808080808080808
+    },
+    {
+      "feature": "air_yards_roll5",
+      "combined_score": 0.2852398682423312
+    },
+    {
+      "feature": "pregame_total",
+      "combined_score": 0.2588141318410635
+    },
+    {
+      "feature": "avg_yards_last_season",
+      "combined_score": 0.18626678750069456
+    },
+    {
+      "feature": "avg_start_yardline_roll5",
+      "combined_score": 0.15828659911781098
+    },
+    {
+      "feature": "wind_mph",
+      "combined_score": 0.15345556768259466
+    },
+    {
+      "feature": "target_share_std_roll5",
+      "combined_score": 0.15040813397729036
+    },
+    {
+      "feature": "air_yard_share_roll5",
+      "combined_score": 0.1476975361430886
+    },
+    {
+      "feature": "avg_air_yard_share_last_season",
+      "combined_score": 0.1470587443409845
+    },
+    {
+      "feature": "target_share_momentum",
+      "combined_score": 0.14366690501232038
+    },
+    {
+      "feature": "week",
+      "combined_score": 0.14171349665507524
+    },
+    {
+      "feature": "wp_var_lag1",
+      "combined_score": 0.12907226627335103
+    },
+    {
+      "feature": "qb_attempts_roll5",
+      "combined_score": 0.127426829767611
+    },
+    {
+      "feature": "avg_depth_roll5",
+      "combined_score": 0.12532269453272374
+    },
+    {
+      "feature": "yards_Q1_roll5",
+      "combined_score": 0.1219576330516826
+    },
+    {
+      "feature": "team_air_yards_lag1",
+      "combined_score": 0.11723599313861793
+    },
+    {
+      "feature": "avg_epa_last_season",
+      "combined_score": 0.11638901718525273
+    },
+    {
+      "feature": "yards_wp_55_75_roll5",
+      "combined_score": 0.11176316705391262
+    },
+    {
+      "feature": "humidity_pct",
+      "combined_score": 0.10923715015271246
+    },
+    {
+      "feature": "avg_score_diff_lag1",
+      "combined_score": 0.10752311218624012
+    },
+    {
+      "feature": "target_volume_interaction",
+      "combined_score": 0.10520378415557471
+    },
+    {
+      "feature": "pregame_spread",
+      "combined_score": 0.10234381640188847
+    },
+    {
+      "feature": "avg_catch_rate_last_season",
+      "combined_score": 0.09944134842924247
+    },
+    {
+      "feature": "air_yards_momentum",
+      "combined_score": 0.09492842232657954
+    },
+    {
+      "feature": "yards_Q2_roll5",
+      "combined_score": 0.09299974313777204
+    },
+    {
+      "feature": "reception_std_roll5",
+      "combined_score": 0.09219056887157036
+    },
+    {
+      "feature": "qb_completions_roll5",
+      "combined_score": 0.08770527372211971
+    },
+    {
+      "feature": "temp_f",
+      "combined_score": 0.08762052639697988
+    },
+    {
+      "feature": "avg_start_yardline_lag1",
+      "combined_score": 0.08709361877367654
+    },
+    {
+      "feature": "qb_comp_pct_roll5",
+      "combined_score": 0.0849951210695159
+    },
+    {
+      "feature": "yards_wp_less_than_25_roll5",
+      "combined_score": 0.08455277497720237
+    },
+    {
+      "feature": "targets_wp_55_75_roll5",
+      "combined_score": 0.08405128873019206
+    },
+    {
+      "feature": "wpa_roll5",
+      "combined_score": 0.08319850133336855
+    },
+    {
+      "feature": "yards_Q3_roll5",
+      "combined_score": 0.08318949241492182
+    },
+    {
+      "feature": "surface",
+      "combined_score": 0.08227939677960945
+    },
+    {
+      "feature": "receptions_momentum",
+      "combined_score": 0.08207548463321997
+    },
+    {
+      "feature": "yards_wp_55_75_lag1",
+      "combined_score": 0.08200622077636195
+    },
+    {
+      "feature": "avg_target_share_last_season",
+      "combined_score": 0.08194114204797179
+    },
+    {
+      "feature": "yards_Q4_lag1",
+      "combined_score": 0.08065122302922637
+    },
+    {
+      "feature": "games_played_last_season",
+      "combined_score": 0.07909923425941455
+    },
+    {
+      "feature": "reception_std_lag1",
+      "combined_score": 0.07753013686342823
+    },
+    {
+      "feature": "yards_wp_greater_than_75_roll5",
+      "combined_score": 0.07583626668260555
+    },
+    {
+      "feature": "wpa_lag1",
+      "combined_score": 0.07532245322892611
+    },
+    {
+      "feature": "epa_roll5",
+      "combined_score": 0.0751601763238961
+    },
+    {
+      "feature": "air_yard_share_lag1",
+      "combined_score": 0.07488023029696761
+    },
+    {
+      "feature": "def_yards_dev_lag1",
+      "combined_score": 0.0748102882115001
+    },
+    {
+      "feature": "epa_momentum",
+      "combined_score": 0.07451775420287793
+    },
+    {
+      "feature": "team_epa_lag1",
+      "combined_score": 0.0740771324543113
+    },
+    {
+      "feature": "team_air_yards_roll5",
+      "combined_score": 0.07405556581745093
+    },
+    {
+      "feature": "def_tds_dev_roll5",
+      "combined_score": 0.07387431880289858
+    },
+    {
+      "feature": "success_rate_roll5",
+      "combined_score": 0.07214838505318069
+    },
+    {
+      "feature": "qb_cpoe_roll5",
+      "combined_score": 0.07201037375783229
+    },
+    {
+      "feature": "td_rate_roll5",
+      "combined_score": 0.0701121350872622
+    },
+    {
+      "feature": "weeks_since_last_game_roll5",
+      "combined_score": 0.06991372891993385
+    },
+    {
+      "feature": "yards_wp_45_55_roll5",
+      "combined_score": 0.06936204369471531
+    },
+    {
+      "feature": "qb_air_yards_roll5",
+      "combined_score": 0.06878270284564357
+    },
+    {
+      "feature": "def_tds_dev_lag1",
+      "combined_score": 0.06871527415991883
+    },
+    {
+      "feature": "receptions_Q1_roll5",
+      "combined_score": 0.0683968018815674
+    },
+    {
+      "feature": "season",
+      "combined_score": 0.06757991906311928
+    },
+    {
+      "feature": "yards_per_target_momentum",
+      "combined_score": 0.06747247982826649
+    },
+    {
+      "feature": "yards_wp_25_45_lag1",
+      "combined_score": 0.06701577507015882
+    },
+    {
+      "feature": "qb_air_yards_lag1",
+      "combined_score": 0.06677417323049722
+    },
+    {
+      "feature": "def_yards_dev_roll5",
+      "combined_score": 0.06466196040444151
+    },
+    {
+      "feature": "air_yards_lag1",
+      "combined_score": 0.06445526593186036
+    },
+    {
+      "feature": "targets_wp_25_45_roll5",
+      "combined_score": 0.06443188973523752
+    },
+    {
+      "feature": "yards_wp_45_55_lag1",
+      "combined_score": 0.06442187289528624
+    },
+    {
+      "feature": "team_pass_attempts_roll5",
+      "combined_score": 0.0641284024418153
+    },
+    {
+      "feature": "avg_score_diff_roll5",
+      "combined_score": 0.06387227429829613
+    },
+    {
+      "feature": "avg_quarter_lag1",
+      "combined_score": 0.06358619062982575
+    },
+    {
+      "feature": "yards_per_target_roll5",
+      "combined_score": 0.06275826138961646
+    },
+    {
+      "feature": "targets_momentum",
+      "combined_score": 0.06273768661129805
+    },
+    {
+      "feature": "yards_wp_greater_than_75_lag1",
+      "combined_score": 0.06211090744990441
+    },
+    {
+      "feature": "yards_Q2_lag1",
+      "combined_score": 0.061749113309714526
+    },
+    {
+      "feature": "receptions_roll5",
+      "combined_score": 0.06140678447454867
+    },
+    {
+      "feature": "def_epa_dev_roll5",
+      "combined_score": 0.061387513815942735
+    },
+    {
+      "feature": "targets_Q1_roll5",
+      "combined_score": 0.061271165770412694
+    },
+    {
+      "feature": "receptions_wp_55_75_roll5",
+      "combined_score": 0.0605240948968614
+    },
+    {
+      "feature": "explosive_plays_roll5",
+      "combined_score": 0.060287357806557355
+    },
+    {
+      "feature": "leading_pct_roll5",
+      "combined_score": 0.05951260896681836
+    },
+    {
+      "feature": "yards_per_target_lag1",
+      "combined_score": 0.05934911482318333
+    },
+    {
+      "feature": "yards_Q4_roll5",
+      "combined_score": 0.059103160447469265
+    },
+    {
+      "feature": "yards_Q3_lag1",
+      "combined_score": 0.05860852897449425
+    },
+    {
+      "feature": "target_share_roll5",
+      "combined_score": 0.05848835086957975
+    },
+    {
+      "feature": "targets_wp_greater_than_75_lag1",
+      "combined_score": 0.05747015755435433
+    },
+    {
+      "feature": "air_yard_share_momentum",
+      "combined_score": 0.05732521605724939
+    },
+    {
+      "feature": "catch_rate_roll5",
+      "combined_score": 0.05730985342571982
+    },
+    {
+      "feature": "targets_wp_less_than_25_roll5",
+      "combined_score": 0.057232803246476734
+    },
+    {
+      "feature": "yac_per_reception_lag1",
+      "combined_score": 0.05656658187320437
+    },
+    {
+      "feature": "tds_roll5",
+      "combined_score": 0.056015031920237976
+    },
+    {
+      "feature": "team_epa_roll5",
+      "combined_score": 0.05463922750016655
+    },
+    {
+      "feature": "qb_completions_lag1",
+      "combined_score": 0.05453676106220092
+    },
+    {
+      "feature": "def_receptions_dev_lag1",
+      "combined_score": 0.054465124195422786
+    },
+    {
+      "feature": "qb_comp_pct_lag1",
+      "combined_score": 0.054389248879607575
+    },
+    {
+      "feature": "epa_lag1",
+      "combined_score": 0.05380729147976245
+    },
+    {
+      "feature": "receptions_wp_less_than_25_roll5",
+      "combined_score": 0.05337004228071733
+    },
+    {
+      "feature": "def_epa_dev_lag1",
+      "combined_score": 0.05098143317313357
+    },
+    {
+      "feature": "avg_depth_lag1",
+      "combined_score": 0.050178309709699165
+    },
+    {
+      "feature": "targets_wp_45_55_roll5",
+      "combined_score": 0.04976606955093266
+    },
+    {
+      "feature": "team_pass_attempts_lag1",
+      "combined_score": 0.04973255451110126
+    },
+    {
+      "feature": "targets_Q2_roll5",
+      "combined_score": 0.04887000288851936
+    },
+    {
+      "feature": "catch_rate_momentum",
+      "combined_score": 0.04883979940128447
+    },
+    {
+      "feature": "target_share_lag1",
+      "combined_score": 0.047247852932548885
+    },
+    {
+      "feature": "qb_attempts_lag1",
+      "combined_score": 0.04681429177560289
+    },
+    {
+      "feature": "big_play_rate_roll5",
+      "combined_score": 0.04671574923012293
+    },
+    {
+      "feature": "def_targets_dev_lag1",
+      "combined_score": 0.04496292424190677
+    },
+    {
+      "feature": "def_targets_dev_roll5",
+      "combined_score": 0.04150108204721802
+    },
+    {
+      "feature": "yac_per_reception_roll5",
+      "combined_score": 0.04115549711077803
+    },
+    {
+      "feature": "receptions_Q3_roll5",
+      "combined_score": 0.03999224284927201
+    },
+    {
+      "feature": "targets_wp_greater_than_75_roll5",
+      "combined_score": 0.03974764028357135
+    },
+    {
+      "feature": "qb_cpoe_lag1",
+      "combined_score": 0.0396049584102149
+    },
+    {
+      "feature": "wp_var_roll5",
+      "combined_score": 0.03910334108660769
+    },
+    {
+      "feature": "yards_wp_25_45_roll5",
+      "combined_score": 0.03867485353986573
+    },
+    {
+      "feature": "air_yards_expected",
+      "combined_score": 0.03846392876496821
+    },
+    {
+      "feature": "team_changed",
+      "combined_score": 0.03791567592909842
+    },
+    {
+      "feature": "explosive_plays_lag1",
+      "combined_score": 0.037789332242964796
+    },
+    {
+      "feature": "second_and_long_targets_roll5",
+      "combined_score": 0.037716696532725386
+    },
+    {
+      "feature": "yac_lag1",
+      "combined_score": 0.036812539706288866
+    },
+    {
+      "feature": "def_receptions_dev_roll5",
+      "combined_score": 0.03642101262724309
+    },
+    {
+      "feature": "receptions_wp_25_45_lag1",
+      "combined_score": 0.035826232077346906
+    },
+    {
+      "feature": "adot_roll5",
+      "combined_score": 0.03419629905862037
+    },
+    {
+      "feature": "high_leverage_targets_roll5",
+      "combined_score": 0.03409272737594114
+    },
+    {
+      "feature": "third_down_targets_roll5",
+      "combined_score": 0.03290607992352711
+    },
+    {
+      "feature": "is_new_season",
+      "combined_score": 0.03227186019090239
+    },
+    {
+      "feature": "epa_per_target",
+      "combined_score": 0.032084142812762895
+    },
+    {
+      "feature": "avg_quarter_roll5",
+      "combined_score": 0.030855812621538085
+    },
+    {
+      "feature": "targets_wp_55_75_lag1",
+      "combined_score": 0.029992217452011326
+    },
+    {
+      "feature": "catch_rate_lag1",
+      "combined_score": 0.029799189206890085
+    },
+    {
+      "feature": "targets_wp_25_45_lag1",
+      "combined_score": 0.029421772130511024
+    },
+    {
+      "feature": "big_play_rate_lag1",
+      "combined_score": 0.029096570816079175
+    },
+    {
+      "feature": "is_clear",
+      "combined_score": 0.028446055967548883
+    },
+    {
+      "feature": "receptions_lag1",
+      "combined_score": 0.02842506698586724
+    },
+    {
+      "feature": "targets_Q4_roll5",
+      "combined_score": 0.027260221559742486
+    },
+    {
+      "feature": "targets_Q3_roll5",
+      "combined_score": 0.02671343835089544
+    },
+    {
+      "feature": "red_zone_targets_roll5",
+      "combined_score": 0.026047822106817758
+    },
+    {
+      "feature": "third_and_medium_targets_lag1",
+      "combined_score": 0.025970676001349485
+    },
+    {
+      "feature": "targets_Q2_lag1",
+      "combined_score": 0.025646716375092065
+    },
+    {
+      "feature": "targets_lag1",
+      "combined_score": 0.02491697438080052
+    },
+    {
+      "feature": "targets_Q4_lag1",
+      "combined_score": 0.02457546607374844
+    },
+    {
+      "feature": "third_down_targets_lag1",
+      "combined_score": 0.024357749864158004
+    },
+    {
+      "feature": "receptions_Q2_lag1",
+      "combined_score": 0.023925710718777745
+    },
+    {
+      "feature": "receptions_Q4_roll5",
+      "combined_score": 0.023663417915954735
+    },
+    {
+      "feature": "yards_wp_less_than_25_lag1",
+      "combined_score": 0.023068278345909684
+    },
+    {
+      "feature": "receptions_wp_greater_than_75_roll5",
+      "combined_score": 0.022158822524502422
+    },
+    {
+      "feature": "yac_roll5",
+      "combined_score": 0.021904643869610746
+    },
+    {
+      "feature": "weeks_since_last_game_lag1",
+      "combined_score": 0.02049576539094701
+    },
+    {
+      "feature": "adot_lag1",
+      "combined_score": 0.01924158470949741
+    },
+    {
+      "feature": "receptions_wp_25_45_roll5",
+      "combined_score": 0.019085361866863687
+    },
+    {
+      "feature": "targets_Q3_lag1",
+      "combined_score": 0.01880979189893814
+    },
+    {
+      "feature": "expected_receptions",
+      "combined_score": 0.017609515001602245
+    },
+    {
+      "feature": "success_rate_lag1",
+      "combined_score": 0.017204057199485374
+    },
+    {
+      "feature": "fourth_down_targets_roll5",
+      "combined_score": 0.01567230933355262
+    },
+    {
+      "feature": "first_downs_lag1",
+      "combined_score": 0.015665903687477112
+    },
+    {
+      "feature": "receptions_wp_45_55_lag1",
+      "combined_score": 0.014983313167561787
+    },
+    {
+      "feature": "targets_Q1_lag1",
+      "combined_score": 0.014610046760715319
+    },
+    {
+      "feature": "leading_pct_lag1",
+      "combined_score": 0.014609737796803015
+    },
+    {
+      "feature": "receptions_wp_45_55_roll5",
+      "combined_score": 0.013907814868772874
+    },
+    {
+      "feature": "receptions_Q2_roll5",
+      "combined_score": 0.013876135700918509
+    },
+    {
+      "feature": "red_zone_targets_lag1",
+      "combined_score": 0.011303849057341466
+    },
+    {
+      "feature": "is_dome",
+      "combined_score": 0.01098838123031939
+    },
+    {
+      "feature": "yards_Q1_lag1",
+      "combined_score": 0.010747643658007035
+    },
+    {
+      "feature": "receptions_Q4_lag1",
+      "combined_score": 0.010398078248883138
+    },
+    {
+      "feature": "high_leverage_targets_lag1",
+      "combined_score": 0.009948833384598146
+    },
+    {
+      "feature": "receptions_wp_less_than_25_lag1",
+      "combined_score": 0.009824097161228309
+    },
+    {
+      "feature": "targets_wp_45_55_lag1",
+      "combined_score": 0.00937836268220586
+    },
+    {
+      "feature": "tds_lag1",
+      "combined_score": 0.009082394656772266
+    },
+    {
+      "feature": "receptions_Q1_lag1",
+      "combined_score": 0.00850575789809227
+    },
+    {
+      "feature": "third_and_medium_targets_roll5",
+      "combined_score": 0.008487040877831404
+    },
+    {
+      "feature": "receptions_wp_greater_than_75_lag1",
+      "combined_score": 0.008376787416636944
+    },
+    {
+      "feature": "targets_wp_less_than_25_lag1",
+      "combined_score": 0.005070531275123358
+    },
+    {
+      "feature": "second_and_long_targets_lag1",
+      "combined_score": 0.005021140910685062
+    },
+    {
+      "feature": "td_rate_lag1",
+      "combined_score": 0.004952274262905121
+    },
+    {
+      "feature": "is_snow",
+      "combined_score": 0.004903418943285942
+    },
+    {
+      "feature": "receptions_wp_55_75_lag1",
+      "combined_score": 0.0047543663531541824
+    },
+    {
+      "feature": "receptions_Q3_lag1",
+      "combined_score": 0.004029172472655773
+    },
+    {
+      "feature": "is_rain",
+      "combined_score": 0.0035446840338408947
+    },
+    {
+      "feature": "fourth_down_targets_lag1",
+      "combined_score": 0.0025252525252525255
+    },
+    {
+      "feature": "end_zone_targets_lag1",
+      "combined_score": 0.0
+    },
+    {
+      "feature": "end_zone_targets_roll5",
+      "combined_score": 0.0
+    },
+    {
+      "feature": "trailing_pct_roll5",
+      "combined_score": 0.0
+    },
+    {
+      "feature": "trailing_pct_lag1",
+      "combined_score": 0.0
+    },
+    {
+      "feature": "lost_yards_due_to_penalty_roll5",
+      "combined_score": 0.0
+    },
+    {
+      "feature": "lost_yards_due_to_penalty_lag1",
+      "combined_score": 0.0
+    }
+  ],
+  "results": {
+    "XGBoost (184 features)": {
+      "MAE": 18.1505,
+      "RMSE": 25.146,
+      "R2": 0.3335,
+      "Train RMSE (sqrt)": 2.376,
+      "Val RMSE (sqrt)": 2.4913,
+      "Overfit Gap": 0.1153
+    },
+    "LightGBM (184 features)": {
+      "MAE": 18.1496,
+      "RMSE": 25.1258,
+      "R2": 0.3346,
+      "Train RMSE (sqrt)": 2.2592,
+      "Val RMSE (sqrt)": 2.4957,
+      "Overfit Gap": 0.2365
+    },
+    "XGBoost (40 features)": {
+      "MAE": 18.237,
+      "RMSE": 25.1937,
+      "R2": 0.331,
+      "Train RMSE (sqrt)": 2.4027,
+      "Val RMSE (sqrt)": 2.5045,
+      "Overfit Gap": 0.1019
+    },
+    "LightGBM (40 features)": {
+      "MAE": 18.2448,
+      "RMSE": 25.2532,
+      "R2": 0.3278,
+      "Train RMSE (sqrt)": 2.2822,
+      "Val RMSE (sqrt)": 2.5073,
+      "Overfit Gap": 0.2251
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "version": "v2_relaxed",
+  "config": {
+    "seq_len": 6,
+    "batch_size": 32,
+    "sw_strength": 0.7,
+    "n_players": 1308,
+    "player_emb_dim": 8,
+    "rnn_units": 128,
+    "dropout": 0.15,
+    "rnn_dropout": 0.1,
+    "noise": 0.0,
+    "huber_delta": 1.0,
+    "lr": 0.0002,
+    "wd": 0.0001,
+    "patience": 50
+  },
+  "n_seq_features": 45,
+  "n_static_features": 20,
+  "results": {
+    "LSTM_sqrt": {
+      "rnn_type": "LSTM",
+      "target": "sqrt",
+      "test_mae": 18.498268127441406,
+      "test_rmse": 25.465301242726593,
+      "test_r2": 0.3164967894554138,
+      "best_epoch": 4,
+      "total_epochs": 54,
+      "train_loss": 2.3749589920043945,
+      "val_loss": 1.5610597133636475,
+      "loss_gap": -0.8138992786407471,
+      "train_time_s": 231.4
+    },
+    "LSTM_log1p": {
+      "rnn_type": "LSTM",
+      "target": "log1p",
+      "test_mae": 18.302473068237305,
+      "test_rmse": 25.47858561999297,
+      "test_r2": 0.3157835006713867,
+      "best_epoch": 4,
+      "total_epochs": 54,
+      "train_loss": 0.7284285426139832,
+      "val_loss": 0.5787216424942017,
+      "loss_gap": -0.1497069001197815,
+      "train_time_s": 230.2
+    },
+    "GRU_sqrt": {
+      "rnn_type": "GRU",
+      "target": "sqrt",
+      "test_mae": 18.449779510498047,
+      "test_rmse": 25.373998161796333,
+      "test_r2": 0.32138925790786743,
+      "best_epoch": 4,
+      "total_epochs": 54,
+      "train_loss": 2.3872692584991455,
+      "val_loss": 1.563802719116211,
+      "loss_gap": -0.8234665393829346,
+      "train_time_s": 201.2
+    },
+    "GRU_log1p": {
+      "rnn_type": "GRU",
+      "target": "log1p",
+      "test_mae": 18.290576934814453,
+      "test_rmse": 25.283717239003348,
+      "test_r2": 0.3262096643447876,
+      "best_epoch": 4,
+      "total_epochs": 54,
+      "train_loss": 0.7336735129356384,
+      "val_loss": 0.5816099643707275,
+      "loss_gap": -0.1520635485649109,
+      "train_time_s": 201.6
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "model_d": {
+    "name": "Fixed Hybrid (Model B arch + GaussianNoise + Mixup)",
+    "architecture": {
+      "n_layers": 5,
+      "units": [
+        448,
+        128,
+        320,
+        448,
+        256
+      ],
+      "dropout": 0.5,
+      "huber_delta": 0.5,
+      "lr": 0.003701177981657943,
+      "weight_decay": 1.5007044511603625e-05,
+      "batch_size": 32
+    },
+    "noise_stddev": 0.15,
+    "mixup_alpha": 0.2,
+    "sw_strength": 1.0,
+    "test_mae": 17.8289,
+    "test_rmse": 25.669,
+    "test_r2": 0.3055
+  },
+  "model_e": {
+    "name": "Optuna Hybrid (optimized arch + GaussianNoise + Mixup)",
+    "best_params": {
+      "batch_size": 32,
+      "mixup_alpha": 0.2,
+      "sw_strength": 0.9000000000000001,
+      "n_layers": 4,
+      "dropout": 0.4,
+      "noise_stddev": 0.25,
+      "huber_delta": 0.5,
+      "lr": 0.0002448790084311133,
+      "weight_decay": 0.00020741384776951126,
+      "units_0": 320,
+      "units_1": 384,
+      "units_2": 192,
+      "units_3": 128
+    },
+    "best_val_rmse": 25.6239130912108,
+    "test_mae": 17.8833,
+    "test_rmse": 25.3525,
+    "test_r2": 0.3225
+  }
+}
