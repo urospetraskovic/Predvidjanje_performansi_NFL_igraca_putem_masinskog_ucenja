@@ -62,6 +62,22 @@ def p_heading2(text):
     )
 
 
+def p_heading3(text):
+    return (
+        '<w:p><w:pPr><w:pStyle w:val="Heading3"/></w:pPr>'
+        + _runs_from_segments([(text, {})])
+        + '</w:p>'
+    )
+
+
+def p_heading4(text):
+    return (
+        '<w:p><w:pPr><w:pStyle w:val="Heading4"/></w:pPr>'
+        + _runs_from_segments([(text, {})])
+        + '</w:p>'
+    )
+
+
 def p_body(text_or_segments):
     if isinstance(text_or_segments, str):
         segments = [(text_or_segments, {})]
@@ -255,7 +271,7 @@ def build_new_chapter_xml():
     ))
 
     # --- Skup podataka i vremenska podela
-    parts.append(p_heading2("Skup podataka i vremenska podela"))
+    parts.append(p_heading3("Skup podataka i vremenska podela"))
 
     parts.append(p_body(
         "Korišćen je skup podataka iz datoteke wr_all_weeks.csv koji sadrži 46.115 zapisa "
@@ -286,7 +302,7 @@ def build_new_chapter_xml():
     ))
 
     # --- Inženjerstvo obeležja
-    parts.append(p_heading2("Inženjerstvo obeležja"))
+    parts.append(p_heading3("Inženjerstvo obeležja"))
 
     parts.append(p_body(
         "Pošto neuronske mreže nemaju ugrađeni mehanizam za ekstrakciju vremenskih obrazaca "
@@ -337,7 +353,7 @@ def build_new_chapter_xml():
     ))
 
     # --- Arhitekture modela
-    parts.append(p_heading2("Arhitekture modela"))
+    parts.append(p_heading3("Arhitekture modela"))
 
     parts.append(p_body(
         "Testirano je šest klasa arhitektura neuronskih mreža, rangirane od najjednostavnije "
@@ -349,7 +365,7 @@ def build_new_chapter_xml():
     ))
 
     # MLP
-    parts.append(p_heading2("Feed-forward mreže (MLP)"))
+    parts.append(p_heading4("Feed-forward mreže (MLP)"))
     parts.append(p_body(
         "Osnovni MLP model (Model B) koristi pet potpuno povezanih slojeva dimenzija "
         "[448, 128, 320, 448, 256] sa ReLU aktivacijom, LayerNorm normalizacijom i "
@@ -361,7 +377,7 @@ def build_new_chapter_xml():
     ))
 
     # RNN
-    parts.append(p_heading2("Rekurentne mreže i Improved RNN"))
+    parts.append(p_heading4("Rekurentne mreže i Improved RNN"))
     parts.append(p_body(
         "Rani RNN eksperimenti sa standardnom sliding window postavkom (duzina sekvence = 5 "
         "utakmica, 95 sirovih obeležja po koraku) dali su slabe rezultate (R² ≈ 0,26 za "
@@ -379,7 +395,7 @@ def build_new_chapter_xml():
     ))
 
     # Attention + Embeddings
-    parts.append(p_heading2("Pažnja i ugrađivanje identiteta igrača"))
+    parts.append(p_heading4("Pažnja i ugrađivanje identiteta igrača"))
     parts.append(p_body(
         "Najkompleksnija testirana arhitektura kombinuje tri ulazne grane: sekvencijalnu "
         "(T × 45 obeležja, gde je 45 = 33 sirova + 6 lag1 + 6 roll3 kanala), embedding "
@@ -394,7 +410,7 @@ def build_new_chapter_xml():
     ))
 
     # Quantile
-    parts.append(p_heading2("Kvantilna regresija (MLP Quantile)"))
+    parts.append(p_heading4("Kvantilna regresija (MLP Quantile)"))
     parts.append(p_body(
         "Zbog izražene asimetrije i prisustva outliera u receiving_yards distribuciji, "
         "testiran je i pristup kvantilne regresije. Arhitektura koristi istu MLP-B osnovu "
@@ -408,7 +424,7 @@ def build_new_chapter_xml():
     ))
 
     # Ensemble
-    parts.append(p_heading2("Strategije ansambliranja"))
+    parts.append(p_heading4("Strategije ansambliranja"))
     parts.append(p_body(
         "Iako pojedinačni modeli dostižu sličan kvalitet, njihove greške nisu savršeno "
         "korelisane (koeficijenti korelacije reziduala u opsegu 0,96–0,99), što ostavlja "
@@ -421,7 +437,7 @@ def build_new_chapter_xml():
     ))
 
     # Training process
-    parts.append(p_heading2("Proces treniranja"))
+    parts.append(p_heading3("Proces treniranja"))
     parts.append(p_body(
         "Svi modeli koriste AdamW optimizator sa weight decay u opsegu [1e-4; 5e-3], koji "
         "se u praksi pokazao dramatično bolji od klasičnog Adam-a zbog ispravne L2 "
@@ -446,7 +462,7 @@ def build_new_chapter_xml():
     ))
 
     # Optuna
-    parts.append(p_heading2("Optimizacija hiperparametara primenom Optuna biblioteke"))
+    parts.append(p_heading3("Optimizacija hiperparametara primenom Optuna biblioteke"))
     parts.append(p_body(
         "Za razliku od klasičnih modela gde se pokazao dovoljan Grid Search, neuronske "
         "mreže zahtevaju bogatiji prostor pretrage zbog većeg broja hiperparametara "
@@ -487,7 +503,7 @@ def build_new_chapter_xml():
     ))
 
     # --- Eksperimentalni postupak
-    parts.append(p_heading2("Eksperimentalni postupak"))
+    parts.append(p_heading3("Eksperimentalni postupak"))
 
     parts.append(p_body([
         ("Faza 1 — bazni GRU: ", {"b": True}),
@@ -566,7 +582,7 @@ def build_new_chapter_xml():
     ]))
 
     # --- Rezultati po modelima (sumarna tabela)
-    parts.append(p_heading2("Sumarni rezultati svih modela"))
+    parts.append(p_heading3("Sumarni rezultati svih modela"))
     parts.append(p_body(
         "Sledeća tabela prikazuje rezultate na test skupu (sezone 2024–2025, 6.199 "
         "uzoraka) za sve testirane modele, sortirano po srednjoj apsolutnoj grešci (MAE) "
@@ -609,7 +625,7 @@ def build_new_chapter_xml():
     ))
 
     # --- Poređenje sa referentnim modelom
-    parts.append(p_heading2("Poređenje sa referentnim modelom"))
+    parts.append(p_heading3("Poređenje sa referentnim modelom"))
 
     parts.append(p_body(
         "Prirodna referentna tačka za ovo proširenje su klasični regresioni modeli iz "
@@ -660,7 +676,7 @@ def build_new_chapter_xml():
     ))
 
     # --- Analiza grešaka po segmentima
-    parts.append(p_heading2("Analiza grešaka po segmentima targeta"))
+    parts.append(p_heading3("Analiza grešaka po segmentima targeta"))
 
     parts.append(p_body(
         "Da bi se utvrdilo gde tačno svaki model greši, predikcije su analizirane u "
@@ -693,7 +709,7 @@ def build_new_chapter_xml():
     ))
 
     # --- Ceiling analiza
-    parts.append(p_heading2("Teorijski plafon i ceiling analiza"))
+    parts.append(p_heading3("Teorijski plafon i ceiling analiza"))
 
     parts.append(p_body(
         "Centralno pitanje celog istraživanja je da li je R² ≈ 0,33 plafon modela ili "
@@ -731,7 +747,7 @@ def build_new_chapter_xml():
     ))
 
     # --- Ablacija TopN
-    parts.append(p_heading2("Ablacija obeležja: opadajući povraćaji"))
+    parts.append(p_heading3("Ablacija obeležja: opadajući povraćaji"))
 
     parts.append(p_body(
         "Dodatna dijagnostička analiza sproverena je kroz treniranje svih finalnih modela "
@@ -759,7 +775,7 @@ def build_new_chapter_xml():
     ))
 
     # --- Analiza kompleksnosti ansambla
-    parts.append(p_heading2("Korelisanost reziduala i ograničenje ansambla"))
+    parts.append(p_heading3("Korelisanost reziduala i ograničenje ansambla"))
 
     parts.append(p_body(
         "Matrica korelacije reziduala pet baznih modela ansambla pokazuje veoma visoke "
@@ -774,7 +790,7 @@ def build_new_chapter_xml():
     ))
 
     # --- Final conclusions
-    parts.append(p_heading2("Zaključak proširenja"))
+    parts.append(p_heading3("Zaključak proširenja"))
 
     parts.append(p_body(
         "Primena dubokog učenja na game-level predviđanje prijemnih jardi NFL Wide "
