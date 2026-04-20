@@ -5,11 +5,7 @@ This project predicts NFL players performance using machine learning models incl
 ## Dependencies
 
 ### Required Python Version
-- **Python 3.13.x** (testirano na 3.13.11)
-- TensorFlow 2.21 podržava Python 3.9–3.13
-- Napomena: TensorFlow ≥2.11 nema GPU podršku na native Windows — za GPU koristiti WSL2
-
-Sve verzije su pinovane u `requirements.txt` radi reprodukcije okruženja. Ispod je pregled.
+- Python 3.13.x (testirano na 3.13.11)
 
 ### Data Science & Machine Learning
 - pandas==2.3.3
@@ -44,14 +40,6 @@ Sve verzije su pinovane u `requirements.txt` radi reprodukcije okruženja. Ispod
 - python-dotenv==1.2.1
 - tabulate==0.10.0
 - tqdm==4.67.3
-
-### Web Scraping (Optional)
-- requests==2.32.5
-- beautifulsoup4==4.14.3
-- lxml==6.0.2
-- selenium==4.40.0
-- webdriver-manager==4.0.2
-- cloudscraper==1.2.71
 
 ## Installation
 
