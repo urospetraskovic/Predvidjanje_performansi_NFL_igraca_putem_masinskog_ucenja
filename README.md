@@ -34,7 +34,7 @@ This project requires the following Python packages:
 
 ### Neural Networks
 - tensorflow==2.21.0
-- keras==3.13.2
+- keras>=3.8,<4.0
 
 ### Web Scraping (Optional)
 - requests==2.31.0
