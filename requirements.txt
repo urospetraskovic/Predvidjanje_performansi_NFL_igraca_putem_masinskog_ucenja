@@ -1,33 +1,32 @@
+# Web Scraping
 requests==2.31.0
 beautifulsoup4==4.12.2
-pandas==2.1.3
-lxml==4.9.3
+lxml>=5.0
 selenium==4.15.2
 webdriver-manager==4.0.1
 
 # Machine Learning and Data Science
-scikit-learn>=1.3.0
-numpy>=1.24.0
-scipy>=1.11.0
-optuna>=3.0.0
-xgboost>=1.7.0
-lightgbm>=4.0.0
+pandas==2.1.3
+numpy>=1.24,<2.0
+scipy>=1.11,<2.0
+scikit-learn>=1.3,<1.6
+joblib>=1.3,<2.0
+optuna>=3.0,<4.0
+xgboost>=1.7,<2.0
+lightgbm>=4.0,<5.0
 
 # Visualization
-matplotlib>=3.7.0
-seaborn>=0.12.0
-adjustText>=1.3.0
-
-# Model persistence
-joblib>=1.3.0
+matplotlib>=3.7,<4.0
+seaborn>=0.12,<1.0
+adjustText>=1.3,<2.0
 
 # SHAP for feature importance analysis
-shap>=0.42.0
+shap>=0.42.0,<0.46
 
 # Jupyter notebook support
-jupyter>=1.0.0
-ipykernel>=6.25.0
-ipython>=8.0.0
+jupyter>=1.0
+ipykernel>=6.25
+ipython>=8.0,<9.0
 
 # Neural Networks
-tensorflow>=2.15.0
+tensorflow>=2.15,<2.17

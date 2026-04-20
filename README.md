@@ -5,17 +5,19 @@ This project predicts NFL players performance using machine learning models incl
 ## Dependencies
 
 ### Required Python Version
-- Python 3.8 or higher
+- Python 3.10 or 3.11 (preporučeno)
+- TensorFlow 2.15/2.16 ne podržava Python 3.12+, a pandas 2.1 zahteva Python ≥3.9
+- Napomena: TensorFlow ≥2.11 nema GPU podršku na native Windows — za GPU koristiti WSL2
 
 This project requires the following Python packages:
 
 ### Data Science & Machine Learning
 - pandas==2.1.3
-- scikit-learn>=1.3.0
-- numpy>=1.24.0
+- numpy>=1.24,<2.0
 - scipy>=1.11.0
+- scikit-learn>=1.3.0
 - joblib>=1.3.0
-- shap>=0.42.0
+- shap>=0.42.0,<0.46
 - optuna>=3.0.0
 - xgboost>=1.7.0
 - lightgbm>=4.0.0
@@ -23,6 +25,7 @@ This project requires the following Python packages:
 ### Visualization
 - matplotlib>=3.7.0
 - seaborn>=0.12.0
+- adjustText>=1.3.0
 
 ### Jupyter Environment
 - jupyter>=1.0.0
@@ -30,12 +33,12 @@ This project requires the following Python packages:
 - ipython>=8.0.0
 
 ### Neural Networks
-- tensorflow>=2.15.0
+- tensorflow>=2.15,<2.17
 
 ### Web Scraping (Optional)
 - requests==2.31.0
 - beautifulsoup4==4.12.2
-- lxml==4.9.3
+- lxml>=5.0
 - selenium==4.15.2
 - webdriver-manager==4.0.1
 
