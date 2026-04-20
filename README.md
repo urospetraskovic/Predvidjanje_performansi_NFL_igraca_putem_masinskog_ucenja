@@ -46,7 +46,7 @@ This project predicts NFL players performance using machine learning models incl
 1. **Clone the repository:**
    ```bash
    git clone <repository-url>
-   cd nfl-analytics-project
+   rename folder to a short name (because of potential long path problems)
    ```
 
 2. **Create a virtual environment (recommended):**
