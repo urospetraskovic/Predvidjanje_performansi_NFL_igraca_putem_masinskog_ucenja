@@ -1,0 +1,9 @@
+Model,Spearman vs smoothed,Spearman vs raw,Test R² (vs smoothed),Rank − R² gap
+LSTM Improved,0.7751,0.5575,0.599,0.1761
+MLP Quantile q50,0.7684,0.5604,0.5893,0.1791
+MLP Hybrid,0.7672,0.5594,0.5939,0.1733
+GRU Improved,0.7664,0.5571,0.5896,0.1768
+RandomForest,0.7643,0.5591,0.5899,0.1744
+ElasticNet,0.7633,0.5515,0.5797,0.1836
+XGBoost,0.758,0.5554,0.5796,0.1784
+LightGBM,0.7513,0.5511,0.5657,0.1856
