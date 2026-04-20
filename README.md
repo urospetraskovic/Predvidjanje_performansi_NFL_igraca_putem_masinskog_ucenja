@@ -5,8 +5,8 @@ This project predicts NFL players performance using machine learning models incl
 ## Dependencies
 
 ### Required Python Version
-- Python 3.10 or 3.11 (preporučeno)
-- TensorFlow 2.15/2.16 ne podržava Python 3.12+, a pandas 2.1 zahteva Python ≥3.9
+- Python 3.11 ili 3.12 (preporučeno)
+- TensorFlow 2.21 zahteva Python 3.9–3.12, a pandas 2.1 zahteva Python ≥3.9
 - Napomena: TensorFlow ≥2.11 nema GPU podršku na native Windows — za GPU koristiti WSL2
 
 This project requires the following Python packages:
@@ -33,7 +33,8 @@ This project requires the following Python packages:
 - ipython>=8.0.0
 
 ### Neural Networks
-- tensorflow>=2.15,<2.17
+- tensorflow==2.21.0
+- keras==3.13.2
 
 ### Web Scraping (Optional)
 - requests==2.31.0
