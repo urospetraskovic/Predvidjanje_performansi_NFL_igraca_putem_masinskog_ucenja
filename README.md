@@ -5,43 +5,53 @@ This project predicts NFL players performance using machine learning models incl
 ## Dependencies
 
 ### Required Python Version
-- Python 3.11 ili 3.12 (preporučeno)
-- TensorFlow 2.21 zahteva Python 3.9–3.12, a pandas 2.1 zahteva Python ≥3.9
+- **Python 3.13.x** (testirano na 3.13.11)
+- TensorFlow 2.21 podržava Python 3.9–3.13
 - Napomena: TensorFlow ≥2.11 nema GPU podršku na native Windows — za GPU koristiti WSL2
 
-This project requires the following Python packages:
+Sve verzije su pinovane u `requirements.txt` radi reprodukcije okruženja. Ispod je pregled.
 
 ### Data Science & Machine Learning
-- pandas==2.1.3
-- numpy>=1.24,<2.0
-- scipy>=1.11.0
-- scikit-learn>=1.3.0
-- joblib>=1.3.0
-- shap>=0.42.0,<0.46
-- optuna>=3.0.0
-- xgboost>=1.7.0
-- lightgbm>=4.0.0
+- pandas==2.3.3
+- numpy==2.4.0
+- scipy==1.16.3
+- scikit-learn==1.8.0
+- joblib==1.5.3
+- shap==0.50.0
+- optuna==4.8.0
+- optuna-integration==4.8.0
+- xgboost==3.2.0
+- lightgbm==4.6.0
+- numba==0.64.0
 
 ### Visualization
-- matplotlib>=3.7.0
-- seaborn>=0.12.0
-- adjustText>=1.3.0
+- matplotlib==3.10.8
+- seaborn==0.13.2
+- adjustText==1.3.0
 
 ### Jupyter Environment
-- jupyter>=1.0.0
-- ipykernel>=6.25.0
-- ipython>=8.0.0
+- ipykernel==7.2.0
+- ipython==9.10.0
+- (VS Code sa Jupyter ekstenzijom koristi `ipykernel` direktno — `jupyter` meta-paket nije obavezan)
 
 ### Neural Networks
 - tensorflow==2.21.0
-- keras>=3.8,<4.0
+- keras==3.13.2
+- keras-tuner==1.4.8
+
+### Reporting / Utilities
+- python-docx==1.2.0
+- python-dotenv==1.2.1
+- tabulate==0.10.0
+- tqdm==4.67.3
 
 ### Web Scraping (Optional)
-- requests==2.31.0
-- beautifulsoup4==4.12.2
-- lxml>=5.0
-- selenium==4.15.2
-- webdriver-manager==4.0.1
+- requests==2.32.5
+- beautifulsoup4==4.14.3
+- lxml==6.0.2
+- selenium==4.40.0
+- webdriver-manager==4.0.2
+- cloudscraper==1.2.71
 
 ## Installation
 
@@ -53,15 +63,17 @@ This project requires the following Python packages:
 
 2. **Create a virtual environment (recommended):**
    ```bash
-   python -m venv venv
+   # Use Python 3.13.x explicitly — the project is pinned to this version
+   py -3.13 -m venv .venv
    # On Windows:
-   venv\Scripts\activate
+   .venv\Scripts\activate
    # On macOS/Linux:
-   source venv/bin/activate
+   source .venv/bin/activate
    ```
 
 3. **Install dependencies:**
    ```bash
+   python -m pip install --upgrade pip
    pip install -r requirements.txt
    ```
 
